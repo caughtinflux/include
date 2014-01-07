@@ -42,8 +42,9 @@
 #import "SBPrototypeController.h"
 #import "SBRootSettings.h"
 #import "SBRootAnimationSettings.h"
-#import <SpringBoardFoundation/SBFAnimationFactorySettings.h>
-#import <SpringBoardFoundation/SBFAnimationSettings>
+#import "SBFAnimationFactorySettings.h"
+#import <SpringBoardFoundation/SBFAnimationFactory.h>
+#import <SpringBoardFoundation/SBFAnimationSettings.h>
 
 #import "NSIndexPath-SBIconIndex.h"
 

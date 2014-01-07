@@ -33,7 +33,7 @@
 - (id)_basicAnimationForView:(id)arg1 withKeyPath:(id)arg2;
 - (void)setTimingFunctionFromSettings:(id)arg1;
 - (void)animateWithDelay:(double)delay options:(unsigned long long)arg2 animations:(id)arg3 completion:(id)arg4;
-- (void)animateWithDelay:(double)delay animations:(id)arg2 completion:(id)arg3;
+- (void)animateWithDelay:(double)delay animations:(void(^)(void))animations completion:(id)arg3;
 
 @end
 
