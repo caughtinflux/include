@@ -206,7 +206,7 @@
 - (SBFolderController *)_openFolderController;
 - (SBRootFolderController *)_rootFolderController;
 - (SBRootFolder *)rootFolder;
-- (id)contentView;
+- (SBIconContentView *)contentView;
 - (void)dealloc;
 - (SBIconModel *)model;
 - (void)_runScrollFolderTest:(NSInteger)arg1;

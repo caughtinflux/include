@@ -4,9 +4,10 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2012 by Steve Nygard.
  */
 
-#import "UIView.h"
+#import <UIKit/UIView.h>
 
-#import "_SBIconWallpaperColorClient.h"
+#import "_SBIconWallpaperColorClient-Protocol.h"
+#import "SBIconBlurryBackgroundViewObserver-Protocol.h"
 
 @interface SBIconBlurryBackgroundView : UIView <_SBIconWallpaperColorClient>
 {
@@ -21,16 +22,13 @@
 @property(nonatomic, getter=isSuppressingExternalUpdates) BOOL suppressesExternalUpdates; // @synthesize suppressesExternalUpdates=_suppressesExternalUpdates;
 @property(copy, nonatomic) id wantsBlurEvaluator; // @synthesize wantsBlurEvaluator=_wantsBlurEvaluator;
 @property(readonly, nonatomic) BOOL isBlurring; // @synthesize isBlurring=_isBlurring;
-@property(nonatomic) struct CGPoint wallpaperRelativeCenter; // @synthesize wallpaperRelativeCenter=_wallpaperRelativeCenter;
-@property(nonatomic) id <SBIconBlurryBackgroundViewObserver> observer; // @synthesize observer=_observer;
-- (BOOL)_shouldAnimatePropertyWithKey:(id)arg1;
-- (void)setBlurring:(BOOL)arg1;
-- (void)setWallpaperColor:(struct CGColor *)arg1 phase:(struct CGSize)arg2;
+@property(nonatomic) CGPoint wallpaperRelativeCenter; // @synthesize wallpaperRelativeCenter=_wallpaperRelativeCenter;
+@property(nonatomic, assign) id<SBIconBlurryBackgroundViewObserver> observer; // @synthesize observer=_observer;
+- (BOOL)_shouldAnimatePropertyWithKey:(id)key;
+- (void)setBlurring:(BOOL)blurring;
+- (void)setWallpaperColor:(CGColorRef)color phase:(CGSize)arg2;
 - (BOOL)wantsBlur:(id)arg1;
-- (struct CGRect)wallpaperRelativeBounds;
-- (void)didAddSubview:(id)arg1;
-- (void)dealloc;
-- (id)initWithFrame:(struct CGRect)arg1;
+- (CGRect)wallpaperRelativeBounds;
 
 @end
 

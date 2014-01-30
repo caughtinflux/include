@@ -49,7 +49,7 @@
 - (void)recycleViewForIcon:(id)arg1;
 - (void)_recycleIconView:(id)arg1;
 - (void)purgeIconFromMap:(id)arg1;
-- (void)_addIconView:(id)arg1 forIcon:(id)arg2;
+- (void)_addIconView:(SBIconView *)iconView forIcon:(SBIcon *)icon;
 - (void)tryToReplaceIcon:(id)arg1 withIcon:(id)arg2;
 - (SBIconView *)iconViewForIcon:(SBIcon *)icon;
 - (SBIconView *)_iconViewForIcon:(SBIcon *)icon;

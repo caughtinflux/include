@@ -4,58 +4,58 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2012 by Steve Nygard.
  */
 
-#import "_UISettings.h"
+#import <UIKit/_UISettings.h>
 
 @interface SBLegibilitySettings : _UISettings
 {
-    float _slideToUnlockDarkShadowStrength;
-    float _slideToUnlockLightShadowStrength;
-    float _cameraGrabberDarkShadowStrength;
-    float _cameraGrabberLightShadowStrength;
-    float _timeDarkShadowStrength;
-    float _timeLightShadowStrength;
-    float _dateDarkShadowStrength;
-    float _dateLightShadowStrength;
-    float _legalDarkShadowStrength;
-    float _legalLightShadowStrength;
-    float _iconLabelDarkShadowStrength;
-    float _iconLabelLightShadowStrength;
-    float _folderTitleDarkShadowStrength;
-    float _folderTitleLightShadowStrength;
-    float _timerTextDarkShadowStrength;
-    float _timerTextLightShadowStrength;
-    float _timerDialDarkShadowStrength;
-    float _timerDialLightShadowStrength;
+    CGFloat _slideToUnlockDarkShadowStrength;
+    CGFloat _slideToUnlockLightShadowStrength;
+    CGFloat _cameraGrabberDarkShadowStrength;
+    CGFloat _cameraGrabberLightShadowStrength;
+    CGFloat _timeDarkShadowStrength;
+    CGFloat _timeLightShadowStrength;
+    CGFloat _dateDarkShadowStrength;
+    CGFloat _dateLightShadowStrength;
+    CGFloat _legalDarkShadowStrength;
+    CGFloat _legalLightShadowStrength;
+    CGFloat _iconLabelDarkShadowStrength;
+    CGFloat _iconLabelLightShadowStrength;
+    CGFloat _folderTitleDarkShadowStrength;
+    CGFloat _folderTitleLightShadowStrength;
+    CGFloat _timerTextDarkShadowStrength;
+    CGFloat _timerTextLightShadowStrength;
+    CGFloat _timerDialDarkShadowStrength;
+    CGFloat _timerDialLightShadowStrength;
 }
 
 + (id)settingsControllerModule;
-@property float timerDialLightShadowStrength; // @synthesize timerDialLightShadowStrength=_timerDialLightShadowStrength;
-@property float timerDialDarkShadowStrength; // @synthesize timerDialDarkShadowStrength=_timerDialDarkShadowStrength;
-@property float timerTextLightShadowStrength; // @synthesize timerTextLightShadowStrength=_timerTextLightShadowStrength;
-@property float timerTextDarkShadowStrength; // @synthesize timerTextDarkShadowStrength=_timerTextDarkShadowStrength;
-@property float folderTitleLightShadowStrength; // @synthesize folderTitleLightShadowStrength=_folderTitleLightShadowStrength;
-@property float folderTitleDarkShadowStrength; // @synthesize folderTitleDarkShadowStrength=_folderTitleDarkShadowStrength;
-@property float iconLabelLightShadowStrength; // @synthesize iconLabelLightShadowStrength=_iconLabelLightShadowStrength;
-@property float iconLabelDarkShadowStrength; // @synthesize iconLabelDarkShadowStrength=_iconLabelDarkShadowStrength;
-@property float legalLightShadowStrength; // @synthesize legalLightShadowStrength=_legalLightShadowStrength;
-@property float legalDarkShadowStrength; // @synthesize legalDarkShadowStrength=_legalDarkShadowStrength;
-@property float dateLightShadowStrength; // @synthesize dateLightShadowStrength=_dateLightShadowStrength;
-@property float dateDarkShadowStrength; // @synthesize dateDarkShadowStrength=_dateDarkShadowStrength;
-@property float timeLightShadowStrength; // @synthesize timeLightShadowStrength=_timeLightShadowStrength;
-@property float timeDarkShadowStrength; // @synthesize timeDarkShadowStrength=_timeDarkShadowStrength;
-@property float cameraGrabberLightShadowStrength; // @synthesize cameraGrabberLightShadowStrength=_cameraGrabberLightShadowStrength;
-@property float cameraGrabberDarkShadowStrength; // @synthesize cameraGrabberDarkShadowStrength=_cameraGrabberDarkShadowStrength;
-@property float slideToUnlockLightShadowStrength; // @synthesize slideToUnlockLightShadowStrength=_slideToUnlockLightShadowStrength;
-@property float slideToUnlockDarkShadowStrength; // @synthesize slideToUnlockDarkShadowStrength=_slideToUnlockDarkShadowStrength;
-- (float)timerDialStrengthForStyle:(int)arg1;
-- (float)timerTextStrengthForStyle:(int)arg1;
-- (float)folderTitleStrengthForStyle:(int)arg1;
-- (float)iconLabelStrengthForStyle:(int)arg1;
-- (float)legalStrengthForStyle:(int)arg1;
-- (float)dateStrengthForStyle:(int)arg1;
-- (float)timeStrengthForStyle:(int)arg1;
-- (float)cameraGrabberStrengthForStyle:(int)arg1;
-- (float)slideToUnlockStrengthForStyle:(int)arg1;
+@property CGFloat timerDialLightShadowStrength; // @synthesize timerDialLightShadowStrength=_timerDialLightShadowStrength;
+@property CGFloat timerDialDarkShadowStrength; // @synthesize timerDialDarkShadowStrength=_timerDialDarkShadowStrength;
+@property CGFloat timerTextLightShadowStrength; // @synthesize timerTextLightShadowStrength=_timerTextLightShadowStrength;
+@property CGFloat timerTextDarkShadowStrength; // @synthesize timerTextDarkShadowStrength=_timerTextDarkShadowStrength;
+@property CGFloat folderTitleLightShadowStrength; // @synthesize folderTitleLightShadowStrength=_folderTitleLightShadowStrength;
+@property CGFloat folderTitleDarkShadowStrength; // @synthesize folderTitleDarkShadowStrength=_folderTitleDarkShadowStrength;
+@property CGFloat iconLabelLightShadowStrength; // @synthesize iconLabelLightShadowStrength=_iconLabelLightShadowStrength;
+@property CGFloat iconLabelDarkShadowStrength; // @synthesize iconLabelDarkShadowStrength=_iconLabelDarkShadowStrength;
+@property CGFloat legalLightShadowStrength; // @synthesize legalLightShadowStrength=_legalLightShadowStrength;
+@property CGFloat legalDarkShadowStrength; // @synthesize legalDarkShadowStrength=_legalDarkShadowStrength;
+@property CGFloat dateLightShadowStrength; // @synthesize dateLightShadowStrength=_dateLightShadowStrength;
+@property CGFloat dateDarkShadowStrength; // @synthesize dateDarkShadowStrength=_dateDarkShadowStrength;
+@property CGFloat timeLightShadowStrength; // @synthesize timeLightShadowStrength=_timeLightShadowStrength;
+@property CGFloat timeDarkShadowStrength; // @synthesize timeDarkShadowStrength=_timeDarkShadowStrength;
+@property CGFloat cameraGrabberLightShadowStrength; // @synthesize cameraGrabberLightShadowStrength=_cameraGrabberLightShadowStrength;
+@property CGFloat cameraGrabberDarkShadowStrength; // @synthesize cameraGrabberDarkShadowStrength=_cameraGrabberDarkShadowStrength;
+@property CGFloat slideToUnlockLightShadowStrength; // @synthesize slideToUnlockLightShadowStrength=_slideToUnlockLightShadowStrength;
+@property CGFloat slideToUnlockDarkShadowStrength; // @synthesize slideToUnlockDarkShadowStrength=_slideToUnlockDarkShadowStrength;
+- (CGFloat)timerDialStrengthForStyle:(NSInteger)arg1;
+- (CGFloat)timerTextStrengthForStyle:(NSInteger)arg1;
+- (CGFloat)folderTitleStrengthForStyle:(NSInteger)arg1;
+- (CGFloat)iconLabelStrengthForStyle:(NSInteger)arg1;
+- (CGFloat)legalStrengthForStyle:(NSInteger)arg1;
+- (CGFloat)dateStrengthForStyle:(NSInteger)arg1;
+- (CGFloat)timeStrengthForStyle:(NSInteger)arg1;
+- (CGFloat)cameraGrabberStrengthForStyle:(NSInteger)arg1;
+- (CGFloat)slideToUnlockStrengthForStyle:(NSInteger)arg1;
 - (void)setDefaultValues;
 
 @end

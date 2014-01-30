@@ -26,8 +26,6 @@
 - (id)folderControllers;
 - (unsigned int)_depth;
 - (Class)_contentViewClass;
-- (void)dealloc;
-- (id)initWithFolder:(id)arg1 orientation:(int)arg2;
 
 // Remaining properties
 @property(readonly, nonatomic) SBRootFolderView *contentView;

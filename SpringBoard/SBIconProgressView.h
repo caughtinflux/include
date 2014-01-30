@@ -4,7 +4,8 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2012 by Steve Nygard.
  */
 
-#import "UIView.h"
+#import <UIKit/UIView.h>
+#import "SBIconProgressViewDelegate-Protocol.h"
 
 @class CADisplayLink, UIImage, _SBIconProgressFractionTransition, _SBIconProgressPausedTransition, _SBIconProgressStateTransition;
 
@@ -15,51 +16,50 @@
     _SBIconProgressFractionTransition *_activeFractionTransition;
     int _modelState;
     BOOL _modelPaused;
-    float _modelFraction;
+    CGFloat _modelFraction;
     CADisplayLink *_displayLink;
     double _lastUpdate;
     UIImage *_maskImage;
     BOOL _canAnimate;
     BOOL _displayingPaused;
-    id <SBIconProgressViewDelegate> _delegate;
+    id<SBIconProgressViewDelegate> _delegate;
     UIImage *_overlayImage;
-    float _backgroundAlpha;
-    float _foregroundAlpha;
-    float _circleRadiusFraction;
-    float _pauseRadiusFraction;
+    CGFloat _backgroundAlpha;
+    CGFloat _foregroundAlpha;
+    CGFloat _circleRadiusFraction;
+    CGFloat _pauseRadiusFraction;
     int _displayedState;
-    float _displayedFraction;
+    CGFloat _displayedFraction;
 }
 
-@property(nonatomic) float displayedFraction; // @synthesize displayedFraction=_displayedFraction;
+@property(nonatomic) CGFloat displayedFraction; // @synthesize displayedFraction=_displayedFraction;
 @property(nonatomic) BOOL displayingPaused; // @synthesize displayingPaused=_displayingPaused;
 @property(nonatomic) int displayedState; // @synthesize displayedState=_displayedState;
-@property(nonatomic) float pauseRadiusFraction; // @synthesize pauseRadiusFraction=_pauseRadiusFraction;
-@property(nonatomic) float circleRadiusFraction; // @synthesize circleRadiusFraction=_circleRadiusFraction;
-@property(nonatomic) float foregroundAlpha; // @synthesize foregroundAlpha=_foregroundAlpha;
-@property(nonatomic) float backgroundAlpha; // @synthesize backgroundAlpha=_backgroundAlpha;
+@property(nonatomic) CGFloat pauseRadiusFraction; // @synthesize pauseRadiusFraction=_pauseRadiusFraction;
+@property(nonatomic) CGFloat circleRadiusFraction; // @synthesize circleRadiusFraction=_circleRadiusFraction;
+@property(nonatomic) CGFloat foregroundAlpha; // @synthesize foregroundAlpha=_foregroundAlpha;
+@property(nonatomic) CGFloat backgroundAlpha; // @synthesize backgroundAlpha=_backgroundAlpha;
 @property(nonatomic) BOOL canAnimate; // @synthesize canAnimate=_canAnimate;
 @property(retain, nonatomic) UIImage *overlayImage; // @synthesize overlayImage=_overlayImage;
-@property(nonatomic) id <SBIconProgressViewDelegate> delegate; // @synthesize delegate=_delegate;
-@property(readonly, nonatomic) struct CGRect circleBoundingRect;
+@property(nonatomic, assign) id<SBIconProgressViewDelegate> delegate; // @synthesize delegate=_delegate;
+@property(readonly, nonatomic) CGRect circleBoundingRect;
 - (id)_maskImage;
-- (void)_drawPauseUIWithCenter:(struct CGPoint)arg1;
-- (void)_drawIncomingCircleWithCenter:(struct CGPoint)arg1;
-- (void)_drawOutgoingCircleWithCenter:(struct CGPoint)arg1;
-- (void)_drawPieWithCenter:(struct CGPoint)arg1;
-- (void)drawRect:(struct CGRect)arg1;
+- (void)_drawPauseUIWithCenter:(CGPoint)arg1;
+- (void)_drawIncomingCircleWithCenter:(CGPoint)arg1;
+- (void)_drawOutgoingCircleWithCenter:(CGPoint)arg1;
+- (void)_drawPieWithCenter:(CGPoint)arg1;
+- (void)drawRect:(CGRect)arg1;
 - (void)_clearDisplayLink;
 - (void)_ensureDisplayLink;
-- (void)_onDisplayLink:(id)arg1;
+- (void)_onDisplayLink:(id)dl;
 - (void)_clearTransitionIfComplete:(id *)arg1;
-- (void)_updateFractionTransitionAnimated:(BOOL)arg1;
-- (void)_updateStateTransitionAnimated:(BOOL)arg1;
-- (void)_updatePausedTransitionAnimated:(BOOL)arg1;
-- (void)_updateTransitionsAnimated:(BOOL)arg1;
+- (void)_updateFractionTransitionAnimated:(BOOL)animated;
+- (void)_updateStateTransitionAnimated:(BOOL)animated;
+- (void)_updatePausedTransitionAnimated:(BOOL)animated;
+- (void)_updateTransitionsAnimated:(BOOL)animated;
 - (BOOL)_hasActiveTransitions;
-- (void)setState:(int)arg1 paused:(BOOL)arg2 fractionLoaded:(float)arg3 animated:(BOOL)arg4;
-- (void)dealloc;
-- (id)initWithFrame:(struct CGRect)arg1;
+- (void)setState:(NSInteger)state paused:(BOOL)paused fractionLoaded:(CGFloat)fraction animated:(BOOL)animated;
+
 
 @end
 

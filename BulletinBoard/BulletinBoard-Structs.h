@@ -8,10 +8,7 @@
 
 typedef struct _NSZone* NSZoneRef;
 
-typedef struct CGSize {
-	float width;
-	float height;
-} CGSize;
+#import <CoreGraphics/CoreGraphics.h>
 
 typedef struct {
 	unsigned pushDataProvider : 1;

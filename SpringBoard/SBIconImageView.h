@@ -19,16 +19,16 @@
     UIImage *_cachedSquareContentsImage;
     BOOL _showsSquareCorners;
     SBIcon *_icon;
-    float _brightness;
-    float _overlayAlpha;
+    CGFloat _brightness;
+    CGFloat _overlayAlpha;
 }
 
 + (id)dequeueRecycledIconImageViewOfClass:(Class)arg1;
 + (void)recycleIconImageView:(id)arg1;
-+ (float)cornerRadius;
++ (CGFloat)cornerRadius;
 @property(nonatomic) BOOL showsSquareCorners; // @synthesize showsSquareCorners=_showsSquareCorners;
-@property(nonatomic) float overlayAlpha; // @synthesize overlayAlpha=_overlayAlpha;
-@property(nonatomic) float brightness; // @synthesize brightness=_brightness;
+@property(nonatomic) CGFloat overlayAlpha; // @synthesize overlayAlpha=_overlayAlpha;
+@property(nonatomic) CGFloat brightness; // @synthesize brightness=_brightness;
 @property(retain, nonatomic) SBIcon *icon; // @synthesize icon=_icon;
 - (BOOL)_shouldAnimatePropertyWithKey:(id)arg1;
 - (void)iconImageDidUpdate:(id)arg1;
@@ -48,14 +48,13 @@
 - (void)prepareForReuse;
 - (void)layoutSubviews;
 - (void)setPaused:(BOOL)arg1;
-- (void)setProgressAlpha:(float)arg1;
+- (void)setProgressAlpha:(CGFloat)arg1;
 - (void)_clearProgressView;
-- (void)progressViewCanBeRemoved:(id)arg1;
-- (void)setProgressState:(int)arg1 paused:(BOOL)arg2 percent:(float)arg3 animated:(BOOL)arg4;
+- (void)progressViewCanBeRemoved:(id)progressView;
+- (void)setProgressState:(int)state paused:(BOOL)paused percent:(CGFloat)percent animated:(BOOL)animated;
 - (void)_updateOverlayAlpha;
-- (void)setIcon:(id)arg1 animated:(BOOL)arg2;
+- (void)setIcon:(id)icon animated:(BOOL)animated;
 - (void)dealloc;
-- (id)initWithFrame:(CGRect)arg1;
 
 @end
 

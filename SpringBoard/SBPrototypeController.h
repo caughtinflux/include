@@ -43,9 +43,7 @@
 - (void)showOrHide;
 - (BOOL)isPrototypingEnabled;
 - (BOOL)isShowingSettingsUI;
-- (id)rootSettings;
-- (void)dealloc;
-- (id)init;
+- (SBRootSettings *)rootSettings;
 
 @end
 

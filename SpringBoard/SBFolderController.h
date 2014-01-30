@@ -10,7 +10,7 @@
 #import "SBFolderObserver-Protocol.h"
 #import "SBFolderViewDelegate-Protocol.h"
 
-@class NSArray, NSMapTable, NSTimer, SBFolder, SBFolderContext, SBFolderView, SBIcon, SBIconAnimator, _UILegibilitySettings;
+@class NSArray, NSMapTable, NSTimer, SBFolder, SBFolderContext, SBFolderView, SBIconListView, SBDockIconListView, SBIcon, SBIconAnimator, _UILegibilitySettings;
 
 @interface SBFolderController : NSObject <SBFolderControllerDelegate, SBFolderViewDelegate, SBFolderObserver>
 {
@@ -123,14 +123,14 @@
 - (void)willAnimate;
 - (void)setDockVerticalStretch:(CGFloat)arg1;
 - (void)setDockOffscreenFraction:(CGFloat)arg1;
-- (id)dockListView;
+- (SBDockIconListView *)dockListView;
 - (BOOL)hasDock;
 - (BOOL)isDisplayingIcon:(id)arg1;
-- (id)iconListViewContainingIcon:(id)arg1;
-- (id)iconListViewForTouch:(id)arg1;
-- (id)iconListViewAtIndex:(NSUInteger)arg1;
+- (SBIconListView *)iconListViewContainingIcon:(id)arg1;
+- (SBIconListView *)iconListViewForTouch:(id)arg1;
+- (SBIconListView *)iconListViewAtIndex:(NSUInteger)arg1;
 - (BOOL)doesPageContainIconListView:(int)arg1;
-- (id)currentIconListView;
+- (SBIconListView *)currentIconListView;
 
 - (BOOL)_restoreFromContext:(id)arg1;
 - (id)_createContext;
@@ -142,7 +142,7 @@
 
 - (Class)_contentViewClass;
 - (void)_invalidate;
-- (void)dealloc;
+
 - (instancetype)initWithFolder:(id)arg1 orientation:(int)arg2;
 
 @end

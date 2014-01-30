@@ -6,7 +6,7 @@
 
 #import "NSObject.h"
 
-#import "BBObserverDelegate.h"
+#import <BulletinBoard/BBObserverDelegate.h>
 #import "SBUIBannerSource.h"
 #import "SBUIBannerTargetManagerObserver.h"
 #import "SBVolumePressBandit.h"

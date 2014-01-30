@@ -6,8 +6,8 @@
 
 #import "NSObject.h"
 
-#import "NSFastEnumeration.h"
-#import "SBIconIndexNodeObserver.h"
+#import "SBIconIndexMutableListObserver-Protocol.h"
+#import "SBIconIndexNodeObserver-Protocol.h"
 
 @class NSMapTable, NSMutableArray;
 
@@ -18,9 +18,8 @@
     id <SBIconIndexMutableListObserver> _observer;
 }
 
-@property(nonatomic) id <SBIconIndexMutableListObserver> observer; // @synthesize observer=_observer;
+@property(nonatomic, assign) id <SBIconIndexMutableListObserver> observer; // @synthesize observer=_observer;
 - (id)indexDescriptionWithPrefix:(id)arg1;
-- (unsigned int)countByEnumeratingWithState:(CDStruct_11f37819 *)arg1 objects:(id *)arg2 count:(unsigned int)arg3;
 - (void)node:(id)arg1 didRemoveContainedNodeIdentifiers:(id)arg2;
 - (void)node:(id)arg1 didAddContainedNodeIdentifiers:(id)arg2;
 - (void)removeAllNodes;
