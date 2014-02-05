@@ -6,10 +6,11 @@
 
 #import "NSObject.h"
 
-#import <BulletinBoard/BBObserverDelegate.h>
-#import "SBUIBannerSource.h"
-#import "SBUIBannerTargetManagerObserver.h"
-#import "SBVolumePressBandit.h"
+#import "BBObserverDelegate-Protocol.h"
+#import "SBUIBannerSource-Protocol.h"
+#import "SBUIBannerTargetManagerObserver-Protocol.h"
+#import "SBVolumePressBandit-Protocol.h"
+#import "SBUIBannerTarget-Protocol.h"
 
 @class BBObserver, NSMutableArray, NSMutableSet;
 

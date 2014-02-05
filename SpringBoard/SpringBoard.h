@@ -9,6 +9,8 @@
 #import <GraphicsServices/GraphicsServices.h>
 #import <IOKit/hid/IOHIDEvent.h>
 
+#import "SBApplication.h"
+#import "SBTelephonyManager.h"
 #import "SBIconView.h"
 #import "SBFolderIconView.h"
 #import "SBApplicationIcon.h"

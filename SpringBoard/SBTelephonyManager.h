@@ -84,8 +84,8 @@
 - (void)_cancelFakeService;
 - (void)_updateRegistrationNow;
 - (void)_setRegistrationStatus:(int)arg1;
-- (void)_setCachedCTRegistrationStatus:(struct __CFString *)arg1;
-- (struct __CFString *)_cachedCTRegistrationStatus;
+- (void)_setCachedCTRegistrationStatus:(CFStringRef)arg1;
+- (CFStringRef)_cachedCTRegistrationStatus;
 - (void)postponementStatusChanged;
 - (void)_proximityChanged:(id)arg1;
 - (void)_headphoneChanged:(id)arg1;
@@ -161,7 +161,7 @@
 - (void)airplaneModeChanged;
 - (void)updateAirplaneMode;
 - (void)setFastDormancySuspended:(BOOL)arg1;
-- (void)queue_setFastDormancySuspended:(BOOL)arg1 withConnection:(struct __CTServerConnection *)arg2;
+// - (void)queue_setFastDormancySuspended:(BOOL)arg1 withConnection:(struct __CTServerConnection *)arg2;
 - (void)setLimitTransmitPowerPerBandEnabled:(BOOL)arg1;
 - (void)updateStatusBarCallDuration;
 - (void)_phoneActivationStateChanged:(id)arg1;
@@ -178,7 +178,7 @@
 - (BOOL)hasCellularTelephony;
 - (BOOL)containsCellularRadio;
 - (void)SBTelephonyDaemonRestartHandler;
-- (void)_serverConnectionDidError:(CDStruct_1ef3fb1f)arg1;
+//- (void)_serverConnectionDidError:(CDStruct_1ef3fb1f)arg1;
 - (void)_avSystemControllerDidError:(id)arg1;
 - (struct __CTServerConnection *)_serverConnection;
 - (void)_performQueryInBackground:(id)arg1 withMainQueueResultHandler:(void)arg2;

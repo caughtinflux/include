@@ -5,13 +5,14 @@
  */
 
 #import "NSObject.h"
+#import "CDStructures.h"
 
-#import "SBDisplayProtocol.h"
-#import "SBLeafIconDataSource.h"
-#import "SBScreenObserver.h"
-#import "SBSystemLocalNotificationAlertDelegate.h"
-#import "SBWindowContextHostManagerDelegate.h"
-#import "SBWindowContextManagerDelegate.h"
+#import "SBDisplayProtocol-Protocol.h"
+#import "SBLeafIconDataSource-Protocol.h"
+#import "SBScreenObserver-Protocol.h"
+#import "SBSystemLocalNotificationAlertDelegate-Protocol.h"
+#import "SBWindowContextHostManagerDelegate-Protocol.h"
+#import "SBWindowContextManagerDelegate-Protocol.h"
 
 @class BKSApplicationDataStore, BKSCFBundle, BKSMachSendRight, BKSProcessAssertion, NSArray, NSDate, NSDictionary, NSHashTable, NSMapTable, NSMutableArray, NSMutableDictionary, NSMutableSet, NSSet, NSString, NSTimer, PCPersistentTimer, SBActivationContext, SBWindowContextManager, UILocalNotification, UIRemoteApplication;
 
@@ -102,10 +103,7 @@
     NSMutableSet *_requireLocalNotificationsCachingReasons;
     NSArray *_cachedLocalNotifications;
     unsigned int _applicationState;
-    struct _opaque_pthread_mutex_t {
-        long __sig;
-        char __opaque[40];
-    } _appBundleMutex;
+    struct _opaque_pthread_mutex_t _appBundleMutex;
     NSDate *_nextApplicationWakeDate;
     PCPersistentTimer *_applicationWakeTimer;
     PCPersistentTimer *_localNotificationTimer;
@@ -311,7 +309,7 @@
 - (BOOL)provisioningProfileValidated;
 - (void)markApplicationIdentityAsTrusted;
 - (id)_expirationDateForProvisioningProfile;
-- (BOOL)_doesProfileMatchSignerIdentity:(struct _MISProfile *)arg1;
+// - (BOOL)_doesProfileMatchSignerIdentity:(struct _MISProfile *)arg1;
 - (BOOL)_signatureNeedsExplicitUserTrust;
 - (int)applicationSignatureState;
 - (id)signerIdentity;

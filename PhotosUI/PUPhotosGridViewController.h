@@ -7,18 +7,16 @@
 */
 
 #import <PhotosUI/PhotosUI-Structs.h>
-#import <UIKit/UICollectionViewController.h>
-#import <UIKit/UIPopoverControllerDelegate.h>
-#import <PhotoLibraryServices/PLAssetContainerListChangeObserver.h>
-#import <PhotoLibrary/PLAssetContainerObserver.h>
-#import <PhotoLibrary/PLSlideshowSettingsViewControllerDelegate.h>
+#import <UIKit/UIKit.h>
+#import <PhotosUI/PLAssetContainerListChangeObserver.h>
+#import <PhotosUI/PLAssetContainerObserver.h>
+#import <PhotosUI/PLSlideshowSettingsViewControllerDelegate.h>
 #import <PhotosUI/PUCollectionViewReorderDelegate.h>
 #import <PhotosUI/PUActivityViewControllerDelegate.h>
 #import <PhotosUI/PUSessionInfoObserver.h>
-#import <PhotoLibrary/PLDeletePhotosActionControllerDelegate.h>
-#import <UIKit/UIGestureRecognizerDelegate.h>
-#import <PhotoLibrary/PLNavigableAssetContainerViewController.h>
-#import <PhotoLibrary/PLDismissableViewController.h>
+#import <PhotosUI/PLDeletePhotosActionControllerDelegate.h>
+#import <PhotosUI/PLNavigableAssetContainerViewController.h>
+#import <PhotosUI/PLDismissableViewController.h>
 #import <PhotosUI/PUStackedAlbumControllerTransition.h>
 
 @protocol PLAssetContainerList, PUGridLayoutProtocol;
@@ -73,7 +71,7 @@
 }
 
 @property (nonatomic,retain) PUPhotosGridViewControllerSpec * gridSpec;                                                                                          //@synthesize gridSpec=_gridSpec - In the implementation block
-@property (nonatomic,retain) <PLAssetContainerList> * photoCollections;                                                                                          //@synthesize photoCollections=_photoCollections - In the implementation block
+@property (nonatomic,assign) id<PLAssetContainerList> * photoCollections;                                                                                          //@synthesize photoCollections=_photoCollections - In the implementation block
 @property (nonatomic,retain) PUSessionInfo * sessionInfo;                                                                                                        //@synthesize sessionInfo=_sessionInfo - In the implementation block
 @property (assign,nonatomic) unsigned allowedActions;                                                                                                            //@synthesize allowedActions=_allowedActions - In the implementation block
 @property (nonatomic,retain) UICollectionViewLayout<PUGridLayoutProtocol> * mainGridLayout;                                                                      //@synthesize mainGridLayout=_mainGridLayout - In the implementation block
