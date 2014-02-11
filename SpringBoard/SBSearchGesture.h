@@ -4,11 +4,10 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2012 by Steve Nygard.
  */
 
-#import "NSObject.h"
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-#import "UIScrollViewDelegate.h"
-
-@class NSHashTable, SBSearchScrollView, UIView;
+@class SBSearchScrollView;
 
 @interface SBSearchGesture : NSObject <UIScrollViewDelegate>
 {
@@ -20,7 +19,7 @@
     UIView *_targetView;
 }
 
-+ (id)sharedInstance;
++ (instancetype)sharedInstance;
 @property(nonatomic) BOOL enabled; // @synthesize enabled=_enabled;
 @property(readonly, nonatomic, getter=isAnimatingResetOrReveal) BOOL animatingResetOrReveal; // @synthesize animatingResetOrReveal=_animatingResetOrReveal;
 @property(retain, nonatomic) UIView *targetView; // @synthesize targetView=_targetView;
@@ -42,8 +41,6 @@
 - (void)removeObserver:(id)arg1;
 - (void)addObserver:(id)arg1;
 - (void)updateForRotation;
-- (void)dealloc;
-- (id)init;
 
 @end
 

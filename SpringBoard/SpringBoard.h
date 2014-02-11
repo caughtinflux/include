@@ -37,6 +37,7 @@
 #import "SBCameraGrabberView.h"
 #import "SBSearchViewController.h"
 #import "SBUIController.h"
+#import "SBSearchGesture.h"
 #import "SBFolderIconZoomAnimator.h"
 #import "SBFolderIconFadeAnimator.h"
 #import "SBIconAnimator.h"

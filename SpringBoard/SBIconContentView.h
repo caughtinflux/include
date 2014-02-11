@@ -16,13 +16,11 @@
 }
 
 @property(nonatomic) int orientation; // @synthesize orientation=_orientation;
-- (void)layoutSubviews;
-- (void)didAddSubview:(id)arg1;
+
 - (void)clearAllFolderContentViews;
 - (void)popFolderContentView:(id)arg1;
 - (void)pushFolderContentView:(id)arg1;
 - (void)updateLayoutWithDuration:(double)arg1;
-- (void)dealloc;
 - (id)initWithOrientation:(int)arg1;
 
 @end

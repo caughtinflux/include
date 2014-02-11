@@ -12,29 +12,29 @@
 
 @interface SBScaleIconZoomAnimator : SBIconZoomAnimator
 {
-    struct UIEdgeInsets _iconScootch;
-    float _dockStretch;
+    UIEdgeInsets _iconScootch;
+    CGFloat _dockStretch;
     SBIconCoordinate _dockListCenterCoordinate;
     SBIconCoordinate _mainListCenterCoordinate;
-    float _naturalVisualAltitude;
+    CGFloat _naturalVisualAltitude;
     UIView *_scalingView;
     SBIcon *_targetIcon;
-    float _zoomScale;
+    CGFloat _zoomScale;
 }
 
-@property(readonly, nonatomic) float zoomScale; // @synthesize zoomScale=_zoomScale;
+@property(readonly, nonatomic) CGFloat zoomScale; // @synthesize zoomScale=_zoomScale;
 @property(readonly, nonatomic) SBIcon *targetIcon; // @synthesize targetIcon=_targetIcon;
 - (void)_calculateIconScootch;
-- (struct CGPoint)_scootchForIcon:(id)arg1 inDock:(BOOL)arg2;
-- (void)_applyOuterFadeFraction:(float)arg1;
-- (void)_applyZoomFraction:(float)arg1;
-- (float)_zoomedVisualAltitude;
-- (struct CGPoint)_zoomedIconCenter;
-- (struct CGRect)_zoomedFrame;
-- (void)_animateToFraction:(float)arg1 afterDelay:(double)arg2 withSharedCompletion:(id)arg3;
+- (CGPoint)_scootchForIcon:(id)arg1 inDock:(BOOL)arg2;
+- (void)_applyOuterFadeFraction:(CGFloat)arg1;
+- (void)_applyZoomFraction:(CGFloat)arg1;
+- (CGFloat)_zoomedVisualAltitude;
+- (CGPoint)_zoomedIconCenter;
+- (CGRect)_zoomedFrame;
+- (void)_animateToFraction:(CGFloat)fraction afterDelay:(NSTimeInterval)delay withSharedCompletion:(id)arg3;
 - (unsigned int)_numberOfSignificantAnimations;
 - (void)_cleanupAnimation;
-- (void)_setAnimationFraction:(float)arg1;
+- (void)_setAnimationFraction:(CGFloat)arg1;
 - (void)_prepareAnimation;
 @property(readonly, nonatomic) SBIconView *targetIconView;
 - (void)dealloc;

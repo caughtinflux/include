@@ -72,14 +72,14 @@
 - (void)removeIcon:(id)arg1;
 - (void)addIcon:(id)arg1;
 - (void)_createIconLists;
-- (id)_iconState;
-- (id)iconState;
+- (NSDictionary *)_iconState;
+- (NSDictionary *)iconState;
 - (SBApplicationIcon *)applicationIconForDisplayIdentifier:(id)arg1;
 - (SBLeafIcon *)leafIconForIdentifier:(id)arg1;
 - (SBIcon *)expectedIconForDisplayIdentifier:(NSString *)identifier;
-- (id)_applicationIcons;
-- (id)leafIcons;
-- (id)visibleIconIdentifiers;
+- (NSSet *)_applicationIcons;
+- (NSSet *)leafIcons;
+- (NSArray *)visibleIconIdentifiers;
 - (void)loadAllIcons;
 - (void)_addNewsstandIcon;
 - (void)addIconForApplication:(id)arg1;
@@ -98,7 +98,7 @@
 - (SBFolder *)createFolderIconForFolderType:(NSString *)folderType;
 - (id)newsstandFolder;
 - (id)newsstandIcon;
-- (id)rootFolder;
+- (SBRootFolder *)rootFolder;
 - (instancetype)initWithStore:(id<SBIconModelStore>)store applicationDataSource:(id<SBIconModelApplicationDataSource>)source;
 
 @end

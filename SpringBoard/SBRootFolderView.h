@@ -47,9 +47,7 @@
 - (void)setOrientation:(int)arg1;
 - (void)setNeedsLayout;
 - (void)returnScalingView;
-- (void)dealloc;
 - (id)initWithFolder:(id)arg1 orientation:(int)arg2 forSnapshot:(BOOL)arg3;
-- (id)initWithFolder:(id)arg1 orientation:(int)arg2;
 
 // Remaining properties
 @property(retain, nonatomic) SBRootFolder *folder;
