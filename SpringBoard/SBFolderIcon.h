@@ -18,12 +18,12 @@
     SBFolder *_folder;
     NSHashTable *_nodeObservers;
     NSMutableSet *_finishedDownloadIdentifiers;
-    int _progressState;
-    float _progressPercent;
+    NSInteger _progressState;
+    CGFloat _progressPercent;
 }
 
 + (Class)_iconGridImageClass;
-+ (unsigned int)_maxIconsInGridImage;
++ (NSUInteger)_maxIconsInGridImage;
 - (BOOL)hasFolderIconView;
 - (SBFolder *)folder;
 - (BOOL)isFolderIcon;
@@ -32,44 +32,26 @@
 - (void)node:(id)arg1 didRemoveContainedNodeIdentifiers:(id)arg2;
 - (void)node:(id)arg1 didAddContainedNodeIdentifiers:(id)arg2;
 - (id)nodeDescriptionWithPrefix:(id)arg1;
-- (void)removeNodeObserver:(id)arg1;
-- (void)addNodeObserver:(id)arg1;
-- (id)nodesAlongIndexPath:(id)arg1 consumedIndexes:(unsigned int)arg2;
-- (id)indexPathsForContainedNodeIdentifier:(id)arg1 prefixPath:(id)arg2;
-- (id)containedNodeIdentifiers;
-- (BOOL)containsNodeIdentifier:(id)arg1;
-- (id)nodeIdentifier;
 - (void)iconAccessoriesDidUpdate:(id)arg1;
 - (void)iconImageDidUpdate:(id)arg1;
 - (id)miniGridCellImageForIcon:(id)arg1;
 - (id)gridImages;
 - (void)purgeCachedImages;
-- (id)_miniIconGridForPage:(int)arg1;
-- (unsigned int)gridCellIndexForIconIndex:(unsigned int)arg1;
-- (unsigned int)listIndexForContainedIcon:(id)arg1;
+- (id)_miniIconGridForPage:(NSInteger)arg1;
+- (NSUInteger)gridCellIndexForIconIndex:(NSUInteger)arg1;
+- (NSUInteger)listIndexForContainedIcon:(id)arg1;
 - (void)_containedIconImageChanged:(id)arg1;
 - (void)noteContainedIcon:(id)arg1 replacedIcon:(id)arg2;
 - (void)noteContainedIconsAdded:(id)arg1 removed:(id)arg2;
 - (void)_adjustForIconsAdded:(id)arg1 removed:(id)arg2;
-- (float)progressPercent;
+- (CGFloat)progressPercent;
 - (BOOL)progressIsPaused;
-- (int)progressState;
+- (NSInteger)progressState;
 - (void)_updateProgress;
 - (void)_appPlaceholdersDidChange:(id)arg1;
 - (void)_updateBadgeValue;
 - (void)updateLabel;
-- (void)launchFromLocation:(int)arg1;
-- (id)description;
-- (void)localeChanged;
-- (BOOL)matchesRepresentation:(id)arg1;
-- (id)representation;
-- (id)displayName;
-- (id)getGenericIconImage:(int)arg1;
-- (id)generateIconImage:(int)arg1;
-- (void)dealloc;
-- (id)initWithFolder:(id)arg1;
-- (Class)iconImageViewClassForLocation:(SBIconLocation)loc;
-- (Class)iconViewClassForLocation:(SBIconLocation)loc;
+- (id)initWithFolder:(SBFolder *)folder;
 
 @end
 

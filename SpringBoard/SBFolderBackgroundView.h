@@ -4,10 +4,10 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2012 by Steve Nygard.
  */
 
-#import "UIView.h"
+#import <UIKit/UIView.h>
 
-#import "SBWallpaperObserver.h"
-#import "_UISettingsKeyObserver.h"
+#import "SBWallpaperObserver-Protocol.h"
+#import "_UISettingsKeyObserver-Protocol.h"
 
 @class SBFolderSettings, SBWallpaperEffectView, UIImageView;
 
@@ -18,17 +18,15 @@
     SBFolderSettings *_folderSettings;
 }
 
-+ (float)cornerRadiusToInsetContent;
-+ (struct CGSize)folderBackgroundSize;
++ (CGFloat)cornerRadiusToInsetContent;
++ (CGSize)folderBackgroundSize;
+
 - (void)wallpaperDidChangeForVariant:(int)arg1;
-- (void)settings:(id)arg1 changedValueForKey:(id)arg2;
+- (void)settings:(id)settings changedValueForKey:(id)key;
 - (void)_configureBackground;
-- (void)adjustCornerRadiusForMagnificationFraction:(float)arg1;
+- (void)adjustCornerRadiusForMagnificationFraction:(CGFloat)arg1;
 - (void)didAnimate;
 - (void)willAnimate;
-- (void)layoutSubviews;
-- (void)dealloc;
-- (id)initWithFrame:(struct CGRect)arg1;
 
 @end
 

@@ -43,7 +43,7 @@
 - (void)_animateToFractionFromContext:(id)arg1;
 - (void)_animateToFractionFromPendingContexts;
 - (void)cleanup;
-- (void)animateToFraction:(float)arg1 afterDelay:(double)arg2 withCompletion:(id)arg3;
+- (void)animateToFraction:(float)arg1 afterDelay:(double)arg2 withCompletion:(void(^)(void))arg3;
 - (void)setFraction:(float)arg1;
 - (void)prepare;
 - (id)centralAnimationFactory;

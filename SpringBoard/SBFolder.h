@@ -28,7 +28,7 @@
     SBIconIndexMutableList *_lists;
 }
 
-+ (unsigned int)maxListCount;
++ (NSUInteger)maxListCount;
 @property(nonatomic, getter=isCancelable) BOOL cancelable; // @synthesize cancelable=_cancelable;
 @property(nonatomic, retain) SBFolderIcon *icon; // @synthesize icon=_icon;
 @property(nonatomic) BOOL isOpen; // @synthesize isOpen=_open;
@@ -41,7 +41,7 @@
 - (id)nodeDescriptionWithPrefix:(id)arg1;
 - (void)removeNodeObserver:(id)arg1;
 - (void)addNodeObserver:(id)arg1;
-- (id)nodesAlongIndexPath:(id)arg1 consumedIndexes:(unsigned int)arg2;
+- (id)nodesAlongIndexPath:(id)arg1 consumedIndexes:(NSUInteger)arg2;
 - (id)indexPathsForContainedNodeIdentifier:(id)arg1 prefixPath:(id)arg2;
 - (id)containedNodeIdentifiers;
 - (BOOL)containsNodeIdentifier:(id)arg1;
@@ -70,16 +70,16 @@
 - (NSSet *)allIcons;
 - (NSSet *)iconsOfClass:(Class)arg1;
 - (id)indexPathForFirstFreeSlotAvoidingFirstList:(BOOL)arg1;
-- (id)performCascadingIconInsertion:(id)arg1 listIndex:(unsigned int)arg2 iconIndex:(unsigned int)arg3;
+- (id)performCascadingIconInsertion:(id)arg1 listIndex:(NSUInteger)arg2 iconIndex:(NSUInteger)arg3;
 - (id)performCascadingIconInsertion:(id)arg1 indexPath:(id)arg2;
 - (BOOL)canAddIcon;
-- (id)addIcon:(id)arg1;
-- (void)removeIconAtIndexPath:(id)arg1;
+- (NSIndexPath *)addIcon:(SBIcon *)icon;
+- (void)removeIconAtIndexPath:(NSIndexPath *)indexPath;
 - (id)insertIcon:(id)arg1 atIndexPath:(id *)arg2;
 - (id)placeIcon:(id)arg1 atIndexPath:(id *)arg2;
 - (void)purgeLists;
-- (unsigned int)indexOfList:(id)arg1;
-- (id)listAtIndex:(unsigned int)arg1;
+- (NSUInteger)indexOfList:(id)arg1;
+- (id)listAtIndex:(NSUInteger)arg1;
 - (id)_createNewListWithIcon:(id)arg1;
 - (void)markIconStateClean;
 - (BOOL)isIconStateDirty;

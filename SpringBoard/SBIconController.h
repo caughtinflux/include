@@ -134,7 +134,7 @@
 - (void)setRecipientIcon:(id)arg1 duration:(double)arg2;
 - (id)grabbedIcon;
 - (void)_iconDropDidFinish:(id)arg1;
-- (void)setGrabbedIcon:(id)arg1;
+- (void)setGrabbedIcon:(SBIcon *)icon;
 - (void)_dropIcon:(id)arg1 withInsertionPath:(id)arg2;
 - (void)fixupBouncedIconsInFolder:(id)arg1 startingWithIndex:(NSInteger)arg2;
 - (void)setLastTouch:(id)arg1;

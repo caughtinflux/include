@@ -7,13 +7,17 @@
 #import <Foundation/NSIndexPath.h>
 
 @interface NSIndexPath (SBIconIndex)
-+ (id)indexPathWithIconIndex:(unsigned int)arg1 listIndex:(unsigned int)arg2;
-+ (id)emptyPath;
-- (BOOL)isPrefixedByPath:(id)arg1;
-- (id)indexPathWithPrefixPath:(id)arg1;
-- (id)subpathFromPosition:(unsigned int)arg1;
-- (id)_subpathWithRange:(struct _NSRange)arg1;
-- (unsigned int)sbListIndex;
-- (unsigned int)sbIconIndex;
-@end
 
++ (instancetype)indexPathWithIconIndex:(NSUInteger)iconIdx listIndex:(NSUInteger)listIdx;
++ (instancetype)emptyPath;
+
+- (BOOL)isPrefixedByPath:(NSIndexPath *)path;
+- (id)indexPathWithPrefixPath:(NSIndexPath *)indexPath;
+
+- (id)subpathFromPosition:(NSUInteger)arg1;
+- (id)_subpathWithRange:(NSRange)range;
+
+- (NSUInteger)sbListIndex;
+- (NSUInteger)sbIconIndex;
+
+@end

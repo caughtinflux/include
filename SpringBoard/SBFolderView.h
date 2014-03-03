@@ -111,9 +111,6 @@
 - (float)_offsetToCenterPageControlInSpaceForPageControl;
 - (CGRect)_frameForScalingView;
 - (void)_layoutSubviews;
-- (id)hitTest:(CGPoint)arg1 withEvent:(id)arg2;
-- (void)layoutSubviews;
-- (void)setNeedsLayout;
 - (void)fadeContentForMinificationFraction:(float)arg1;
 - (void)fadeContentForMagnificationFraction:(float)arg1;
 - (void)didAnimate;
@@ -132,8 +129,8 @@
 - (void)_setAnimatedScrolling:(BOOL)arg1;
 @property(nonatomic, getter=isScrolling) BOOL scrolling; // @synthesize scrolling=_isScrolling;
 - (SBIconScrollView *)scrollView;
-- (id)initWithFolder:(id)arg1 orientation:(NSInteger)arg2 viewMap:(id)arg3;
-- (id)initWithFolder:(id)arg1 orientation:(NSInteger)arg2;
+- (instancetype)initWithFolder:(SBFolder *)folder orientation:(UIInterfaceOrientation)orientation viewMap:(SBIconViewMap *)viewMap;
+- (instancetype)initWithFolder:(SBFolder *)folder orientation:(UIInterfaceOrientation)orientation;
 
 @end
 

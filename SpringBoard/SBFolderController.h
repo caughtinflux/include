@@ -83,7 +83,7 @@
 - (void)_animateFloatyFolderOpen:(BOOL)arg1 settings:(id)arg2 completion:(id)arg3;
 - (void)_animateNewsstandFolderOpen:(BOOL)arg1 settings:(id)arg2 completion:(id)arg3;
 - (void)_setInnerFolderOpen:(BOOL)arg1 animated:(BOOL)arg2 completion:(id)arg3;
-- (BOOL)_iconAppearsOnCurrentPage:(id)arg1;
+- (BOOL)_iconAppearsOnCurrentPage:(SBIcon *)icon;
 - (BOOL)_listIndexIsVisible:(NSUInteger)arg1;
 - (NSUInteger)_depth;
 - (id)_newAnimatorForZoomUp:(BOOL)arg1;

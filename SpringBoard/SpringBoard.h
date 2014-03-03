@@ -29,6 +29,8 @@
 #import "SBFolderIcon.h"
 #import "SBRootFolder.h"
 #import "SBFolderView.h"
+#import "SBFloatyFolderView.h"
+#import "SBFolderBackgroundView.h"
 #import "SBRootFolderView.h"
 #import "SBFolderController.h"
 #import "SBRootFolderController.h"
@@ -47,7 +49,9 @@
 #import "SBPrototypeController.h"
 #import "SBRootSettings.h"
 #import "SBRootAnimationSettings.h"
+#import "SBScaleZoomSettings.h"
 #import "SBFAnimationFactorySettings.h"
+#import "SBWallpaperController.h"
 #import <SpringBoardFoundation/SBFAnimationFactory.h>
 #import <SpringBoardFoundation/SBFAnimationSettings.h>
 

@@ -5,9 +5,8 @@
  */
 
 #import "SBFolderView.h"
-
-#import "UIGestureRecognizerDelegate.h"
-#import "_UISettingsKeyObserver.h"
+#import <UIKit/UIKit.h>
+#import "_UISettingsKeyObserver-Protocol.h"
 
 @class SBFolderBackgroundView, SBFolderSettings, UILongPressGestureRecognizer, UIPinchGestureRecognizer, UITapGestureRecognizer, UIView;
 
@@ -29,19 +28,19 @@
 - (void)_handlePinchGesture:(id)arg1;
 - (void)_handleOutsideTap:(id)arg1;
 - (void)_configureGestures;
-- (void)fadeContentForMinificationFraction:(float)arg1;
-- (void)fadeContentForMagnificationFraction:(float)arg1;
+- (void)fadeContentForMinificationFraction:(CGFloat)arg1;
+- (void)fadeContentForMagnificationFraction:(CGFloat)arg1;
 - (void)didAnimate;
 - (void)willAnimate;
-- (float)_titleFontSize;
+- (CGFloat)_titleFontSize;
 - (BOOL)_showsTitle;
-- (BOOL)locationCountsAsInsideFolder:(struct CGPoint)arg1;
-- (struct CGRect)_frameForScalingView;
+- (BOOL)locationCountsAsInsideFolder:(CGPoint)arg1;
+- (CGRect)_frameForScalingView;
 - (void)_layoutSubviews;
-- (struct CGPoint)visibleFolderRelativeImageCenterForIcon:(id)arg1;
-- (void)setBackgroundAlpha:(float)arg1;
-- (void)dealloc;
-- (id)initWithFolder:(id)arg1 orientation:(int)arg2;
+- (CGPoint)visibleFolderRelativeImageCenterForIcon:(id)arg1;
+- (void)setBackgroundAlpha:(CGFloat)arg1;
+
+- (instancetype)initWithFolder:(SBFolder *)folder orientation:(UIInterfaceOrientation)orientation;
 
 @end
 

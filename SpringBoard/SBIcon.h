@@ -74,8 +74,6 @@ typedef NS_ENUM(NSInteger, SBIconLocation) {
 - (void)localeChanged;
 - (BOOL)matchesRepresentation:(id)arg1;
 - (id)representation;
-- (void)dealloc;
-- (id)init;
 - (NSInteger)iconFormatForLocation:(SBIconLocation)location;
 @property(readonly, nonatomic) BOOL shouldWarmUp;
 - (BOOL)hasCachedImageForLocation:(SBIconLocation)location;
@@ -84,7 +82,7 @@ typedef NS_ENUM(NSInteger, SBIconLocation) {
 - (void)addNodeObserver:(id)arg1;
 - (id)nodesAlongIndexPath:(id)arg1 consumedIndexes:(NSUInteger)arg2;
 - (id)indexPathsForContainedNodeIdentifier:(id)arg1 prefixPath:(id)arg2;
-- (id)containedNodeIdentifiers;
+- (NSSet *)containedNodeIdentifiers;
 - (BOOL)containsNodeIdentifier:(id)arg1;
 - (id)nodeIdentifier;
 - (BOOL)hasObserver:(id)arg1;
