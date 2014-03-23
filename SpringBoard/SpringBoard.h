@@ -52,6 +52,7 @@
 #import "SBScaleZoomSettings.h"
 #import "SBFAnimationFactorySettings.h"
 #import "SBWallpaperController.h"
+#import "SBWallpaperEffectView.h"
 #import <SpringBoardFoundation/SBFAnimationFactory.h>
 #import <SpringBoardFoundation/SBFAnimationSettings.h>
 

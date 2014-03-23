@@ -5,10 +5,11 @@
  */
 
 #import "NSObject.h"
+#import "_SBFakeBlurObserver-Protocol.h"
 
 @protocol _SBFakeBlur <NSObject>
-@property(nonatomic) id <_SBFakeBlurObserver> observer;
-- (int)effectiveStyle;
-- (void)requestStyle:(int)arg1;
+@property(nonatomic, assign) id<_SBFakeBlurObserver> observer;
+- (NSInteger)effectiveStyle;
+- (void)requestStyle:(NSInteger)style;
 @end
 

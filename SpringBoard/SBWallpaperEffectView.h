@@ -4,12 +4,16 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2012 by Steve Nygard.
  */
 
-#import "UIView.h"
+#import <UIKit/UIKit.h>
 
-#import "SBWallpaperObserver.h"
-#import "_SBFakeBlurObserver.h"
+#import "SBWallpaperObserver-Protocol.h"
+#import "_SBFakeBlurObserver-Protocol.h"
+#import "_SBFakeBlur-Protocol.h"
 
-@class UIColor, UIImage, UIImageView, UIView<_SBFakeBlur>;
+typedef NS_ENUM(NSInteger, SBWallpaperVariant) {
+    SBWallpaperVariantLockScreen,
+    SBWallpaperVariantHomeScreen
+};
 
 @interface SBWallpaperEffectView : UIView <_SBFakeBlurObserver, SBWallpaperObserver>
 {
@@ -33,28 +37,27 @@
     BOOL _accessibilityIncreaseContrastEnabled;
 }
 
-+ (id)imageInRect:(struct CGRect)arg1 forVariant:(int)arg2 withStyle:(int)arg3 zoomFactor:(float)arg4 mask:(id)arg5 masksBlur:(BOOL)arg6 masksTint:(BOOL)arg7;
++ (id)imageInRect:(CGRect)arg1 forVariant:(NSInteger)arg2 withStyle:(NSInteger)arg3 zoomFactor:(float)arg4 mask:(id)arg5 masksBlur:(BOOL)arg6 masksTint:(BOOL)arg7;
 - (BOOL)_shouldAnimatePropertyWithKey:(id)arg1;
 - (void)_accessibilityEnhanceBackgroundContrastChanged:(id)arg1;
 - (void)_clearView:(id *)arg1;
-- (void)_configureGrayscaleTintView:(id *)arg1 colorTintView:(id *)arg2 forStyle:(int)arg3;
+- (void)_configureGrayscaleTintView:(id *)arg1 colorTintView:(id *)arg2 forStyle:(NSInteger)arg3;
 - (void)_configureViews;
 - (void)_configureForCurrentBlurStyle;
 - (void)_configureFromScratch;
 - (void)_setTransitionFraction:(float)arg1;
 - (void)_updateWallpaperAverageColor:(id)arg1;
-- (void)wallpaperDidChangeForVariant:(int)arg1;
-- (void)wallpaperLegibilitySettingsDidChange:(id)arg1 forVariant:(int)arg2;
-- (void)fakeBlurView:(id)arg1 didChangeStyle:(int)arg2;
+- (void)wallpaperDidChangeForVariant:(NSInteger)arg1;
+- (void)wallpaperLegibilitySettingsDidChange:(id)arg1 forVariant:(NSInteger)arg2;
+- (void)fakeBlurView:(id)arg1 didChangeStyle:(NSInteger)arg2;
 - (void)layoutSubviews;
 - (void)setMaskImage:(id)arg1 masksBlur:(BOOL)arg2 masksTint:(BOOL)arg3;
 - (BOOL)currentTransitionStateIsOpaque;
 - (void)setTransitionState:(CDStruct_04b3617e)arg1;
 - (BOOL)prepareToAnimateToTransitionState:(inout CDStruct_04b3617e *)arg1;
-- (void)setStyle:(int)arg1;
-- (id)description;
-- (void)dealloc;
-- (id)initWithWallpaperVariant:(int)arg1;
+- (void)setStyle:(NSInteger)style;
+
+- (instancetype)initWithWallpaperVariant:(SBWallpaperVariant)variant;
 
 @end
 

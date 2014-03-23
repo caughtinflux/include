@@ -597,3 +597,5 @@
 #import "_UITableViewCellEditControlMinusView.h"
 
 #import "UIStatusBar.h"
+
+#import "_UILegibilityView.h"
