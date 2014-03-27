@@ -40,7 +40,10 @@ inline SBIconCoordinate SBIconCoordinateMake(NSInteger row, NSInteger col)
 + (NSUInteger)maxVisibleIconRowsInterfaceOrientation:(UIInterfaceOrientation)orientation;
 + (NSUInteger)iconRowsForInterfaceOrientation:(UIInterfaceOrientation)orientation;
 + (NSInteger)rotationAnchor;
+
+// Setting layoutDelegate to nil calls -[SBIconListView layoutIconsNow]. Why? Because SBIconListView has swag.
 @property(nonatomic, assign) id <SBIconListLayoutDelegate> layoutDelegate; // @synthesize layoutDelegate=_layoutDelegate;
+
 @property(nonatomic) CGRect wallpaperRelativeFrame; // @synthesize wallpaperRelativeFrame=_wallpaperRelativeFrame;
 @property(nonatomic) CGFloat statusBarHeight; // @synthesize statusBarHeight=_statusBarHeight;
 @property(nonatomic) UIInterfaceOrientation orientation; // @synthesize orientation=_orientation;

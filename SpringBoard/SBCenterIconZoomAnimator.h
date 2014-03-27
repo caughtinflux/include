@@ -5,21 +5,21 @@
  */
 
 #import "SBIconZoomAnimator.h"
+#import "SBCenterZoomSettings.h"
 
-#import "SBIconListLayoutDelegate.h"
+#import "SBIconListLayoutDelegate-Protocol.h"
 
 @class SBCenterZoomSettings, UIView;
 
 @interface SBCenterIconZoomAnimator : SBIconZoomAnimator <SBIconListLayoutDelegate>
 {
     UIView *_zoomView;
-    float _iconZoomedZ;
-    float _centerRow;
-    float _centerCol;
-    struct CGPoint _cameraPosition;
+    CGFloat _iconZoomedZ;
+    CGFloat _centerRow;
+    CGFloat _centerCol;
 }
 
-@property(readonly, nonatomic) struct CGPoint cameraPosition; // @synthesize cameraPosition=_cameraPosition;
+@property(readonly, nonatomic) CGPoint cameraPosition; // @synthesize cameraPosition=_cameraPosition;
 @property(readonly, nonatomic) UIView *zoomView; // @synthesize zoomView=_zoomView;
 - (void)_calculateCentersAndCameraPosition;
 - (id)_animationFactoryForDock;
@@ -27,13 +27,12 @@
 - (void)_positionView:(id)arg1 forIcon:(id)arg2;
 - (void)iconListViewLayoutInvalidated:(id)arg1;
 - (void)iconListView:(id)arg1 wouldHaveMovedIcon:(id)arg2;
-- (double)_iconZoomDelay;
-- (void)_animateToFraction:(float)arg1 afterDelay:(double)arg2 withSharedCompletion:(id)arg3;
-- (unsigned int)_numberOfSignificantAnimations;
+- (NSTimeInterval)_iconZoomDelay;
+- (void)_animateToFraction:(CGFloat)arg1 afterDelay:(NSTimeInterval)arg2 withSharedCompletion:(id)arg3;
+- (NSUInteger)_numberOfSignificantAnimations;
 - (void)_cleanupAnimation;
-- (void)_setAnimationFraction:(float)arg1;
+- (void)_setAnimationFraction:(CGFloat)arg1;
 - (void)_prepareAnimation;
-- (void)dealloc;
 - (id)initWithFolderController:(id)arg1;
 
 // Remaining properties

@@ -97,7 +97,7 @@
 - (void)icon:(id)arg1 touchMoved:(id)arg2;
 - (void)iconTouchBegan:(id)arg1;
 - (void)icon:(id)arg1 touchEnded:(BOOL)arg2;
-- (void)iconHandleLongPress:(id)arg1;
+- (void)iconHandleLongPress:(SBIconView *)iconView;
 - (NSInteger)viewMap:(id)arg1 locationForIcon:(id)arg2;
 - (NSUInteger)viewMap:(id)arg1 maxRecycledIconViewsOfClass:(Class)arg2;
 - (NSUInteger)viewMap:(id)arg1 numberOfViewsToPrepareOfClass:(Class)arg2;

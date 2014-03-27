@@ -5,31 +5,30 @@
  */
 
 #import "SBCenterIconZoomAnimator.h"
+#import "SBCenterAppZoomSettings.h"
 
 @class SBCenterAppZoomSettings, UIView;
 
 @interface SBCenterAppIconZoomAnimator : SBCenterIconZoomAnimator
 {
     UIView *_appView;
-    float _distantScale;
+    CGFloat _distantScale;
 }
 
-@property float distantScale; // @synthesize distantScale=_distantScale;
-- (void)_fadeAppForZoomFraction:(float)arg1;
-- (void)_zoomAppForZoomFraction:(float)arg1;
-- (double)_appZoomDelay;
-- (double)_iconZoomDelay;
-- (void)_animateToFraction:(float)arg1 afterDelay:(double)arg2 withSharedCompletion:(id)arg3;
-- (unsigned int)_numberOfSignificantAnimations;
+@property CGFloat distantScale; // @synthesize distantScale=_distantScale;
+@property(retain, nonatomic) SBCenterAppZoomSettings *settings;
+
+- (void)_fadeAppForZoomFraction:(CGFloat)arg1;
+- (void)_zoomAppForZoomFraction:(CGFloat)arg1;
+- (NSTimeInterval)_appZoomDelay;
+- (NSTimeInterval)_iconZoomDelay;
+- (void)_animateToFraction:(CGFloat)arg1 afterDelay:(NSTimeInterval)arg2 withSharedCompletion:(id /* void(^)(void) */)arg3;
+- (NSUInteger)_numberOfSignificantAnimations;
 - (void)_cleanupAnimation;
-- (void)_setAnimationFraction:(float)arg1;
+- (void)_setAnimationFraction:(CGFloat)arg1;
 - (void)_prepareAnimation;
 - (void)_delayedForRotation;
-- (void)dealloc;
 - (id)initWithFolderController:(id)arg1 appView:(id)arg2;
-
-// Remaining properties
-@property(retain, nonatomic) SBCenterAppZoomSettings *settings;
 
 @end
 

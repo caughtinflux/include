@@ -62,8 +62,8 @@
 - (id)indexPathForIcon:(id)arg1 includingPlaceholders:(BOOL)arg2;
 - (NSIndexPath *)indexPathForIcon:(SBIcon *)icon;
 - (id)indexPathForNodeIdentifier:(id)arg1;
-- (id)listContainingLeafIconWithIdentifier:(id)arg1;
-- (id)listContainingIcon:(id)arg1;
+- (SBIconListModel *)listContainingLeafIconWithIdentifier:(NSString *)ident;
+- (SBIconListModel *)listContainingIcon:(SBIcon *)icon;
 - (NSSet *)visibleIcons;
 - (NSSet *)folderIcons;
 - (NSSet *)leafIcons;

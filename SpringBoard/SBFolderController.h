@@ -17,7 +17,7 @@
     SBFolderView *_contentView;
     BOOL _didAutoScroll;
     NSTimer *_autoScrollTimer;
-    struct CGPoint _dragPausePoint;
+    CGPoint _dragPausePoint;
     NSTimer *_dragPauseTimer;
     NSTimer *_closeFolderTimer;
     BOOL _grabbedIconHasEverEnteredFolderView;
@@ -73,7 +73,7 @@
 - (void)folderController:(id)arg1 draggedIconShouldDropFromListView:(id)arg2;
 - (BOOL)folderController:(id)arg1 draggedIconMightDropFromListView:(id)arg2;
 - (BOOL)folderController:(id)arg1 draggedIconDidMoveFromListView:(id)arg2 toListView:(id)arg3;
-- (BOOL)folderController:(id)arg1 draggedIconDidPauseAtLocation:(struct CGPoint)arg2 inListView:(id)arg3;
+- (BOOL)folderController:(id)arg1 draggedIconDidPauseAtLocation:(CGPoint)arg2 inListView:(id)arg3;
 - (void)didRotateFromInterfaceOrientation:(int)arg1;
 - (void)willAnimateRotationToInterfaceOrientation:(int)arg1;
 - (void)willRotateToInterfaceOrientation:(int)arg1;
@@ -101,7 +101,7 @@
 - (void)_updateDragPauseForTouch:(id)arg1;
 - (void)_dragPauseTimerFired:(id)arg1;
 - (BOOL)_canDropIconInListView:(id)arg1;
-- (void)_resetDragPauseTimerForPoint:(struct CGPoint)arg1 inIconListView:(id)arg2;
+- (void)_resetDragPauseTimerForPoint:(CGPoint)arg1 inIconListView:(id)arg2;
 - (void)_cancelDragPauseTimer;
 - (void)_updateCloseFolderForTouch:(id)arg1;
 - (void)_setCloseFolderTimerIfNecessary;
