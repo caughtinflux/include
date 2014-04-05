@@ -9,6 +9,6 @@
 @interface UITableCellFlashDeselectAnimation : UIAnimation {
 	int _flashCount;
 }
--(void)setProgress:(float)progress;
+-(void)setProgress:(CGFloat)progress;
 @end
 

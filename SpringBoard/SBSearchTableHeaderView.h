@@ -15,8 +15,8 @@
     NSString *_reuseIdentifier;
 }
 
-+ (float)heightForContentSizeCategory:(id)arg1;
-+ (float)titleBaselineFromBottomForContentSizeCategory:(id)arg1;
++ (CGFloat)heightForContentSizeCategory:(id)arg1;
++ (CGFloat)titleBaselineFromBottomForContentSizeCategory:(id)arg1;
 + (id)lineColor;
 @property(readonly, nonatomic) NSString *reuseIdentifier; // @synthesize reuseIdentifier=_reuseIdentifier;
 - (BOOL)isUserInteractionEnabled;

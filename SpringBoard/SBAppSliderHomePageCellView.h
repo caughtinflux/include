@@ -24,7 +24,7 @@
     int _orientation;
 }
 
-+ (id)wallpaperSnapshotForZoomFactor:(float)arg1 orientation:(int)arg2;
++ (id)wallpaperSnapshotForZoomFactor:(CGFloat)arg1 orientation:(int)arg2;
 @property(nonatomic) int orientation; // @synthesize orientation=_orientation;
 @property(retain, nonatomic) UIView *homeScreenView; // @synthesize homeScreenView=_homeScreenView;
 @property(readonly, nonatomic) UIView *homeSnapshot; // @synthesize homeSnapshot=_homeSnapshot;

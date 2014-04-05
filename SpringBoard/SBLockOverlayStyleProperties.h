@@ -13,16 +13,16 @@
     UIColor *_primaryColor;
     UIColor *_secondaryColor;
     UIColor *_tintColor;
-    float _tintAlpha;
-    float _blurRadius;
+    CGFloat _tintAlpha;
+    CGFloat _blurRadius;
     unsigned int _style;
     int _quality;
     _UIBackdropViewSettings *_settings;
 }
 
-@property(readonly, nonatomic) float blurRadius; // @synthesize blurRadius=_blurRadius;
+@property(readonly, nonatomic) CGFloat blurRadius; // @synthesize blurRadius=_blurRadius;
 @property(readonly, nonatomic) UIColor *tintColor; // @synthesize tintColor=_tintColor;
-@property(readonly, nonatomic) float tintAlpha; // @synthesize tintAlpha=_tintAlpha;
+@property(readonly, nonatomic) CGFloat tintAlpha; // @synthesize tintAlpha=_tintAlpha;
 @property(readonly, nonatomic) int graphicsQuality; // @synthesize graphicsQuality=_quality;
 @property(readonly, nonatomic) unsigned int style; // @synthesize style=_style;
 - (id)_stringForStyle;

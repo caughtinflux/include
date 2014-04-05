@@ -17,12 +17,12 @@
 }
 
 @property (assign,nonatomic,__weak) <PUAbstractNavigationBannerDelegate> * delegate;              //@synthesize delegate=_delegate - In the implementation block
-@property (nonatomic,readonly) float height; 
+@property (nonatomic,readonly) CGFloat height; 
 @property (nonatomic,readonly) UIView * view; 
 -(void)setDelegate:(id)arg1 ;
 -(id)delegate;
 -(id)view;
--(float)height;
+-(CGFloat)height;
 -(void).cxx_destruct;
 @end
 

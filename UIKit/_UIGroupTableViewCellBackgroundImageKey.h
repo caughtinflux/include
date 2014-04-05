@@ -54,8 +54,8 @@ __attribute__((visibility("hidden")))
 	UIColor* _bottomShadowColor;
 #endif
 	UIColor* _fillColor;
-	float _leftPhase;
-	float _rightPhase;
+	CGFloat _leftPhase;
+	CGFloat _rightPhase;
 	int _sectionLocation;
 }
 @property(assign, nonatomic) BOOL opaque;
@@ -63,8 +63,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIColor* backgroundColor;
 @property(retain, nonatomic) UIColor* borderColor;
 @property(retain, nonatomic) UIColor* fillColor;
-@property(assign, nonatomic) float leftPhase;
-@property(assign, nonatomic) float rightPhase;
+@property(assign, nonatomic) CGFloat leftPhase;
+@property(assign, nonatomic) CGFloat rightPhase;
 @property(assign, nonatomic) int sectionLocation;
 // inherited: -(void)dealloc;
 // inherited: -(BOOL)isEqual:(id)equal;

@@ -24,12 +24,12 @@
 	UIView* _maskView;
 	UIView* _maskContainerView;
 	CGSize _thumbnailSize;
-	float _zoomOriginXDelta;
-	float _zoomWidthDelta;
+	CGFloat _zoomOriginXDelta;
+	CGFloat _zoomWidthDelta;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-	float _unclampedZoomWidthDelta;
+	CGFloat _unclampedZoomWidthDelta;
 #endif
-	float _zoomAnimationDuration;
+	CGFloat _zoomAnimationDuration;
 	double _duration;
 	double _value;
 	double _startValue;
@@ -67,10 +67,10 @@
 -(void)_reallyReloadData;
 -(void)reloadData;
 -(void)layoutSubviews;
--(void)setZoomAnimationDuration:(float)duration;
--(float)zoomAnimationDuration __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);
+-(void)setZoomAnimationDuration:(CGFloat)duration;
+-(CGFloat)zoomAnimationDuration __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);
 -(BOOL)zoomAtPoint:(CGPoint)point;
--(void)_setOverlayViewIsZoomed:(BOOL)zoomed minValue:(float)value maxValue:(float)value3 __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);
+-(void)_setOverlayViewIsZoomed:(BOOL)zoomed minValue:(CGFloat)value maxValue:(CGFloat)value3 __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);
 -(void)unzoom;
 -(void)_zoomAnimation:(id)animation didFinish:(id)finish context:(void*)context;
 -(void)_unzoomAnimation:(id)animation didFinish:(id)finish context:(void*)context;

@@ -15,14 +15,14 @@
 	NSString* _valueStyle;
 	NSString* _valueHighlightStyle;
 	UIImage* _labelBadgeImage;
-	float _disclosureAlpha;
+	CGFloat _disclosureAlpha;
 	UIColor* _valueColor;
 	struct {
 		unsigned style : 1;
 		unsigned reserved : 31;
 	} _valueButtonFlags;
 }
-+(float)defaultHeight;
++(CGFloat)defaultHeight;
 +(CGRect)frameRectForOpaqueContentRect:(CGRect)opaqueContentRect;
 +(CGRect)opaqueContentRectForFrameRect:(CGRect)frameRect;
 -(void)_commonInitValueButton;
@@ -43,10 +43,10 @@
 -(int)displayStyle;
 -(void)setShowsDisclosure:(BOOL)disclosure;
 -(BOOL)showsDisclosure;
--(float)rightEndPadding;
--(void)setDisclosureAlpha:(float)alpha;
--(float)disclosureAlpha;
--(float)buttonEdge;
+-(CGFloat)rightEndPadding;
+-(void)setDisclosureAlpha:(CGFloat)alpha;
+-(CGFloat)disclosureAlpha;
+-(CGFloat)buttonEdge;
 -(void)_drawValueStyleInteriorInRect:(CGRect)rect withValueColor:(id)valueColor valueFont:(id)font isPressed:(BOOL)pressed;
 -(void)_drawLabelAndValueStyleInteriorInRect:(CGRect)rect;
 -(void)drawButtonPart:(int)part inRect:(CGRect)rect;

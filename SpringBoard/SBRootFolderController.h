@@ -16,8 +16,8 @@
 - (void)willAnimateRotationToInterfaceOrientation:(int)arg1;
 - (void)willRotateToInterfaceOrientation:(int)arg1;
 - (BOOL)_listIndexIsVisible:(unsigned int)arg1;
-- (void)setDockVerticalStretch:(float)arg1;
-- (void)setDockOffscreenFraction:(float)arg1;
+- (void)setDockVerticalStretch:(CGFloat)arg1;
+- (void)setDockOffscreenFraction:(CGFloat)arg1;
 - (id)dockListView;
 - (BOOL)hasDock;
 - (BOOL)isDisplayingIcon:(id)arg1;

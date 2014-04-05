@@ -11,38 +11,38 @@
 @interface BBThumbnailSizeConstraints : NSObject <NSCoding> {
 
 	int _constraintType;
-	float _fixedWidth;
-	float _fixedHeight;
-	float _fixedDimension;
-	float _minAspectRatio;
-	float _maxAspectRatio;
-	float _thumbnailScale;
+	CGFloat _fixedWidth;
+	CGFloat _fixedHeight;
+	CGFloat _fixedDimension;
+	CGFloat _minAspectRatio;
+	CGFloat _maxAspectRatio;
+	CGFloat _thumbnailScale;
 
 }
 
 @property (assign,nonatomic) int constraintType;                //@synthesize constraintType=_constraintType - In the implementation block
-@property (assign,nonatomic) float fixedWidth;                  //@synthesize fixedWidth=_fixedWidth - In the implementation block
-@property (assign,nonatomic) float fixedHeight;                 //@synthesize fixedHeight=_fixedHeight - In the implementation block
-@property (assign,nonatomic) float fixedDimension;              //@synthesize fixedDimension=_fixedDimension - In the implementation block
-@property (assign,nonatomic) float minAspectRatio;              //@synthesize minAspectRatio=_minAspectRatio - In the implementation block
-@property (assign,nonatomic) float maxAspectRatio;              //@synthesize maxAspectRatio=_maxAspectRatio - In the implementation block
-@property (assign,nonatomic) float thumbnailScale;              //@synthesize thumbnailScale=_thumbnailScale - In the implementation block
--(void)setFixedHeight:(float)arg1 ;
--(float)fixedHeight;
+@property (assign,nonatomic) CGFloat fixedWidth;                  //@synthesize fixedWidth=_fixedWidth - In the implementation block
+@property (assign,nonatomic) CGFloat fixedHeight;                 //@synthesize fixedHeight=_fixedHeight - In the implementation block
+@property (assign,nonatomic) CGFloat fixedDimension;              //@synthesize fixedDimension=_fixedDimension - In the implementation block
+@property (assign,nonatomic) CGFloat minAspectRatio;              //@synthesize minAspectRatio=_minAspectRatio - In the implementation block
+@property (assign,nonatomic) CGFloat maxAspectRatio;              //@synthesize maxAspectRatio=_maxAspectRatio - In the implementation block
+@property (assign,nonatomic) CGFloat thumbnailScale;              //@synthesize thumbnailScale=_thumbnailScale - In the implementation block
+-(void)setFixedHeight:(CGFloat)arg1 ;
+-(CGFloat)fixedHeight;
 -(id)initWithCoder:(id)arg1 ;
 -(void)encodeWithCoder:(id)arg1 ;
 -(BOOL)areReasonable;
 -(int)constraintType;
--(float)minAspectRatio;
--(float)maxAspectRatio;
--(float)fixedWidth;
--(float)fixedDimension;
+-(CGFloat)minAspectRatio;
+-(CGFloat)maxAspectRatio;
+-(CGFloat)fixedWidth;
+-(CGFloat)fixedDimension;
 -(void)setConstraintType:(int)arg1 ;
--(void)setFixedWidth:(float)arg1 ;
--(void)setFixedDimension:(float)arg1 ;
--(void)setMinAspectRatio:(float)arg1 ;
--(void)setMaxAspectRatio:(float)arg1 ;
--(void)setThumbnailScale:(float)arg1 ;
--(float)thumbnailScale;
+-(void)setFixedWidth:(CGFloat)arg1 ;
+-(void)setFixedDimension:(CGFloat)arg1 ;
+-(void)setMinAspectRatio:(CGFloat)arg1 ;
+-(void)setMaxAspectRatio:(CGFloat)arg1 ;
+-(void)setThumbnailScale:(CGFloat)arg1 ;
+-(CGFloat)thumbnailScale;
 @end
 

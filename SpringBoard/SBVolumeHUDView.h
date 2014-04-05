@@ -10,18 +10,18 @@
 {
     int _mode;
     BOOL _headphonesPresent;
-    float _euVolumeLimit;
+    CGFloat _euVolumeLimit;
 }
 
-+ (BOOL)wouldShowAtLeastAYellowBlockForVolume:(float)arg1 euVolumeLimit:(float)arg2;
-+ (float)volumeStepDownForCurrentVolume:(float)arg1 euVolumeLimit:(float)arg2;
-+ (float)volumeStepUpForCurrentVolume:(float)arg1 euVolumeLimit:(float)arg2;
-@property(nonatomic) float EUVolumeLimit; // @synthesize EUVolumeLimit=_euVolumeLimit;
++ (BOOL)wouldShowAtLeastAYellowBlockForVolume:(CGFloat)arg1 euVolumeLimit:(CGFloat)arg2;
++ (CGFloat)volumeStepDownForCurrentVolume:(CGFloat)arg1 euVolumeLimit:(CGFloat)arg2;
++ (CGFloat)volumeStepUpForCurrentVolume:(CGFloat)arg1 euVolumeLimit:(CGFloat)arg2;
+@property(nonatomic) CGFloat EUVolumeLimit; // @synthesize EUVolumeLimit=_euVolumeLimit;
 @property(nonatomic) BOOL headphonesPresent; // @synthesize headphonesPresent=_headphonesPresent;
 @property(nonatomic) int mode; // @synthesize mode=_mode;
-- (void)_updateBlockView:(id)arg1 value:(float)arg2 blockSize:(struct CGSize)arg3 point:(struct CGPoint)arg4;
-- (id)_blockColorForValue:(float)arg1;
-- (void)setProgress:(float)arg1;
+- (void)_updateBlockView:(id)arg1 value:(CGFloat)arg2 blockSize:(struct CGSize)arg3 point:(struct CGPoint)arg4;
+- (id)_blockColorForValue:(CGFloat)arg1;
+- (void)setProgress:(CGFloat)arg1;
 - (id)init;
 - (void)_updateLabels;
 - (void)_updateImage;

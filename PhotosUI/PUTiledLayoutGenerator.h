@@ -25,7 +25,7 @@
 	/*^block*/ id _tileCaptionSizeBlock;
 	/*^block*/ id _tileBatchIDBlock;
 	int _numberOfMagneticGuidelines;
-	float _roundingScale;
+	CGFloat _roundingScale;
 	/*^block*/ id _parsedFrameBlock;
 	int _scanLocation;
 	id _scannedBatchID;
@@ -46,7 +46,7 @@
 @property (nonatomic,copy) id tileCaptionSizeBlock;                                    //@synthesize tileCaptionSizeBlock=_tileCaptionSizeBlock - In the implementation block
 @property (nonatomic,copy) id tileBatchIDBlock;                                        //@synthesize tileBatchIDBlock=_tileBatchIDBlock - In the implementation block
 @property (assign,nonatomic) int numberOfMagneticGuidelines;                           //@synthesize numberOfMagneticGuidelines=_numberOfMagneticGuidelines - In the implementation block
-@property (assign,nonatomic) float roundingScale;                                      //@synthesize roundingScale=_roundingScale - In the implementation block
+@property (assign,nonatomic) CGFloat roundingScale;                                      //@synthesize roundingScale=_roundingScale - In the implementation block
 @property (assign,nonatomic) id parsedFrameBlock;                                      //@synthesize parsedFrameBlock=_parsedFrameBlock - In the implementation block
 @property (assign,nonatomic) PUTiledLayoutGeneratorScanState * scanState; 
 @property (assign,nonatomic) int scanLocation;                                         //@synthesize scanLocation=_scanLocation - In the implementation block
@@ -72,7 +72,7 @@
 -(UIEdgeInsets)captionPadding;
 -(CGSize)noCaptionSpacing;
 -(void)setNumberOfMagneticGuidelines:(int)arg1 ;
--(void)setRoundingScale:(float)arg1 ;
+-(void)setRoundingScale:(CGFloat)arg1 ;
 -(void)enumerateFramesWithBlock:(/*^block*/ id)arg1 ;
 -(void)setParsedFrameBlock:(/*^block*/ id)arg1 ;
 -(void)willParseTiles;
@@ -97,7 +97,7 @@
 -(/*^block*/ id)parsedFrameBlock;
 -(void)setShouldStop:(BOOL)arg1 ;
 -(int)numberOfMagneticGuidelines;
--(float)roundingScale;
+-(CGFloat)roundingScale;
 -(id)scanState;
 -(void)setScanState:(id)arg1 ;
 -(BOOL)scanAnyTile:(SCD_Struct_PU15*)arg1 ;
@@ -108,7 +108,7 @@
 -(BOOL)scanTile:(SCD_Struct_PU15*)arg1 type:(int*)arg2 ;
 -(CGSize)captionSizeForTileAtIndex:(int)arg1 proposedSize:(CGSize)arg2 ;
 -(void)parsedFrame:(CGRect)arg1 type:(int)arg2 forTileAtIndex:(int)arg3 ;
--(float)valueByRounding:(float)arg1 usingMagneticGuidelines:(BOOL)arg2 ;
+-(CGFloat)valueByRounding:(CGFloat)arg1 usingMagneticGuidelines:(BOOL)arg2 ;
 -(void).cxx_destruct;
 @end
 

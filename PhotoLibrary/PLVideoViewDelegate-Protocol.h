@@ -16,7 +16,7 @@
 - (void)videoViewDidCancelEditing:(id)arg1;
 - (void)videoViewDidBeginEditing:(id)arg1;
 - (void)videoViewWillBeginEditing:(id)arg1;
-- (void)videoView:(id)arg1 remakingProgressDidChange:(float)arg2;
+- (void)videoView:(id)arg1 remakingProgressDidChange:(CGFloat)arg2;
 - (void)videoViewDidEndRemaking:(id)arg1 didSucceed:(_Bool)arg2;
 - (void)videoViewDidBeginRemaking:(id)arg1;
 - (void)videoViewDidEndScrubbing:(id)arg1;

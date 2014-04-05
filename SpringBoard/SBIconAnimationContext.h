@@ -8,13 +8,13 @@
 
 @interface SBIconAnimationContext : NSObject
 {
-    float _fraction;
+    CGFloat _fraction;
     id _completion;
     double _delay;
 }
 
 @property(copy, nonatomic) id completion; // @synthesize completion=_completion;
-@property(nonatomic) float fraction; // @synthesize fraction=_fraction;
+@property(nonatomic) CGFloat fraction; // @synthesize fraction=_fraction;
 @property(nonatomic) double delay; // @synthesize delay=_delay;
 - (void)invalidate;
 - (void)dealloc;

@@ -29,8 +29,8 @@
 - (id)description;
 - (id)countedMapKey;
 - (void)dealloc;
-- (id)initWithCGImage:(struct CGImage *)arg1 scale:(float)arg2 orientation:(int)arg3;
-- (id)_initWithCGImage:(struct CGImage *)arg1 scale:(float)arg2 orientation:(int)arg3 parameters:(id)arg4 maxSizeOffset:(struct CGPoint)arg5;
+- (id)initWithCGImage:(struct CGImage *)arg1 scale:(CGFloat)arg2 orientation:(int)arg3;
+- (id)_initWithCGImage:(struct CGImage *)arg1 scale:(CGFloat)arg2 orientation:(int)arg3 parameters:(id)arg4 maxSizeOffset:(struct CGPoint)arg5;
 
 @end
 

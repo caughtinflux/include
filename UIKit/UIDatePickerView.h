@@ -55,7 +55,7 @@
 @property(assign, nonatomic) double countDownDuration;
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;
--(float)_tableRowHeight;
+-(CGFloat)_tableRowHeight;
 -(id)pickerImageNamePrefix;
 -(int)_incrementForElement:(unsigned)element;
 -(void)_doneLoadingDateOrTime;
@@ -112,8 +112,8 @@
 -(void)setHighlightsToday:(BOOL)today;
 -(id)dateComponents;
 -(void)setDateComponents:(id)components;
--(float)pickerView:(id)view rowHeightForComponent:(int)component;
--(float)pickerView:(id)view widthForComponent:(int)component;
+-(CGFloat)pickerView:(id)view rowHeightForComponent:(int)component;
+-(CGFloat)pickerView:(id)view widthForComponent:(int)component;
 -(id)pickerView:(id)view viewForRow:(int)row forComponent:(int)component reusingView:(id)view4;
 -(id)shadowColor;
 -(id)_createAccessoryViewWithText:(id)text andFont:(id)font;

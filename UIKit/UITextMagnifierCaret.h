@@ -15,14 +15,14 @@
 	CGPoint _magnificationPoint;
 	CGPoint _offset;
 	UITextMagnifierTimeWeightedPoint* _weightedPoint;
-	float _yOffset;
+	CGFloat _yOffset;
 	UIView* _magnifierRenderer;
 	UIView* _autoscrollRenderer;
 	int _autoscrollDirections;
 }
 @property(retain, nonatomic) UIView<UITextSelectingContainer>* target;
 @property(assign, nonatomic) CGPoint offset;
-@property(assign, nonatomic) float yOffset;
+@property(assign, nonatomic) CGFloat yOffset;
 @property(assign, nonatomic) CGPoint animationPoint;
 @property(readonly, assign, nonatomic) CGPoint terminalPoint;
 @property(readonly, assign, nonatomic) BOOL terminalPointPlacedCarefully;

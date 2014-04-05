@@ -115,7 +115,7 @@
 -(id)cachedCellForSpecifier:(id)specifier;
 -(id)cachedCellForSpecifierID:(id)specifierID;
 -(id)table:(id)table cellForRow:(int)row column:(id)column;
--(float)preferencesTable:(id)table heightForRow:(int)row inGroup:(int)group withProposedHeight:(float)proposedHeight;
+-(CGFloat)preferencesTable:(id)table heightForRow:(int)row inGroup:(int)group withProposedHeight:(CGFloat)proposedHeight;
 -(id)preferencesTable:(id)table titleForGroup:(int)group;
 -(id)preferencesTable:(id)table cellForGroup:(int)group;
 -(id)preferencesTable:(id)table cellForRow:(int)row inGroup:(int)group;

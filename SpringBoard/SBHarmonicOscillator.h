@@ -8,30 +8,30 @@
 
 @interface SBHarmonicOscillator : NSObject
 {
-    float A;
-    float Z;
-    float k;
-    float dk;
-    float mink;
-    float m;
-    float dm;
-    float minm;
-    float psi_n;
-    float psi_d;
-    float zeta;
+    CGFloat A;
+    CGFloat Z;
+    CGFloat k;
+    CGFloat dk;
+    CGFloat mink;
+    CGFloat m;
+    CGFloat dm;
+    CGFloat minm;
+    CGFloat psi_n;
+    CGFloat psi_d;
+    CGFloat zeta;
 }
 
-@property(nonatomic) float minimumMass; // @synthesize minimumMass=minm;
-@property(nonatomic) float massDecay; // @synthesize massDecay=dm;
-@property(nonatomic) float mass; // @synthesize mass=m;
-@property(nonatomic) float minimumSpringStrength; // @synthesize minimumSpringStrength=mink;
-@property(nonatomic) float springDecay; // @synthesize springDecay=dk;
-@property(nonatomic) float springStrength; // @synthesize springStrength=k;
-@property(nonatomic) float endingAmplitude; // @synthesize endingAmplitude=Z;
-@property(nonatomic) float startingAmplitude; // @synthesize startingAmplitude=A;
-- (float)amplitudeForElapsedTime:(double)arg1;
+@property(nonatomic) CGFloat minimumMass; // @synthesize minimumMass=minm;
+@property(nonatomic) CGFloat massDecay; // @synthesize massDecay=dm;
+@property(nonatomic) CGFloat mass; // @synthesize mass=m;
+@property(nonatomic) CGFloat minimumSpringStrength; // @synthesize minimumSpringStrength=mink;
+@property(nonatomic) CGFloat springDecay; // @synthesize springDecay=dk;
+@property(nonatomic) CGFloat springStrength; // @synthesize springStrength=k;
+@property(nonatomic) CGFloat endingAmplitude; // @synthesize endingAmplitude=Z;
+@property(nonatomic) CGFloat startingAmplitude; // @synthesize startingAmplitude=A;
+- (CGFloat)amplitudeForElapsedTime:(double)arg1;
 - (void)updateParameters;
-- (void)setSpringConstant:(float)arg1;
+- (void)setSpringConstant:(CGFloat)arg1;
 - (id)init;
 
 @end

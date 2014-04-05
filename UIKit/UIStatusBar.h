@@ -30,7 +30,7 @@
 @property(assign, nonatomic) id<UIStatusBarStyleDelegate> styleDelegate;
 @property(assign, nonatomic) UIStatusBarWindow *statusBarWindow;
 + (CGRect)frameForStyle:(int)style orientation:(int)orientation;
-+ (float)heightForStyle:(int)style orientation:(int)orientation;
++ (CGFloat)heightForStyle:(int)style orientation:(int)orientation;
 + (int)defaultStatusBarStyle;
 + (int)defaultStyleForRequestedStyle:(int)requestedStyle styleOverrides:(int)overrides;
 
@@ -60,7 +60,7 @@
 - (CGAffineTransform)_slideTransform;
 - (void)_prepareToSetStyle:(int)setStyle animation:(int)animation;
 - (void)_setStyle:(int)style animation:(int)animation duration:(double)duration;
-- (void)_finishedSettingStyleWithOldHeight:(float)oldHeight newHeight:(float)height animation:(int)animation;
+- (void)_finishedSettingStyleWithOldHeight:(CGFloat)oldHeight newHeight:(CGFloat)height animation:(int)animation;
 - (void)_setFrameForStyle:(int)style;
 - (void)_setStyle:(int)style duration:(double)duration;
 - (void)_styleAnimationDidStop:(id)_styleAnimation finished:(id)finished context:(void *)context;

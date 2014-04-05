@@ -27,8 +27,8 @@
 -(void)stopLoading;
 -(void)goBack;
 -(void)goForward;
--(void)setScale:(float)scale;
--(float)scale;
+-(void)setScale:(CGFloat)scale;
+-(CGFloat)scale;
 -(void)_updateCheckeredPattern;
 -(CGSize)sizeThatFits:(CGSize)fits;
 -(void)_frameOrBoundsChanged;
@@ -75,7 +75,7 @@
 // in a protocol: -(id)viewForZoomingInScrollView:(id)scrollView;
 // in a protocol: -(void)scrollViewWillBeginZooming:(id)scrollView withView:(id)view;
 // in a protocol: -(void)scrollViewDidZoom:(id)scrollView;
-// in a protocol: -(void)scrollViewDidEndZooming:(id)scrollView withView:(id)view atScale:(float)scale;
+// in a protocol: -(void)scrollViewDidEndZooming:(id)scrollView withView:(id)view atScale:(CGFloat)scale;
 // in a protocol: -(void)scrollViewWillBeginDragging:(id)scrollView;
 // in a protocol: -(void)scrollViewDidEndDragging:(id)scrollView willDecelerate:(BOOL)decelerate;
 // in a protocol: -(void)scrollViewDidEndDecelerating:(id)scrollView;

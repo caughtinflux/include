@@ -50,7 +50,7 @@
 -(id)delegate;
 -(BOOL)ignoresInteractionEvents;
 -(void)setIgnoresInteractionEvents:(BOOL)events;
--(void)_startTransition:(int)transition withDuration:(float)duration;
+-(void)_startTransition:(int)transition withDuration:(CGFloat)duration;
 -(void)_transitionDidStop:(id)_transition finished:(id)finished;
 @end
 

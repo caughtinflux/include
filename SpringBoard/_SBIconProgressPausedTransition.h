@@ -14,7 +14,7 @@
     double _duration;
     CAMediaTimingFunction *_timingFunction;
     BOOL _toPaused;
-    float _fraction;
+    CGFloat _fraction;
 }
 
 + (id)newTransitionToPaused:(BOOL)arg1;

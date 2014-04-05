@@ -22,7 +22,7 @@
     TPButton *_cancelPushButton;
     TPCameraButton *_okPushButton;
     PLProgressHUD *_hud;
-    float _statusBarHeight;
+    CGFloat _statusBarHeight;
     int _mode;
     unsigned int _previewMode:1;
     unsigned int _cropRectIsVisible:1;
@@ -90,7 +90,7 @@
 - (void)didCaptureVideo;
 - (void)didCapturePhoto;
 - (void)_setMode:(int)arg1;
-- (void)setCropRectVisible:(_Bool)arg1 duration:(float)arg2;
+- (void)setCropRectVisible:(_Bool)arg1 duration:(CGFloat)arg2;
 - (id)telephonyUIBottomBar;
 - (id)telephonyUIShutterButton;
 - (struct CGRect)bottomBarFrame;

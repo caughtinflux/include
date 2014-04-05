@@ -8,18 +8,18 @@
 
 @interface PLSlalomRangeMapperScaledRegion : NSObject
 {
-    float _rate;
-    float _rampInStartTime;
-    float _rampInEndTime;
-    float _rampOutStartTime;
-    float _rampOutEndTime;
+    CGFloat _rate;
+    CGFloat _rampInStartTime;
+    CGFloat _rampInEndTime;
+    CGFloat _rampOutStartTime;
+    CGFloat _rampOutEndTime;
 }
 
-@property(nonatomic) float rampOutEndTime; // @synthesize rampOutEndTime=_rampOutEndTime;
-@property(nonatomic) float rampOutStartTime; // @synthesize rampOutStartTime=_rampOutStartTime;
-@property(nonatomic) float rampInEndTime; // @synthesize rampInEndTime=_rampInEndTime;
-@property(nonatomic) float rampInStartTime; // @synthesize rampInStartTime=_rampInStartTime;
-@property(nonatomic) float rate; // @synthesize rate=_rate;
+@property(nonatomic) CGFloat rampOutEndTime; // @synthesize rampOutEndTime=_rampOutEndTime;
+@property(nonatomic) CGFloat rampOutStartTime; // @synthesize rampOutStartTime=_rampOutStartTime;
+@property(nonatomic) CGFloat rampInEndTime; // @synthesize rampInEndTime=_rampInEndTime;
+@property(nonatomic) CGFloat rampInStartTime; // @synthesize rampInStartTime=_rampInStartTime;
+@property(nonatomic) CGFloat rate; // @synthesize rate=_rate;
 
 @end
 

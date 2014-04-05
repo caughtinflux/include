@@ -14,7 +14,7 @@
     NSLock *_lock;
     int _mode;
     NSLock *_progressLock;
-    float _progress;
+    CGFloat _progress;
 }
 
 + (id)sharedInstance;
@@ -23,8 +23,8 @@
 - (void)_resetThread;
 - (void)_beginReset:(id)arg1;
 - (void)beginReset;
-- (float)progress;
-- (void)_setProgress:(float)arg1;
+- (CGFloat)progress;
+- (void)_setProgress:(CGFloat)arg1;
 - (void)setMode:(int)arg1;
 - (void)dealloc;
 - (id)init;

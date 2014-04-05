@@ -8,12 +8,12 @@
 
 @interface SBNotificationCenterSeparatorView : UIView
 {
-    float _height;
+    CGFloat _height;
 }
 
 + (id)separatorForCurrentState;
 + (int)_separatorViewModeForCurrentState;
-+ (id)separatorWithScreenScale:(float)arg1 mode:(int)arg2;
++ (id)separatorWithScreenScale:(CGFloat)arg1 mode:(int)arg2;
 - (void)setBounds:(struct CGRect)arg1;
 - (void)setFrame:(struct CGRect)arg1;
 - (void)updateForCurrentState;

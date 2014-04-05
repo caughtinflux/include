@@ -10,7 +10,7 @@
 {
 }
 
-- (float)computeIncrementalGestureMotion:(struct __SBGestureContext *)arg1;
+- (CGFloat)computeIncrementalGestureMotion:(struct __SBGestureContext *)arg1;
 
 @end
 

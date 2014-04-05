@@ -13,9 +13,9 @@
     _SBAnimatableCorneredView *_containerView;
     SBIconImageView *_imageView;
     UIView *_crossfadeView;
-    float _crossfadeFraction;
-    float _containerScaleX;
-    float _containerScaleY;
+    CGFloat _crossfadeFraction;
+    CGFloat _containerScaleX;
+    CGFloat _containerScaleY;
     BOOL _masksCorners;
     BOOL _performsTrueCrossfade;
     struct CGPoint _stretchAnchorPoint;
@@ -26,8 +26,8 @@
 @property(nonatomic) BOOL masksCorners; // @synthesize masksCorners=_masksCorners;
 - (void)_updateCornerMask;
 - (void)cleanup;
-- (void)setMorphFraction:(float)arg1;
-- (void)setFadeFraction:(float)arg1;
+- (void)setMorphFraction:(CGFloat)arg1;
+- (void)setFadeFraction:(CGFloat)arg1;
 - (void)layoutSubviews;
 - (void)prepareGeometry;
 - (void)dealloc;

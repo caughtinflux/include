@@ -13,19 +13,19 @@
 
 	CGPoint _touch0InitialLocation;
 	CGPoint _touch1InitialLocation;
-	float _lastTransitionProgress;
+	CGFloat _lastTransitionProgress;
 	unsigned _transitionDirection;
 
 }
 
-@property (nonatomic,readonly) float transitionProgress; 
+@property (nonatomic,readonly) CGFloat transitionProgress; 
 @property (nonatomic,readonly) CGSize centerOffset; 
 @property (nonatomic,readonly) unsigned transitionDirection;              //@synthesize transitionDirection=_transitionDirection - In the implementation block
 @property (nonatomic,readonly) BOOL transitionShouldFinish; 
 -(void)setState:(int)arg1 ;
 -(void)reset;
 -(unsigned)transitionDirection;
--(float)transitionProgress;
+-(CGFloat)transitionProgress;
 -(CGSize)centerOffset;
 -(BOOL)transitionShouldFinish;
 -(void)_resetTransitionState;

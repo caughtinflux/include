@@ -16,7 +16,7 @@
 - (id)iconFormattedAccessoryString:(id)arg1;
 - (id)iconBadgeNumberOrString:(id)arg1;
 - (BOOL)iconProgressIsPaused:(id)arg1;
-- (float)iconProgressPercent:(id)arg1;
+- (CGFloat)iconProgressPercent:(id)arg1;
 - (int)iconProgressState:(id)arg1;
 - (BOOL)iconAppearsInNewsstand:(id)arg1;
 - (BOOL)iconCanEllipsizeLabel:(id)arg1;

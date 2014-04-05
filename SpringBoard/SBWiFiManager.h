@@ -40,7 +40,7 @@
 - (void)resetSettings;
 - (id)knownNetworks;
 - (void)updateSignalStrength;
-- (void)updateSignalStrengthFromRawRSSI:(int)arg1 andScaledRSSI:(float)arg2;
+- (void)updateSignalStrengthFromRawRSSI:(int)arg1 andScaledRSSI:(CGFloat)arg2;
 - (int)signalStrengthRSSI;
 - (int)signalStrengthBars;
 - (void)setWiFiEnabled:(BOOL)arg1;

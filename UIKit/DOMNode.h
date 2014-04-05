@@ -121,7 +121,7 @@
 // in a protocol: -(void)handleKeyWebEvent:(id)event;
 // in a protocol: -(void)replaceRangeWithTextWithoutClosingTyping:(id)textWithoutClosingTyping replacementText:(id)text;
 // in a protocol: -(NSRange)_markedTextNSRange;
--(void)setSelectionWithPoint:(CGPoint)point inset:(float)inset;
+-(void)setSelectionWithPoint:(CGPoint)point inset:(CGFloat)inset;
 -(void)detachInteractionAssistant;
 -(void)detachSelectionView;
 // in a protocol: -(id)textInRange:(id)range;

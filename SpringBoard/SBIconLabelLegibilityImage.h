@@ -18,7 +18,7 @@
 + (void)checkinLegibilityImage:(id)arg1;
 + (id)checkoutLegibilityImageWithLabelImage:(id)arg1 parameters:(id)arg2;
 + (struct CGRect)_legibilityImageRectForLabelImage:(id)arg1 style:(int)arg2;
-+ (float)_strengthForLegibilityStyle:(int)arg1;
++ (CGFloat)_strengthForLegibilityStyle:(int)arg1;
 + (id)_legibilityImageForIconLabelImage:(id)arg1 parameters:(id)arg2;
 + (id)_legibilityImagePool;
 + (id)_legibilityImageCountedMap;
@@ -26,7 +26,7 @@
 @property(readonly) SBIconLabelImageParameters *parameters; // @synthesize parameters=_parameters;
 - (id)countedMapKey;
 - (void)dealloc;
-- (id)_initWithCGImage:(struct CGImage *)arg1 scale:(float)arg2 orientation:(int)arg3 parameters:(id)arg4;
+- (id)_initWithCGImage:(struct CGImage *)arg1 scale:(CGFloat)arg2 orientation:(int)arg3 parameters:(id)arg4;
 
 @end
 

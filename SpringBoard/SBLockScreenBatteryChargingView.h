@@ -18,7 +18,7 @@
 }
 
 @property(retain, nonatomic) _UILegibilitySettings *legibilitySettings; // @synthesize legibilitySettings=_legibilitySettings;
-- (float)_chargingTextBaselineOffset;
+- (CGFloat)_chargingTextBaselineOffset;
 - (id)_chargePercentFont;
 - (void)layoutSubviews;
 - (struct CGPoint)_batteryOrigin;

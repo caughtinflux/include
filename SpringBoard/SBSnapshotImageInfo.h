@@ -13,7 +13,7 @@
     BOOL _defaultPNG;
     NSString *_path;
     UIScreen *_screen;
-    float _scale;
+    CGFloat _scale;
     int _launchingOrientation;
     int _originalOrientation;
 }
@@ -22,7 +22,7 @@
 @property(nonatomic) BOOL defaultPNG; // @synthesize defaultPNG=_defaultPNG;
 @property(nonatomic) int originalOrientation; // @synthesize originalOrientation=_originalOrientation;
 @property(nonatomic) int launchingOrientation; // @synthesize launchingOrientation=_launchingOrientation;
-@property(nonatomic) float scale; // @synthesize scale=_scale;
+@property(nonatomic) CGFloat scale; // @synthesize scale=_scale;
 @property(retain, nonatomic) UIScreen *screen; // @synthesize screen=_screen;
 @property(copy, nonatomic) NSString *path; // @synthesize path=_path;
 - (id)description;

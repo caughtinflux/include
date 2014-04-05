@@ -10,7 +10,7 @@
 
 @interface UITableCell : UIView {
 	_UITableCellTransientData* _transientData;
-	float _rightMargin;
+	CGFloat _rightMargin;
 	struct {
 		unsigned dontShowSelection : 1;
 		unsigned showDisclosure : 1;
@@ -37,7 +37,7 @@
 -(void)setSelected:(BOOL)selected withFade:(BOOL)fade;
 -(void)updateHighlightColors;
 -(BOOL)isAtLeastHalfSelected;
--(float)selectionPercent;
+-(CGFloat)selectionPercent;
 -(void)_deselectWithFlashCount:(int)flashCount duration:(double)duration;
 -(void)setSelected:(BOOL)selected;
 -(BOOL)isSelected;
@@ -53,7 +53,7 @@
 -(void)setSeparatorStyleOnly:(int)only;
 -(BOOL)showSelection;
 -(BOOL)showDisclosure;
--(void)setAlpha:(float)alpha;
+-(void)setAlpha:(CGFloat)alpha;
 -(id)hitTest:(CGPoint)test forEvent:(GSEventRef)event;
 -(BOOL)cancelMouseTracking;
 -(BOOL)cancelTouchTracking;
@@ -62,15 +62,15 @@
 -(void)drawRect:(CGRect)rect;
 -(void)_releaseGrabber;
 -(void)_finishedFadingGrabber:(id)grabber finished:(BOOL)finished;
--(float)disclosureRightMargin;
+-(CGFloat)disclosureRightMargin;
 -(BOOL)isReorderingEnabled;
 -(void)setShowDisclosureWhenReordering:(BOOL)reordering;
 -(BOOL)showDisclosureWhenReordering;
 -(void)setEnableReordering:(BOOL)reordering animated:(BOOL)animated;
 -(void)_grabberBeganReorder:(id)reorder;
--(void)_grabberDragged:(id)dragged yDelta:(float)delta;
+-(void)_grabberDragged:(id)dragged yDelta:(CGFloat)delta;
 -(void)_grabberReleased:(id)released;
--(void)drawBackgroundInRect:(CGRect)rect withFade:(float)fade;
+-(void)drawBackgroundInRect:(CGRect)rect withFade:(CGFloat)fade;
 -(void)drawSeparatorInRect:(CGRect)rect;
 -(void)drawContentInRect:(CGRect)rect selected:(BOOL)selected;
 -(void)_releaseRemoveControl;
@@ -82,11 +82,11 @@
 -(void)_setGrabberHidden:(BOOL)hidden;
 -(void)removeControlWillShowRemoveConfirmation:(id)removeControl;
 -(void)removeControlWillHideRemoveConfirmation:(id)removeControl;
--(void)_setRightMargin:(float)margin;
+-(void)_setRightMargin:(CGFloat)margin;
 -(id)disclosureView;
 -(void)setDisclosureView:(id)view;
 -(id)_disclosureView;
--(float)removeButtonAnimationDuration;
+-(CGFloat)removeButtonAnimationDuration;
 -(void)_layoutSubviewsAnimated:(BOOL)animated;
 -(void)_setShowIndentSpacer:(BOOL)spacer animated:(BOOL)animated;
 -(BOOL)isRemoveControlVisible;
@@ -100,10 +100,10 @@
 -(id)_createDisclosureView;
 -(CGRect)contentBounds;
 -(void)setShowDisclosure:(BOOL)disclosure animated:(BOOL)animated;
--(void)_setRemoveCharge:(float)charge;
+-(void)_setRemoveCharge:(CGFloat)charge;
 -(void)_setDrawsTopSeparator:(BOOL)separator;
 -(void)layoutSubviews;
 -(BOOL)_shouldTryPromoteDescendantToFirstResponder;
--(void)_setSelectionFadeFraction:(float)fraction;
+-(void)_setSelectionFadeFraction:(CGFloat)fraction;
 @end
 

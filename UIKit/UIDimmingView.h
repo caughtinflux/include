@@ -27,7 +27,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) id delegate;
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)dealloc;
--(void)display:(BOOL)display withAnimationDuration:(float)animationDuration;
+-(void)display:(BOOL)display withAnimationDuration:(CGFloat)animationDuration;
 // inherited: -(void)mouseUp:(GSEventRef)up;
 // inherited: -(void)touchesEnded:(id)ended withEvent:(id)event;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2

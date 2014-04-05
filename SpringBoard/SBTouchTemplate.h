@@ -13,10 +13,10 @@
     SBPolygon *m_template;
     SBPolygon *m_candidate;
     unsigned int m_transformType;
-    float m_acceptFactor;
+    CGFloat m_acceptFactor;
 }
 
-@property(nonatomic) float acceptFactor; // @synthesize acceptFactor=m_acceptFactor;
+@property(nonatomic) CGFloat acceptFactor; // @synthesize acceptFactor=m_acceptFactor;
 @property(nonatomic) unsigned int transformType; // @synthesize transformType=m_transformType;
 - (BOOL)acceptPolygon:(id)arg1;
 - (BOOL)acceptPoints:(struct CGPoint *)arg1 count:(unsigned int)arg2;

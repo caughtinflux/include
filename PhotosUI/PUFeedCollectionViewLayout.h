@@ -22,14 +22,14 @@
 	BOOL _shouldFloatWithEase;
 	BOOL _shouldFloatOverShortDistances;
 	int _flowDirection;
-	float _thumbnailSpacing;
-	float _sectionHeaderBackgroundHeight;
-	float _floatingBottomDecorationHeight;
+	CGFloat _thumbnailSpacing;
+	CGFloat _sectionHeaderBackgroundHeight;
+	CGFloat _CGFloatingBottomDecorationHeight;
 	CGSize _sectionReferenceSize;
 	CGSize _interTileSpacing;
 	CGSize _noCaptionSpacing;
 	UIEdgeInsets _captionPadding;
-	UIEdgeInsets _floatPadding;
+	UIEdgeInsets _CGFloatPadding;
 
 }
 
@@ -42,13 +42,13 @@
 @property (assign,nonatomic) BOOL shouldDisplayCaptionsBelowBatches;                     //@synthesize shouldDisplayCaptionsBelowBatches=_shouldDisplayCaptionsBelowBatches - In the implementation block
 @property (assign,nonatomic) BOOL shouldDisplaySectionHeadersBelowSections;              //@synthesize shouldDisplaySectionHeadersBelowSections=_shouldDisplaySectionHeadersBelowSections - In the implementation block
 @property (assign,nonatomic) BOOL shouldFloatThumbnails;                                 //@synthesize shouldFloatThumbnails=_shouldFloatThumbnails - In the implementation block
-@property (assign,nonatomic) float thumbnailSpacing;                                     //@synthesize thumbnailSpacing=_thumbnailSpacing - In the implementation block
+@property (assign,nonatomic) CGFloat thumbnailSpacing;                                     //@synthesize thumbnailSpacing=_thumbnailSpacing - In the implementation block
 @property (assign,nonatomic) BOOL shouldFloatSectionHeaders;                             //@synthesize shouldFloatSectionHeaders=_shouldFloatSectionHeaders - In the implementation block
-@property (assign,nonatomic) float sectionHeaderBackgroundHeight;                        //@synthesize sectionHeaderBackgroundHeight=_sectionHeaderBackgroundHeight - In the implementation block
+@property (assign,nonatomic) CGFloat sectionHeaderBackgroundHeight;                        //@synthesize sectionHeaderBackgroundHeight=_sectionHeaderBackgroundHeight - In the implementation block
 @property (assign,nonatomic) BOOL shouldFloatWithEase;                                   //@synthesize shouldFloatWithEase=_shouldFloatWithEase - In the implementation block
 @property (assign,nonatomic) BOOL shouldFloatOverShortDistances;                         //@synthesize shouldFloatOverShortDistances=_shouldFloatOverShortDistances - In the implementation block
-@property (assign,nonatomic) float floatingBottomDecorationHeight;                       //@synthesize floatingBottomDecorationHeight=_floatingBottomDecorationHeight - In the implementation block
-@property (assign,nonatomic) UIEdgeInsets floatPadding;                                  //@synthesize floatPadding=_floatPadding - In the implementation block
+@property (assign,nonatomic) CGFloat CGFloatingBottomDecorationHeight;                       //@synthesize CGFloatingBottomDecorationHeight=_CGFloatingBottomDecorationHeight - In the implementation block
+@property (assign,nonatomic) UIEdgeInsets CGFloatPadding;                                  //@synthesize CGFloatPadding=_CGFloatPadding - In the implementation block
 -(id)_delegate;
 -(CGSize)collectionViewContentSize;
 -(id)layoutAttributesForItemAtIndexPath:(id)arg1 ;
@@ -59,7 +59,7 @@
 -(id)invalidationContextForBoundsChange:(CGRect)arg1 ;
 -(id)layoutAttributesForDecorationViewOfKind:(id)arg1 atIndexPath:(id)arg2 ;
 -(void)setSectionReferenceSize:(CGSize)arg1 ;
--(void)setThumbnailSpacing:(float)arg1 ;
+-(void)setThumbnailSpacing:(CGFloat)arg1 ;
 -(void)setInterTileSpacing:(CGSize)arg1 ;
 -(void)setCaptionPadding:(UIEdgeInsets)arg1 ;
 -(void)setNoCaptionSpacing:(CGSize)arg1 ;
@@ -83,29 +83,29 @@
 -(id)indexPathForImageElementAtPoint:(CGPoint)arg1 ;
 -(BOOL)shouldFloatSectionHeaders;
 -(BOOL)shouldFloatThumbnails;
--(float)floatingBottomDecorationHeight;
--(float)sectionHeaderBackgroundHeight;
+-(CGFloat)CGFloatingBottomDecorationHeight;
+-(CGFloat)sectionHeaderBackgroundHeight;
 -(void)_updateSectionLayoutInfosIfNecessary;
 -(void)_updateGlobalLayoutInfoWithOptions:(int)arg1 sectionsWithUpdatedGroupIDs:(out id*)arg2 ;
 -(void)_updateLayoutInfoForSection:(int)arg1 ignoreSizeChange:(BOOL)arg2 ;
 -(void)_adjustFloatingLayoutAttributes:(id)arg1 inSection:(int)arg2 ;
 -(void)_enumerateSectionsInRect:(CGRect)arg1 withBlock:(/*^block*/ id)arg2 ;
--(void)_getSize:(out CGSize*)arg1 headerSize:(out CGSize*)arg2 footerSize:(out CGSize*)arg3 fixedLayoutAttributes:(id)arg4 tileLayoutAttributes:(id)arg5 floatingLayoutAttributes:(id)arg6 type:(out int*)arg7 forSection:(int)arg8 isJoined:(BOOL)arg9 ;
+-(void)_getSize:(out CGSize*)arg1 headerSize:(out CGSize*)arg2 footerSize:(out CGSize*)arg3 fixedLayoutAttributes:(id)arg4 tileLayoutAttributes:(id)arg5 CGFloatingLayoutAttributes:(id)arg6 type:(out int*)arg7 forSection:(int)arg8 isJoined:(BOOL)arg9 ;
 -(CGSize)sectionReferenceSize;
 -(void)_sectionAtIndex:(int)arg1 sizeDidChangeFrom:(CGSize)arg2 to:(CGSize)arg3 ;
--(UIEdgeInsets)floatPadding;
+-(UIEdgeInsets)CGFloatPadding;
 -(BOOL)shouldFloatOverShortDistances;
 -(BOOL)shouldFloatWithEase;
--(void)_getSizeForVerticalFlowDirection:(out CGSize*)arg1 headerSize:(out CGSize*)arg2 footerSize:(out CGSize*)arg3 fixedLayoutAttributes:(id)arg4 tileLayoutAttributes:(id)arg5 floatingLayoutAttributes:(id)arg6 type:(out int*)arg7 forSection:(int)arg8 isJoined:(BOOL)arg9 ;
--(void)_getSizeForHorizontalFlowDirection:(out CGSize*)arg1 headerSize:(out CGSize*)arg2 footerSize:(out CGSize*)arg3 fixedLayoutAttributes:(id)arg4 tileLayoutAttributes:(id)arg5 floatingLayoutAttributes:(id)arg6 type:(out int*)arg7 forSection:(int)arg8 isJoined:(BOOL)arg9 ;
+-(void)_getSizeForVerticalFlowDirection:(out CGSize*)arg1 headerSize:(out CGSize*)arg2 footerSize:(out CGSize*)arg3 fixedLayoutAttributes:(id)arg4 tileLayoutAttributes:(id)arg5 CGFloatingLayoutAttributes:(id)arg6 type:(out int*)arg7 forSection:(int)arg8 isJoined:(BOOL)arg9 ;
+-(void)_getSizeForHorizontalFlowDirection:(out CGSize*)arg1 headerSize:(out CGSize*)arg2 footerSize:(out CGSize*)arg3 fixedLayoutAttributes:(id)arg4 tileLayoutAttributes:(id)arg5 CGFloatingLayoutAttributes:(id)arg6 type:(out int*)arg7 forSection:(int)arg8 isJoined:(BOOL)arg9 ;
 -(CGSize)interTileSpacing;
 -(UIEdgeInsets)captionPadding;
 -(CGSize)noCaptionSpacing;
 -(BOOL)shouldDisplayCaptionsBelowBatches;
--(float)thumbnailSpacing;
+-(CGFloat)thumbnailSpacing;
 -(BOOL)shouldDisplaySectionHeadersBelowSections;
--(void)setSectionHeaderBackgroundHeight:(float)arg1 ;
--(void)setFloatingBottomDecorationHeight:(float)arg1 ;
+-(void)setSectionHeaderBackgroundHeight:(CGFloat)arg1 ;
+-(void)setFloatingBottomDecorationHeight:(CGFloat)arg1 ;
 -(void).cxx_destruct;
 @end
 

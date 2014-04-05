@@ -8,7 +8,7 @@
 
 @interface UIImage (PLPhotoLibraryAdditions)
 - (void *)PL_imageContents;
-- (id)newImageRotatedByDegrees:(float)arg1;
+- (id)newImageRotatedByDegrees:(CGFloat)arg1;
 - (id)newImageWithOrientation:(long long)arg1;
 @end
 

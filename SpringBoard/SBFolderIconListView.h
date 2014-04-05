@@ -13,9 +13,9 @@
 + (unsigned int)maxVisibleIconRowsInterfaceOrientation:(int)arg1;
 + (unsigned int)iconColumnsForInterfaceOrientation:(int)arg1;
 - (int)iconLocation;
-- (float)sideIconInset;
-- (float)bottomIconInset;
-- (float)topIconInset;
+- (CGFloat)sideIconInset;
+- (CGFloat)bottomIconInset;
+- (CGFloat)topIconInset;
 
 @end
 

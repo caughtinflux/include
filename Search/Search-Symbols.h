@@ -293,7 +293,7 @@ ___assert_rtn
 ___error
 ___fixdfdi
 ___fixunsdfdi
-___floatdidf
+___CGFloatdidf
 ___objc_personality_v0
 ___stack_chk_fail
 ___stack_chk_guard

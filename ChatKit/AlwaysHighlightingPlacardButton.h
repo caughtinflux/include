@@ -10,7 +10,7 @@
 @interface AlwaysHighlightingPlacardButton : UIPlacardButton {
 }
 -(id)initWithTitle:(id)title;
--(void)drawTitleAtPoint:(CGPoint)point width:(float)width;
+-(void)drawTitleAtPoint:(CGPoint)point width:(CGFloat)width;
 -(BOOL)_alwaysHandleScrollerMouseEvent;
 @end
 

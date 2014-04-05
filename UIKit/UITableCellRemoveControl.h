@@ -7,9 +7,9 @@
 
 
 @interface UITableCellRemoveControl : UIRemoveControl {
-	float _verticalOffset;
+	CGFloat _verticalOffset;
 }
 -(id)initWithTarget:(id)target;
--(float)_verticalOffsetFromTarget;
+-(CGFloat)_verticalOffsetFromTarget;
 @end
 

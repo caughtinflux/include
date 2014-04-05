@@ -12,9 +12,9 @@
 	UIView* _view;
 	NSIndexPath* _indexPath;
 	CGRect _endRect;
-	float _endAlpha;
-	float _startFraction;
-	float _endFraction;
+	CGFloat _endAlpha;
+	CGFloat _startFraction;
+	CGFloat _endFraction;
 	int _curve;
 	BOOL _animateFromCurrentPosition;
 	BOOL _shouldDeleteAfterAnimation;
@@ -23,14 +23,14 @@
 @property(readonly, assign, nonatomic) UIView* view;
 @property(readonly, assign, nonatomic) NSIndexPath* indexPath;
 @property(readonly, assign, nonatomic) CGRect endRect;
-@property(readonly, assign, nonatomic) float endAlpha;
-@property(readonly, assign, nonatomic) float startFraction;
-@property(readonly, assign, nonatomic) float endFraction;
+@property(readonly, assign, nonatomic) CGFloat endAlpha;
+@property(readonly, assign, nonatomic) CGFloat startFraction;
+@property(readonly, assign, nonatomic) CGFloat endFraction;
 @property(readonly, assign, nonatomic) int curve;
 @property(readonly, assign, nonatomic) BOOL animateFromCurrentPosition;
 @property(readonly, assign, nonatomic) BOOL shouldDeleteAfterAnimation;
 @property(readonly, assign, nonatomic) BOOL editing;
--(id)initWithView:(id)view indexPath:(id)path endRect:(CGRect)rect endAlpha:(float)alpha startFraction:(float)fraction endFraction:(float)fraction6 curve:(int)curve animateFromCurrentPosition:(BOOL)currentPosition shouldDeleteAfterAnimation:(BOOL)animation editing:(BOOL)editing;
+-(id)initWithView:(id)view indexPath:(id)path endRect:(CGRect)rect endAlpha:(CGFloat)alpha startFraction:(CGFloat)fraction endFraction:(CGFloat)fraction6 curve:(int)curve animateFromCurrentPosition:(BOOL)currentPosition shouldDeleteAfterAnimation:(BOOL)animation editing:(BOOL)editing;
 -(void)dealloc;
 -(id)description;
 @end

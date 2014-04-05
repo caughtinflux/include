@@ -21,7 +21,7 @@ __attribute__((visibility("hidden")))
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 	int _textAlignment;
 	UITableView* _tableView;
-	float _maxTitleWidth;
+	CGFloat _maxTitleWidth;
 #endif
 }
 @property(assign, nonatomic) int tableViewStyle;
@@ -32,7 +32,7 @@ __attribute__((visibility("hidden")))
 -(void)dealloc;
 -(void)setFrame:(CGRect)frame;
 -(CGRect)frame;
--(CGSize)_textSizeForWidth:(float)width;
+-(CGSize)_textSizeForWidth:(CGFloat)width;
 -(CGRect)_labelFrame;
 -(CGSize)sizeThatFits:(CGSize)fits;
 -(void)_updateBackgroundImage;
@@ -40,7 +40,7 @@ __attribute__((visibility("hidden")))
 -(void)drawRect:(CGRect)rect;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 @property(assign, nonatomic) UITableView* tableView;
-@property(assign, nonatomic) float maxTitleWidth;
+@property(assign, nonatomic) CGFloat maxTitleWidth;
 @property(assign, nonatomic) int textAlignment;
 -(id)_label:(BOOL)label;
 -(id)_scriptingInfo;

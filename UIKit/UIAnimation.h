@@ -29,8 +29,8 @@
 -(void)setAction:(SEL)action;
 -(SEL)action;
 -(void)setAnimationCurve:(int)curve;
--(void)setProgress:(float)progress;
--(float)progressForFraction:(float)fraction;
+-(void)setProgress:(CGFloat)progress;
+-(CGFloat)progressForFraction:(CGFloat)fraction;
 -(void)dealloc;
 @end
 
@@ -38,7 +38,7 @@
 -(int)state;
 -(BOOL)tvOutput;
 -(void)setDuration:(double)duration;
--(float)fractionForTime:(double)time;
+-(CGFloat)fractionForTime:(double)time;
 -(void)markStart:(double)start;
 -(void)markStop;
 @end

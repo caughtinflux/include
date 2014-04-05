@@ -22,7 +22,7 @@
     double _pinchScale;
     struct CGRect _initialExpandingFrame;
     struct CGRect _originalBounds;
-    float _currentAngle;
+    CGFloat _currentAngle;
     struct CGSize _centerOffset;
     PLManagedAsset *_photo;
     struct {
@@ -64,21 +64,21 @@
 - (void)finishTransition;
 - (void)_bounceToPlace:(id)arg1 finished:(id)arg2 context:(void *)arg3;
 - (void)_bounceBack:(id)arg1 finished:(id)arg2 context:(void *)arg3;
-- (float)completeTrackingPinch:(id)arg1 toState:(int)arg2 duration:(double)arg3;
+- (CGFloat)completeTrackingPinch:(id)arg1 toState:(int)arg2 duration:(double)arg3;
 - (void)setTransformAndCenterForFrame:(struct CGRect)arg1;
 - (struct CGSize)_newSizeFromSize:(struct CGSize)arg1;
-- (float)continueTrackingPinch:(id)arg1;
+- (CGFloat)continueTrackingPinch:(id)arg1;
 - (void)_updatePinchWidthAndScaleWithLeftPoint:(struct CGPoint)arg1 rightPoint:(struct CGPoint)arg2;
 - (void)_updateBorderAndAccessoriesAlpha;
-- (float)_borderAlphaForExpansionFraction:(float)arg1;
-- (void)setSize:(struct CGSize)arg1 angle:(float)arg2;
+- (CGFloat)_borderAlphaForExpansionFraction:(CGFloat)arg1;
+- (void)setSize:(struct CGSize)arg1 angle:(CGFloat)arg2;
 - (void)beginTrackingPinch:(id)arg1;
 - (void)_setOriginalSize:(struct CGSize)arg1;
 - (void)stateDidChangeFrom:(int)arg1;
 - (struct CGRect)_snappedExpandedFrame;
-- (float)_expansionFraction;
-- (float)_expandedScale;
-- (float)_currentScale;
+- (CGFloat)_expansionFraction;
+- (CGFloat)_expandedScale;
+- (CGFloat)_currentScale;
 - (_Bool)pointInside:(struct CGPoint)arg1 withEvent:(id)arg2;
 - (void)layoutSubviews;
 - (void)dealloc;

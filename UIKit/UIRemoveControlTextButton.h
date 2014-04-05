@@ -21,7 +21,7 @@
 -(void)_controlTouchMoved:(id)moved withEvent:(id)event;
 -(void)_controlTouchEnded:(id)ended withEvent:(id)event;
 -(void)sizeToFit;
--(float)buttonWidth;
+-(CGFloat)buttonWidth;
 -(BOOL)_alwaysHandleScrollerMouseEvent;
 -(void)drawRect:(CGRect)rect;
 -(id)_scriptingInfo;

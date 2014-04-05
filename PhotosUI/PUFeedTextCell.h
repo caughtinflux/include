@@ -16,7 +16,7 @@
 	BOOL _shouldUseOpaqueBackground;
 	NSAttributedString* _attributedText;
 	int _numberOfTextLines;
-	float _textDetailTextSpacing;
+	CGFloat _textDetailTextSpacing;
 	NSAttributedString* _attributedDetailText;
 	int _numberOfDetailTextLines;
 	int _textAlignment;
@@ -26,7 +26,7 @@
 	int _buttonType;
 	int _buttonSize;
 	int _buttonHorizontalAlignment;
-	float _buttonPadding;
+	CGFloat _buttonPadding;
 	UILabel* __label;
 	UILabel* __detailLabel;
 	UIImageView* __iconImageView;
@@ -41,7 +41,7 @@
 @property (assign,nonatomic) UIEdgeInsets contentInsets;                                          //@synthesize contentInsets=_contentInsets - In the implementation block
 @property (nonatomic,retain) NSAttributedString * attributedText;                                 //@synthesize attributedText=_attributedText - In the implementation block
 @property (assign,nonatomic) int numberOfTextLines;                                               //@synthesize numberOfTextLines=_numberOfTextLines - In the implementation block
-@property (assign,nonatomic) float textDetailTextSpacing;                                         //@synthesize textDetailTextSpacing=_textDetailTextSpacing - In the implementation block
+@property (assign,nonatomic) CGFloat textDetailTextSpacing;                                         //@synthesize textDetailTextSpacing=_textDetailTextSpacing - In the implementation block
 @property (nonatomic,retain) NSAttributedString * attributedDetailText;                           //@synthesize attributedDetailText=_attributedDetailText - In the implementation block
 @property (assign,nonatomic) int numberOfDetailTextLines;                                         //@synthesize numberOfDetailTextLines=_numberOfDetailTextLines - In the implementation block
 @property (assign,nonatomic) int textAlignment;                                                   //@synthesize textAlignment=_textAlignment - In the implementation block
@@ -54,7 +54,7 @@
 @property (assign,nonatomic) int buttonSize;                                                      //@synthesize buttonSize=_buttonSize - In the implementation block
 @property (assign,nonatomic) int buttonHorizontalAlignment;                                       //@synthesize buttonHorizontalAlignment=_buttonHorizontalAlignment - In the implementation block
 @property (assign,nonatomic) UIOffset buttonOffset;                                               //@synthesize buttonOffset=_buttonOffset - In the implementation block
-@property (assign,nonatomic) float buttonPadding;                                                 //@synthesize buttonPadding=_buttonPadding - In the implementation block
+@property (assign,nonatomic) CGFloat buttonPadding;                                                 //@synthesize buttonPadding=_buttonPadding - In the implementation block
 @property (assign,nonatomic) BOOL shouldUseOpaqueBackground;                                      //@synthesize shouldUseOpaqueBackground=_shouldUseOpaqueBackground - In the implementation block
 @property (setter=_setLabel:,nonatomic,retain) UILabel * _label;                                  //@synthesize _label=__label - In the implementation block
 @property (setter=_setDetailLabel:,nonatomic,retain) UILabel * _detailLabel;                      //@synthesize _detailLabel=__detailLabel - In the implementation block
@@ -77,7 +77,7 @@
 -(void)setTappableArea:(int)arg1 ;
 -(void)setAttributedDetailText:(id)arg1 ;
 -(void)setNumberOfDetailTextLines:(int)arg1 ;
--(void)setTextDetailTextSpacing:(float)arg1 ;
+-(void)setTextDetailTextSpacing:(CGFloat)arg1 ;
 -(void)setIconImage:(id)arg1 ;
 -(void)setIconLocation:(int)arg1 ;
 -(void)setIconPadding:(UIEdgeInsets)arg1 ;
@@ -86,7 +86,7 @@
 -(void)setButtonSize:(int)arg1 ;
 -(void)setButtonHorizontalAlignment:(int)arg1 ;
 -(void)setButtonOffset:(UIOffset)arg1 ;
--(void)setButtonPadding:(float)arg1 ;
+-(void)setButtonPadding:(CGFloat)arg1 ;
 -(void)setButtonType:(int)arg1 ;
 -(BOOL)shouldRecognizerTap:(id)arg1 ;
 -(void)_setLabel:(id)arg1 ;
@@ -105,8 +105,8 @@
 -(CGSize)_maximumPossibleTextSizeForButtonWithType:(int)arg1 size:(int)arg2 ;
 -(int)buttonHorizontalAlignment;
 -(UIOffset)buttonOffset;
--(float)buttonPadding;
--(float)textDetailTextSpacing;
+-(CGFloat)buttonPadding;
+-(CGFloat)textDetailTextSpacing;
 -(UIOffset)iconOffset;
 -(id)_iconImageView;
 -(int)tappableArea;

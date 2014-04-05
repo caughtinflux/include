@@ -24,12 +24,12 @@
 -(BOOL)pointInsideLeftHandle:(CGPoint)handle;
 -(BOOL)pointInsideRightHandle:(CGPoint)handle;
 -(BOOL)pointInsideCenterHandle:(CGPoint)handle;
--(int)handleForPoint:(CGPoint)point hitOffset:(float*)offset;
+-(int)handleForPoint:(CGPoint)point hitOffset:(CGFloat*)offset;
 -(CGRect)leftHandleBounds;
 -(CGRect)leftHandleFrame;
 -(CGRect)rightHandleBounds;
 -(CGRect)rightHandleFrame;
 -(void)bounce;
--(float)_bounceValueForFraction:(float)fraction;
+-(CGFloat)_bounceValueForFraction:(CGFloat)fraction;
 @end
 

@@ -18,8 +18,8 @@
 	UILabel* _subtitleLabel;
 	UILabel* _bodyTextLabel;
 	UILabel* _taglineTextLabel;
-	float _startX;
-	float _startY;
+	CGFloat _startX;
+	CGFloat _startY;
 	id _context;
 	int _cancelButton;
 	int _defaultButton;
@@ -29,7 +29,7 @@
 	UIWindow* _dimWindow;
 	int _suspendTag;
 	int _dismissButtonIndex;
-	float _bodyTextHeight;
+	CGFloat _bodyTextHeight;
 	NSMutableArray* _buttons;
 	NSMutableArray* _textFields;
 	UIView* _keyboard;
@@ -168,7 +168,7 @@
 -(void)_layoutPopupAlertWithOrientation:(int)orientation animated:(BOOL)animated;
 -(void)_layoutIfNeeded;
 -(void)_adjustLabelFontSizes;
--(void)popupAlertAnimated:(BOOL)animated atOffset:(float)offset;
+-(void)popupAlertAnimated:(BOOL)animated atOffset:(CGFloat)offset;
 -(void)popupAlertAnimated:(BOOL)animated fromBarButtonItem:(id)barButtonItem;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 -(void)userDidCancelPopoverView:(id)user;
@@ -188,10 +188,10 @@
 -(void)dismiss;
 -(void)dismissAnimated:(BOOL)animated;
 -(CGSize)backgroundSize;
--(float)_titleVerticalTopInset;
--(float)_titleVerticalBottomInset;
--(float)_titleHorizontalInset;
--(float)_bottomVerticalInset;
+-(CGFloat)_titleVerticalTopInset;
+-(CGFloat)_titleVerticalBottomInset;
+-(CGFloat)_titleHorizontalInset;
+-(CGFloat)_bottomVerticalInset;
 -(void)drawRect:(CGRect)rect;
 -(void)_appSuspended:(id)suspended;
 -(void)_alertSheetAnimationDidStop:(id)_alertSheetAnimation finished:(id)finished;
@@ -208,8 +208,8 @@
 -(void)setRunsModal:(BOOL)modal;
 -(BOOL)runsModal;
 -(CGRect)titleRect;
--(float)_maxHeight;
--(float)_buttonHeight;
+-(CGFloat)_maxHeight;
+-(CGFloat)_buttonHeight;
 -(void)layout;
 -(int)numberOfLinesInTitle __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);
 -(void)presentSheetFromButtonBar:(id)buttonBar;

@@ -63,10 +63,10 @@
 -(BOOL)shouldShowDatesInSectionFootersInCollectionViewType:(int)arg1 ;
 -(void)configureTextCell:(id)arg1 forSectionFooterWithActionText:(id)arg2 collectionViewType:(int)arg3 ;
 -(void)configureTextCell:(id)arg1 forSectionFooterWithDateText:(id)arg2 collectionViewType:(int)arg3 ;
--(void)getReferenceMaximumLength:(float*)arg1 minimumNumberOfTilesToOmit:(int*)arg2 forSectionType:(int)arg3 collectionViewType:(int)arg4 ;
+-(void)getReferenceMaximumLength:(CGFloat*)arg1 minimumNumberOfTilesToOmit:(int*)arg2 forSectionType:(int)arg3 collectionViewType:(int)arg4 ;
 -(void)configureSeparatorMetrics:(inout PUFeedSeparatorMetrics*)arg1 betweenSectionWithInfo:(id)arg2 andSectionWithInfo:(id)arg3 joined:(BOOL)arg4 collectionViewType:(int)arg5 ;
 -(void)configureTextCell:(id)arg1 forSectionGroupHeaderWithText:(id)arg2 collectionViewType:(int)arg3 ;
--(float)spacingBetweenSectionWithInfo:(id)arg1 andHeaderWithGroupID:(id)arg2 ;
+-(CGFloat)spacingBetweenSectionWithInfo:(id)arg1 andHeaderWithGroupID:(id)arg2 ;
 -(BOOL)shouldHideBarsInLandscape;
 -(BOOL)shouldShowInvitationsInPopover;
 -(id)photosPickerSpec;

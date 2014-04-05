@@ -33,20 +33,20 @@
 	BOOL _showingPeoplePicker;
 	UIPopoverController* _peoplePickerPopoverController;
 	CGSize _recipientViewSize;
-	float _lastHeight;
+	CGFloat _lastHeight;
 	id _delegate;
-	float _bottomTableOffset;
+	CGFloat _bottomTableOffset;
 
 }
 
 @property (assign,nonatomic,__weak) id delegate;                   //@synthesize delegate=_delegate - In the implementation block
 @property (nonatomic,readonly) NSArray * recipients; 
-@property (assign,nonatomic) float bottomTableOffset;              //@synthesize bottomTableOffset=_bottomTableOffset - In the implementation block
+@property (assign,nonatomic) CGFloat bottomTableOffset;              //@synthesize bottomTableOffset=_bottomTableOffset - In the implementation block
 +(void)recordRecentInvitationRecipient:(id)arg1 displayName:(id)arg2 date:(id)arg3 ;
 -(void)dealloc;
 -(void)setDelegate:(id)arg1 ;
 -(void)tableView:(id)arg1 willDisplayCell:(id)arg2 forRowAtIndexPath:(id)arg3 ;
--(float)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2 ;
+-(CGFloat)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2 ;
 -(void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2 ;
 -(int)tableView:(id)arg1 numberOfRowsInSection:(int)arg2 ;
 -(id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2 ;
@@ -64,7 +64,7 @@
 -(void*)_addressBook;
 -(void)makeRecipientViewResignFirstResponder;
 -(void)makeRecipientViewFirstResponder;
--(void)setBottomTableOffset:(float)arg1 ;
+-(void)setBottomTableOffset:(CGFloat)arg1 ;
 -(void)_searchForRecipientWithText:(id)arg1 ;
 -(id)composeRecipientView:(id)arg1 composeRecipientForAddress:(id)arg2 ;
 -(void)_forceDismissPeoplePickerPopover;
@@ -92,7 +92,7 @@
 -(id)composeRecipientView:(id)arg1 composeRecipientForRecord:(void*)arg2 identifier:(int)arg3 ;
 -(id)composeRecipientView:(id)arg1 composeRecipientForRecord:(void*)arg2 property:(int)arg3 identifier:(int)arg4 ;
 -(void)composeRecipientViewReturnPressed:(id)arg1 ;
--(float)bottomTableOffset;
+-(CGFloat)bottomTableOffset;
 -(void).cxx_destruct;
 @end
 

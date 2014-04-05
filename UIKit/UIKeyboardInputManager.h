@@ -248,7 +248,7 @@
 
 /*! Returns the probability of each charged key. Not used in 3.0 anymore.
  
- Each entry should be (unichar => float). 
+ Each entry should be (unichar => CGFloat). 
  */
 -(CFDictionaryRef)chargedKeyProbabilities;
 

@@ -18,12 +18,12 @@
     UIImageView *_backgroundImageView;
 }
 
-+ (float)defaultHeight;
++ (CGFloat)defaultHeight;
 - (void)wallpaperDidChangeForVariant:(int)arg1;
 - (id)_newBackgroundImage;
-- (void)setVerticalBackgroundStretch:(float)arg1;
-- (void)setBackgroundAlpha:(float)arg1;
-- (float)heightForOrientation:(int)arg1;
+- (void)setVerticalBackgroundStretch:(CGFloat)arg1;
+- (void)setBackgroundAlpha:(CGFloat)arg1;
+- (CGFloat)heightForOrientation:(int)arg1;
 - (void)layoutSubviews;
 - (id)dockListView;
 - (void)dealloc;

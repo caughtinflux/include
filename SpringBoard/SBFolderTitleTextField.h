@@ -26,7 +26,7 @@
 - (struct CGRect)textRectForBounds:(struct CGRect)arg1;
 - (struct CGRect)_textRectForBounds:(struct CGRect)arg1;
 - (struct CGSize)sizeThatFits:(struct CGSize)arg1;
-@property(nonatomic) float fontSize;
+@property(nonatomic) CGFloat fontSize;
 - (void)layoutSubviews;
 - (void)setText:(id)arg1;
 - (void)_updateLegibilityView;

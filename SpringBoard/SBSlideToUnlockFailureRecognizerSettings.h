@@ -11,13 +11,13 @@
     BOOL _enabled;
     BOOL _viewDebugArea;
     unsigned int _maxAllowableVerticalOffset;
-    float _topAngle;
-    float _bottomAngle;
+    CGFloat _topAngle;
+    CGFloat _bottomAngle;
 }
 
 + (id)settingsControllerModule;
-@property(nonatomic) float bottomAngle; // @synthesize bottomAngle=_bottomAngle;
-@property(nonatomic) float topAngle; // @synthesize topAngle=_topAngle;
+@property(nonatomic) CGFloat bottomAngle; // @synthesize bottomAngle=_bottomAngle;
+@property(nonatomic) CGFloat topAngle; // @synthesize topAngle=_topAngle;
 @property(nonatomic) unsigned int maxAllowableVerticalOffset; // @synthesize maxAllowableVerticalOffset=_maxAllowableVerticalOffset;
 @property(nonatomic) BOOL viewDebugArea; // @synthesize viewDebugArea=_viewDebugArea;
 @property(nonatomic) BOOL enabled; // @synthesize enabled=_enabled;

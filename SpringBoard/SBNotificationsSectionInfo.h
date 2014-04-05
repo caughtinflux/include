@@ -18,7 +18,7 @@
 @property(copy, nonatomic) id clearPossibleAction; // @synthesize clearPossibleAction=_clearPossibleAction;
 - (void)populateReusableView:(id)arg1;
 - (BOOL)shouldSuppressBulletinMessageForPrivacy:(id)arg1;
-- (float)heightForReusableViewInTableView:(id)arg1;
+- (CGFloat)heightForReusableViewInTableView:(id)arg1;
 - (Class)reusableViewClass;
 - (id)identifier;
 @property(readonly, nonatomic) SBBulletinListSection *representedListSection;

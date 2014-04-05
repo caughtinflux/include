@@ -19,7 +19,7 @@
 -(id)layoutAttributesForSupplementaryViewOfKind:(id)arg1 atIndexPath:(id)arg2 ;
 -(CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)arg1 ;
 -(id)layoutAttributesForDecorationViewOfKind:(id)arg1 atIndexPath:(id)arg2 ;
--(void)setTransitionProgress:(float)arg1 ;
+-(void)setTransitionProgress:(CGFloat)arg1 ;
 -(void)_adjustLayoutAttributes:(id)arg1 ;
 @end
 

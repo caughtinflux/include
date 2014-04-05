@@ -11,21 +11,21 @@
 @interface SBWindowContext : NSObject
 {
     unsigned int _identifier;
-    float _level;
+    CGFloat _level;
     UIScreen *_screen;
     BOOL _orderOutPending;
 }
 
-+ (id)contextWithIdentifier:(unsigned int)arg1 level:(float)arg2 screen:(id)arg3;
++ (id)contextWithIdentifier:(unsigned int)arg1 level:(CGFloat)arg2 screen:(id)arg3;
 @property(nonatomic, getter=isOrderOutPending) BOOL orderOutPending; // @synthesize orderOutPending=_orderOutPending;
 @property(readonly, nonatomic) UIScreen *screen; // @synthesize screen=_screen;
-@property(readonly, nonatomic) float level; // @synthesize level=_level;
+@property(readonly, nonatomic) CGFloat level; // @synthesize level=_level;
 @property(readonly, nonatomic) unsigned int identifier; // @synthesize identifier=_identifier;
 - (id)description;
 - (BOOL)isEqual:(id)arg1;
 - (unsigned int)hash;
 - (void)dealloc;
-- (id)initWithIdentifier:(unsigned int)arg1 level:(float)arg2 screen:(id)arg3;
+- (id)initWithIdentifier:(unsigned int)arg1 level:(CGFloat)arg2 screen:(id)arg3;
 
 @end
 

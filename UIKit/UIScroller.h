@@ -62,16 +62,16 @@
 		unsigned autoscrolling : 1;
 		unsigned reserved : 17;
 	} _scrollerFlags;
-	float _scrollHysteresis;
-	float _scrollDecelerationFactor;
+	CGFloat _scrollHysteresis;
+	CGFloat _scrollDecelerationFactor;
 	double _scrollToPointAnimationDuration;
-	float _directionalScrollingAngle;
-	float _farthestDistance;
-	float _leftRubberBandWidth;
-	float _rightRubberBandWidth;
-	float _topRubberBandHeight;
-	float _bottomRubberBandHeight;
-	float _bottomBufferHeight;
+	CGFloat _directionalScrollingAngle;
+	CGFloat _farthestDistance;
+	CGFloat _leftRubberBandWidth;
+	CGFloat _rightRubberBandWidth;
+	CGFloat _topRubberBandHeight;
+	CGFloat _bottomRubberBandHeight;
+	CGFloat _bottomBufferHeight;
 	CGPoint _initialTouchPosition;
 	CGPoint _startTouchPosition;
 	double _startTouchTime;
@@ -104,8 +104,8 @@
 -(BOOL)adjustForContentSizeChange;
 -(void)setOffset:(CGPoint)offset;
 -(CGPoint)offset;
--(void)setBottomBufferHeight:(float)height;
--(float)bottomBufferHeight;
+-(void)setBottomBufferHeight:(CGFloat)height;
+-(CGFloat)bottomBufferHeight;
 -(void)scrollByDelta:(CGSize)delta;
 -(void)scrollByDelta:(CGSize)delta animated:(BOOL)animated;
 -(void)removeFromSuperview;
@@ -118,8 +118,8 @@
 -(void)scrollRectToVisible:(CGRect)visible;
 -(void)setScrollToPointAnimationDuration:(double)pointAnimationDuration;
 -(double)scrollToPointAnimationDuration;
--(void)setScrollHysteresis:(float)hysteresis;
--(float)scrollHysteresis;
+-(void)setScrollHysteresis:(CGFloat)hysteresis;
+-(CGFloat)scrollHysteresis;
 -(void)setEventMode:(int)mode;
 -(int)eventMode;
 -(void)setAllowsRubberBanding:(BOOL)banding;
@@ -128,13 +128,13 @@
 -(void)setAllowsFourWayRubberBanding:(BOOL)banding;
 -(void)setDirectionalScrolling:(BOOL)scrolling;
 -(BOOL)directionalScrolling;
--(void)setDirectionalScrollingAngle:(float)angle;
--(float)directionalScrollingAngle;
+-(void)setDirectionalScrollingAngle:(CGFloat)angle;
+-(CGFloat)directionalScrollingAngle;
 -(void)setScrollingEnabled:(BOOL)enabled;
 -(BOOL)scrollingEnabled;
 -(BOOL)isScrollEnabled;
--(void)setScrollDecelerationFactor:(float)factor;
--(float)scrollDecelerationFactor;
+-(void)setScrollDecelerationFactor:(CGFloat)factor;
+-(CGFloat)scrollDecelerationFactor;
 -(void)setBounces:(BOOL)bounces;
 -(BOOL)bounces;
 -(void)setGridSize:(CGSize)size;
@@ -150,8 +150,8 @@
 -(void)setScrollerIndicatorStyle:(int)style;
 -(int)scrollerIndicatorStyle;
 -(void)displayScrollerIndicators;
--(void)setRubberBand:(float)band forEdges:(unsigned)edges;
--(float)rubberBandValueForEdge:(unsigned)edge;
+-(void)setRubberBand:(CGFloat)band forEdges:(unsigned)edges;
+-(CGFloat)rubberBandValueForEdge:(unsigned)edge;
 -(BOOL)releaseRubberBandIfNecessary;
 -(void)setDelegate:(id)delegate;
 -(id)delegate;
@@ -161,7 +161,7 @@
 -(void)_scrollerWillStartDragging;
 -(void)_scrollerDidEndDragging;
 -(void)mouseDown:(GSEventRef)down;
--(void)setOffsetForDragOffset:(CGPoint)dragOffset withEvent:(GSEventRef)event duration:(float)duration;
+-(void)setOffsetForDragOffset:(CGPoint)dragOffset withEvent:(GSEventRef)event duration:(CGFloat)duration;
 -(CGPoint)dragStartOffset;
 -(void)mouseDragged:(GSEventRef)dragged;
 -(void)gestureStarted:(GSEventRef)started;
@@ -250,7 +250,7 @@
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
 @interface UIScroller (UIWebSelectionAutoscroll)
 -(int)scrollableDirections;
--(float)maxVelocityInDirection:(int)direction;
+-(CGFloat)maxVelocityInDirection:(int)direction;
 @end
 #endif
 

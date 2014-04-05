@@ -14,19 +14,19 @@
 	CGPoint _origin;
 	SCD_Struct_PU14 _enqueuedCaptionTileInfo;
 	BOOL _shouldDisplayCaptionsBelowBatches;
-	float _referenceWidth;
+	CGFloat _referenceWidth;
 
 }
 
-@property (assign,nonatomic) float referenceWidth;                                //@synthesize referenceWidth=_referenceWidth - In the implementation block
+@property (assign,nonatomic) CGFloat referenceWidth;                                //@synthesize referenceWidth=_referenceWidth - In the implementation block
 @property (assign,nonatomic) BOOL shouldDisplayCaptionsBelowBatches;              //@synthesize shouldDisplayCaptionsBelowBatches=_shouldDisplayCaptionsBelowBatches - In the implementation block
 -(void)setShouldDisplayCaptionsBelowBatches:(BOOL)arg1 ;
 -(BOOL)shouldDisplayCaptionsBelowBatches;
--(void)setReferenceWidth:(float)arg1 ;
+-(void)setReferenceWidth:(CGFloat)arg1 ;
 -(void)willParseTiles;
 -(void)didParseTiles;
 -(BOOL)parseNextTiles;
--(float)referenceDistanceForMagneticGuidelines;
+-(CGFloat)referenceDistanceForMagneticGuidelines;
 -(BOOL)_parseTileRequiringFullWidth;
 -(BOOL)_parseSpecialSequence;
 -(BOOL)_parseSpecialTileTriplet;
@@ -34,7 +34,7 @@
 -(BOOL)_parseTilePair;
 -(BOOL)_parseSingleTile;
 -(BOOL)_dequeueCaption;
--(float)referenceWidth;
+-(CGFloat)referenceWidth;
 -(BOOL)_addRowWithContiguousTiles:(SCD_Struct_PU15*)arg1 count:(int)arg2 ;
 -(BOOL)_scanTilePair:(SCD_Struct_PU15*)arg1 ;
 -(BOOL)_scanTileTriplet:(SCD_Struct_PU15*)arg1 ;

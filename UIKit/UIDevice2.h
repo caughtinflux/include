@@ -24,7 +24,7 @@
 @property(assign, nonatomic) int orientation;
 -(void)_setProximityState:(BOOL)state;
 -(void)_setBatteryState:(int)state;
--(void)_setBatteryLevel:(float)level;
+-(void)_setBatteryLevel:(CGFloat)level;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 -(BOOL)isWildcat;
 -(void)setIsWildcat:(BOOL)wildcat;

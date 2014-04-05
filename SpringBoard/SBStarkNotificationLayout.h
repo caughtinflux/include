@@ -16,18 +16,18 @@
     NSArray *_previousSubActionsAttributes;
     UICollectionViewLayoutAttributes *_backgroundAttributes;
     UICollectionViewLayoutAttributes *_previousBackgroundAttributes;
-    float _notificationHeight;
-    float _transitionSpacing;
+    CGFloat _notificationHeight;
+    CGFloat _transitionSpacing;
     struct UIEdgeInsets _subActionsInsets;
-    float _subActionPadding;
-    float _subActionHeight;
+    CGFloat _subActionPadding;
+    CGFloat _subActionHeight;
 }
 
-@property(nonatomic) float subActionHeight; // @synthesize subActionHeight=_subActionHeight;
-@property(nonatomic) float subActionPadding; // @synthesize subActionPadding=_subActionPadding;
+@property(nonatomic) CGFloat subActionHeight; // @synthesize subActionHeight=_subActionHeight;
+@property(nonatomic) CGFloat subActionPadding; // @synthesize subActionPadding=_subActionPadding;
 @property(nonatomic) struct UIEdgeInsets subActionsInsets; // @synthesize subActionsInsets=_subActionsInsets;
-@property(nonatomic) float transitionSpacing; // @synthesize transitionSpacing=_transitionSpacing;
-@property(nonatomic) float notificationHeight; // @synthesize notificationHeight=_notificationHeight;
+@property(nonatomic) CGFloat transitionSpacing; // @synthesize transitionSpacing=_transitionSpacing;
+@property(nonatomic) CGFloat notificationHeight; // @synthesize notificationHeight=_notificationHeight;
 - (id)finalLayoutAttributesForDisappearingDecorationElementOfKind:(id)arg1 atIndexPath:(id)arg2;
 - (id)initialLayoutAttributesForAppearingDecorationElementOfKind:(id)arg1 atIndexPath:(id)arg2;
 - (id)finalLayoutAttributesForDisappearingItemAtIndexPath:(id)arg1;

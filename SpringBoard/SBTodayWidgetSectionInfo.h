@@ -11,7 +11,7 @@
 }
 
 - (void)populateReusableView:(id)arg1;
-- (float)heightForReusableViewInTableView:(id)arg1;
+- (CGFloat)heightForReusableViewInTableView:(id)arg1;
 - (Class)reusableViewClass;
 - (id)representedListSection;
 

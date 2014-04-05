@@ -14,7 +14,7 @@
 }
 +(BOOL)shouldHaveAccessoryDiclosure;
 +(CGSize)defaultSize;
-+(float)heightForText:(id)text width:(float)width includeBuffers:(BOOL)buffers;
++(CGFloat)heightForText:(id)text width:(CGFloat)width includeBuffers:(BOOL)buffers;
 -(id)initWithFrame:(CGRect)frame delegate:(id)delegate;
 -(void)dealloc;
 -(void)setOrientation:(int)orientation;

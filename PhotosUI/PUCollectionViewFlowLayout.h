@@ -24,27 +24,27 @@
 	NSIndexPath* _reorderingInsertedIndexPath;
 	UICollectionViewLayoutAttributes* _globalFooterLayoutAttributes;
 	NSIndexPath* globalFooterIndexPath;
-	float globalTopPadding;
-	float globalBottomPadding;
+	CGFloat globalTopPadding;
+	CGFloat globalBottomPadding;
 	NSString* sectionHeaderElementKind;
-	float sectionTopPadding;
+	CGFloat sectionTopPadding;
 	<PUCollectionViewLayoutTransitioningDelegate>* transitioningDelegate;
 	NSSet* _hiddenItemIndexPaths;
-	float _globalFooterHeight;
+	CGFloat _globalFooterHeight;
 
 }
 
 @property (assign,nonatomic,__weak) <PUCollectionViewLayoutTransitioningDelegate> * transitioningDelegate; 
 @property (nonatomic,readonly) NSIndexPath * globalFooterIndexPath; 
-@property (assign,nonatomic) float globalFooterHeight;                                                                  //@synthesize globalFooterHeight=_globalFooterHeight - In the implementation block
-@property (assign,nonatomic) float globalTopPadding; 
-@property (assign,nonatomic) float globalBottomPadding; 
+@property (assign,nonatomic) CGFloat globalFooterHeight;                                                                  //@synthesize globalFooterHeight=_globalFooterHeight - In the implementation block
+@property (assign,nonatomic) CGFloat globalTopPadding; 
+@property (assign,nonatomic) CGFloat globalBottomPadding; 
 @property (nonatomic,copy) NSSet * hiddenItemIndexPaths;                                                                //@synthesize hiddenItemIndexPaths=_hiddenItemIndexPaths - In the implementation block
 @property (nonatomic,copy) NSString * sectionHeaderElementKind; 
-@property (assign,nonatomic) float sectionHeaderHeight; 
-@property (assign,nonatomic) float sectionTopPadding; 
--(void)setSectionHeaderHeight:(float)arg1 ;
--(float)sectionHeaderHeight;
+@property (assign,nonatomic) CGFloat sectionHeaderHeight; 
+@property (assign,nonatomic) CGFloat sectionTopPadding; 
+-(void)setSectionHeaderHeight:(CGFloat)arg1 ;
+-(CGFloat)sectionHeaderHeight;
 -(id)transitioningDelegate;
 -(void)setTransitioningDelegate:(id)arg1 ;
 -(CGSize)collectionViewContentSize;
@@ -60,18 +60,18 @@
 -(id)sectionHeaderElementKind;
 -(void)invalidateLayoutForVerticalScroll;
 -(id)assetIndexPathsForElementsInRect:(CGRect)arg1 ;
--(float)globalFooterHeight;
--(void)setGlobalFooterHeight:(float)arg1 ;
+-(CGFloat)globalFooterHeight;
+-(void)setGlobalFooterHeight:(CGFloat)arg1 ;
 -(id)globalFooterIndexPath;
--(float)globalTopPadding;
--(void)setGlobalTopPadding:(float)arg1 ;
--(float)globalBottomPadding;
--(void)setGlobalBottomPadding:(float)arg1 ;
+-(CGFloat)globalTopPadding;
+-(void)setGlobalTopPadding:(CGFloat)arg1 ;
+-(CGFloat)globalBottomPadding;
+-(void)setGlobalBottomPadding:(CGFloat)arg1 ;
 -(id)hiddenItemIndexPaths;
 -(void)setHiddenItemIndexPaths:(id)arg1 ;
 -(void)setSectionHeaderElementKind:(id)arg1 ;
--(float)sectionTopPadding;
--(void)setSectionTopPadding:(float)arg1 ;
+-(CGFloat)sectionTopPadding;
+-(void)setSectionTopPadding:(CGFloat)arg1 ;
 -(void)beginReorderingItemAtIndexPath:(id)arg1 ;
 -(id)reorderedIndexPath:(id)arg1 ;
 -(void)updateReorderingTargetIndexPath:(id)arg1 ;

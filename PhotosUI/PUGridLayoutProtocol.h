@@ -9,30 +9,30 @@
 
 @protocol PUGridLayoutProtocol <NSObject,PUCollectionViewLayoutDelegating>
 @property (nonatomic,readonly) NSIndexPath * globalFooterIndexPath; 
-@property (assign,nonatomic) float globalFooterHeight; 
-@property (assign,nonatomic) float globalTopPadding; 
-@property (assign,nonatomic) float globalBottomPadding; 
+@property (assign,nonatomic) CGFloat globalFooterHeight; 
+@property (assign,nonatomic) CGFloat globalTopPadding; 
+@property (assign,nonatomic) CGFloat globalBottomPadding; 
 @property (nonatomic,copy) NSSet * hiddenItemIndexPaths; 
 @property (nonatomic,copy) NSString * sectionHeaderElementKind; 
-@property (assign,nonatomic) float sectionHeaderHeight; 
-@property (assign,nonatomic) float sectionTopPadding; 
+@property (assign,nonatomic) CGFloat sectionHeaderHeight; 
+@property (assign,nonatomic) CGFloat sectionTopPadding; 
 @required
--(void)setSectionHeaderHeight:(float)arg1;
--(float)sectionHeaderHeight;
+-(void)setSectionHeaderHeight:(CGFloat)arg1;
+-(CGFloat)sectionHeaderHeight;
 -(id)sectionHeaderElementKind;
 -(void)invalidateLayoutForVerticalScroll;
 -(id)assetIndexPathsForElementsInRect:(CGRect)arg1;
--(float)globalFooterHeight;
--(void)setGlobalFooterHeight:(float)arg1;
+-(CGFloat)globalFooterHeight;
+-(void)setGlobalFooterHeight:(CGFloat)arg1;
 -(id)globalFooterIndexPath;
--(float)globalTopPadding;
--(void)setGlobalTopPadding:(float)arg1;
--(float)globalBottomPadding;
--(void)setGlobalBottomPadding:(float)arg1;
+-(CGFloat)globalTopPadding;
+-(void)setGlobalTopPadding:(CGFloat)arg1;
+-(CGFloat)globalBottomPadding;
+-(void)setGlobalBottomPadding:(CGFloat)arg1;
 -(id)hiddenItemIndexPaths;
 -(void)setHiddenItemIndexPaths:(id)arg1;
 -(void)setSectionHeaderElementKind:(id)arg1;
--(float)sectionTopPadding;
--(void)setSectionTopPadding:(float)arg1;
+-(CGFloat)sectionTopPadding;
+-(void)setSectionTopPadding:(CGFloat)arg1;
 @end
 

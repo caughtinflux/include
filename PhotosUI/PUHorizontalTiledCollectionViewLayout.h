@@ -15,13 +15,13 @@
 @interface PUHorizontalTiledCollectionViewLayout : UICollectionViewLayout {
 
 	PUCollectionViewData* _data;
-	float _interitemSpacing;
+	CGFloat _interitemSpacing;
 	<PUHorizontalTiledCollectionViewLayoutDelegate>* _delegate;
 	UIEdgeInsets _itemsContentInset;
 
 }
 
-@property (assign,nonatomic) float interitemSpacing;                                                         //@synthesize interitemSpacing=_interitemSpacing - In the implementation block
+@property (assign,nonatomic) CGFloat interitemSpacing;                                                         //@synthesize interitemSpacing=_interitemSpacing - In the implementation block
 @property (assign,nonatomic) UIEdgeInsets itemsContentInset;                                                 //@synthesize itemsContentInset=_itemsContentInset - In the implementation block
 @property (assign,nonatomic,__weak) <PUHorizontalTiledCollectionViewLayoutDelegate> * delegate;              //@synthesize delegate=_delegate - In the implementation block
 @property (nonatomic,readonly) BOOL hasReferenceIndexPath; 
@@ -36,17 +36,17 @@
 -(BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)arg1 ;
 -(id)invalidationContextForBoundsChange:(CGRect)arg1 ;
 -(void)invalidateLayoutWithContext:(id)arg1 ;
--(void)setInteritemSpacing:(float)arg1 ;
+-(void)setInteritemSpacing:(CGFloat)arg1 ;
 -(UIEdgeInsets)itemsContentInset;
 -(BOOL)hasReferenceIndexPath;
 -(void)setItemsContentInset:(UIEdgeInsets)arg1 ;
 -(void)invalidateCachedLayout;
--(float)interitemSpacing;
+-(CGFloat)interitemSpacing;
 -(BOOL)_shouldInvalidateCachedLayoutForBoundsChange:(CGRect)arg1 ;
 -(id)_layoutAttributesForItemAtIndexPath:(id)arg1 ;
 -(id)_next:(int)arg1 indexPathsFollowingIndexPath:(id)arg2 direction:(int)arg3 ;
--(BOOL)_updateLayoutData:(id)arg1 inDirection:(int)arg2 outDeltaOriginX:(float*)arg3 ;
--(void)_ensureRect:(CGRect)arg1 inData:(id)arg2 outDeltaOriginX:(float*)arg3 ;
+-(BOOL)_updateLayoutData:(id)arg1 inDirection:(int)arg2 outDeltaOriginX:(CGFloat*)arg3 ;
+-(void)_ensureRect:(CGRect)arg1 inData:(id)arg2 outDeltaOriginX:(CGFloat*)arg3 ;
 -(void)_ensureIndexPath:(id)arg1 inData:(id)arg2 ;
 -(void).cxx_destruct;
 @end

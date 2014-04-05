@@ -13,9 +13,9 @@
 }
 
 + (Class)layerClass;
-@property float lineWidth;
-@property float sharpness;
-@property float offset;
+@property CGFloat lineWidth;
+@property CGFloat sharpness;
+@property CGFloat offset;
 @property struct CGColor *foregroundColor;
 @property BOOL invertsShape;
 @property(copy, nonatomic) NSString *renderMode;

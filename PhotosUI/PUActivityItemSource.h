@@ -25,14 +25,14 @@
 	NSObject<OS_dispatch_semaphore>* _remakingSemaphore;
 	NSString* _remakerTempPath;
 	id _strongSelf;
-	float _remakerProgress;
+	CGFloat _remakerProgress;
 
 }
 
 @property (nonatomic,readonly) PLManagedAsset * asset;              //@synthesize asset=_asset - In the implementation block
 @property (nonatomic,readonly) NSData * data; 
 @property (nonatomic,readonly) NSString * utiType; 
-@property (assign) float remakerProgress;                           //@synthesize remakerProgress=_remakerProgress - In the implementation block
+@property (assign) CGFloat remakerProgress;                           //@synthesize remakerProgress=_remakerProgress - In the implementation block
 -(void)dealloc;
 -(id)data;
 -(id)initWithAsset:(id)arg1 ;
@@ -45,7 +45,7 @@
 -(id)utiType;
 -(void)cleanupForActivityDidComplete;
 -(BOOL)needsVideoRemakerForActivityType:(id)arg1 ;
--(float)remakerProgress;
+-(CGFloat)remakerProgress;
 -(void)_cancelRemaking:(id)arg1 ;
 -(void)videoRemakerDidBeginRemaking:(id)arg1 ;
 -(void)videoRemakerDidEndRemaking:(id)arg1 temporaryPath:(id)arg2 ;
@@ -54,9 +54,9 @@
 -(void)_getData:(id*)arg1 type:(id*)arg2 forActivityType:(id)arg3 ;
 -(BOOL)_videoRemakerNeededForActivityType:(id)arg1 ;
 -(void)_getAssetData:(id*)arg1 type:(id*)arg2 forActivityType:(id)arg3 ;
--(void)_setRemakerProgress:(float)arg1 ;
+-(void)_setRemakerProgress:(CGFloat)arg1 ;
 -(void)prepareItemForActivityType:(id)arg1 ;
--(void)videoRemaker:(id)arg1 progressDidChange:(float)arg2 ;
+-(void)videoRemaker:(id)arg1 progressDidChange:(CGFloat)arg2 ;
 -(void).cxx_destruct;
 @end
 

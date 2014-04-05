@@ -11,21 +11,21 @@
 
 @interface PBSqueezeFilter : PBFilter {
 
-	float lastInputX;
-	float lastInputY;
-	float lastInputRadius;
-	float lastInputScale;
-	float _inputAmount;
+	CGFloat lastInputX;
+	CGFloat lastInputY;
+	CGFloat lastInputRadius;
+	CGFloat lastInputScale;
+	CGFloat _inputAmount;
 	bool firstTime;
 	CGPoint inputPoint;
 
 }
 
 @property (assign) CGPoint inputPoint; 
-@property (@dynamic) float inputAmount; 
+@property (@dynamic) CGFloat inputAmount; 
 -(void)setDefaults;
--(void)setInputAmount:(float)arg1 ;
--(float)inputAmount;
+-(void)setInputAmount:(CGFloat)arg1 ;
+-(CGFloat)inputAmount;
 -(CGPoint)inputPoint;
 -(void)setInputPoint:(CGPoint)arg1 ;
 -(id)ciFilterName;

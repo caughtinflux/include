@@ -11,17 +11,17 @@
 
 @interface PUPhotoStreamDimmingClipView : UIView {
 
-	float _cornerRadius;
+	CGFloat _cornerRadius;
 	CGRect _clipRect;
 
 }
 
 @property (assign,nonatomic) CGRect clipRect;                 //@synthesize clipRect=_clipRect - In the implementation block
-@property (assign,nonatomic) float cornerRadius;              //@synthesize cornerRadius=_cornerRadius - In the implementation block
+@property (assign,nonatomic) CGFloat cornerRadius;              //@synthesize cornerRadius=_cornerRadius - In the implementation block
 -(id)initWithFrame:(CGRect)arg1 ;
 -(void)drawRect:(CGRect)arg1 ;
--(float)cornerRadius;
--(void)setCornerRadius:(float)arg1 ;
+-(CGFloat)cornerRadius;
+-(void)setCornerRadius:(CGFloat)arg1 ;
 -(CGRect)clipRect;
 -(void)setClipRect:(CGRect)arg1 ;
 @end

@@ -36,7 +36,7 @@
 - (void)dismiss;
 - (void)layoutForInterfaceOrientation:(int)arg1;
 - (BOOL)isSupportedInterfaceOrientation:(int)arg1;
-- (float)_lcdYOffset;
+- (CGFloat)_lcdYOffset;
 - (void)dealloc;
 
 @end

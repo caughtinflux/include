@@ -22,7 +22,7 @@
 -(CGRect)minimumValueImageRectForBounds:(CGRect)bounds;
 -(CGRect)maximumValueImageRectForBounds:(CGRect)bounds;
 -(CGRect)trackRectForBounds:(CGRect)bounds;
--(CGRect)thumbRectForBounds:(CGRect)bounds trackRect:(CGRect)rect value:(float)value;
+-(CGRect)thumbRectForBounds:(CGRect)bounds trackRect:(CGRect)rect value:(CGFloat)value;
 -(CGSize)sizeThatFits:(CGSize)fits;
 -(void)setFrame:(CGRect)frame;
 -(void)setBounds:(CGRect)bounds;
@@ -32,8 +32,8 @@
 -(void)setEnabled:(BOOL)enabled;
 -(void)setHighlighted:(BOOL)highlighted;
 -(void)setSelected:(BOOL)selected;
--(void)setValue:(float)value animated:(BOOL)animated;
--(void)_setValue:(float)value andSendAction:(BOOL)action;
+-(void)setValue:(CGFloat)value animated:(BOOL)animated;
+-(void)_setValue:(CGFloat)value andSendAction:(BOOL)action;
 -(void)_sliderAnimationWillStart:(id)_sliderAnimation context:(void*)context;
 -(void)_sliderAnimationDidStop:(id)_sliderAnimation finished:(id)finished context:(void*)context;
 -(void)_sendDelayedActions;

@@ -34,7 +34,7 @@
     BOOL _isBecomingVisible;
 }
 
-- (float)audioLevelForWaveyView:(id)arg1;
+- (CGFloat)audioLevelForWaveyView:(id)arg1;
 - (id)nextSuggestionsForSuggestionsView:(id)arg1 maxSuggestions:(unsigned int)arg2;
 - (void)_keywordsChanged;
 - (void)recognitionSession:(id)arg1 didFinishSpeakingFeedbackStringWithError:(id)arg2;

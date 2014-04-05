@@ -22,7 +22,7 @@
     unsigned int _suppressShadowDrawing:1;
     unsigned int _borderViewIsVisible:1;
     unsigned int _drawsBorder:1;
-    float _aspectRatio;
+    CGFloat _aspectRatio;
     double _lastBorderAlphaTime;
     double _lastShadowAlphaTime;
     double _transitionProgress;
@@ -56,8 +56,8 @@
 - (void)setEdgeAntialiasingEnabled:(_Bool)arg1;
 @property(nonatomic, getter=isDimmed) _Bool dimmed;
 @property(nonatomic) _Bool drawsBorder;
-@property(nonatomic) float borderAndAccessoriesAlpha;
-- (void)setBorderAndAccessoriesAlpha:(float)arg1 forced:(_Bool)arg2;
+@property(nonatomic) CGFloat borderAndAccessoriesAlpha;
+- (void)setBorderAndAccessoriesAlpha:(CGFloat)arg1 forced:(_Bool)arg2;
 - (void)parentDidLayout;
 @property(nonatomic, getter=isBorderAndAccessoriesVisible) _Bool borderAndAccessoriesVisible;
 @property(nonatomic, getter=isShadowEnabled) _Bool shadowEnabled;

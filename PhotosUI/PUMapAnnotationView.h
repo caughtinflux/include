@@ -24,12 +24,12 @@
 
 @property (assign,nonatomic) unsigned count; 
 @property (nonatomic,readonly) PUStackView * stackView;              //@synthesize stackView=_stackView - In the implementation block
-@property (nonatomic,readonly) float sideCapWidth; 
+@property (nonatomic,readonly) CGFloat sideCapWidth; 
 -(unsigned)count;
 -(void)layoutSubviews;
 -(void)setCount:(unsigned)arg1 ;
 -(id)stackView;
--(float)sideCapWidth;
+-(CGFloat)sideCapWidth;
 -(void)updateOrder;
 -(void)configureAnnotationWithSpec:(id)arg1 ;
 -(void)updateLabelForAnnotation:(id)arg1 ;
@@ -37,7 +37,7 @@
 -(id)compactDescription;
 -(void)cleanUpAnimatedState;
 -(BOOL)wouldCoverAnnotationView:(id)arg1 ;
--(void)setAlpha:(float)arg1 nonFrontOnly:(BOOL)arg2 ;
+-(void)setAlpha:(CGFloat)arg1 nonFrontOnly:(BOOL)arg2 ;
 -(void).cxx_destruct;
 @end
 

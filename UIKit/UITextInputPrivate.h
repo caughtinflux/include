@@ -66,7 +66,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 @optional
 -(BOOL)requiresKeyEvents;
 -(void)handleKeyWebEvent:(id)event;
--(void)setBottomBufferHeight:(float)height;
+-(void)setBottomBufferHeight:(CGFloat)height;
 -(id)automaticallySelectedOverlay;
 @end
 

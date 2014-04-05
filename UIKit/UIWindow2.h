@@ -14,7 +14,7 @@
 @interface UIWindow ()
 +(CGRect)constrainFrameToScreen:(CGRect)screen;
 +(id)keyWindow;
-+(void)_noteStatusBarHeightChanged:(float)changed oldHeight:(float)height fence:(int)fence;
++(void)_noteStatusBarHeightChanged:(CGFloat)changed oldHeight:(CGFloat)height fence:(int)fence;
 +(CFDictionaryRef)_ioSurfacePropertyDictionaryForRect:(CGRect)rect;
 +(IOSurfaceRef)createIOSurfaceWithContextId:(unsigned)contextId frame:(CGRect)frame;
 +(IOSurfaceRef)createIOSurfaceWithContextIds:(const unsigned*)contextIds count:(size_t)count frame:(CGRect)frame;
@@ -59,8 +59,8 @@
 -(BOOL)_containedInAbsoluteResponderChain;
 -(CGPoint)convertWindowToDevice:(CGPoint)device;
 -(CGPoint)convertDeviceToWindow:(CGPoint)window;
--(void)setLevel:(float)level;
--(float)level;
+-(void)setLevel:(CGFloat)level;
+-(CGFloat)level;
 -(void)setBecomeKeyOnOrderFront:(BOOL)front;
 -(void)_clearPendingKeyboardChanges;
 -(BOOL)_shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation;
@@ -131,8 +131,8 @@
 -(void)_createContext;
 -(void)_destroyContext;
 -(void)_createContextIfNecessary;
--(float)_contentsScale;
--(void)_setContentsScale:(float)scale;
+-(CGFloat)_contentsScale;
+-(void)_setContentsScale:(CGFloat)scale;
 -(void)_updateInterfaceOrientationFromDeviceOrientation:(BOOL)deviceOrientation;
 -(void)_setRotatableClient:(id)client toOrientation:(int)orientation duration:(double)duration force:(BOOL)force;
 -(void)_finishedFirstHalfRotation:(id)rotation finished:(id)finished context:(id)context;

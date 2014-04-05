@@ -11,8 +11,8 @@
 
 @interface PUAlbumListViewControllerPhoneSpec : PUAlbumListViewControllerSpec
 -(CGSize)stackSize;
--(float)sectionHeaderHeight;
--(float)sectionFooterHeight;
+-(CGFloat)sectionHeaderHeight;
+-(CGFloat)sectionFooterHeight;
 -(CGSize)photoSize;
 -(CGSize)cellSizeForBounds:(CGRect)arg1 ;
 -(id)photosPickerViewControllerSpec;

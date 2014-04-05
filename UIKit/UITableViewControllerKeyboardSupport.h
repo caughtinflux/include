@@ -9,11 +9,11 @@
 
 @interface UITableViewControllerKeyboardSupport : NSObject {
 	UITableViewController* _tableViewController;
-	float _adjustmentForKeyboard;
+	CGFloat _adjustmentForKeyboard;
 	unsigned _viewIsDisappearing : 1;
 	unsigned _registeredForNotifications : 1;
 }
-@property(assign, nonatomic) float adjustmentForKeyboard;
+@property(assign, nonatomic) CGFloat adjustmentForKeyboard;
 @property(assign, nonatomic) BOOL registeredForNotifications;
 @property(assign, nonatomic) BOOL viewIsDisappearing;
 -(id)initWithTableViewController:(id)tableViewController;

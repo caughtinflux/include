@@ -49,7 +49,7 @@
 
 @interface UIGroupTableViewCellBackground (UIGroupTableViewCellBackgroundInternal)
 -(CGContextRef)_createContextForCachingWithFrame:(CGRect)frame isOpaque:(BOOL)opaque;
--(CGRect)_contentRectForContentHeight:(float)contentHeight;
+-(CGRect)_contentRectForContentHeight:(CGFloat)contentHeight;
 -(void)_incrementAnimationCount;
 -(void)_decrementAnimationCount;
 -(id)_backgroundColor;
@@ -62,11 +62,11 @@
 -(id)_topShadowColor;
 -(id)_bottomShadowColor;
 -(void)_updateSeparatorViews;
--(float)_pixelDisplayedImageHeight;
+-(CGFloat)_pixelDisplayedImageHeight;
 -(CGRect)_contentsRect:(BOOL)rect;
 -(CGRect)_contentsCenter:(BOOL)center;
 #else
--(CGImageRef)_cachedImageWithSize:(CGSize)size forBackgroundColor:(id)backgroundColor borderColor:(id)color fillColor:(id)color4 leftPhase:(float)phase rightPhase:(float)phase6 ignoreSectionLocation:(BOOL)location;
+-(CGImageRef)_cachedImageWithSize:(CGSize)size forBackgroundColor:(id)backgroundColor borderColor:(id)color fillColor:(id)color4 leftPhase:(CGFloat)phase rightPhase:(CGFloat)phase6 ignoreSectionLocation:(BOOL)location;
 -(void)_updateSeparatorView;
 -(void)_updateContentsRectAndCenter;
 #endif

@@ -23,11 +23,11 @@
 @property(assign, nonatomic) id delegate;
 +(CGRect)sendButtonFrame:(CGRect)frame;
 +(CGRect)entryFieldBalloonFrame:(CGRect)frame;
-+(float)defaultHeight;
-+(float)defaultWidthInPortrait;
++(CGFloat)defaultHeight;
++(CGFloat)defaultWidthInPortrait;
 -(id)initWithFrame:(CGRect)frame;
 -(void)showFakeEntryView:(BOOL)view;
--(void)fadeToSendingState:(BOOL)sendingState withDuration:(float)duration;
+-(void)fadeToSendingState:(BOOL)sendingState withDuration:(CGFloat)duration;
 -(void)dealloc;
 -(void)send:(id)send;
 -(CKContentEntryView*)entryField;
@@ -39,6 +39,6 @@
 -(void)setIsAnimating:(BOOL)animating;
 -(void)setFinalFrame:(CGRect)frame;
 -(CGRect)finalFrame;
--(BOOL)ckContentEntryViewContentSizeChanged:(id)changed height:(float)height animate:(BOOL)animate;
+-(BOOL)ckContentEntryViewContentSizeChanged:(id)changed height:(CGFloat)height animate:(BOOL)animate;
 @end
 

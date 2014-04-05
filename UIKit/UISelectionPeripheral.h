@@ -40,7 +40,7 @@
 -(int)numberOfComponentsInPickerView:(id)pickerView;
 -(int)pickerView:(id)view numberOfRowsInComponent:(int)component;
 -(void)pickerView:(id)view row:(int)row column:(int)column checked:(BOOL)checked;
--(float)pickerView:(id)view widthForComponent:(int)component;
+-(CGFloat)pickerView:(id)view widthForComponent:(int)component;
 @end
 
 #endif

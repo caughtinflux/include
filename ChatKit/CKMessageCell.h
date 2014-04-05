@@ -10,8 +10,8 @@
 @interface CKMessageCell : UITableViewCell {
 	CKBalloonView* _balloonView;
 	UIButton* _failedButton;
-	float _topPadding;
-	float _bottomPadding;
+	CGFloat _topPadding;
+	CGFloat _bottomPadding;
 	id _replacementMessageBubbleData;
 }
 @property(readonly, assign, nonatomic) CKBalloonView* balloonView;
@@ -28,7 +28,7 @@
 -(id)_multiselectBackgroundColor;
 -(void)addBalloonView:(id)view;
 -(void)setFailed:(BOOL)failed;
--(void)setTopPadding:(float)padding bottomPadding:(float)padding2;
+-(void)setTopPadding:(CGFloat)padding bottomPadding:(CGFloat)padding2;
 -(void)_failPressed:(id)pressed;
 -(void)didTapBalloon:(id)balloon;
 -(void)_resetBalloonFrame;

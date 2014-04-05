@@ -11,8 +11,8 @@
 @interface PLProgressStack : NSObject
 {
     _Bool notifyUsingAssetsdNotificationCenter;
-    float currentMultiplier;
-    float currentTotal;
+    CGFloat currentMultiplier;
+    CGFloat currentTotal;
     id delegate;
     NSMutableArray *multipliers;
     NSString *mediaPathString;
@@ -21,18 +21,18 @@
 + (id)unarchiveFromDictionary:(id)arg1;
 @property(retain, nonatomic) NSString *mediaPathString; // @synthesize mediaPathString;
 @property(nonatomic) _Bool notifyUsingAssetsdNotificationCenter; // @synthesize notifyUsingAssetsdNotificationCenter;
-@property(nonatomic) float currentTotal; // @synthesize currentTotal;
+@property(nonatomic) CGFloat currentTotal; // @synthesize currentTotal;
 @property(retain, nonatomic) NSMutableArray *multipliers; // @synthesize multipliers;
-@property(nonatomic) float currentMultiplier; // @synthesize currentMultiplier;
+@property(nonatomic) CGFloat currentMultiplier; // @synthesize currentMultiplier;
 @property(nonatomic) id delegate; // @synthesize delegate;
 - (id)archiveToDictionary;
 - (void)setCurrentMediaPath:(id)arg1;
 - (void)popAndUpdate;
-- (void)updateProgress:(float)arg1;
+- (void)updateProgress:(CGFloat)arg1;
 - (void)dealloc;
-- (float)totalProgress:(float)arg1;
+- (CGFloat)totalProgress:(CGFloat)arg1;
 - (void)pop;
-- (void)push:(float)arg1;
+- (void)push:(CGFloat)arg1;
 - (id)initWithDelegate:(id)arg1;
 
 @end

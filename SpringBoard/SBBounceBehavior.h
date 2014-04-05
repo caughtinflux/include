@@ -12,8 +12,8 @@
 
 @interface SBBounceBehavior : UIDynamicBehavior <UICollisionBehaviorDelegate>
 {
-    float _midwayPosition;
-    float _completionThreshold;
+    CGFloat _midwayPosition;
+    CGFloat _completionThreshold;
     struct CGRect _targetFrame;
     id <UIDynamicItem> _item;
     UIDynamicItemBehavior *_bodyBehavior;
@@ -22,40 +22,40 @@
     UIDynamicItemBehavior *_pushBehavior;
     UIAttachmentBehavior *_draggingBehavior;
     id <SBBounceBehaviorDelegate> _delegate;
-    float _gravity;
-    float _velocity;
-    float _elasticity;
-    float _friction;
-    float _resistance;
-    float _minVelocityToAssist;
-    float _maxVelocityToAssist;
-    float _maxVelocityAssistance;
+    CGFloat _gravity;
+    CGFloat _velocity;
+    CGFloat _elasticity;
+    CGFloat _friction;
+    CGFloat _resistance;
+    CGFloat _minVelocityToAssist;
+    CGFloat _maxVelocityToAssist;
+    CGFloat _maxVelocityAssistance;
     struct UIEdgeInsets _boundaryInsets;
 }
 
 @property(nonatomic) struct UIEdgeInsets boundaryInsets; // @synthesize boundaryInsets=_boundaryInsets;
-@property(nonatomic) float maxVelocityAssistance; // @synthesize maxVelocityAssistance=_maxVelocityAssistance;
-@property(nonatomic) float maxVelocityToAssist; // @synthesize maxVelocityToAssist=_maxVelocityToAssist;
-@property(nonatomic) float minVelocityToAssist; // @synthesize minVelocityToAssist=_minVelocityToAssist;
-@property(nonatomic) float resistance; // @synthesize resistance=_resistance;
-@property(nonatomic) float friction; // @synthesize friction=_friction;
-@property(nonatomic) float elasticity; // @synthesize elasticity=_elasticity;
-@property(nonatomic) float velocity; // @synthesize velocity=_velocity;
-@property(nonatomic) float gravity; // @synthesize gravity=_gravity;
+@property(nonatomic) CGFloat maxVelocityAssistance; // @synthesize maxVelocityAssistance=_maxVelocityAssistance;
+@property(nonatomic) CGFloat maxVelocityToAssist; // @synthesize maxVelocityToAssist=_maxVelocityToAssist;
+@property(nonatomic) CGFloat minVelocityToAssist; // @synthesize minVelocityToAssist=_minVelocityToAssist;
+@property(nonatomic) CGFloat resistance; // @synthesize resistance=_resistance;
+@property(nonatomic) CGFloat friction; // @synthesize friction=_friction;
+@property(nonatomic) CGFloat elasticity; // @synthesize elasticity=_elasticity;
+@property(nonatomic) CGFloat velocity; // @synthesize velocity=_velocity;
+@property(nonatomic) CGFloat gravity; // @synthesize gravity=_gravity;
 @property(nonatomic) id <SBBounceBehaviorDelegate> delegate; // @synthesize delegate=_delegate;
 - (void)collisionBehavior:(id)arg1 beganContactForItem:(id)arg2 withBoundaryIdentifier:(id)arg3 atPoint:(struct CGPoint)arg4;
 - (BOOL)allowsAnimatorToStop;
-- (float)_maxVelocityToAssist;
-- (float)_minVelocityToAssist;
-- (float)_velocityAssistance;
-- (BOOL)_shouldAssistWithVelocity:(float)arg1;
-- (float)_adjustedVelocity:(float)arg1;
-- (float)_itemOriginY;
+- (CGFloat)_maxVelocityToAssist;
+- (CGFloat)_minVelocityToAssist;
+- (CGFloat)_velocityAssistance;
+- (BOOL)_shouldAssistWithVelocity:(CGFloat)arg1;
+- (CGFloat)_adjustedVelocity:(CGFloat)arg1;
+- (CGFloat)_itemOriginY;
 - (BOOL)_itemStopped;
 - (BOOL)_itemCompleted;
 - (BOOL)_itemPastMidway;
-- (float)_percentRemaining;
-- (float)_percentComplete;
+- (CGFloat)_percentRemaining;
+- (CGFloat)_percentComplete;
 - (void)_removeDraggingBehavior;
 - (void)_beginInteraction;
 - (void)finishInteraction;

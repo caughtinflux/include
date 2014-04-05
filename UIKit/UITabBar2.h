@@ -46,13 +46,13 @@
 @end
 
 @interface UITabBar (UITabBarInternal)
-+(float)_buttonGap;
--(void)_alertWillShow:(BOOL)_alert duration:(float)duration;
++(CGFloat)_buttonGap;
+-(void)_alertWillShow:(BOOL)_alert duration:(CGFloat)duration;
 -(void)_alertDidHide;
 @end
 
 @interface UITabBar (UITabBarPrivate)
-+(float)defaultHeightForBarSize:(int)barSize;
++(CGFloat)defaultHeightForBarSize:(int)barSize;
 -(void)_tabBarFinishedAnimating;
 -(void)dismissCustomizeSheet:(BOOL)sheet;
 -(id)hitTest:(CGPoint)test withEvent:(id)event;

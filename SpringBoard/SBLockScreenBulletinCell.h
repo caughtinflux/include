@@ -10,8 +10,8 @@
 {
 }
 
-+ (float)paddingBetweenTitleAndRelevanceDate;
-+ (float)rowHeightForTitle:(id)arg1 subtitle:(id)arg2 body:(id)arg3 maxLines:(unsigned int)arg4 attachmentSize:(struct CGSize)arg5 datesVisible:(BOOL)arg6 rowWidth:(float)arg7 includeUnlockActionText:(BOOL)arg8;
++ (CGFloat)paddingBetweenTitleAndRelevanceDate;
++ (CGFloat)rowHeightForTitle:(id)arg1 subtitle:(id)arg2 body:(id)arg3 maxLines:(unsigned int)arg4 attachmentSize:(struct CGSize)arg5 datesVisible:(BOOL)arg6 rowWidth:(CGFloat)arg7 includeUnlockActionText:(BOOL)arg8;
 
 @end
 

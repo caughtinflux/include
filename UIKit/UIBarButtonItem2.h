@@ -59,8 +59,8 @@
 @property(assign, nonatomic) BOOL _shouldBezelImage;
 -(id)createViewForNavigationItem:(id)navigationItem;
 -(id)createViewForToolbar:(id)toolbar;
--(void)_setWidth:(float)width;
--(float)_width;
+-(void)_setWidth:(CGFloat)width;
+-(CGFloat)_width;
 #endif
 @end
 

@@ -12,26 +12,26 @@
 @interface PBKaleidoscopeFilter : PBFilter {
 
 	bool firstTime;
-	float _inputAmount;
-	float lastInputX;
-	float lastInputY;
-	float lastInputSize;
-	float lastInputDecay;
-	float lastInputRotation;
-	float inputRotation;
+	CGFloat _inputAmount;
+	CGFloat lastInputX;
+	CGFloat lastInputY;
+	CGFloat lastInputSize;
+	CGFloat lastInputDecay;
+	CGFloat lastInputRotation;
+	CGFloat inputRotation;
 	CGPoint inputPoint;
 
 }
 
 @property (assign) CGPoint inputPoint; 
-@property (@dynamic) float inputAmount; 
-@property (assign) float inputRotation; 
+@property (@dynamic) CGFloat inputAmount; 
+@property (assign) CGFloat inputRotation; 
 -(void)setDefaults;
--(void)setInputAmount:(float)arg1 ;
--(float)inputAmount;
+-(void)setInputAmount:(CGFloat)arg1 ;
+-(CGFloat)inputAmount;
 -(CGPoint)inputPoint;
--(void)setInputRotation:(float)arg1 ;
--(float)inputRotation;
+-(void)setInputRotation:(CGFloat)arg1 ;
+-(CGFloat)inputRotation;
 -(void)setInputPoint:(CGPoint)arg1 ;
 -(id)ciFilterName;
 -(BOOL)needsWrapMirror;

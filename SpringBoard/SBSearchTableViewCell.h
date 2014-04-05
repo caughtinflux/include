@@ -32,10 +32,10 @@
     BOOL _shouldKnockoutImage;
 }
 
-+ (float)summaryBaselineOriginForContentSizeCategory:(id)arg1;
-+ (float)subtitleBaselineOriginForContentSizeCategory:(id)arg1;
-+ (float)titleBaselineOriginForContentSizeCategory:(id)arg1;
-+ (float)rowHeightForPreferredContentSizeWithNumberOfSummaryLines:(int)arg1;
++ (CGFloat)summaryBaselineOriginForContentSizeCategory:(id)arg1;
++ (CGFloat)subtitleBaselineOriginForContentSizeCategory:(id)arg1;
++ (CGFloat)titleBaselineOriginForContentSizeCategory:(id)arg1;
++ (CGFloat)rowHeightForPreferredContentSizeWithNumberOfSummaryLines:(int)arg1;
 + (void)resetContentSizeCache;
 + (id)starImage;
 + (id)unreadImage;

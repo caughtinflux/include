@@ -15,7 +15,7 @@
 	BOOL _canDisplayMultipleRightBarButtonItems;
 	PUPhotosGridViewControllerSpec* _gridSpec;
 	int _magnifiedImageFormat;
-	float _magnifiedYOffset;
+	CGFloat _magnifiedYOffset;
 	int _fullMomentsLevelThumbnailFormat;
 	int _fullMomentsSectionHeaderStyle;
 	int _collectionsSectionHeaderStyle;
@@ -35,7 +35,7 @@
 @property (nonatomic,readonly) BOOL canDisplayMultipleRightBarButtonItems;                            //@synthesize canDisplayMultipleRightBarButtonItems=_canDisplayMultipleRightBarButtonItems - In the implementation block
 @property (nonatomic,readonly) int magnifiedImageFormat;                                              //@synthesize magnifiedImageFormat=_magnifiedImageFormat - In the implementation block
 @property (nonatomic,readonly) CGSize magnifiedImageSize;                                             //@synthesize magnifiedImageSize=_magnifiedImageSize - In the implementation block
-@property (assign,nonatomic) float magnifiedYOffset;                                                  //@synthesize magnifiedYOffset=_magnifiedYOffset - In the implementation block
+@property (assign,nonatomic) CGFloat magnifiedYOffset;                                                  //@synthesize magnifiedYOffset=_magnifiedYOffset - In the implementation block
 @property (assign,nonatomic) UIEdgeInsets magnifiedDragEdgeInsets;                                    //@synthesize magnifiedDragEdgeInsets=_magnifiedDragEdgeInsets - In the implementation block
 @property (nonatomic,readonly) int fullMomentsLevelThumbnailFormat;                                   //@synthesize fullMomentsLevelThumbnailFormat=_fullMomentsLevelThumbnailFormat - In the implementation block
 @property (nonatomic,readonly) UIEdgeInsets fullMomentsLevelSectionHeaderContentInset;                //@synthesize fullMomentsLevelSectionHeaderContentInset=_fullMomentsLevelSectionHeaderContentInset - In the implementation block
@@ -56,20 +56,20 @@
 -(CGSize)magnifiedImageSize;
 -(UIEdgeInsets)magnifiedDragEdgeInsets;
 -(void)setMagnifiedDragEdgeInsets:(UIEdgeInsets)arg1 ;
--(void)configureFullMomentsLevelGridLayout:(id)arg1 forWidth:(float)arg2 ;
+-(void)configureFullMomentsLevelGridLayout:(id)arg1 forWidth:(CGFloat)arg2 ;
 -(int)fullMomentsSectionHeaderStyle;
 -(unsigned)fullMomentsSectionHeaderBackgroundStyle;
 -(UIEdgeInsets)fullMomentsLevelSectionHeaderContentInset;
 -(UIEdgeInsets)fullMomentsLevelSectionHeaderHighlightInset;
 -(int)fullMomentsLevelThumbnailFormat;
 -(int)yearsLevelThumbnailFormat;
--(void)configureYearsLevelGridLayout:(id)arg1 forWidth:(float)arg2 ;
+-(void)configureYearsLevelGridLayout:(id)arg1 forWidth:(CGFloat)arg2 ;
 -(int)yearsSectionHeaderStyle;
 -(unsigned)yearsSectionHeaderBackgroundStyle;
 -(UIEdgeInsets)yearsLevelSectionHeaderContentInset;
 -(UIEdgeInsets)yearsLevelSectionHeaderHighlightInset;
 -(int)collectionsLevelThumbnailFormat;
--(void)configureCollectionsLevelGridLayout:(id)arg1 forWidth:(float)arg2 ;
+-(void)configureCollectionsLevelGridLayout:(id)arg1 forWidth:(CGFloat)arg2 ;
 -(int)collectionsSectionHeaderStyle;
 -(unsigned)collectionsSectionHeaderBackgroundStyle;
 -(UIEdgeInsets)collectionsLevelSectionHeaderContentInset;
@@ -79,8 +79,8 @@
 -(void)_setGridSpec:(id)arg1 ;
 -(BOOL)canDisplayMultipleRightBarButtonItems;
 -(int)magnifiedImageFormat;
--(float)magnifiedYOffset;
--(void)setMagnifiedYOffset:(float)arg1 ;
+-(CGFloat)magnifiedYOffset;
+-(void)setMagnifiedYOffset:(CGFloat)arg1 ;
 -(void).cxx_destruct;
 @end
 

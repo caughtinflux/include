@@ -9,8 +9,8 @@
 
 @interface UITableViewCellLayoutManagerSubtitle : UITableViewCellLayoutManager {
 }
--(float)defaultTextLabelFontSizeForCell:(id)cell;
--(float)defaultDetailTextLabelFontSizeForCell:(id)cell;
+-(CGFloat)defaultTextLabelFontSizeForCell:(id)cell;
+-(CGFloat)defaultDetailTextLabelFontSizeForCell:(id)cell;
 -(id)imageViewForCell:(id)cell;
 -(id)textLabelForCell:(id)cell;
 -(id)detailTextLabelForCell:(id)cell;

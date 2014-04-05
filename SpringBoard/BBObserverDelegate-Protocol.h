@@ -9,7 +9,7 @@
 @protocol BBObserverDelegate <NSObject>
 
 @optional
-- (struct CGSize)observer:(id)arg1 composedAttachmentSizeForType:(int)arg2 thumbnailWidth:(float)arg3 height:(float)arg4 key:(id)arg5;
+- (struct CGSize)observer:(id)arg1 composedAttachmentSizeForType:(int)arg2 thumbnailWidth:(CGFloat)arg3 height:(CGFloat)arg4 key:(id)arg5;
 - (id)observer:(id)arg1 composedAttachmentImageForType:(int)arg2 thumbnailData:(id)arg3 key:(id)arg4;
 - (id)observer:(id)arg1 multipleThumbnailSizeConstraintsForAttachmentType:(int)arg2;
 - (id)observer:(id)arg1 thumbnailSizeConstraintsForAttachmentType:(int)arg2;

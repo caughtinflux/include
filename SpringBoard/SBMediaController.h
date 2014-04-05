@@ -12,7 +12,7 @@
 {
     int _manualVolumeChangeCount;
     NSDictionary *_nowPlayingInfo;
-    float _pendingVolumeChange;
+    CGFloat _pendingVolumeChange;
     NSTimer *_volumeCommitTimer;
     BOOL _debounceVolumeRepeat;
     int _numberOfVolumeDecreasesSinceDownButtonDown;
@@ -59,13 +59,13 @@
 - (void)cancelVolumeEvent;
 - (void)decreaseVolume;
 - (void)increaseVolume;
-- (float)_calcButtonRepeatDelay;
-- (void)_changeVolumeBy:(float)arg1;
+- (CGFloat)_calcButtonRepeatDelay;
+- (void)_changeVolumeBy:(CGFloat)arg1;
 - (BOOL)lastSavedRingerMutedState;
 @property(nonatomic, getter=isRingerMuted) BOOL ringerMuted;
 - (BOOL)muted;
-- (void)setVolume:(float)arg1;
-- (float)volume;
+- (void)setVolume:(CGFloat)arg1;
+- (CGFloat)volume;
 - (BOOL)setPlaybackSpeed:(int)arg1;
 - (BOOL)toggleShuffle;
 - (BOOL)toggleRepeat;
@@ -87,7 +87,7 @@
 - (id)mediaControlsDestinationApp;
 - (id)nowPlayingApplication;
 - (BOOL)trackIsBeingPlayedByMusicApp;
-- (void)setCurrentTrackTime:(float)arg1;
+- (void)setCurrentTrackTime:(CGFloat)arg1;
 - (double)trackElapsedTime;
 - (id)artwork;
 - (double)trackDuration;

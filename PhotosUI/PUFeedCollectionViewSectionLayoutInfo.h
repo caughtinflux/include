@@ -15,7 +15,7 @@
 	BOOL _hidden;
 	NSArray* _fixedLayoutAttributes;
 	NSArray* _tileLayoutAttributes;
-	NSArray* _floatingLayoutAttributes;
+	NSArray* _CGFloatingLayoutAttributes;
 	int _sectionType;
 	int _previousVisibleSection;
 	int _nextVisibleSection;
@@ -38,7 +38,7 @@
 @property (assign,nonatomic) UIEdgeInsets margins;                            //@synthesize margins=_margins - In the implementation block
 @property (nonatomic,retain) NSArray * fixedLayoutAttributes;                 //@synthesize fixedLayoutAttributes=_fixedLayoutAttributes - In the implementation block
 @property (nonatomic,retain) NSArray * tileLayoutAttributes;                  //@synthesize tileLayoutAttributes=_tileLayoutAttributes - In the implementation block
-@property (nonatomic,retain) NSArray * floatingLayoutAttributes;              //@synthesize floatingLayoutAttributes=_floatingLayoutAttributes - In the implementation block
+@property (nonatomic,retain) NSArray * CGFloatingLayoutAttributes;              //@synthesize CGFloatingLayoutAttributes=_CGFloatingLayoutAttributes - In the implementation block
 @property (assign,getter=isHidden,nonatomic) BOOL hidden;                     //@synthesize hidden=_hidden - In the implementation block
 @property (assign,nonatomic) int sectionType;                                 //@synthesize sectionType=_sectionType - In the implementation block
 @property (assign,nonatomic) int previousVisibleSection;                      //@synthesize previousVisibleSection=_previousVisibleSection - In the implementation block
@@ -58,7 +58,7 @@
 -(CGPoint)origin;
 -(void)setOrigin:(CGPoint)arg1 ;
 -(int)sectionType;
--(id)floatingLayoutAttributes;
+-(id)CGFloatingLayoutAttributes;
 -(id)fixedLayoutAttributes;
 -(int)firstJoinedSection;
 -(int)lastJoinedSection;

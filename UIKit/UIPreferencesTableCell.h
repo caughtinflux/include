@@ -37,7 +37,7 @@
 }
 +(id)defaultTitleFont;
 +(Class)valueTextLabelClass;
--(float)_cellInset;
+-(CGFloat)_cellInset;
 -(CGRect)buttonBounds;
 -(CGRect)contentBounds;
 -(id)enclosingPreferencesTable;
@@ -51,7 +51,7 @@
 -(void)_unhighlight;
 -(void)mouseUp:(GSEventRef)up;
 -(void)mouseDown:(GSEventRef)down;
--(void)_createBezierPathWithCornerRadius:(float)cornerRadius bottomRadius:(float)radius animating:(BOOL)animating;
+-(void)_createBezierPathWithCornerRadius:(CGFloat)cornerRadius bottomRadius:(CGFloat)radius animating:(BOOL)animating;
 -(void)setNeedsDisplay;
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;
@@ -59,7 +59,7 @@
 -(void)_invalidatePaths;
 -(void)setDrawsBackground:(BOOL)background;
 -(void)setFrame:(CGRect)frame;
--(void)drawBackgroundInRect:(CGRect)rect withFade:(float)fade;
+-(void)drawBackgroundInRect:(CGRect)rect withFade:(CGFloat)fade;
 -(CGContextRef)_createContextForCaching;
 -(CGImageRef)_createCachedPrefImage;
 -(CGImageRef)_cachedBackgroundImage;
@@ -69,7 +69,7 @@
 -(void)_removeContextFromSuperview:(id)superview finished:(id)finished context:(id)context;
 -(void)_removeContextFromSuperviewAndRedislaySelf:(id)superviewAndRedislaySelf finished:(id)finished context:(id)context;
 -(id)_copyBackgroundButtonViewWithFrame:(CGRect)frame;
--(float)removeButtonAnimationDuration;
+-(CGFloat)removeButtonAnimationDuration;
 -(void)_animateRemoveControlVisible:(BOOL)visible;
 -(void)_updateButtonSizeForRemoveControlVisible:(BOOL)removeControlVisible animated:(BOOL)animated;
 -(void)removeControlWillShowRemoveButton:(id)removeControl animated:(BOOL)animated;
@@ -83,7 +83,7 @@
 -(id)value;
 -(void)setTruncatesTitleBeforeValue:(BOOL)value;
 -(BOOL)truncatesTitleBeforeValue;
--(float)disclosureRightMargin;
+-(CGFloat)disclosureRightMargin;
 -(id)hitTest:(CGPoint)test forEvent:(GSEventRef)event;
 -(void)setTarget:(id)target;
 -(id)target;

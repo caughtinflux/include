@@ -23,7 +23,7 @@
     id <SBStarkAutoHideControlBarDelegate> _autoHideDelegate;
 }
 
-+ (float)desiredHeightForBounds:(struct CGRect)arg1;
++ (CGFloat)desiredHeightForBounds:(struct CGRect)arg1;
 @property(retain, nonatomic) SBStarkFakeIconOperationController *fakeIconOperationController; // @synthesize fakeIconOperationController=_fakeIconOperationController;
 @property(nonatomic) id <SBStarkAutoHideControlBarDelegate> autoHideDelegate; // @synthesize autoHideDelegate=_autoHideDelegate;
 @property(readonly, nonatomic) SBStarkIconListModel *iconList; // @synthesize iconList=_iconList;
@@ -36,7 +36,7 @@
 - (id)iconBadgeNumberOrString:(id)arg1;
 - (int)iconAccessoryType:(id)arg1;
 - (BOOL)iconProgressIsPaused:(id)arg1;
-- (float)iconProgressPercent:(id)arg1;
+- (CGFloat)iconProgressPercent:(id)arg1;
 - (int)iconProgressState:(id)arg1;
 - (BOOL)iconAppearsInNewsstand:(id)arg1;
 - (BOOL)iconCanEllipsizeLabel:(id)arg1;
@@ -68,7 +68,7 @@
 - (id)initWithNibName:(id)arg1 bundle:(id)arg2;
 
 // Remaining properties
-@property(nonatomic) float height; // @dynamic height;
+@property(nonatomic) CGFloat height; // @dynamic height;
 
 @end
 

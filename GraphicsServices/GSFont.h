@@ -92,8 +92,8 @@ extern "C" {
 	 @brief Set to use legacy font metrics or not.
 	 
 	 The setting will apply when you create a GSFont. The difference between using legacy metrics or not is that, with
-	 the modern metrics, most floating point operations are single precision, and float-to-int operations are rounded up
-	 (ceiling), while for legacy metrics there are more double precision operations and floating points are rounded to the
+	 the modern metrics, most CGFloating point operations are single precision, and CGFloat-to-int operations are rounded up
+	 (ceiling), while for legacy metrics there are more double precision operations and CGFloating points are rounded to the
 	 nearest integers (floor(0.5+x)). There may be some other differences in the algorithm.
 	 */
 	void GSFontSetUseLegacyFontMetrics(Boolean useLegacyFontMetrics);

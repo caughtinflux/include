@@ -352,13 +352,13 @@ extern NSString *WebViewProgressFinishedNotification;
     @abstract Change the size of the text rendering in views managed by this webView.
     @param multiplier A fractional percentage value, 1.0 is 100%.
 */    
-- (void)setTextSizeMultiplier:(float)multiplier;
+- (void)setTextSizeMultiplier:(CGFloat)multiplier;
 
 /*!
     @method textSizeMultiplier
     @result The text size multipler.
 */    
-- (float)textSizeMultiplier;
+- (CGFloat)textSizeMultiplier;
 
 /*!
     @method setApplicationNameForUserAgent:

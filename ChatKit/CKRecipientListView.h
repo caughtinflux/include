@@ -22,7 +22,7 @@
 -(void)dealloc;
 -(void)layoutSubviews;
 -(void)setExpanded:(BOOL)expanded animate:(BOOL)animate;
--(float)heightWithoutSeparator;
+-(CGFloat)heightWithoutSeparator;
 -(void)addressAtomClicked:(id)clicked;
 -(void)atomListView:(id)view sizeDidChange:(CGSize)size;
 -(void)_clearToField;

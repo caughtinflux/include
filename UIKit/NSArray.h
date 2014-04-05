@@ -8,9 +8,9 @@
 
 
 @interface NSArray (UIStringDrawingPrivate)
--(CGSize)_drawComponentsJoinedByString:(id)string atPoint:(CGPoint*)point forWidth:(float)width withFont:(id)font lineBreakMode:(int)mode;
--(CGSize)sizeOfComponentsJoinedByString:(id)componentsJoinedByString withFont:(id)font forWidth:(float)width lineBreakMode:(int)mode;
--(CGSize)drawComponentsJoinedByString:(id)string atPoint:(CGPoint)point forWidth:(float)width withFont:(id)font lineBreakMode:(int)mode;
+-(CGSize)_drawComponentsJoinedByString:(id)string atPoint:(CGPoint*)point forWidth:(CGFloat)width withFont:(id)font lineBreakMode:(int)mode;
+-(CGSize)sizeOfComponentsJoinedByString:(id)componentsJoinedByString withFont:(id)font forWidth:(CGFloat)width lineBreakMode:(int)mode;
+-(CGSize)drawComponentsJoinedByString:(id)string atPoint:(CGPoint)point forWidth:(CGFloat)width withFont:(id)font lineBreakMode:(int)mode;
 @end
 
 @interface NSArray (UICollectionAdditions_Performance)

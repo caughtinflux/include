@@ -13,7 +13,7 @@
     NSHashTable *_disableAlphaChangeAssertions;
     NSMutableOrderedSet *_windowLevelOverrideReasons;
     NSMutableDictionary *_windowLevelOverrideMap;
-    float _defaultWindowLevel;
+    CGFloat _defaultWindowLevel;
 }
 
 + (id)sharedInstance;
@@ -21,9 +21,9 @@
 - (void)_addDisableAppStatusBarAlphaChangesAssertion:(id)arg1;
 - (void)_updateWindowLevel;
 - (void)removeWindowLevelOverrideReason:(id)arg1;
-- (void)setWindowLevel:(float)arg1 forOverrideReason:(id)arg2;
-- (void)setDefaultWindowLevel:(float)arg1;
-- (void)setStatusBarAlpha:(float)arg1;
+- (void)setWindowLevel:(CGFloat)arg1 forOverrideReason:(id)arg2;
+- (void)setDefaultWindowLevel:(CGFloat)arg1;
+- (void)setStatusBarAlpha:(CGFloat)arg1;
 - (void)hideStatusBar;
 - (void)showStatusBar;
 - (BOOL)isStatusBarHidden;

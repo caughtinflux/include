@@ -28,7 +28,7 @@
 -(BOOL)_supportsAdvancedTransitionAnimations;
 -(UIOffset)sharingBadgeOffset;
 -(id)zoomingCellIndexPath;
--(CGRect)_floatingSelectionBadgeFrameForItemFrame:(CGRect)arg1 visibleItemFrame:(CGRect)arg2 atIndexPath:(id)arg3 ;
+-(CGRect)_CGFloatingSelectionBadgeFrameForItemFrame:(CGRect)arg1 visibleItemFrame:(CGRect)arg2 atIndexPath:(id)arg3 ;
 -(id)_badgeLayoutAttributesForItemLayoutAttributes:(id)arg1 ;
 -(void)setZoomingCellIndexPath:(id)arg1 ;
 -(void)setSharingBadgeOffset:(UIOffset)arg1 ;

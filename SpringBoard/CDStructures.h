@@ -13,7 +13,7 @@ struct SBBannerDismissGestureState {
     struct CGSize _field4;
     struct CGRect _field5;
     int _field6;
-    float _field7;
+    CGFloat _field7;
     char _field8;
 };
 
@@ -23,8 +23,8 @@ typedef struct SBIconCoordinate {
 } SBIconCoordinate;
 
 struct SBWindowLevelRange_struct {
-    float start;
-    float end;
+    CGFloat start;
+    CGFloat end;
 };
 
 #pragma mark Typedef'd Structures
@@ -94,21 +94,21 @@ typedef struct {
     char _field2;
     char _field3;
     char _field4;
-    float _field5;
+    CGFloat _field5;
     int _field6;
 } CDStruct_af7d35ee;
 
 typedef struct {
-    float x;
-    float y;
-    float scale;
-    float rotate;
+    CGFloat x;
+    CGFloat y;
+    CGFloat scale;
+    CGFloat rotate;
 } CDStruct_812d5f7b;
 
 typedef struct {
     int startStyle;
     int endStyle;
-    float transitionFraction;
+    CGFloat transitionFraction;
 } CDStruct_04b3617e;
 
 typedef struct {
@@ -130,7 +130,7 @@ typedef struct {
     struct CGPoint previousLocation;
     struct CGPoint unrotatedLocation;
     struct CGPoint previousUnrotatedLocation;
-    float totalDistanceTraveled;
+    CGFloat totalDistanceTraveled;
     int interfaceOrientation;
     int previousInterfaceOrientation;
     double timestamp;

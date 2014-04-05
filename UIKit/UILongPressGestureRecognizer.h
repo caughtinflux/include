@@ -36,14 +36,14 @@
 	BOOL _gotTooMany;
 	int _numberOfFingers;
 	double _delay;
-	float _allowableMovement;
+	CGFloat _allowableMovement;
 	CGPoint _startPointScreen;
 	UIDelayedAction* _enoughTimeElapsed;
 	id<UILongPressGestureRecognizerDelegate> _delegate;
 }
 @property(retain, nonatomic) NSArray* touches;
 @property(assign, nonatomic) int numberOfFingers;
-@property(assign, nonatomic) float allowableMovement;
+@property(assign, nonatomic) CGFloat allowableMovement;
 @property(assign, nonatomic) double delay;
 #endif
 @property(readonly, assign, nonatomic) CGPoint centroid;

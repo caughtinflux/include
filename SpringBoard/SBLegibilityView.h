@@ -22,7 +22,7 @@
 - (void)setSettings:(id)arg1 image:(id)arg2 shadowImage:(id)arg3;
 - (BOOL)pointInside:(struct CGPoint)arg1 withEvent:(id)arg2;
 - (void)dealloc;
-- (id)initWithSettings:(id)arg1 strength:(float)arg2 image:(id)arg3 tintColor:(int)arg4;
+- (id)initWithSettings:(id)arg1 strength:(CGFloat)arg2 image:(id)arg3 tintColor:(int)arg4;
 
 @end
 

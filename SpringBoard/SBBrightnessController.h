@@ -18,10 +18,10 @@
 - (void)handleBrightnessEvent:(struct __IOHIDEvent *)arg1;
 - (void)decreaseBrightnessAndRepeat;
 - (void)increaseBrightnessAndRepeat;
-- (void)setBrightnessLevel:(float)arg1;
-- (void)_setBrightnessLevel:(float)arg1 showHUD:(BOOL)arg2;
+- (void)setBrightnessLevel:(CGFloat)arg1;
+- (void)_setBrightnessLevel:(CGFloat)arg1 showHUD:(BOOL)arg2;
 - (void)adjustBacklightLevel:(BOOL)arg1;
-- (float)_calcButtonRepeatDelay;
+- (CGFloat)_calcButtonRepeatDelay;
 
 @end
 

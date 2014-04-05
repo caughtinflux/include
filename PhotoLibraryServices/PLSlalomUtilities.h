@@ -11,13 +11,13 @@
 }
 
 + (id)audioMixForScaledComposition:(id)arg1 timeRangeMapper:(id)arg2;
-+ (CDStruct_3c1748cc)_timeRangeFromTime:(float)arg1 toTime:(float)arg2;
-+ (id)_setVolume:(float)arg1 forSlalomRegionsInTrack:(id)arg2 timeRangeMapper:(id)arg3;
-+ (float)_slalomRampVolume;
-+ (float)_slalomVolume;
++ (CDStruct_3c1748cc)_timeRangeFromTime:(CGFloat)arg1 toTime:(CGFloat)arg2;
++ (id)_setVolume:(CGFloat)arg1 forSlalomRegionsInTrack:(id)arg2 timeRangeMapper:(id)arg3;
++ (CGFloat)_slalomRampVolume;
++ (CGFloat)_slalomVolume;
 + (id)exportPresetForAsset:(id)arg1 preferredPreset:(id)arg2;
 + (void)configureExportSession:(id)arg1 forcePreciseConversion:(_Bool)arg2;
-+ (double)_scaleWithinComposition:(id)arg1 fromCursor:(double)arg2 timeStep:(double)arg3 rate:(float)arg4 timeRangeMapper:(id)arg5;
++ (double)_scaleWithinComposition:(id)arg1 fromCursor:(double)arg2 timeStep:(double)arg3 rate:(CGFloat)arg4 timeRangeMapper:(id)arg5;
 + (_Bool)_scaleComposition:(id)arg1 baseDuration:(double)arg2 regions:(id)arg3 forExport:(_Bool)arg4 outTimeRangeMapper:(id *)arg5;
 + (id)scaledCompositionForAsset:(id)arg1 regions:(id)arg2 forExport:(_Bool)arg3 outTimeRangeMapper:(id *)arg4;
 + (double)durationForBaseDuration:(double)arg1 slalomRegions:(id)arg2;

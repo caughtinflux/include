@@ -39,14 +39,14 @@
 - (void)blurryBackgroundViewDidChangeWhetherBlurring:(id)arg1;
 - (void)folderIcon:(id)arg1 didUpdateGridImage:(id)arg2 forListIndex:(unsigned int)arg3 forContainedIconImageUpdate:(id)arg4;
 - (void)cleanupAfterFloatyFolderCrossfade;
-- (void)setFloatyFolderCrossfadeFraction:(float)arg1;
+- (void)setFloatyFolderCrossfadeFraction:(CGFloat)arg1;
 - (void)prepareToCrossfadeWithFloatyFolderView:(id)arg1 allowFolderInteraction:(BOOL)arg2;
 - (void)setSuppressesBlurryBackgroundChanges:(BOOL)arg1;
 - (void)setWallpaperRelativeCenter:(struct CGPoint)arg1;
-- (void)setBackgroundScale:(float)arg1;
+- (void)setBackgroundScale:(CGFloat)arg1;
 - (id)backgroundView;
-- (void)setBackgroundAndIconGridImageAlpha:(float)arg1;
-- (void)setIconGridImageAlpha:(float)arg1;
+- (void)setBackgroundAndIconGridImageAlpha:(CGFloat)arg1;
+- (void)setIconGridImageAlpha:(CGFloat)arg1;
 - (struct CGRect)frameForMiniIconAtIndexPath:(id)arg1;
 - (struct CGRect)visibleImageRelativeFrameForMiniIconAtIndex:(unsigned int)arg1;
 - (struct CGRect)frameForMiniIconAtIndex:(unsigned int)arg1;

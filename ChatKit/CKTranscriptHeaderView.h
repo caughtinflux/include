@@ -14,7 +14,7 @@
 	UIPlacardButton* _secondButton;
 	UIPlacardButton* _loadMoreButton;
 }
-+(float)defaultHeight;
++(CGFloat)defaultHeight;
 -(id)initWithFrame:(CGRect)frame withFirstTitle:(id)firstTitle withSecondTitle:(id)secondTitle displayLoadPrevious:(BOOL)previous;
 -(void)dealloc;
 -(void)setButtonsEnabled:(BOOL)enabled;

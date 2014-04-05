@@ -24,7 +24,7 @@
 - (void)_newsstandStoreAvailabilityDidChangeNotification:(id)arg1;
 - (void)_layoutSubviews;
 - (void)setLegibilitySettings:(id)arg1;
-- (float)_titleFontSize;
+- (CGFloat)_titleFontSize;
 - (BOOL)_showsTitle;
 - (void)setFolder:(id)arg1;
 - (void)dealloc;

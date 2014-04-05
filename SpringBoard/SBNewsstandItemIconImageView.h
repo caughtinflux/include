@@ -10,7 +10,7 @@
 {
 }
 
-+ (float)cornerRadius;
++ (CGFloat)cornerRadius;
 + (int)_defaultIconFormat;
 - (struct CGRect)visibleBounds;
 - (struct CGSize)sizeThatFits:(struct CGSize)arg1;

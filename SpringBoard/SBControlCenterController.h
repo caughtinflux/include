@@ -69,11 +69,11 @@
 - (BOOL)_allowsShowTransition;
 - (void)_setNCGrabberHidden:(BOOL)arg1;
 - (void)_updateGrabberVisibility;
-- (void)_updateRevealPercentage:(float)arg1;
-- (void)_revealSlidingViewToHeight:(float)arg1;
-- (float)_controlCenterHeightForTouchLocation:(struct CGPoint)arg1;
-- (float)_yValueForClosed;
-- (float)_yValueForOpen;
+- (void)_updateRevealPercentage:(CGFloat)arg1;
+- (void)_revealSlidingViewToHeight:(CGFloat)arg1;
+- (CGFloat)_controlCenterHeightForTouchLocation:(struct CGPoint)arg1;
+- (CGFloat)_yValueForClosed;
+- (CGFloat)_yValueForOpen;
 - (BOOL)shouldAutorotateToInterfaceOrientation:(int)arg1;
 - (BOOL)shouldAutomaticallyForwardRotationMethods;
 - (BOOL)shouldAutomaticallyForwardAppearanceMethods;

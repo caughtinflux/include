@@ -16,7 +16,7 @@
 
 	BOOL _extendsToTop;
 	BOOL __needsRendering;
-	float _leftContentInset;
+	CGFloat _leftContentInset;
 	int _backgroundColorValue;
 	NSArray* _itemIndexPaths;
 	int _visualSectionIndex;
@@ -33,7 +33,7 @@
 
 @property (assign,nonatomic) CGSize itemSize;                                                  //@synthesize itemSize=_itemSize - In the implementation block
 @property (assign,nonatomic) CGSize interItemSpacing;                                          //@synthesize interItemSpacing=_interItemSpacing - In the implementation block
-@property (assign,nonatomic) float leftContentInset;                                           //@synthesize leftContentInset=_leftContentInset - In the implementation block
+@property (assign,nonatomic) CGFloat leftContentInset;                                           //@synthesize leftContentInset=_leftContentInset - In the implementation block
 @property (assign,nonatomic) int backgroundColorValue;                                         //@synthesize backgroundColorValue=_backgroundColorValue - In the implementation block
 @property (nonatomic,retain) NSArray * itemIndexPaths;                                         //@synthesize itemIndexPaths=_itemIndexPaths - In the implementation block
 @property (nonatomic,readonly) int visualSectionIndex;                                         //@synthesize visualSectionIndex=_visualSectionIndex - In the implementation block
@@ -63,12 +63,12 @@
 -(void)_render;
 -(void)_setNeedsRendering:(BOOL)arg1 ;
 -(void)_updateExtendedContents;
--(float)leftContentInset;
+-(CGFloat)leftContentInset;
 -(int)backgroundColorValue;
 -(void)setExtendsToTop:(BOOL)arg1 ;
 -(id)topContentView;
 -(void)setContentExtenderType:(unsigned)arg1 ;
--(void)setLeftContentInset:(float)arg1 ;
+-(void)setLeftContentInset:(CGFloat)arg1 ;
 -(void)setVisualSectionIndex:(int)arg1 andVisualItemRange:(NSRange)arg2 ;
 -(void)setBackgroundColorValue:(int)arg1 ;
 -(id)itemIndexPaths;

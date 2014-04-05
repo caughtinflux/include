@@ -8,15 +8,15 @@
 
 
 @interface UIDeviceWhiteColor : UIColor {
-	float whiteComponent;
-	float alphaComponent;
+	CGFloat whiteComponent;
+	CGFloat alphaComponent;
 	CGColorRef cachedColor;
 }
--(id)initWithWhite:(float)white alpha:(float)alpha;
+-(id)initWithWhite:(CGFloat)white alpha:(CGFloat)alpha;
 -(id)initWithCGColor:(CGColorRef)cgcolor;
 -(void)dealloc;
--(CGColorRef)_createCGColorWithAlpha:(float)alpha;
--(id)colorWithAlphaComponent:(float)alphaComponent;
+-(CGColorRef)_createCGColorWithAlpha:(CGFloat)alpha;
+-(id)colorWithAlphaComponent:(CGFloat)alphaComponent;
 -(void)set;
 -(void)setFill;
 -(void)setStroke;

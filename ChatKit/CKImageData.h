@@ -17,7 +17,7 @@
 -(void)dealloc;
 -(id)image;
 -(id)imageWithMaxLength:(int)maxLength;
--(id)jpegDataWithMaxLength:(int)maxLength compression:(float)compression;
+-(id)jpegDataWithMaxLength:(int)maxLength compression:(CGFloat)compression;
 -(id)pngDataWithMaxLength:(int)maxLength;
 -(id)mimeType;
 -(id)imageType;

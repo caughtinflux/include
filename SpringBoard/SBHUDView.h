@@ -15,21 +15,21 @@
     NSString *_subtitle;
     UIImage *_image;
     BOOL _showsProgress;
-    float _progress;
+    CGFloat _progress;
     UIView *_blockView;
     _UIBackdropView *_backdropView;
     UIImageView *_backdropMaskImageView;
 }
 
-+ (float)progressIndicatorStep;
++ (CGFloat)progressIndicatorStep;
 + (int)numberOfProgressIndicatorSteps;
-@property(nonatomic) float progress; // @synthesize progress=_progress;
+@property(nonatomic) CGFloat progress; // @synthesize progress=_progress;
 @property(nonatomic) BOOL showsProgress; // @synthesize showsProgress=_showsProgress;
 @property(nonatomic) int level; // @synthesize level=_level;
 - (void)layoutSubviews;
 - (void)_updateBlockView;
-- (id)_blockColorForValue:(float)arg1;
-- (void)_updateBlockView:(id)arg1 value:(float)arg2 blockSize:(struct CGSize)arg3 point:(struct CGPoint)arg4;
+- (id)_blockColorForValue:(CGFloat)arg1;
+- (void)_updateBlockView:(id)arg1 value:(CGFloat)arg2 blockSize:(struct CGSize)arg3 point:(struct CGPoint)arg4;
 @property(retain, nonatomic) UIImage *image;
 @property(retain, nonatomic) NSString *subtitle;
 @property(retain, nonatomic) NSString *title;

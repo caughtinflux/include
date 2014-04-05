@@ -18,7 +18,7 @@
 @property(assign, nonatomic) CKSMSMessage* message;
 -(id)init;
 -(void)dealloc;
--(float)progress;
+-(CGFloat)progress;
 -(BOOL)isSending;
 -(void)_finishedSendingMessages;
 -(void)_notifyDelegatesOfMessageDelivery:(CKSMSRecordRef)messageDelivery success:(BOOL)success;

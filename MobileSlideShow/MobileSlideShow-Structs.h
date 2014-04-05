@@ -13,7 +13,7 @@ typedef struct {
 	BOOL field2;
 	BOOL field3;
 	BOOL field4;
-	float field5;
+	CGFloat field5;
 	int field6;
 } SCD_Struct_WI1;
 

@@ -23,8 +23,8 @@
 -(CGRect)textRectForBounds:(CGRect)bounds limitedToNumberOfLines:(NSInteger)lines;
 #endif
 -(void)_invalidateTextSize;
--(void)setActualFontSize:(float)size;
--(float)actualFontSize;
+-(void)setActualFontSize:(CGFloat)size;
+-(CGFloat)actualFontSize;
 -(id)_disabledFontColor;
 -(id)currentTextColor;
 -(CGSize)sizeThatFits:(CGSize)fits;
@@ -39,7 +39,7 @@
 -(id)color;
 -(void)setCentersHorizontally:(BOOL)horizontally;
 -(BOOL)centersHorizontally;
--(CGSize)textSizeForWidth:(float)width;
+-(CGSize)textSizeForWidth:(CGFloat)width;
 -(CGRect)textRectForBounds:(CGRect)bounds;
 -(void)drawContentsInRect:(CGRect)rect;
 -(void)setRawSize:(CGSize)size;

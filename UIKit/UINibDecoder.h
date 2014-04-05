@@ -86,15 +86,15 @@ __attribute__((visibility("hidden")))
 // inherited: -(id)decodeObjectForKey:(id)key;
 // inherited: -(const char*)decodeBytesForKey:(id)key returnedLength:(unsigned*)length;
 // inherited: -(BOOL)decodeBoolForKey:(id)key;
-// inherited: -(float)decodeFloatForKey:(id)key;
+// inherited: -(CGFloat)decodeFloatForKey:(id)key;
 // inherited: -(double)decodeDoubleForKey:(id)key;
 // inherited: -(long long)decodeInt64ForKey:(id)key;
 // inherited: -(int)decodeIntegerForKey:(id)key;
 // inherited: -(int)decodeIntForKey:(id)key;
 // inherited: -(int)decodeInt32ForKey:(id)key;
--(BOOL)decodeArrayOfFloats:(float*)floats count:(int)count forKey:(id)key;
+-(BOOL)decodeArrayOfFloats:(CGFloat*)CGFloats count:(int)count forKey:(id)key;
 -(BOOL)decodeArrayOfDoubles:(double*)doubles count:(int)count forKey:(id)key;
--(BOOL)decodeArrayOfCGFloats:(float*)cgfloats count:(int)count forKey:(id)key;
+-(BOOL)decodeArrayOfCGFloats:(CGFloat*)cgCGFloats count:(int)count forKey:(id)key;
 -(CGPoint)decodeCGPointForKey:(id)key;
 -(CGSize)decodeCGSizeForKey:(id)key;
 -(CGRect)decodeCGRectForKey:(id)key;

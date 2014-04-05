@@ -19,7 +19,7 @@
 	NSArray* _cachedSectionFrames;
 	CGRect _lastRequestedRect;
 	NSArray* _lastRequestedLayoutAttributesInRect;
-	float _interitemSpacing;
+	CGFloat _interitemSpacing;
 	<PUHorizontalCollectionViewLayoutDelegate>* _delegate;
 	CGSize _itemSize;
 	UIEdgeInsets _itemsContentInset;
@@ -27,7 +27,7 @@
 }
 
 @property (assign,nonatomic) CGSize itemSize;                                                           //@synthesize itemSize=_itemSize - In the implementation block
-@property (assign,nonatomic) float interitemSpacing;                                                    //@synthesize interitemSpacing=_interitemSpacing - In the implementation block
+@property (assign,nonatomic) CGFloat interitemSpacing;                                                    //@synthesize interitemSpacing=_interitemSpacing - In the implementation block
 @property (assign,nonatomic) UIEdgeInsets itemsContentInset;                                            //@synthesize itemsContentInset=_itemsContentInset - In the implementation block
 @property (assign,nonatomic,__weak) <PUHorizontalCollectionViewLayoutDelegate> * delegate;              //@synthesize delegate=_delegate - In the implementation block
 +(Class)invalidationContextClass;
@@ -43,10 +43,10 @@
 -(void)invalidateLayoutWithContext:(id)arg1 ;
 -(CGSize)itemSize;
 -(void)setItemSize:(CGSize)arg1 ;
--(void)setInteritemSpacing:(float)arg1 ;
+-(void)setInteritemSpacing:(CGFloat)arg1 ;
 -(UIEdgeInsets)itemsContentInset;
 -(void)setItemsContentInset:(UIEdgeInsets)arg1 ;
--(float)interitemSpacing;
+-(CGFloat)interitemSpacing;
 -(BOOL)_shouldInvalidateCachedLayoutForBoundsChange:(CGRect)arg1 ;
 -(id)_layoutAttributesForItemAtIndexPath:(id)arg1 ;
 -(void).cxx_destruct;

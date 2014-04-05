@@ -21,8 +21,8 @@
 	BOOL _barHeight;
 	BOOL _badgeAnimated;
 	BOOL _bezel;
-	float _width;
-	float _labelHeight;
+	CGFloat _width;
+	CGFloat _labelHeight;
 	UIEdgeInsets _infoInsets;
 	UIColor* _tintColor;
 }
@@ -30,7 +30,7 @@
 +(id)_defaultLabelColor;
 +(id)_pushButtonWithBarStyle:(int)barStyle withStyle:(int)style withTintColor:(id)tintColor;
 +(void)_adjustPushButton:(id)button withBarStyle:(int)barStyle withStyle:(int)style withTintColor:(id)tintColor;
--(id)initWithImage:(id)image selectedImage:(id)image2 label:(id)label labelHeight:(float)height withBarStyle:(int)barStyle withStyle:(int)style withInsets:(UIEdgeInsets)insets possibleTitles:(id)titles withTintColor:(id)tintColor bezel:(BOOL)bezel imageInsets:(UIEdgeInsets)insets11 glowInsets:(UIEdgeInsets)insets12;
+-(id)initWithImage:(id)image selectedImage:(id)image2 label:(id)label labelHeight:(CGFloat)height withBarStyle:(int)barStyle withStyle:(int)style withInsets:(UIEdgeInsets)insets possibleTitles:(id)titles withTintColor:(id)tintColor bezel:(BOOL)bezel imageInsets:(UIEdgeInsets)insets11 glowInsets:(UIEdgeInsets)insets12;
 -(void)dealloc;
 -(void)setSizesToFitImage:(BOOL)fitImage;
 -(void)_sizeView:(id)view toPossibleTitles:(id)possibleTitles selectedTitle:(id)title;
@@ -44,7 +44,7 @@
 -(void)_setBadgeValue:(id)value;
 -(void)_badgeAnimationDidStop:(id)_badgeAnimation finished:(id)finished;
 -(void)_setBadgeAnimated:(BOOL)animated;
--(void)_setInfoWidth:(float)width;
+-(void)_setInfoWidth:(CGFloat)width;
 -(void)setEnabled:(BOOL)enabled;
 -(BOOL)pointInside:(CGPoint)inside forEvent:(GSEventRef)event;
 -(BOOL)pointInside:(CGPoint)inside withEvent:(id)event;
@@ -56,9 +56,9 @@
 -(BOOL)_isBordered;
 -(void)_setOn:(BOOL)on;
 -(BOOL)_isOn;
--(void)_animateImage:(float)image withButtonBar:(id)buttonBar target:(id)target didFinishSelector:(SEL)selector;
--(void)_animateImage:(float)image withButtonBar:(id)buttonBar;
--(void)_setBarHeight:(float)height;
+-(void)_animateImage:(CGFloat)image withButtonBar:(id)buttonBar target:(id)target didFinishSelector:(SEL)selector;
+-(void)_animateImage:(CGFloat)image withButtonBar:(id)buttonBar;
+-(void)_setBarHeight:(CGFloat)height;
 -(BOOL)_useBarHeight;
 -(void)setTintColor:(id)color;
 -(void)_adjustPushButtonWithBarStyle:(int)barStyle withTintColor:(id)tintColor;

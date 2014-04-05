@@ -17,7 +17,7 @@
 
 @property(retain, nonatomic) _UILegibilitySettings *legibilitySettings; // @synthesize legibilitySettings=_legibilitySettings;
 @property(nonatomic) BOOL disablesUpdates; // @synthesize disablesUpdates=_disablesUpdates;
-- (void)setContentAlpha:(float)arg1 withDateVisible:(BOOL)arg2;
+- (void)setContentAlpha:(CGFloat)arg1 withDateVisible:(BOOL)arg2;
 - (void)_startUpdateTimer;
 - (void)_stopUpdateTimer;
 - (void)_updateView;

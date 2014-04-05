@@ -38,7 +38,7 @@ __attribute__((visibility("hidden")))
 	UIKeyboardGenericKeyView* _nextPageButton;
 	UIKeyboardGenericKeyView* _prevPageButton;
 	CGRect _inlineCandidateFrame;
-	float _lazyLayoutNextOriginY;
+	CGFloat _lazyLayoutNextOriginY;
 	unsigned _lazyLayoutNextCandidateIndex;
 	int _orientation;
 	BOOL _forMobileNotes;
@@ -82,8 +82,8 @@ __attribute__((visibility("hidden")))
 // in a protocol: -(void)candidateAcceptedAtIndex:(unsigned)index;
 // inherited: -(void)drawRect:(CGRect)rect;
 -(void)_setInlineText:(id)text;
-// in a protocol: -(void)setCandidates:(id)candidates inlineText:(id)text inlineRect:(CGRect)rect maxX:(float)x layout:(BOOL)layout;
-// in a protocol: -(void)setCandidates:(id)candidates type:(int)type inlineText:(id)text inlineRect:(CGRect)rect maxX:(float)x layout:(BOOL)layout;
+// in a protocol: -(void)setCandidates:(id)candidates inlineText:(id)text inlineRect:(CGRect)rect maxX:(CGFloat)x layout:(BOOL)layout;
+// in a protocol: -(void)setCandidates:(id)candidates type:(int)type inlineText:(id)text inlineRect:(CGRect)rect maxX:(CGFloat)x layout:(BOOL)layout;
 // in a protocol: -(void)obsoleteCandidates;
 // in a protocol: -(void)setCompletionContext:(id)context;
 // in a protocol: -(void)showCandidateAtIndex:(unsigned)index;
@@ -137,7 +137,7 @@ __attribute__((visibility("hidden")))
 -(void)layoutWithWindowType:(int)windowType;
 -(void)_showCandidateListInline;
 -(void)_showCandidateListBottom;
--(BOOL)_layoutNextLineWithMarginLeft:(float)marginLeft marginRight:(float)right;
+-(BOOL)_layoutNextLineWithMarginLeft:(CGFloat)marginLeft marginRight:(CGFloat)right;
 #else
 -(void)layoutOneCandidateAtIndex:(unsigned)index;
 #endif

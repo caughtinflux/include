@@ -9,7 +9,7 @@
 
 @interface UIGradient : NSObject {
 	XXStruct_iyXfGC* _values;
-	float _height;
+	CGFloat _height;
 	CGShadingRef _shader;
 }
 -(id)initVerticalWithValues:(XXStruct_iyXfGC*)values;

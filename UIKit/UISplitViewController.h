@@ -17,10 +17,10 @@
 -(void)_viewControllerHiding:(id)hiding;
 -(BOOL)hidesMasterViewInPortrait;
 -(void)setHidesMasterViewInPortrait:(BOOL)portrait;
--(float)masterColumnWidth;
--(void)setMasterColumnWidth:(float)width;
--(float)gutterWidth;
--(void)setGutterWidth:(float)width;
+-(CGFloat)masterColumnWidth;
+-(void)setMasterColumnWidth:(CGFloat)width;
+-(CGFloat)gutterWidth;
+-(void)setGutterWidth:(CGFloat)width;
 -(void)showMasterInPopover:(id)popover;
 -(void)_layoutChildViewControllersForOrientation:(int)orientation includingMaster:(BOOL)master;
 -(void)_layoutChildViewControllers;

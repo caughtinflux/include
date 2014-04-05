@@ -10,9 +10,9 @@
 {
 }
 
-+ (float)_labelHeight;
++ (CGFloat)_labelHeight;
 + (int)_defaultIconFormat;
-- (float)_labelVerticalOffset;
+- (CGFloat)_labelVerticalOffset;
 - (struct CGRect)_frameForLabel;
 - (id)initWithFrame:(struct CGRect)arg1;
 

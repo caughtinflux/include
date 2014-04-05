@@ -9,14 +9,14 @@
 
 @interface UITextFieldBackgroundView : UIView {
 	BOOL _active;
-	float _progress;
+	CGFloat _progress;
 }
 -(void)_updateImages;
 -(id)initWithFrame:(CGRect)frame active:(BOOL)active;
 -(void)setFrame:(CGRect)frame;
 -(void)setBounds:(CGRect)bounds;
 -(void)setActive:(BOOL)active;
--(void)setProgress:(float)progress;
+-(void)setProgress:(CGFloat)progress;
 -(BOOL)ignoresMouseEvents;
 @end
 

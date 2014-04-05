@@ -23,7 +23,7 @@
 -(CFStringRef)aggregateLevelKey;
 -(id)sectionHeaderElementKind;
 -(BOOL)supportsIncrementalChangeNotifications;
--(void)updateLayoutMetricsForWidth:(float)arg1 ;
+-(void)updateLayoutMetricsForWidth:(CGFloat)arg1 ;
 -(BOOL)supportsEditMode;
 -(BOOL)configureGridCell:(id)arg1 forIndexPath:(id)arg2 ;
 -(BOOL)wantsMagnifierNavigation;

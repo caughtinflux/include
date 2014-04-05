@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 // inherited: -(void)makeKeyWindow;
 // inherited: -(void)_handleMouseUp:(GSEventRef)up;
 // inherited: -(id)representation;
-// inherited (since 3.2): -(void)_setContentsScale:(float)scale;
-// inherited (since 3.2): -(float)_contentsScale;
+// inherited (since 3.2): -(void)_setContentsScale:(CGFloat)scale;
+// inherited (since 3.2): -(CGFloat)_contentsScale;
 @end
 

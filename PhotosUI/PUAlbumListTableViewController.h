@@ -24,7 +24,7 @@
 @property (setter=_setMainTableView:,nonatomic,retain) UITableView * _mainTableView;                                        //@synthesize _mainTableView=__mainTableView - In the implementation block
 @property (assign,setter=_setIgnoredReorderNotificationCount:,nonatomic) int _ignoredReorderNotificationCount;              //@synthesize _ignoredReorderNotificationCount=__ignoredReorderNotificationCount - In the implementation block
 -(void)dealloc;
--(float)tableView:(id)arg1 heightForFooterInSection:(int)arg2 ;
+-(CGFloat)tableView:(id)arg1 heightForFooterInSection:(int)arg2 ;
 -(id)tableView:(id)arg1 viewForFooterInSection:(int)arg2 ;
 -(BOOL)tableView:(id)arg1 shouldHighlightRowAtIndexPath:(id)arg2 ;
 -(void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2 ;

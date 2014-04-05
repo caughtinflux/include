@@ -30,7 +30,7 @@ typedef struct Vector Vector;
 typedef struct Animation {
 	/*function-pointer*/ void** _field1;
 	Atomic _field2;
-	float _field3;
+	CGFloat _field3;
 	Timing* _field4;
 	Vector* _field5;
 	void* _field6;
@@ -72,7 +72,7 @@ typedef struct Context {
 	CFRunLoopSourceRef _field14;
 	Shmem* _field15;
 	Shmem* _field16;
-	float _field17;
+	CGFloat _field17;
 	Commit* _field18;
 	unsigned _field19 : 1;
 	unsigned _field20 : 1;
@@ -159,8 +159,8 @@ typedef struct {
 } XXStruct_kFm5bA;
 
 typedef struct CAMediaTimingFunctionPrivate {
-	float _field1[2];
-	float _field2[2];
+	CGFloat _field1[2];
+	CGFloat _field2[2];
 } CAMediaTimingFunctionPrivate;
 
 typedef struct _EAGLNativeWindowObject {

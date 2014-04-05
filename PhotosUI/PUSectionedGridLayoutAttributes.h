@@ -11,15 +11,15 @@
 
 @interface PUSectionedGridLayoutAttributes : UICollectionViewLayoutAttributes {
 
-	BOOL _floating;
+	BOOL _CGFloating;
 	BOOL _extendsTopContent;
 	BOOL _exists;
-	float _interactiveTransitionProgress;
+	CGFloat _interactiveTransitionProgress;
 
 }
 
-@property (assign,nonatomic) BOOL floating;                                    //@synthesize floating=_floating - In the implementation block
-@property (assign,nonatomic) float interactiveTransitionProgress;              //@synthesize interactiveTransitionProgress=_interactiveTransitionProgress - In the implementation block
+@property (assign,nonatomic) BOOL CGFloating;                                    //@synthesize CGFloating=_CGFloating - In the implementation block
+@property (assign,nonatomic) CGFloat interactiveTransitionProgress;              //@synthesize interactiveTransitionProgress=_interactiveTransitionProgress - In the implementation block
 @property (assign,nonatomic) BOOL extendsTopContent;                           //@synthesize extendsTopContent=_extendsTopContent - In the implementation block
 @property (assign,nonatomic) BOOL exists;                                      //@synthesize exists=_exists - In the implementation block
 -(BOOL)exists;
@@ -28,11 +28,11 @@
 -(id)description;
 -(id)copyWithZone:(NSZone)arg1 ;
 -(void)setFloating:(BOOL)arg1 ;
--(BOOL)floating;
--(float)interactiveTransitionProgress;
+-(BOOL)CGFloating;
+-(CGFloat)interactiveTransitionProgress;
 -(void)setExists:(BOOL)arg1 ;
 -(void)setExtendsTopContent:(BOOL)arg1 ;
 -(BOOL)extendsTopContent;
--(void)setInteractiveTransitionProgress:(float)arg1 ;
+-(void)setInteractiveTransitionProgress:(CGFloat)arg1 ;
 @end
 

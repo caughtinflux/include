@@ -10,18 +10,18 @@
 
 @interface PLSlalomConfiguration : NSObject
 {
-    float _rate;
-    float _volumeDuringSlalom;
-    float _volumeDuringRampToSlalom;
+    CGFloat _rate;
+    CGFloat _volumeDuringSlalom;
+    CGFloat _volumeDuringRampToSlalom;
     PLSlalomRampConfiguration *_rampDown;
     PLSlalomRampConfiguration *_rampUp;
 }
 
 @property(readonly, nonatomic) PLSlalomRampConfiguration *rampUp; // @synthesize rampUp=_rampUp;
 @property(readonly, nonatomic) PLSlalomRampConfiguration *rampDown; // @synthesize rampDown=_rampDown;
-@property(nonatomic) float volumeDuringRampToSlalom; // @synthesize volumeDuringRampToSlalom=_volumeDuringRampToSlalom;
-@property(nonatomic) float volumeDuringSlalom; // @synthesize volumeDuringSlalom=_volumeDuringSlalom;
-@property(nonatomic) float rate; // @synthesize rate=_rate;
+@property(nonatomic) CGFloat volumeDuringRampToSlalom; // @synthesize volumeDuringRampToSlalom=_volumeDuringRampToSlalom;
+@property(nonatomic) CGFloat volumeDuringSlalom; // @synthesize volumeDuringSlalom=_volumeDuringSlalom;
+@property(nonatomic) CGFloat rate; // @synthesize rate=_rate;
 - (void)dealloc;
 - (id)init;
 

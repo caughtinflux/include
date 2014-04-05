@@ -13,7 +13,7 @@
 
 @interface PUCollageView : UIView {
 
-	float _spacing;
+	CGFloat _spacing;
 	int _numberOfItems;
 	int __numberOfImageViews;
 	NSArray* __imageViews;
@@ -23,7 +23,7 @@
 }
 
 @property (assign,nonatomic) CGSize collageSize;                          //@synthesize collageSize=_collageSize - In the implementation block
-@property (assign,nonatomic) float spacing;                               //@synthesize spacing=_spacing - In the implementation block
+@property (assign,nonatomic) CGFloat spacing;                               //@synthesize spacing=_spacing - In the implementation block
 @property (assign,nonatomic) int numberOfItems;                           //@synthesize numberOfItems=_numberOfItems - In the implementation block
 @property (nonatomic,readonly) int _numberOfImageViews;                   //@synthesize _numberOfImageViews=__numberOfImageViews - In the implementation block
 @property (nonatomic,readonly) NSArray * _imageViews;                     //@synthesize _imageViews=__imageViews - In the implementation block
@@ -33,8 +33,8 @@
 -(void)layoutSubviews;
 -(CGSize)sizeThatFits:(CGSize)arg1 ;
 -(int)numberOfItems;
--(float)spacing;
--(void)setSpacing:(float)arg1 ;
+-(CGFloat)spacing;
+-(void)setSpacing:(CGFloat)arg1 ;
 -(void)setNumberOfItems:(int)arg1 ;
 -(void)setImageSize:(CGSize)arg1 forItemAtIndex:(int)arg2 ;
 -(void)setImage:(id)arg1 forItemAtIndex:(int)arg2 ;

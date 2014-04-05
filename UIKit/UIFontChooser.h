@@ -32,7 +32,7 @@
 -(int)numberOfRowsInTable:(id)table;
 -(id)table:(id)table cellForRow:(int)row column:(id)column;
 -(void)selectFamilyName:(id)name;
--(void)selectSize:(float)size;
+-(void)selectSize:(CGFloat)size;
 -(void)selectFont:(id)font;
 -(void)acceptSizeFromSizeField;
 -(void)_finishedEditing:(id)editing;

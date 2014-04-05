@@ -12,7 +12,7 @@
 +(id)mimeTypesToFileExtensions;
 -(id)newPreview:(int)preview highlight:(BOOL)highlight;
 -(Class)balloonPreviewClassWithPreviewData:(id)previewData;
--(float)balloonHeightWithPreviewData:(id)previewData;
+-(CGFloat)balloonHeightWithPreviewData:(id)previewData;
 -(void)configureBalloon:(id)balloon withPreviewData:(id)previewData;
 -(BOOL)_imageHasAnimation;
 @end

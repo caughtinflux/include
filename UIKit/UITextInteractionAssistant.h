@@ -17,7 +17,7 @@ __attribute__((visibility("hidden")))
 	NSMutableArray* _recognizers;
 	UILongPressGestureRecognizer* loupeGesture;
 	int _autoscrollRamp;
-	float _autoscrollFactor;
+	CGFloat _autoscrollFactor;
 	CGPoint _autoscrollBasePoint;
 	CGPoint _autoscrollUntransformedExtentPoint;
 	CGPoint _loupeGestureEndPoint;
@@ -95,7 +95,7 @@ __attribute__((visibility("hidden")))
 -(BOOL)tapOnLinkWithGesture:(id)gesture;
 -(void)cancelInteractionWithLink;
 -(BOOL)longPressGestureCanTransitionToRecognizedState:(id)recognizedState;
--(BOOL)swallowsDoubleTapWithScale:(float)scale atPoint:(CGPoint)point;
+-(BOOL)swallowsDoubleTapWithScale:(CGFloat)scale atPoint:(CGPoint)point;
 -(void)willRotate:(id)rotate;
 -(void)didRotate:(id)rotate;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2

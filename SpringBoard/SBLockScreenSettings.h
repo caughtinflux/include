@@ -19,24 +19,24 @@
     SBFAnimationSettings *_unlockToPhoneWallpaperInSettings;
     SBFAnimationSettings *_unlockWallpaperOutSettings;
     SBFAnimationSettings *_unlockWallpaperInSettings;
-    float _lockToUnlockSlideCompletionPercentage;
-    float _lockToUnlockSlideCompletionPercentageIPad;
-    float _unlockSlideForIdleTimerDisabledPercentage;
-    float _unlockSlideForIdleTimerDisabledPercentageIPad;
-    float _notificationScrollForIdleTimerDisabledOffset;
-    float _notificationScrollForIdleTimerDisabledOffsetIPad;
-    float _unlockSwipeWallpaperAlpha;
+    CGFloat _lockToUnlockSlideCompletionPercentage;
+    CGFloat _lockToUnlockSlideCompletionPercentageIPad;
+    CGFloat _unlockSlideForIdleTimerDisabledPercentage;
+    CGFloat _unlockSlideForIdleTimerDisabledPercentageIPad;
+    CGFloat _notificationScrollForIdleTimerDisabledOffset;
+    CGFloat _notificationScrollForIdleTimerDisabledOffsetIPad;
+    CGFloat _unlockSwipeWallpaperAlpha;
 }
 
 + (id)settingsControllerModule;
 @property BOOL alwaysPutPluginsBelowScrollView; // @synthesize alwaysPutPluginsBelowScrollView=_alwaysPutPluginsBelowScrollView;
-@property float unlockSwipeWallpaperAlpha; // @synthesize unlockSwipeWallpaperAlpha=_unlockSwipeWallpaperAlpha;
-@property float notificationScrollForIdleTimerDisabledOffsetIPad; // @synthesize notificationScrollForIdleTimerDisabledOffsetIPad=_notificationScrollForIdleTimerDisabledOffsetIPad;
-@property float notificationScrollForIdleTimerDisabledOffset; // @synthesize notificationScrollForIdleTimerDisabledOffset=_notificationScrollForIdleTimerDisabledOffset;
-@property float unlockSlideForIdleTimerDisabledPercentageIPad; // @synthesize unlockSlideForIdleTimerDisabledPercentageIPad=_unlockSlideForIdleTimerDisabledPercentageIPad;
-@property float unlockSlideForIdleTimerDisabledPercentage; // @synthesize unlockSlideForIdleTimerDisabledPercentage=_unlockSlideForIdleTimerDisabledPercentage;
-@property float lockToUnlockSlideCompletionPercentageIPad; // @synthesize lockToUnlockSlideCompletionPercentageIPad=_lockToUnlockSlideCompletionPercentageIPad;
-@property float lockToUnlockSlideCompletionPercentage; // @synthesize lockToUnlockSlideCompletionPercentage=_lockToUnlockSlideCompletionPercentage;
+@property CGFloat unlockSwipeWallpaperAlpha; // @synthesize unlockSwipeWallpaperAlpha=_unlockSwipeWallpaperAlpha;
+@property CGFloat notificationScrollForIdleTimerDisabledOffsetIPad; // @synthesize notificationScrollForIdleTimerDisabledOffsetIPad=_notificationScrollForIdleTimerDisabledOffsetIPad;
+@property CGFloat notificationScrollForIdleTimerDisabledOffset; // @synthesize notificationScrollForIdleTimerDisabledOffset=_notificationScrollForIdleTimerDisabledOffset;
+@property CGFloat unlockSlideForIdleTimerDisabledPercentageIPad; // @synthesize unlockSlideForIdleTimerDisabledPercentageIPad=_unlockSlideForIdleTimerDisabledPercentageIPad;
+@property CGFloat unlockSlideForIdleTimerDisabledPercentage; // @synthesize unlockSlideForIdleTimerDisabledPercentage=_unlockSlideForIdleTimerDisabledPercentage;
+@property CGFloat lockToUnlockSlideCompletionPercentageIPad; // @synthesize lockToUnlockSlideCompletionPercentageIPad=_lockToUnlockSlideCompletionPercentageIPad;
+@property CGFloat lockToUnlockSlideCompletionPercentage; // @synthesize lockToUnlockSlideCompletionPercentage=_lockToUnlockSlideCompletionPercentage;
 @property(retain) SBFAnimationSettings *unlockWallpaperInSettings; // @synthesize unlockWallpaperInSettings=_unlockWallpaperInSettings;
 @property(retain) SBFAnimationSettings *unlockWallpaperOutSettings; // @synthesize unlockWallpaperOutSettings=_unlockWallpaperOutSettings;
 @property(retain) SBFAnimationSettings *unlockToPhoneWallpaperInSettings; // @synthesize unlockToPhoneWallpaperInSettings=_unlockToPhoneWallpaperInSettings;

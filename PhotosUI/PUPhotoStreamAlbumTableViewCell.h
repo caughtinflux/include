@@ -9,8 +9,8 @@
 #import <UIKit/UITableViewCell.h>
 
 @interface PUPhotoStreamAlbumTableViewCell : UITableViewCell
-+(float)cellHeight;
-+(float)labelXOrigin;
++(CGFloat)cellHeight;
++(CGFloat)labelXOrigin;
 -(void)layoutSubviews;
 @end
 

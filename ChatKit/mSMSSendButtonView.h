@@ -10,7 +10,7 @@
 @interface mSMSSendButtonView : UIThreePartButton {
 }
 -(BOOL)pointInside:(CGPoint)inside forEvent:(GSEventRef)event;
--(void)drawTitleAtPoint:(CGPoint)point width:(float)width;
--(float)minTitleMargin;
+-(void)drawTitleAtPoint:(CGPoint)point width:(CGFloat)width;
+-(CGFloat)minTitleMargin;
 @end
 

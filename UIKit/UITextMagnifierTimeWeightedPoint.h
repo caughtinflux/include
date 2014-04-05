@@ -18,9 +18,9 @@
 -(void)clearHistory;
 -(void)addPoint:(CGPoint)point;
 -(BOOL)historyCovers:(double)covers;
--(float)distanceCoveredInInterval:(double)interval;
+-(CGFloat)distanceCoveredInInterval:(double)interval;
 -(CGSize)displacementInInterval:(double)interval;
 -(CGSize)displacementInInterval:(double)interval priorTo:(double)to;
--(float)distanceCoveredInInterval:(double)interval priorTo:(double)to;
+-(CGFloat)distanceCoveredInInterval:(double)interval priorTo:(double)to;
 @end
 

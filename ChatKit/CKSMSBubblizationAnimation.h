@@ -8,6 +8,6 @@
 
 @interface CKSMSBubblizationAnimation : UIAnimation {
 }
--(void)setProgress:(float)progress;
+-(void)setProgress:(CGFloat)progress;
 @end
 

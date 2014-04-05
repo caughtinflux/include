@@ -63,7 +63,7 @@
 -(id)automaticKeyboard;
 -(BOOL)hasCustomInputView;
 -(BOOL)isHostingActiveImpl;
--(void)setPeripheralToolbarFrameForHostWidth:(float)hostWidth;
+-(void)setPeripheralToolbarFrameForHostWidth:(CGFloat)hostWidth;
 -(void)setPeripheralFrameForHostBounds:(CGRect)hostBounds;
 -(CGSize)totalPeripheralSizeForOrientation:(int)orientation;
 -(UIPeripheralAnimationGeometry)calculateAnimationGeometryForOrientation:(int)orientation outDirection:(int)direction forMinimize:(BOOL)minimize;

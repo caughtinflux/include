@@ -22,11 +22,11 @@
 -(void)_requestImageAtIndex:(int)index quality:(unsigned)quality;
 -(void)_requestImageAtIndex:(int)index;
 -(void)_notifySelectionDidChange;
--(void)transitionIn:(float)anIn;
--(void)transitionOut:(float)anOut;
+-(void)transitionIn:(CGFloat)anIn;
+-(void)transitionOut:(CGFloat)anOut;
 -(void)transition:(unsigned)transition withCoverFrame:(CGRect)coverFrame;
--(void)transitionIn:(float)anIn fromFrame:(CGRect)frame;
--(void)transitionOut:(float)anOut toFrame:(CGRect)frame;
+-(void)transitionIn:(CGFloat)anIn fromFrame:(CGRect)frame;
+-(void)transitionOut:(CGFloat)anOut toFrame:(CGRect)frame;
 -(void)setDisplayedOrientation:(int)orientation animate:(BOOL)animate;
 -(void)setInfoLayer:(id)layer;
 -(void)setImage:(void*)image atIndex:(unsigned)index type:(unsigned)type;
@@ -41,7 +41,7 @@
 -(void)dragFlow:(unsigned)flow atPoint:(CGPoint)point;
 -(void)selectCoverAtIndex:(unsigned)index;
 -(void)selectCoverAtOffset:(int)offset;
--(unsigned)coverIndexAtPosition:(float)position;
+-(unsigned)coverIndexAtPosition:(CGFloat)position;
 -(void)_setupFlippedCoverLayer:(id)layer;
 -(void)flipSelectedCover;
 -(int)benchmarkTick;
@@ -58,7 +58,7 @@
 -(void)benchmarkImageMode:(int)mode;
 -(void)benchmarkPerformanceLog:(BOOL)log;
 -(void)benchmarkTightLoopTime:(unsigned)time;
--(void)benchmarkLongScrubSpeed:(float)speed;
+-(void)benchmarkLongScrubSpeed:(CGFloat)speed;
 -(void)benchmarkSkipImageLoad:(BOOL)load;
 @end
 

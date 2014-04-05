@@ -88,7 +88,7 @@
 - (void)_streamLikelyToKeepUp;
 - (void)_streamBufferFull;
 @property(nonatomic) double currentTime;
-@property(readonly, nonatomic) float playbackRate;
+@property(readonly, nonatomic) CGFloat playbackRate;
 @property(readonly, nonatomic) double duration;
 - (void)_delayedUpdateFromPendingTime;
 - (void)_updateFromPendingTime;

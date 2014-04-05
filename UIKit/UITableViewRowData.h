@@ -17,22 +17,22 @@ __attribute__((visibility("hidden")))
 	int _numSections;
 	int _sectionRowDataCapacity;
 	UISectionRowData** _sectionRowData;
-	float _minimumRowHeight;
-	float _tableViewWidth;
-	float _tableHeaderHeight;
-	float _tableFooterHeight;
+	CGFloat _minimumRowHeight;
+	CGFloat _tableViewWidth;
+	CGFloat _tableHeaderHeight;
+	CGFloat _tableFooterHeight;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	float _tableTopPadding;
-	float _tableBottomPadding;
+	CGFloat _tableTopPadding;
+	CGFloat _tableBottomPadding;
 #endif
 	NSIndexPath* _reorderedIndexPath;
-	float _reorderedRowHeight;
+	CGFloat _reorderedRowHeight;
 }
-@property(assign, nonatomic) float minimumRowHeight;
+@property(assign, nonatomic) CGFloat minimumRowHeight;
 -(id)initWithTableView:(id)tableView;
--(void)tableViewWidthDidChangeToWidth:(float)tableViewWidth;
--(void)tableHeaderHeightDidChangeToHeight:(float)tableHeaderHeight;
--(void)tableFooterHeightDidChangeToHeight:(float)tableFooterHeight;
+-(void)tableViewWidthDidChangeToWidth:(CGFloat)tableViewWidth;
+-(void)tableHeaderHeightDidChangeToHeight:(CGFloat)tableHeaderHeight;
+-(void)tableFooterHeightDidChangeToHeight:(CGFloat)tableFooterHeight;
 // inherited: -(void)dealloc;
 -(void)ensureAllSectionsAreValid;
 -(void)invalidateAllSections;
@@ -49,12 +49,12 @@ __attribute__((visibility("hidden")))
 -(int)numberOfRows;
 -(BOOL)hasHeaderForSection:(int)section;
 -(BOOL)hasFooterForSection:(int)section;
--(float)heightForTableHeaderView;
--(float)heightForTableFooterView;
--(float)heightForSection:(int)section;
--(float)heightForHeaderInSection:(int)section;
--(float)heightForFooterInSection:(int)section;
--(float)heightForRow:(int)row inSection:(int)section;
+-(CGFloat)heightForTableHeaderView;
+-(CGFloat)heightForTableFooterView;
+-(CGFloat)heightForSection:(int)section;
+-(CGFloat)heightForHeaderInSection:(int)section;
+-(CGFloat)heightForFooterInSection:(int)section;
+-(CGFloat)heightForRow:(int)row inSection:(int)section;
 -(int)sectionLocationForRow:(int)row inSection:(int)section;
 -(int)sectionLocationForReorderedRow:(int)reorderedRow inSection:(int)section;
 -(CGRect)rectForTableHeaderView;
@@ -62,10 +62,10 @@ __attribute__((visibility("hidden")))
 -(CGRect)rectForTable;
 -(CGRect)rectForSection:(int)section;
 -(CGRect)rectForHeaderInSection:(int)section;
--(CGRect)floatingRectForHeaderInSection:(int)section visibleRect:(CGRect)rect;
+-(CGRect)CGFloatingRectForHeaderInSection:(int)section visibleRect:(CGRect)rect;
 -(CGRect)rectForFooterInSection:(int)section;
--(float)heightForTable;
--(CGRect)floatingRectForFooterInSection:(int)section visibleRect:(CGRect)rect;
+-(CGFloat)heightForTable;
+-(CGRect)CGFloatingRectForFooterInSection:(int)section visibleRect:(CGRect)rect;
 -(CGRect)rectForRow:(int)row inSection:(int)section;
 -(CGRect)rectForGlobalRow:(int)globalRow;
 -(id)indexPathsForRowsInRect:(CGRect)rect;
@@ -74,14 +74,14 @@ __attribute__((visibility("hidden")))
 -(id)indexPathForRowAtGlobalRow:(int)globalRow;
 // in a protocol: -(id)copyWithZone:(NSZone*)zone;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-@property(assign, nonatomic) float tableTopPadding;
-@property(assign, nonatomic) float tableBottomPadding;
+@property(assign, nonatomic) CGFloat tableTopPadding;
+@property(assign, nonatomic) CGFloat tableBottomPadding;
 -(int)headerAlignmentForSection:(int)section;
 -(void)setHeaderAlignment:(int)alignment forSection:(int)section;
 -(int)footerAlignmentForSection:(int)section;
 -(void)setFooterAlignment:(int)alignment forSection:(int)section;
--(float)maxHeaderTitleWidthForSection:(int)section;
--(float)maxFooterTitleWidthForSection:(int)section;
+-(CGFloat)maxHeaderTitleWidthForSection:(int)section;
+-(CGFloat)maxFooterTitleWidthForSection:(int)section;
 // inherited: -(id)description;
 #endif
 @end

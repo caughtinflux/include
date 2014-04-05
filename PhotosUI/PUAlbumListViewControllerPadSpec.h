@@ -11,8 +11,8 @@
 
 @interface PUAlbumListViewControllerPadSpec : PUAlbumListViewControllerSpec
 -(CGSize)stackSize;
--(float)sectionHeaderHeight;
--(float)sectionFooterHeight;
+-(CGFloat)sectionHeaderHeight;
+-(CGFloat)sectionFooterHeight;
 -(CGSize)cellSizeForBounds:(CGRect)arg1 ;
 -(id)photosPickerViewControllerSpec;
 -(id)_nameOfEmptySharedAlbumPlaceholderImage;
@@ -27,7 +27,7 @@
 -(UIOffset)stackPerspectiveOffset;
 -(int)collageFastImageFormat;
 -(int)collageQualityImageFormat;
--(float)collageSpacing;
+-(CGFloat)collageSpacing;
 -(BOOL)allowsAlbumCountSubtitle;
 -(BOOL)usesStackTransitionToGrid;
 -(BOOL)shouldUseCollageForCloudFeedPlaceholder;

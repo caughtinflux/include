@@ -96,7 +96,7 @@
 -(void)_layoutPopupAlertWithOrientation:(int)orientation animated:(BOOL)animated;
 -(void)_layoutIfNeeded;
 -(void)_adjustLabelFontSizes;
--(void)popupAlertAnimated:(BOOL)animated atOffset:(float)offset;
+-(void)popupAlertAnimated:(BOOL)animated atOffset:(CGFloat)offset;
 -(void)popupAlertAnimated:(BOOL)animated;
 -(void)_presentSheetFromView:(id)view above:(BOOL)above;
 -(void)presentSheetFromBehindView:(id)behindView;
@@ -110,10 +110,10 @@
 -(void)dismiss;
 -(void)dismissAnimated:(BOOL)animated;
 -(CGSize)backgroundSize;
--(float)_titleVerticalTopInset;
--(float)_titleVerticalBottomInset;
--(float)_titleHorizontalInset;
--(float)_bottomVerticalInset;
+-(CGFloat)_titleVerticalTopInset;
+-(CGFloat)_titleVerticalBottomInset;
+-(CGFloat)_titleHorizontalInset;
+-(CGFloat)_bottomVerticalInset;
 -(void)drawRect:(CGRect)rect;
 -(void)_appSuspended:(id)suspended;
 -(void)_alertSheetAnimationDidStop:(id)_alertSheetAnimation finished:(id)finished;
@@ -130,8 +130,8 @@
 -(void)setRunsModal:(BOOL)modal;
 -(BOOL)runsModal;
 -(CGRect)titleRect;
--(float)_maxHeight;
--(float)_buttonHeight;
+-(CGFloat)_maxHeight;
+-(CGFloat)_buttonHeight;
 -(void)layout;
 -(int)numberOfLinesInTitle __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);
 -(int)tableView:(id)view numberOfRowsInSection:(int)section;

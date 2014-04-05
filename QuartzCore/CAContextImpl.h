@@ -25,8 +25,8 @@ __attribute__((visibility("hidden")))
 -(void)setLayer:(id)layer;
 // inherited: -(void)orderAbove:(unsigned)above;
 // inherited: -(void)orderBelow:(unsigned)below;
--(void)setLevel:(float)level;
--(float)level;
+-(void)setLevel:(CGFloat)level;
+-(CGFloat)level;
 -(BOOL)valid;
 // inherited: -(void)setFence:(unsigned)fence count:(unsigned)count;
 // inherited: -(unsigned)createSlot;

@@ -22,7 +22,7 @@
 	<PUActivityViewControllerDelegate>* _delegate;
 	int __numberOfRemakesNeeded;
 	int __numberOfRemakesCompleted;
-	float __currentRemakerProgress;
+	CGFloat __currentRemakerProgress;
 	PLProgressView* __remakerProgressView;
 
 }
@@ -32,7 +32,7 @@
 @property (assign,nonatomic,__weak) <PUActivityViewControllerDelegate> * delegate;                 //@synthesize delegate=_delegate - In the implementation block
 @property (assign,nonatomic) int _numberOfRemakesNeeded;                                           //@synthesize _numberOfRemakesNeeded=__numberOfRemakesNeeded - In the implementation block
 @property (assign,nonatomic) int _numberOfRemakesCompleted;                                        //@synthesize _numberOfRemakesCompleted=__numberOfRemakesCompleted - In the implementation block
-@property (assign,nonatomic) float _currentRemakerProgress;                                        //@synthesize _currentRemakerProgress=__currentRemakerProgress - In the implementation block
+@property (assign,nonatomic) CGFloat _currentRemakerProgress;                                        //@synthesize _currentRemakerProgress=__currentRemakerProgress - In the implementation block
 @property (nonatomic,retain) PLProgressView * _remakerProgressView;                                //@synthesize _remakerProgressView=__remakerProgressView - In the implementation block
 +(id)photosApplicationActivities;
 +(id)_defaultActivityTypeOrder;
@@ -61,8 +61,8 @@
 -(void)set_numberOfRemakesNeeded:(int)arg1 ;
 -(int)_numberOfRemakesCompleted;
 -(void)set_numberOfRemakesCompleted:(int)arg1 ;
--(float)_currentRemakerProgress;
--(void)set_currentRemakerProgress:(float)arg1 ;
+-(CGFloat)_currentRemakerProgress;
+-(void)set_currentRemakerProgress:(CGFloat)arg1 ;
 -(id)_remakerProgressView;
 -(void)set_remakerProgressView:(id)arg1 ;
 -(void).cxx_destruct;

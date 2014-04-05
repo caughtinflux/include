@@ -17,7 +17,7 @@
     UIImageView *_buttonBackground;
     id _xAction;
     id _clearAction;
-    float _widthWhenShowingClear;
+    CGFloat _widthWhenShowingClear;
     BOOL _showingClear;
     SBNotificationCenterSeparatorView *_separator;
 }

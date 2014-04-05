@@ -20,7 +20,7 @@
     UICollectionView *_iconCollectionView;
 }
 
-+ (float)desiredHeightForBounds:(struct CGRect)arg1;
++ (CGFloat)desiredHeightForBounds:(struct CGRect)arg1;
 @property(nonatomic) id <SBStarkTouchLauncherObserver> observer; // @synthesize observer=_observer;
 - (void)starkLauncherLayoutDidChangeScrollButtonInsets:(id)arg1;
 - (BOOL)starkIconCellDisplaysBadges:(id)arg1;
@@ -34,8 +34,8 @@
 - (int)numberOfSectionsInCollectionView:(id)arg1;
 - (void)loadView;
 - (void)relayoutIcons;
-- (float)height;
-- (void)setHeight:(float)arg1;
+- (CGFloat)height;
+- (void)setHeight:(CGFloat)arg1;
 - (void)scrollRight;
 - (BOOL)canScrollRight;
 - (void)scrollLeft;

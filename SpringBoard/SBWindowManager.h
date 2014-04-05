@@ -20,15 +20,15 @@
 - (id)dumpKnownWindows;
 - (id)dumpHidingState;
 - (void)_releaseWindow:(id)arg1;
-- (BOOL)_isHidingWindowLevel:(float)arg1;
+- (BOOL)_isHidingWindowLevel:(CGFloat)arg1;
 - (void)_captureWindow:(id)arg1;
 - (void)_takeNoteOfWindow:(id)arg1 onScreen:(id)arg2;
 - (void)_adjustWindowsForActiveHideRange;
 - (void)_recomputeHideRangeAndAdjustWindows;
 - (BOOL)_isHidingWindows;
 - (void)stopHidingWindowsForContext:(id)arg1;
-- (void)startHidingWindowsExclusivelyFromLevel:(float)arg1 toLevel:(float)arg2 forContext:(id)arg3 reason:(id)arg4;
-- (void)setAlpha:(float)arg1 forWindow:(id)arg2;
+- (void)startHidingWindowsExclusivelyFromLevel:(CGFloat)arg1 toLevel:(CGFloat)arg2 forContext:(id)arg3 reason:(id)arg4;
+- (void)setAlpha:(CGFloat)arg1 forWindow:(id)arg2;
 - (id)init;
 
 @end

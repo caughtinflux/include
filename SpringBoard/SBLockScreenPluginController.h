@@ -25,10 +25,10 @@
     SBLockScreenTestPluginSettings *_testSettings;
     BOOL _lockScreenHasNotifications;
     BOOL _allowDisplayOfPlugins;
-    float _fadeDuration;
+    CGFloat _fadeDuration;
 }
 
-@property float fadeDuration; // @synthesize fadeDuration=_fadeDuration;
+@property CGFloat fadeDuration; // @synthesize fadeDuration=_fadeDuration;
 @property(nonatomic) BOOL allowDisplayOfPlugins; // @synthesize allowDisplayOfPlugins=_allowDisplayOfPlugins;
 @property(nonatomic) BOOL lockScreenHasNotifications; // @synthesize lockScreenHasNotifications=_lockScreenHasNotifications;
 @property(nonatomic) id <SBLockScreenPluginControllerDelegate> delegate; // @synthesize delegate=_delegate;

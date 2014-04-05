@@ -514,7 +514,7 @@ typedef enum {
     @result The height to reserve for the printed page header, return 0.0 to not reserve any space for a header.
     @discussion The height returned will be used to calculate the rect passed to webView:drawHeaderInRect:.
 */
-- (float)webViewHeaderHeight:(WebView *)sender;
+- (CGFloat)webViewHeaderHeight:(WebView *)sender;
 
 /*!
     @method webViewFooterHeight:
@@ -523,7 +523,7 @@ typedef enum {
     @result The height to reserve for the printed page footer, return 0.0 to not reserve any space for a footer.
     @discussion The height returned will be used to calculate the rect passed to webView:drawFooterInRect:.
 */
-- (float)webViewFooterHeight:(WebView *)sender;
+- (CGFloat)webViewFooterHeight:(WebView *)sender;
 
 /*!
     @method webView:drawHeaderInRect:

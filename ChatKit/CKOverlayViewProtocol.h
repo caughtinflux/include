@@ -6,6 +6,6 @@
 
 
 @protocol CKOverlayViewProtocol
--(float)heightWithoutSeparator;
+-(CGFloat)heightWithoutSeparator;
 @end
 

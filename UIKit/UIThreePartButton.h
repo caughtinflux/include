@@ -21,7 +21,7 @@
 -(void)setPressedBackgroundImage:(id)image;
 -(id)background;
 // inherited: -(XXStruct_UUz0SD)_backgroundSlices:(CGSize)slices;
--(float)minTitleMargin;
-// inherited: -(void)drawTitleAtPoint:(CGPoint)point width:(float)width;
+-(CGFloat)minTitleMargin;
+// inherited: -(void)drawTitleAtPoint:(CGPoint)point width:(CGFloat)width;
 @end
 

@@ -12,8 +12,8 @@
 @class UIColor, NSMutableArray;
 
 @interface UISegmentedControl ()
-+(float)defaultHeightForStyle:(int)style size:(int)size;
-+(float)defaultHeightForStyle:(int)style;
++(CGFloat)defaultHeightForStyle:(int)style size:(int)size;
++(CGFloat)defaultHeightForStyle:(int)style;
 -(void)updateForMiniBarState:(BOOL)miniBarState;
 -(CGPoint)_offsetForMiniBarState:(BOOL)miniBarState;
 -(void)_commonSegmentedControlInit;
@@ -58,7 +58,7 @@
 @end
 
 @interface UISegmentedControl (DeprecatedMethods)
-+(float)defaultHeight;
++(CGFloat)defaultHeight;
 -(id)initWithFrame:(CGRect)frame withStyle:(int)style withItems:(id)items;
 -(void)setDelegate:(id)delegate;
 -(void)setShowsDisclosure:(BOOL)disclosure;
@@ -74,8 +74,8 @@
 -(id)titleForSegment:(unsigned)segment;
 -(void)setImage:(id)image forSegment:(unsigned)segment;
 -(id)imageForSegment:(unsigned)segment;
--(void)setWidth:(float)width forSegment:(unsigned)segment;
--(float)widthForSegment:(unsigned)segment;
+-(void)setWidth:(CGFloat)width forSegment:(unsigned)segment;
+-(CGFloat)widthForSegment:(unsigned)segment;
 -(void)setContentOffset:(CGSize)offset forSegment:(unsigned)segment;
 -(CGSize)contentOffsetForSegment:(unsigned)segment;
 -(void)setEnabled:(BOOL)enabled forSegment:(unsigned)segment;

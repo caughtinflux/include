@@ -25,7 +25,7 @@
 	CGRect oldTableViewVisibleBounds;
 	CGRect newTableViewVisibleBounds;
 	CGRect tableViewVisibleBoundsUnion;
-	float tableViewVisibleBoundsOffset;
+	CGFloat tableViewVisibleBoundsOffset;
 	int oldSectionCount;
 	int newSectionCount;
 	int* oldSectionMap;

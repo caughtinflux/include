@@ -19,7 +19,7 @@
 -(id)imageData;
 -(BOOL)shouldTranscodeForMMS;
 -(Class)balloonPreviewClassWithPreviewData:(id)previewData;
--(float)balloonHeightWithPreviewData:(id)previewData;
+-(CGFloat)balloonHeightWithPreviewData:(id)previewData;
 -(void)configureBalloon:(id)balloon withPreviewData:(id)previewData;
 -(id)_newTranscodedMediaObjectWithMaxByteLength:(int)maxByteLength;
 -(id)newTranscodingForMMSWithMaxByteLength:(int)maxByteLength;

@@ -9,9 +9,9 @@
 
 @interface UIHardware : NSObject {
 }
-+(float)statusBarHeight;
++(CGFloat)statusBarHeight;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-+(void)_setStatusBarHeight:(float)height;
++(void)_setStatusBarHeight:(CGFloat)height;
 #endif
 +(CGSize)mainScreenSize;
 +(CGRect)fullScreenApplicationContentRect;
@@ -20,7 +20,7 @@
 +(BOOL)setSpeakerPhoneEnabled:(BOOL)enabled;
 +(BOOL)isTTYEnabled;
 +(CGSize)TVScreenSize;
-+(float)TVHorizontalPixelScale;
++(CGFloat)TVHorizontalPixelScale;
 +(BOOL)_TVOutStatus:(BOOL)status;
 +(BOOL)TVOutCapableAndPreferred;
 +(BOOL)TVOutCapable;

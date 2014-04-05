@@ -14,6 +14,6 @@
 -(CGPoint)targetOffset;
 -(void)setTargetOffset:(CGPoint)offset;
 -(void)setOriginalOffset:(CGPoint)offset;
--(void)setProgress:(float)progress;
+-(void)setProgress:(CGFloat)progress;
 @end
 

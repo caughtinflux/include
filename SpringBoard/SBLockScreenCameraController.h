@@ -61,7 +61,7 @@
 - (void)_createCameraViewControllerWithNewSessionID:(BOOL)arg1 andStartPreview:(BOOL)arg2;
 - (void)_setCameraSessionID:(id)arg1;
 - (void)finalizeGesture;
-- (void)translateSlidingViewByY:(float)arg1;
+- (void)translateSlidingViewByY:(CGFloat)arg1;
 - (void)_setupCameraSlideDownAnimation;
 - (void)cleanupFromGesture;
 - (void)_cleanupFromDismissal;

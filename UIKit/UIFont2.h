@@ -17,12 +17,12 @@
 #endif
 +(UIFont*)fontWithFamilyName:(NSString*)familyName traits:(GSFontTraitMask)traits size:(CGFloat)fontSize;
 +(UIFont*)fontWithMarkupDescription:(NSString*)markupDescription;
-+(float)labelFontSize;
-+(float)buttonFontSize;
-+(float)smallSystemFontSize;
-+(float)systemFontSize;
--(id)initWithName:(id)name size:(float)size;
--(id)initWithFamilyName:(id)familyName traits:(int)traits size:(float)size;
++(CGFloat)labelFontSize;
++(CGFloat)buttonFontSize;
++(CGFloat)smallSystemFontSize;
++(CGFloat)systemFontSize;
+-(id)initWithName:(id)name size:(CGFloat)size;
+-(id)initWithFamilyName:(id)familyName traits:(int)traits size:(CGFloat)size;
 -(id)initWithMarkupDescription:(id)markupDescription;
 -(id)initWithCoder:(id)coder;
 -(void)encodeWithCoder:(id)coder;

@@ -22,7 +22,7 @@ __attribute__((visibility("hidden")))
 }
 +(UIClassicController*)sharedClassicController;
 -(void)dealloc;
--(void)prepareToSetStatusBarModeWithOrientation:(int)orientation oldMode:(int)mode animation:(int)animation duration:(float)duration;
+-(void)prepareToSetStatusBarModeWithOrientation:(int)orientation oldMode:(int)mode animation:(int)animation duration:(CGFloat)duration;
 -(BOOL)isClassicControlWindow:(id)window;
 -(void)_setupWindow;
 -(id)_window;

@@ -29,9 +29,9 @@
 - (void)finalizeGesture;
 - (void)cleanupFromGesture;
 - (void)prepareForSlideUpAnimation;
-- (void)translateSlidingViewByY:(float)arg1;
+- (void)translateSlidingViewByY:(CGFloat)arg1;
 - (void)gestureDidEnd:(BOOL)arg1;
-- (void)gestureWillEndWithVelocity:(float)arg1;
+- (void)gestureWillEndWithVelocity:(CGFloat)arg1;
 - (void)setGrabberOnLockScreen:(id)arg1;
 - (id)grabberView;
 - (void)dealloc;

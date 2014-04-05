@@ -44,7 +44,7 @@
 
 @interface CALayer (CALayerPrivate) <CAPropertyInfo>
 @property(assign) BOOL sortsSublayers;
-@property(assign) float rasterizationScale;
+@property(assign) CGFloat rasterizationScale;
 @property(assign, getter=isRasterizationEnabled) BOOL rasterizationEnabled;
 @property(assign) CGAffineTransform contentsTransform;
 @property(assign) BOOL clearsContext;

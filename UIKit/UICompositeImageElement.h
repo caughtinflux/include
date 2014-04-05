@@ -17,10 +17,10 @@ __attribute__((visibility("hidden")))
 	CGRect m_fromRect;
 	CGRect m_toRect;
 	int m_operation;
-	float m_fraction;
+	CGFloat m_fraction;
 }
-+(id)elementWithImage:(id)image toRect:(CGRect)rect fromRect:(CGRect)rect3 operation:(int)operation fraction:(float)fraction;
--(id)initWithImage:(id)image toRect:(CGRect)rect fromRect:(CGRect)rect3 operation:(int)operation fraction:(float)fraction;
++(id)elementWithImage:(id)image toRect:(CGRect)rect fromRect:(CGRect)rect3 operation:(int)operation fraction:(CGFloat)fraction;
+-(id)initWithImage:(id)image toRect:(CGRect)rect fromRect:(CGRect)rect3 operation:(int)operation fraction:(CGFloat)fraction;
 -(void)dealloc;
 -(void)draw;
 @end

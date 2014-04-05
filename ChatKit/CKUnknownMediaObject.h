@@ -10,7 +10,7 @@
 @interface CKUnknownMediaObject : CKMediaObject {
 }
 +(BOOL)supportsMIMEType:(id)type;
--(float)balloonHeightWithPreviewData:(id)previewData;
+-(CGFloat)balloonHeightWithPreviewData:(id)previewData;
 -(Class)balloonPreviewClassWithPreviewData:(id)previewData;
 -(BOOL)shouldTranscodeForMMS;
 -(id)newTranscodingForMMSWithMaxByteLength:(int)maxByteLength;

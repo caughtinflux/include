@@ -16,10 +16,10 @@
 	BOOL _canShowFullScreen;
 	id _delegate;
 	NSIndexPath* _itemIndexPath;
-	float _magnifiedYOffset;
+	CGFloat _magnifiedYOffset;
 	int _imageFormat;
-	float _shadowRadius;
-	float _shadowOpacity;
+	CGFloat _shadowRadius;
+	CGFloat _shadowOpacity;
 	PUGridMagnifiedView* _magnifiedView;
 	CGPoint _gestureWindLocation;
 	CGSize _magnifiedSize;
@@ -37,13 +37,13 @@
 @property (assign,nonatomic) CGRect itemWindFrame;                              //@synthesize itemWindFrame=_itemWindFrame - In the implementation block
 @property (nonatomic,readonly) BOOL canShowFullScreen;                          //@synthesize canShowFullScreen=_canShowFullScreen - In the implementation block
 @property (assign,nonatomic) CGRect trackingWindFrame;                          //@synthesize trackingWindFrame=_trackingWindFrame - In the implementation block
-@property (assign,nonatomic) float magnifiedYOffset;                            //@synthesize magnifiedYOffset=_magnifiedYOffset - In the implementation block
+@property (assign,nonatomic) CGFloat magnifiedYOffset;                            //@synthesize magnifiedYOffset=_magnifiedYOffset - In the implementation block
 @property (assign,nonatomic) UIEdgeInsets magnifiedDragEdgeInsets;              //@synthesize magnifiedDragEdgeInsets=_magnifiedDragEdgeInsets - In the implementation block
 @property (assign,nonatomic) int imageFormat;                                   //@synthesize imageFormat=_imageFormat - In the implementation block
 @property (assign,nonatomic) CGSize magnifiedSize;                              //@synthesize magnifiedSize=_magnifiedSize - In the implementation block
 @property (assign,nonatomic) CGSize shadowOffset;                               //@synthesize shadowOffset=_shadowOffset - In the implementation block
-@property (assign,nonatomic) float shadowRadius;                                //@synthesize shadowRadius=_shadowRadius - In the implementation block
-@property (assign,nonatomic) float shadowOpacity;                               //@synthesize shadowOpacity=_shadowOpacity - In the implementation block
+@property (assign,nonatomic) CGFloat shadowRadius;                                //@synthesize shadowRadius=_shadowRadius - In the implementation block
+@property (assign,nonatomic) CGFloat shadowOpacity;                               //@synthesize shadowOpacity=_shadowOpacity - In the implementation block
 @property (nonatomic,retain) PUGridMagnifiedView * magnifiedView;               //@synthesize magnifiedView=_magnifiedView - In the implementation block
 @property (assign,nonatomic) CGPoint lastLocation;                              //@synthesize lastLocation=_lastLocation - In the implementation block
 -(void)setDelegate:(id)arg1 ;
@@ -51,9 +51,9 @@
 -(void)setShadowOffset:(CGSize)arg1 ;
 -(CGSize)shadowOffset;
 -(void)loadView;
--(void)setShadowOpacity:(float)arg1 ;
--(void)setShadowRadius:(float)arg1 ;
--(float)shadowRadius;
+-(void)setShadowOpacity:(CGFloat)arg1 ;
+-(void)setShadowRadius:(CGFloat)arg1 ;
+-(CGFloat)shadowRadius;
 -(int)imageFormat;
 -(id)initWithDelegate:(id)arg1 ;
 -(void)setItemWindFrame:(CGRect)arg1 ;
@@ -70,8 +70,8 @@
 -(UIEdgeInsets)magnifiedDragEdgeInsets;
 -(void)setMagnifiedDragEdgeInsets:(UIEdgeInsets)arg1 ;
 -(void)setImageFormat:(int)arg1 ;
--(float)magnifiedYOffset;
--(void)setMagnifiedYOffset:(float)arg1 ;
+-(CGFloat)magnifiedYOffset;
+-(void)setMagnifiedYOffset:(CGFloat)arg1 ;
 -(void)setMagnifiedSize:(CGSize)arg1 ;
 -(void)setTrackingWindFrame:(CGRect)arg1 ;
 -(void)setupMagnifiedView;
@@ -84,7 +84,7 @@
 -(id)installMagnifiedView;
 -(id)imageForMagnifyLocation:(CGPoint)arg1 ;
 -(CGSize)magnifiedSize;
--(float)shadowOpacity;
+-(CGFloat)shadowOpacity;
 -(CGPoint)lastLocation;
 -(CGRect)trackingWindFrame;
 -(BOOL)isValidMagnifyLocation:(CGPoint)arg1 ;

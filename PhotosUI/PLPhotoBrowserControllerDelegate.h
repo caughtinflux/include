@@ -13,7 +13,7 @@
 -(void)photoBrowserControllerDidEndPaging:(id)arg1;
 -(BOOL)photoBrowserControllerShouldShowActionItem:(id)arg1;
 -(void)photoBrowserController:(id)arg1 willShowActionSheetInView:(id)arg2;
--(void)photoBrowserController:(id)arg1 photoTile:(id)arg2 didCompleteZoomWithScale:(float)arg3;
+-(void)photoBrowserController:(id)arg1 photoTile:(id)arg2 didCompleteZoomWithScale:(CGFloat)arg3;
 -(void)photoBrowserControllerWillBeginDragging:(id)arg1;
 -(void)photoBrowserControllerDidScroll:(id)arg1;
 -(id)photoBrowserControllerMakeNavigationBar:(id)arg1;

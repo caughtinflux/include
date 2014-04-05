@@ -12,17 +12,17 @@
 {
     NSString *_name;
     int _type;
-    float _priority;
+    CGFloat _priority;
     UIWindow *_window;
 }
 
 @property(readonly, nonatomic) UIWindow *window; // @synthesize window=_window;
-@property(readonly, nonatomic) float priority; // @synthesize priority=_priority;
+@property(readonly, nonatomic) CGFloat priority; // @synthesize priority=_priority;
 @property(readonly, nonatomic) int type; // @synthesize type=_type;
 @property(readonly, nonatomic) NSString *name; // @synthesize name=_name;
 - (id)description;
 - (void)dealloc;
-- (id)initWithName:(id)arg1 type:(int)arg2 priority:(float)arg3 window:(id)arg4;
+- (id)initWithName:(id)arg1 type:(int)arg2 priority:(CGFloat)arg3 window:(id)arg4;
 
 @end
 

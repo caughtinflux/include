@@ -10,7 +10,7 @@ __attribute__((visibility("hidden")))
 @interface UIGestureContext : NSObject {
 @private
 	CGPoint _startLocation;
-	float _startTimestamp;
+	CGFloat _startTimestamp;
 	CGPoint _currentLocation;
 	UITouch* _touch;
 	int _state;
@@ -19,7 +19,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) CGPoint currentLocation;
 @property(retain, nonatomic) UITouch* touch;
 @property(assign, nonatomic) int state;
-@property(assign, nonatomic) float startTimestamp;
+@property(assign, nonatomic) CGFloat startTimestamp;
 -(id)initWithTouch:(id)touch inView:(id)view;
 @end
 

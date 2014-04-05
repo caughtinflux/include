@@ -19,7 +19,7 @@
 	NSURL* startupLandscapeImageURL;
 #endif
 	NSString* title;
-	float scale;
+	CGFloat scale;
 	CGPoint scrollPoint;
 	BOOL fullScreen;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
@@ -49,7 +49,7 @@
 @property(retain) NSURL* iconURL;
 @property(retain) NSURL* startupImageURL;
 @property(copy) NSString* title;
-@property(assign) float scale;
+@property(assign) CGFloat scale;
 @property(assign) CGPoint scrollPoint;
 @property(assign) BOOL fullScreen;
 @property(assign) BOOL removalDisallowed;

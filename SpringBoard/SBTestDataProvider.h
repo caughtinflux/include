@@ -18,7 +18,7 @@
 
 + (id)sharedInstance;
 - (void)noteSectionInfoDidChange:(id)arg1;
-- (float)attachmentAspectRatioForRecordID:(id)arg1;
+- (CGFloat)attachmentAspectRatioForRecordID:(id)arg1;
 - (id)attachmentPNGDataForRecordID:(id)arg1 sizeConstraints:(id)arg2;
 - (void)receiveMessageWithName:(id)arg1 userInfo:(id)arg2;
 - (void)dataProviderDidLoad;

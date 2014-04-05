@@ -21,7 +21,7 @@
 - (void)drawRect:(struct CGRect)arg1;
 - (id)_primaryTextAttributedString;
 - (void)_invalidatePrimaryTextAttributedString;
-- (BOOL)textWillWrapForWidth:(float)arg1;
+- (BOOL)textWillWrapForWidth:(CGFloat)arg1;
 @property(copy, nonatomic) NSString *relevanceDateText;
 - (void)setSecondaryText:(id)arg1 italicized:(BOOL)arg2;
 @property(copy, nonatomic) NSString *secondaryText;

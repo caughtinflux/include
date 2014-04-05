@@ -10,10 +10,10 @@
 #include_next <UIKit/UISwipeGestureRecognizer.h>
 
 @interface UISwipeGestureRecognizer()
-@property(assign, nonatomic) float minimumPrimaryMovement;
-@property(assign, nonatomic) float maximumPrimaryMovement;
-@property(assign, nonatomic) float minimumSecondaryMovement;
-@property(assign, nonatomic) float maximumSecondaryMovement;
+@property(assign, nonatomic) CGFloat minimumPrimaryMovement;
+@property(assign, nonatomic) CGFloat maximumPrimaryMovement;
+@property(assign, nonatomic) CGFloat minimumSecondaryMovement;
+@property(assign, nonatomic) CGFloat maximumSecondaryMovement;
 -(BOOL)_checkForSwipeWithDelta:(CGPoint)delta time:(double)time;
 
 #else
@@ -23,28 +23,28 @@
 
 @interface UISwipeGestureRecognizer : UIGestureRecognizer {
 	double _maximumDuration;
-	float _minimumHorizontalMovement;
-	float _maximumHorizontalMovement;
-	float _minimumVerticalMovement;
-	float _maximumVerticalMovement;
-	float _rateOfMinimumMovementDecay;
-	float _rateOfMaximumMovementDecay;
+	CGFloat _minimumHorizontalMovement;
+	CGFloat _maximumHorizontalMovement;
+	CGFloat _minimumVerticalMovement;
+	CGFloat _maximumVerticalMovement;
+	CGFloat _rateOfMinimumMovementDecay;
+	CGFloat _rateOfMaximumMovementDecay;
 	CGPoint _startLocation;
 	CGPoint _startContentOffset;
 	double _startTime;
 	unsigned _trackingTouch : 1;
 	unsigned _tableViewGesture : 1;
 }
-@property(assign, nonatomic) float minimumHorizontalMovement;
-@property(assign, nonatomic) float maximumHorizontalMovement;
-@property(assign, nonatomic) float minimumVerticalMovement;
-@property(assign, nonatomic) float maximumVerticalMovement;
+@property(assign, nonatomic) CGFloat minimumHorizontalMovement;
+@property(assign, nonatomic) CGFloat maximumHorizontalMovement;
+@property(assign, nonatomic) CGFloat minimumVerticalMovement;
+@property(assign, nonatomic) CGFloat maximumVerticalMovement;
 -(BOOL)isTableViewGesture;
 -(void)setTableViewGesture:(BOOL)gesture;
 #endif
 @property(assign, nonatomic) double maximumDuration;
-@property(assign, nonatomic) float rateOfMinimumMovementDecay;
-@property(assign, nonatomic) float rateOfMaximumMovementDecay;
+@property(assign, nonatomic) CGFloat rateOfMinimumMovementDecay;
+@property(assign, nonatomic) CGFloat rateOfMaximumMovementDecay;
 @property(readonly, assign, nonatomic) CGPoint startPoint;
 -(id)initWithTarget:(id)target action:(SEL)action;
 -(void)touchesBegan:(id)began withEvent:(id)event;

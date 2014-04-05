@@ -30,7 +30,7 @@
 -(void)cleanupAfterTranscode;
 -(id)initWithData:(id)data mimeType:(id)type exportedFilename:(id)filename;
 -(id)initWithFilename:(id)filename mimeType:(id)type exportedFilename:(id)filename3;
--(float)balloonHeightWithPreviewData:(id)previewData;
+-(CGFloat)balloonHeightWithPreviewData:(id)previewData;
 -(void)dealloc;
 -(id)previewTitle;
 -(Class)balloonPreviewClassWithPreviewData:(id)previewData;

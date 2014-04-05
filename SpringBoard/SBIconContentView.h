@@ -12,7 +12,7 @@
 {
     int _orientation;
     NSMutableArray *_folderContentViews;
-    float _searchGestureProgress;
+    CGFloat _searchGestureProgress;
 }
 
 @property(nonatomic) int orientation; // @synthesize orientation=_orientation;

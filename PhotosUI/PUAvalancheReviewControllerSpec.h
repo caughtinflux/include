@@ -13,18 +13,18 @@
 	int _fastImageFormat;
 	int _qualityImageFormat;
 	int _zoomingImageFormat;
-	float _interItemSpacing;
+	CGFloat _interItemSpacing;
 
 }
 
 @property (nonatomic,readonly) int fastImageFormat;                        //@synthesize fastImageFormat=_fastImageFormat - In the implementation block
 @property (nonatomic,readonly) int qualityImageFormat;                     //@synthesize qualityImageFormat=_qualityImageFormat - In the implementation block
 @property (nonatomic,readonly) int zoomingImageFormat;                     //@synthesize zoomingImageFormat=_zoomingImageFormat - In the implementation block
-@property (nonatomic,readonly) float interItemSpacing;                     //@synthesize interItemSpacing=_interItemSpacing - In the implementation block
+@property (nonatomic,readonly) CGFloat interItemSpacing;                     //@synthesize interItemSpacing=_interItemSpacing - In the implementation block
 @property (nonatomic,readonly) CGSize selectionBadgeSize; 
 @property (nonatomic,readonly) UIOffset selectionBadgeOffset; 
 @property (nonatomic,readonly) unsigned selectionBadgeCorner; 
--(float)interItemSpacing;
+-(CGFloat)interItemSpacing;
 -(int)fastImageFormat;
 -(int)qualityImageFormat;
 -(CGSize)selectionBadgeSize;

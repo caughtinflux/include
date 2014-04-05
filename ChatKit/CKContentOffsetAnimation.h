@@ -11,7 +11,7 @@
 	CGPoint _startContentOffset;
 	CGPoint _endContentOffset;
 }
--(void)setProgress:(float)progress;
+-(void)setProgress:(CGFloat)progress;
 -(void)setStartContentOffset:(CGPoint)offset;
 -(void)setEndContentOffset:(CGPoint)offset;
 -(CGPoint)endContentOffset;

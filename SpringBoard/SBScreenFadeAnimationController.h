@@ -13,11 +13,11 @@
     UIWindow *_fadeWindow;
     UIView *_overlayView;
     SBFLockScreenDateView *_dateView;
-    float _originalDateLeftEdge;
-    float _originalDateBottomEdge;
-    float _finalTimeAlpha;
-    float _finalDateAlpha;
-    float _finalStatusBarAlpha;
+    CGFloat _originalDateLeftEdge;
+    CGFloat _originalDateBottomEdge;
+    CGFloat _finalTimeAlpha;
+    CGFloat _finalDateAlpha;
+    CGFloat _finalStatusBarAlpha;
     SBLockScreenView *_lockScreenView;
     BOOL _preparingToAnimateFadeIn;
     BOOL _animatingForFadeIn;
@@ -36,7 +36,7 @@
 - (void)setLegibilitySettings:(id)arg1;
 - (void)setTextColor:(id)arg1;
 - (void)hideDate;
-- (void)setDateViewAlpha:(float)arg1;
+- (void)setDateViewAlpha:(CGFloat)arg1;
 - (void)_runCompletionHandlerForFadeIn:(BOOL)arg1;
 - (void)_handleAnimationCompletionIfNecessaryForFadeIn:(BOOL)arg1;
 - (void)fadeOutWithCompletion:(id)arg1;
@@ -46,10 +46,10 @@
 - (void)_mediaControlsDidShow;
 - (void)_blankScreenStateChanged;
 - (void)_startFadeInIfNecessary;
-- (void)prepareToFadeInWithTimeAlpha:(float)arg1 dateAlpha:(float)arg2 statusBarAlpha:(float)arg3 lockScreenView:(id)arg4 existingDateView:(id)arg5 completion:(id)arg6;
+- (void)prepareToFadeInWithTimeAlpha:(CGFloat)arg1 dateAlpha:(CGFloat)arg2 statusBarAlpha:(CGFloat)arg3 lockScreenView:(id)arg4 existingDateView:(id)arg5 completion:(id)arg6;
 - (void)_setRelevantLockScreenViewsHidden:(BOOL)arg1;
 - (void)_adjustViewsForCurrentOrientation;
-- (void)updateDateFrameHorizontalOffset:(float)arg1 verticalOffset:(float)arg2;
+- (void)updateDateFrameHorizontalOffset:(CGFloat)arg1 verticalOffset:(CGFloat)arg2;
 - (BOOL)isFadeOutAnimationInProgress;
 - (BOOL)isFadeInAnimationInProgress;
 - (void)_createFadeWindowForFadeIn:(BOOL)arg1;

@@ -18,13 +18,13 @@
 	<UIViewControllerContextTransitioning>* _transitionContext;
 	UIPercentDrivenInteractiveTransition* _interactiveTransition;
 	BOOL _interactive;
-	float _interactiveProgress;
+	CGFloat _interactiveProgress;
 
 }
 
 @property (nonatomic,readonly) double duration;                                                      //@synthesize duration=_duration - In the implementation block
 @property (assign,getter=isInteractive,nonatomic) BOOL interactive;                                  //@synthesize interactive=_interactive - In the implementation block
-@property (assign,setter=_setInteractiveProgress:,nonatomic) float interactiveProgress;              //@synthesize interactiveProgress=_interactiveProgress - In the implementation block
+@property (assign,setter=_setInteractiveProgress:,nonatomic) CGFloat interactiveProgress;              //@synthesize interactiveProgress=_interactiveProgress - In the implementation block
 +(id)interactionControllerForAnimationController:(id)arg1 ;
 -(id)containerView;
 -(double)transitionDuration:(id)arg1 ;
@@ -41,14 +41,14 @@
 -(CGRect)finalToViewFrame;
 -(id)interactiveTransition;
 -(void)setInteractive:(BOOL)arg1 ;
--(void)updateInteractiveTransitionProgress:(float)arg1 ;
--(void)_setInteractiveProgress:(float)arg1 ;
+-(void)updateInteractiveTransitionProgress:(CGFloat)arg1 ;
+-(void)_setInteractiveProgress:(CGFloat)arg1 ;
 -(id)_newInteractiveTransition;
 -(id)initWithDuration:(double)arg1 ;
 -(CGRect)initialFromViewFrame;
 -(CGRect)initialToViewFrame;
 -(CGRect)finalFromViewFrame;
--(float)interactiveProgress;
+-(CGFloat)interactiveProgress;
 -(void).cxx_destruct;
 @end
 

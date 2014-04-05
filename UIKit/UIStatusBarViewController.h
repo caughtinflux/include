@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 // inherited: -(void)dealloc;
 -(BOOL)isClassicControlWindow:(id)window;
 // inherited: -(void)loadView;
--(void)prepareToSetStatusBarModeWithOrientation:(int)orientation oldMode:(int)mode animation:(int)animation duration:(float)duration;
+-(void)prepareToSetStatusBarModeWithOrientation:(int)orientation oldMode:(int)mode animation:(int)animation duration:(CGFloat)duration;
 -(void)_prepareForZoom:(BOOL)zoom;
 -(void)_zoom:(BOOL)zoom animated:(BOOL)animated;
 -(void)_setStatusBarBackgroundImageForOrientation:(int)orientation;

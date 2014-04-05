@@ -119,7 +119,7 @@
 -(void)_setPreheatedAssets:(id)arg1 ;
 -(id)photosSharingTransitionContext;
 -(id)_imageManager;
--(float)_horizontalOffsetInCollectionView:(id)arg1 forCenteringOnItemAtIndexPath:(id)arg2 ;
+-(CGFloat)_horizontalOffsetInCollectionView:(id)arg1 forCenteringOnItemAtIndexPath:(id)arg2 ;
 -(id)_assetAtIndexPath:(id)arg1 ;
 -(void)_pageToIndexPath:(id)arg1 animated:(BOOL)arg2 ;
 -(id)_indexPathOfCenterVisibleItemInCollectionView:(id)arg1 ;

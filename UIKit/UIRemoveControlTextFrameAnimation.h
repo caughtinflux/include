@@ -9,6 +9,6 @@
 
 @interface UIRemoveControlTextFrameAnimation : UIFrameAnimation {
 }
--(void)setProgress:(float)progress;
+-(void)setProgress:(CGFloat)progress;
 @end
 

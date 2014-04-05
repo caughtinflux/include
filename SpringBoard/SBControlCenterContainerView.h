@@ -13,7 +13,7 @@
 @interface SBControlCenterContainerView : UIView <SBControlCenterObserver>
 {
     UIView *_darkeningView;
-    float _revealPercentage;
+    CGFloat _revealPercentage;
     SBChevronView *_chevronToTrack;
     SBControlCenterContentContainerView *_contentContainerView;
 }
@@ -25,7 +25,7 @@
 - (void)controlCenterDidDismiss;
 - (void)controlCenterWillPresent;
 - (void)updateBackgroundSettings:(id)arg1;
-@property(nonatomic) float revealPercentage;
+@property(nonatomic) CGFloat revealPercentage;
 - (id)_contentChevronView;
 - (id)_currentBGColor;
 - (void)_updateContentFrame;

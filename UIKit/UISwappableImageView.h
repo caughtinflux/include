@@ -49,7 +49,7 @@ __attribute__((visibility("hidden")))
 -(void)updateImageIfNeeded;
 -(void)showAlternateImage:(BOOL)image;
 -(void)setFlipped:(BOOL)flipped;
--(void)animateImage:(float)image withButtonBar:(id)buttonBar withTag:(int)tag target:(id)target didFinishSelector:(SEL)selector;
+-(void)animateImage:(CGFloat)image withButtonBar:(id)buttonBar withTag:(int)tag target:(id)target didFinishSelector:(SEL)selector;
 -(void)animationDidStop:(id)animation finished:(BOOL)finished;
 -(void)setImage:(id)image;
 @end

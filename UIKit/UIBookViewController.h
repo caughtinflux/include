@@ -34,14 +34,14 @@
 	UIViewController* _newOddPage;
 	int _turnCount;
 	int _animatedPageTurns;
-	float _turnMargin;
+	CGFloat _turnMargin;
 	UIEdgeInsets _contentInset;
 	double _turnDuration;
 }
 @property(assign, nonatomic) id<UIBookViewControllerDelegate> delegate;
 @property(retain, nonatomic) UIViewController* oddPage;	// = right page
 @property(retain, nonatomic) UIViewController* evenPage;	// = left page
-@property(assign, nonatomic) float turnMargin;
+@property(assign, nonatomic) CGFloat turnMargin;
 @property(assign, nonatomic) UIEdgeInsets contentInset;
 @property(assign, nonatomic) double turnDuration;
 // inherited: -(id)initWithCoder:(id)coder;

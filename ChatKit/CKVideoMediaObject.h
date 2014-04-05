@@ -19,7 +19,7 @@
 -(int)mediaType;
 -(id)transcodedFilename;
 -(Class)balloonPreviewClassWithPreviewData:(id)previewData;
--(float)balloonHeightWithPreviewData:(id)previewData;
+-(CGFloat)balloonHeightWithPreviewData:(id)previewData;
 -(id)newPreview:(int)preview highlight:(BOOL)highlight;
 -(void)configureBalloon:(id)balloon withPreviewData:(id)previewData;
 -(unsigned long long)sizeInBytes;

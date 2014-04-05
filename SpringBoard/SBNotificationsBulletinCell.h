@@ -16,7 +16,7 @@
 
 + (id)defaultColorForRelevanceDate;
 + (struct CGSize)_preferredSizeForRelevanceDateLabel:(id)arg1;
-+ (float)iconPaddingLeft;
++ (CGFloat)iconPaddingLeft;
 @property(nonatomic, getter=isMissed) BOOL missed; // @synthesize missed=_missed;
 - (struct CGRect)_separatorFrame;
 - (void)setSectionLocation:(int)arg1 animated:(BOOL)arg2;

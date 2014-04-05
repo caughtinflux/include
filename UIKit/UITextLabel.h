@@ -20,8 +20,8 @@
 -(BOOL)wrapsText;
 -(void)setTextAutoresizesToFit:(BOOL)fit;
 -(BOOL)textAutoresizesToFit;
--(void)setMinFontSize:(float)size;
--(float)minFontSize;
+-(void)setMinFontSize:(CGFloat)size;
+-(CGFloat)minFontSize;
 -(void)setAlignment:(int)alignment;
 -(int)alignment;
 -(void)setEllipsisStyle:(int)style;

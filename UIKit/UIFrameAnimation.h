@@ -17,6 +17,6 @@
 -(void)setEndFrame:(CGRect)frame;
 -(CGRect)endFrame;
 -(void)setSignificantRectFields:(int)fields;
--(void)setProgress:(float)progress;
+-(void)setProgress:(CGFloat)progress;
 @end
 

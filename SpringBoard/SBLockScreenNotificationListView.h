@@ -22,16 +22,16 @@
     id <SBLockScreenNotificationViewDelegate> _delegate;
     id <SBLockScreenNotificationModel> _model;
     CADisplayLink *_displayLink;
-    float _currentTextAlpha;
+    CGFloat _currentTextAlpha;
     double _fadeStartTimestamp;
     NSTimer *_oldTextDisabledTimer;
     unsigned int _indexOfNewItem;
     BOOL _notificationCellIsScrollingToPasscode;
-    float _notificationScrollDecelerationRatio;
+    CGFloat _notificationScrollDecelerationRatio;
     NSMutableDictionary *_heightForListItemCache;
-    float _totalContentHeight;
-    float _startingScrollOffset;
-    float _lastDistanceScrolled;
+    CGFloat _totalContentHeight;
+    CGFloat _startingScrollOffset;
+    CGFloat _lastDistanceScrolled;
     BOOL _updateCellsToVisibleOnPluginWillDisable;
 }
 
@@ -62,7 +62,7 @@
 - (void)_setNonSelectedCellsToVisible:(BOOL)arg1 withSelectedCell:(id)arg2;
 - (void)tableView:(id)arg1 didEndDisplayingCell:(id)arg2 forRowAtIndexPath:(id)arg3;
 - (void)tableView:(id)arg1 willDisplayCell:(id)arg2 forRowAtIndexPath:(id)arg3;
-- (float)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2;
+- (CGFloat)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2;
 - (BOOL)tableView:(id)arg1 canEditRowAtIndexPath:(id)arg2;
 - (id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2;
 - (void)_setContentForTableCell:(id)arg1 withItem:(id)arg2 atIndexPath:(id)arg3;

@@ -33,8 +33,8 @@
 -(BOOL)pointInside:(CGPoint)inside withEvent:(id)event;
 -(CGPoint)applyTouchToCenterOffset:(CGPoint)centerOffset;
 -(CGPoint)applyCenterToSelectionPointOffset:(CGPoint)selectionPointOffset;
--(CGPoint)applyOffsetInDirectionOfHandle:(float)handle toPoint:(CGPoint)point;
--(float)offsetInDirectionOfHandleFromFirstPoint:(CGPoint)firstPoint toSecondPoint:(CGPoint)secondPoint;
+-(CGPoint)applyOffsetInDirectionOfHandle:(CGFloat)handle toPoint:(CGPoint)point;
+-(CGFloat)offsetInDirectionOfHandleFromFirstPoint:(CGPoint)firstPoint toSecondPoint:(CGPoint)secondPoint;
 -(void)snapToCornerOfRange:(id)range atStart:(BOOL)start;
 -(CGPoint)suggestedHandlePositionOnRect:(CGRect)rect;
 @end

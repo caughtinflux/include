@@ -12,6 +12,6 @@
 	CGPoint _targetOffset;
 }
 -(void)adjustForContentOffsetDelta:(CGPoint)contentOffsetDelta __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_2);
-// inherited: -(void)setProgress:(float)progress;
+// inherited: -(void)setProgress:(CGFloat)progress;
 @end
 

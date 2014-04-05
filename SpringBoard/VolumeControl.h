@@ -18,7 +18,7 @@
     NSString *_lastEventCategory;
     BOOL _hudHandledLastVolumeChange;
     BOOL _euDevice;
-    float _euVolumeLimit;
+    CGFloat _euVolumeLimit;
     BOOL _euVolumeLimitEnforced;
     BOOL _lastVolumeChangedWasBlocked;
     BOOL _volumeDownButtonIsDown;
@@ -26,8 +26,8 @@
 }
 
 + (id)sharedVolumeControl;
-- (float)getMediaVolume;
-- (void)setMediaVolume:(float)arg1;
+- (CGFloat)getMediaVolume;
+- (void)setMediaVolume:(CGFloat)arg1;
 - (void)sendEUVolumeLimitAcknowledgementIfNecessary;
 - (void)_EUVolumeEnforcementChanged:(id)arg1;
 - (void)_EUVolumeLimitChanged:(id)arg1;
@@ -35,8 +35,8 @@
 - (BOOL)_isVolumeHUDVisible;
 - (void)hideVolumeHUDIfVisible;
 - (id)volumeHUDForCurrentCategory;
-- (void)_presentVolumeHUDWithMode:(int)arg1 volume:(float)arg2;
-- (id)_volumeHUDViewWithMode:(int)arg1 volume:(float)arg2;
+- (void)_presentVolumeHUDWithMode:(int)arg1 volume:(CGFloat)arg2;
+- (id)_volumeHUDViewWithMode:(int)arg1 volume:(CGFloat)arg2;
 - (BOOL)headphonesPresent;
 - (void)_effectiveVolumeChanged:(id)arg1;
 - (int)_volumeModeForCategory:(id)arg1;
@@ -49,11 +49,11 @@
 - (id)lastDisplayedCategory;
 - (void)decreaseVolume;
 - (void)increaseVolume;
-- (float)_calcButtonRepeatDelay;
-- (void)_changeVolumeBy:(float)arg1;
+- (CGFloat)_calcButtonRepeatDelay;
+- (void)_changeVolumeBy:(CGFloat)arg1;
 - (BOOL)_isMusicPlayingSomewhere;
 - (void)_userAcknowledgedEUEnforcement;
-- (float)volume;
+- (CGFloat)volume;
 - (void)toggleMute;
 - (BOOL)_HUDIsDisplayableForCategory:(id)arg1;
 - (BOOL)_isCategoryAlwaysHidden:(id)arg1;
@@ -63,8 +63,8 @@
 - (void)dealloc;
 - (void)_initializeEUVolumeLimits;
 - (id)init;
-- (float)volumeStepDown;
-- (float)volumeStepUp;
+- (CGFloat)volumeStepDown;
+- (CGFloat)volumeStepUp;
 
 @end
 

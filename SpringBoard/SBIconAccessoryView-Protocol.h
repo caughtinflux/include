@@ -9,7 +9,7 @@
 @protocol SBIconAccessoryView <NSObject>
 + (id)checkoutAccessoryImagesForIcon:(id)arg1 location:(int)arg2;
 - (void)prepareForReuse;
-- (void)setAccessoryBrightness:(float)arg1;
+- (void)setAccessoryBrightness:(CGFloat)arg1;
 - (BOOL)displayingAccessory;
 - (CGPoint)accessoryOriginForIconBounds:(CGRect)arg1;
 - (void)configureForIcon:(id)arg1 location:(int)arg2 highlighted:(BOOL)arg3;

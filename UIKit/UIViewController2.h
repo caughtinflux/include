@@ -37,7 +37,7 @@
 -(id)nextResponder;
 -(void)_loadViewFromNibNamed:(id)nibNamed bundle:(id)bundle;
 -(CGRect)_defaultInitialViewFrame;
--(float)_statusBarHeightForCurrentInterfaceOrientation;
+-(CGFloat)_statusBarHeightForCurrentInterfaceOrientation;
 -(void)loadView;
 -(void)viewDidLoad;
 -(void)forceUnloadView;
@@ -153,7 +153,7 @@
 @property(readonly, assign, nonatomic) BOOL _isDimmingBackground;
 @property(readonly, assign, nonatomic) BOOL _useSheetRotation;
 @property(readonly, assign, nonatomic) BOOL _isModalSheet;
--(float)heightForViewInPopoverView;
+-(CGFloat)heightForViewInPopoverView;
 -(CGSize)_sizeForViewInPopoverView;
 -(CGSize)contentSizeForViewInPopoverView;
 -(BOOL)isSheet;
@@ -178,7 +178,7 @@
 -(void)_handleDismiss;
 -(BOOL)_coversApplicationFrame;
 -(id)clientsForRotationForWindow:(id)window;
--(CGAffineTransform)tranformForScreenOriginRotation:(float)screenOriginRotation;
+-(CGAffineTransform)tranformForScreenOriginRotation:(CGFloat)screenOriginRotation;
 -(void)window:(id)window resizeFromOrientation:(int)orientation;
 #else
 -(void)_didFinishPresentModalTransition;

@@ -10,15 +10,15 @@
 
 @interface SBPieChartSlice : NSObject
 {
-    float _value;
+    CGFloat _value;
     UIColor *_fillColor;
 }
 
-+ (id)sliceWithValue:(float)arg1 fillColor:(id)arg2;
++ (id)sliceWithValue:(CGFloat)arg1 fillColor:(id)arg2;
 @property(readonly) UIColor *fillColor; // @synthesize fillColor=_fillColor;
-@property(readonly) float value; // @synthesize value=_value;
+@property(readonly) CGFloat value; // @synthesize value=_value;
 - (void)dealloc;
-- (id)initWithValue:(float)arg1 fillColor:(id)arg2;
+- (id)initWithValue:(CGFloat)arg1 fillColor:(id)arg2;
 
 @end
 

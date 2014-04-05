@@ -23,7 +23,7 @@
     UIPanGestureRecognizer *_panRecognizer;
     void *_addressBook;
     UIImage *_placeHolderImages[15];
-    float _lastContentOffsetY;
+    CGFloat _lastContentOffsetY;
     BOOL _scrollDown;
     BOOL _hasShownBackgroundSinceLastClear;
     id _fadeOutCompletionBlock;
@@ -40,8 +40,8 @@
 - (void)_searchFieldReturnPressed;
 - (void)_searchFieldEditingChanged;
 - (void)searchGesture:(id)arg1 completedShowing:(BOOL)arg2;
-- (void)searchGesture:(id)arg1 changedPercentComplete:(float)arg2;
-- (float)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2;
+- (void)searchGesture:(id)arg1 changedPercentComplete:(CGFloat)arg2;
+- (CGFloat)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2;
 - (id)tableView:(id)arg1 viewForHeaderInSection:(int)arg2;
 - (BOOL)tableView:(id)arg1 wantsHeaderForSection:(int)arg2;
 - (void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2;

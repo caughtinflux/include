@@ -13,7 +13,7 @@ __attribute__((visibility("hidden")))
 @interface UINavigationItemView : UIView {
 	UIFont* _font;
 	UINavigationItem* _item;
-	float _titleWidth;
+	CGFloat _titleWidth;
 	BOOL _titleAutosizesToFit;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 	UIView* _topCrossView;
@@ -28,7 +28,7 @@ __attribute__((visibility("hidden")))
 -(void)setFrame:(CGRect)frame;
 -(void)drawRect:(CGRect)rect;
 -(void)_resetTitleWidth;
--(float)_titleWidth;
+-(CGFloat)_titleWidth;
 -(id)title;
 -(void)setTitleAutoresizesToFit:(BOOL)fit;
 -(BOOL)titleAutoresizesToFit;

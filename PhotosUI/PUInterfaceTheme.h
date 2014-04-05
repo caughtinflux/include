@@ -26,17 +26,17 @@
 @property (nonatomic,readonly) BOOL photoCollectionToolbarTranslucent; 
 @property (nonatomic,readonly) UIImage * photoCollectionToolbarShadowImage; 
 @property (nonatomic,readonly) UIColor * photoCollectionToolbarTintColor; 
-@property (nonatomic,readonly) float photoCollectionToolbarTextTitleSpacerWidth; 
-@property (nonatomic,readonly) float photoCollectionToolbarIconToTextSpacerWidth; 
+@property (nonatomic,readonly) CGFloat photoCollectionToolbarTextTitleSpacerWidth; 
+@property (nonatomic,readonly) CGFloat photoCollectionToolbarIconToTextSpacerWidth; 
 @property (nonatomic,readonly) UIColor * photoCollectionToolbarButtonTintColor; 
 @property (nonatomic,readonly) unsigned emptyPlaceholderStyle; 
 @property (nonatomic,readonly) UIColor * emptyPlaceholderViewBackgroundColor; 
 @property (nonatomic,readonly) UIColor * albumListBackgroundColor; 
 @property (nonatomic,readonly) UIFont * albumListTitleLabelFont; 
 @property (nonatomic,readonly) UIFont * albumListSubtitleLabelFont; 
-@property (nonatomic,readonly) float albumListDisabledAlbumStackViewAlpha; 
-@property (nonatomic,readonly) float albumListDisabledAlbumTitleAlpha; 
-@property (nonatomic,readonly) float bannerHeight; 
+@property (nonatomic,readonly) CGFloat albumListDisabledAlbumStackViewAlpha; 
+@property (nonatomic,readonly) CGFloat albumListDisabledAlbumTitleAlpha; 
+@property (nonatomic,readonly) CGFloat bannerHeight; 
 @property (nonatomic,readonly) UIColor * bannerBackgroundColor; 
 @property (nonatomic,readonly) UIImage * gridViewCellBannerBackgroundImage; 
 @property (nonatomic,readonly) UIColor * gridViewCellBannerBackgroundColor; 
@@ -45,8 +45,8 @@
 @property (nonatomic,readonly) int photoBrowserStatusBarStyle; 
 @property (nonatomic,readonly) UIColor * photoBrowserChromeVisibleBackgroundColor; 
 @property (nonatomic,readonly) UIColor * photoBrowserChromeHiddenBackgroundColor; 
-@property (nonatomic,readonly) float videoPaletteSideMargin; 
-@property (nonatomic,readonly) float videoPaletteBottomMargin; 
+@property (nonatomic,readonly) CGFloat videoPaletteSideMargin; 
+@property (nonatomic,readonly) CGFloat videoPaletteBottomMargin; 
 @property (nonatomic,readonly) NSDictionary * contentCommentsHiddenButtonTextAttributes; 
 @property (nonatomic,readonly) UIColor * contentCommentsHiddenButtonImageColor; 
 @property (nonatomic,readonly) NSDictionary * contentCommentsShownButtonTextAttributes; 
@@ -60,7 +60,7 @@
 @property (nonatomic,readonly) UIFont * wallpaperCategoryLabelFont; 
 @property (nonatomic,readonly) UIColor * cloudFeedBackgroundColor; 
 @property (nonatomic,readonly) UIColor * cloudFeedSeparatorColor; 
-@property (nonatomic,readonly) float cloudFeedSeparatorHeight; 
+@property (nonatomic,readonly) CGFloat cloudFeedSeparatorHeight; 
 @property (nonatomic,readonly) NSDictionary * cloudFeedDefaultTextAttributes; 
 @property (nonatomic,readonly) NSDictionary * cloudFeedEmphasizedTextAttributes; 
 @property (nonatomic,readonly) NSDictionary * cloudFeedWhiteDefaultTextAttributes; 
@@ -81,8 +81,8 @@
 @required
 -(void)configurePhotoCollectionToolbarButton:(id)arg1;
 -(void)configurePhotoCollectionToolbarDeleteButton:(id)arg1;
--(float)photoCollectionToolbarTextTitleSpacerWidth;
--(float)photoCollectionToolbarIconToTextSpacerWidth;
+-(CGFloat)photoCollectionToolbarTextTitleSpacerWidth;
+-(CGFloat)photoCollectionToolbarIconToTextSpacerWidth;
 -(id)photoCollectionViewBackgroundColor;
 -(int)topLevelStatusBarStyle;
 -(void)configureTopLevelNavigationBarDoneButton:(id)arg1;
@@ -92,8 +92,8 @@
 -(void)configureAlbumListTitleTextField:(id)arg1;
 -(void)configureAlbumListSubtitleLabel:(id)arg1;
 -(void)configureAlbumListDeleteButton:(id)arg1;
--(float)albumListDisabledAlbumStackViewAlpha;
--(float)albumListDisabledAlbumTitleAlpha;
+-(CGFloat)albumListDisabledAlbumStackViewAlpha;
+-(CGFloat)albumListDisabledAlbumTitleAlpha;
 -(void)configurePhotoCollectionHeaderTitleLabel:(id)arg1 forStyle:(int)arg2;
 -(void)configurePhotoCollectionHeaderLocationsLabel:(id)arg1 forStyle:(int)arg2;
 -(id)photoCollectionHeaderLocationIconForStyle:(int)arg1;
@@ -104,7 +104,7 @@
 -(UIOffset*)photoCollectionHeaderLocationIconOffsetForStyle:(int)arg1;
 -(void)configureCloudFeedInvitationReplyButton:(id)arg1;
 -(id)cloudFeedSeparatorColor;
--(float)cloudFeedSeparatorHeight;
+-(CGFloat)cloudFeedSeparatorHeight;
 -(id)cloudFeedInvitationTitleTextAttributes;
 -(id)cloudFeedInvitationSubtitleTextAttributes;
 -(void)configureAlbumListStackViewPhonePhotoDecoration:(id)arg1;
@@ -142,7 +142,7 @@
 -(void)configureBannerStackView:(id)arg1;
 -(void)configureBannerLabel:(id)arg1;
 -(id)bannerBackgroundColor;
--(float)bannerHeight;
+-(CGFloat)bannerHeight;
 -(int)photoCollectionViewBackgroundColorValue;
 -(void)configurePhotoCollectionGlobalFooterTitleLabel:(id)arg1;
 -(void)configurePhotoCollectionGlobalFooterSubtitleLabel:(id)arg1;
@@ -153,8 +153,8 @@
 -(id)photoCollectionToolbarBackgroundImageForBarMetrics:(int)arg1;
 -(id)photoBrowserChromeVisibleBackgroundColor;
 -(id)photoBrowserChromeHiddenBackgroundColor;
--(float)videoPaletteSideMargin;
--(float)videoPaletteBottomMargin;
+-(CGFloat)videoPaletteSideMargin;
+-(CGFloat)videoPaletteBottomMargin;
 -(int)photoBrowserStatusBarStyle;
 -(id)cloudFeedBackgroundColor;
 -(void)configureCloudFeedStackView:(id)arg1 withStackSize:(CGSize)arg2;

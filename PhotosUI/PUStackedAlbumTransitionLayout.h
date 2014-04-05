@@ -48,7 +48,7 @@
 -(CGPoint)finalCollapsedStackCenter;
 -(CGPoint)initialCollapsedStackCenter;
 -(CGPoint)_centerOfLayoutAttributes:(id)arg1 ;
--(CGPoint)_newCenterForLayoutAttributes:(id)arg1 transitionProgress:(float)arg2 ;
+-(CGPoint)_newCenterForLayoutAttributes:(id)arg1 transitionProgress:(CGFloat)arg2 ;
 -(CGPoint)interactionOffset;
 -(void).cxx_destruct;
 @end

@@ -12,7 +12,7 @@ __attribute__((visibility("hidden")))
 	UIView* m_selExtraView;
 	int m_mode;
 	CGRect m_referenceRect;
-	float m_pointerOffset;
+	CGFloat m_pointerOffset;
 	NSIndexPath* m_currentInputModeIndexPath;
 }
 @property(readonly, assign, nonatomic) int mode;
@@ -43,7 +43,7 @@ __attribute__((visibility("hidden")))
 -(int)indexForIndexPath:(id)indexPath;
 // in a protocol: -(int)tableView:(id)view numberOfRowsInSection:(int)section;
 // in a protocol: -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
-// in a protocol: -(float)tableView:(id)view heightForRowAtIndexPath:(id)indexPath;
+// in a protocol: -(CGFloat)tableView:(id)view heightForRowAtIndexPath:(id)indexPath;
 // in a protocol: -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 @end
 

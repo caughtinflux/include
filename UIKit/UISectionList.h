@@ -14,17 +14,17 @@
 	NSMutableArray* _titles;
 	NSSet* _indexTitlesAsSet;
 	int _sectionCount;
-	float _listWidth;
+	CGFloat _listWidth;
 	struct {
 		unsigned isTranslucent : 1;
 	} _sectionListFlags;
 }
-+(float)defaultIndexWidth;
++(CGFloat)defaultIndexWidth;
 -(id)initWithFrame:(CGRect)frame showSectionIndex:(BOOL)index;
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;
 -(void)setDataSource:(id)source;
--(float)marginForIndexControl:(BOOL)indexControl;
+-(CGFloat)marginForIndexControl:(BOOL)indexControl;
 -(id)allTitles;
 -(void)_languageChanged;
 -(id)indexTitles;

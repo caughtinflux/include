@@ -20,8 +20,8 @@
 // inherited: -(void)dealloc;
 -(unsigned long)inputCount;
 -(unsigned long)outputCount;
--(BOOL)apply:(const float*)apply result:(float*)result;
--(BOOL)apply:(const float*)apply result:(float*)result parameterFunction:(/*function-pointer*/ void*)function context:(void*)context;
+-(BOOL)apply:(const CGFloat*)apply result:(CGFloat*)result;
+-(BOOL)apply:(const CGFloat*)apply result:(CGFloat*)result parameterFunction:(/*function-pointer*/ void*)function context:(void*)context;
 -(struct Object*)CA_copyRenderValue;
 @end
 

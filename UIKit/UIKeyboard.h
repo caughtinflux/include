@@ -74,9 +74,9 @@
 -(void)minimize;
 -(void)maximize;
 -(void)keyboardMinMaximized:(id)maximized finished:(id)finished context:(id)context;
--(UIPeripheralAnimationGeometry)geometryForImplHeightDelta:(float)implHeightDelta;
-// in a protocol: -(void)prepareForImplBoundsHeightChange:(float)implBoundsHeightChange suppressNotification:(BOOL)notification;
-// in a protocol: -(void)implBoundsHeightChangeDone:(float)done suppressNotification:(BOOL)notification;
+-(UIPeripheralAnimationGeometry)geometryForImplHeightDelta:(CGFloat)implHeightDelta;
+// in a protocol: -(void)prepareForImplBoundsHeightChange:(CGFloat)implBoundsHeightChange suppressNotification:(BOOL)notification;
+// in a protocol: -(void)implBoundsHeightChangeDone:(CGFloat)done suppressNotification:(BOOL)notification;
 // in a protocol: -(BOOL)canDismiss;
 #else
 -(void)_setTypingEnabled:(BOOL)enabled;

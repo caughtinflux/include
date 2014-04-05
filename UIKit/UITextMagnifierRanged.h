@@ -45,7 +45,7 @@
 -(void)zoomDownAnimation;
 -(void)zoomDownAnimationDidStop:(id)zoomDownAnimation finished:(id)finished;
 -(void)remove;
--(float)currentOffset;
+-(CGFloat)currentOffset;
 -(void)updateFrame;
 -(void)detectLostTouches:(id)touches;
 -(void)beginMagnifyingTarget:(id)target magnificationPoint:(CGPoint)point offset:(CGPoint)offset animated:(BOOL)animated;

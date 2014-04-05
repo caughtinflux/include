@@ -17,25 +17,25 @@
 #import "UIGestureRecognizer.h"
 
 @interface UIPinchGestureRecognizer : UIGestureRecognizer {
-	float _lastTouchDistance;
+	CGFloat _lastTouchDistance;
 	double _lastTouchTime;
-	float _velocity;
-	float _previousVelocity;
-	float _scaleThreshold;
+	CGFloat _velocity;
+	CGFloat _previousVelocity;
+	CGFloat _scaleThreshold;
 	CGAffineTransform _transform;
 	CGPoint _anchorPoint;
 	unsigned _scrollViewGesture : 1;
 }
-@property(readonly, assign, nonatomic) float velocity;
-@property(readonly, assign, nonatomic) float scale;
+@property(readonly, assign, nonatomic) CGFloat velocity;
+@property(readonly, assign, nonatomic) CGFloat scale;
 #endif
 @property(readonly, assign, nonatomic) CGAffineTransform transform;
-@property(assign, nonatomic) float scaleThreshold;
+@property(assign, nonatomic) CGFloat scaleThreshold;
 @property(assign, nonatomic, getter=isScrollViewGesture) BOOL scrollViewGesture;
 @property(readonly, assign, nonatomic) CGPoint anchorPoint;
 // inherited: -(id)initWithTarget:(id)target action:(SEL)action;
 // inherited: -(void)reset;
--(float)_distanceBetweenTouches:(id)touches;
+-(CGFloat)_distanceBetweenTouches:(id)touches;
 // inherited: -(void)touchesBegan:(id)began withEvent:(id)event;
 // inherited: -(void)touchesMoved:(id)moved withEvent:(id)event;
 // inherited: -(void)touchesEnded:(id)ended withEvent:(id)event;

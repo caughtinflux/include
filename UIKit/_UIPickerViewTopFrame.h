@@ -12,13 +12,13 @@
 	UIImage* _leftImage;
 	UIImage* _middleImage;
 	UIImage* _rightImage;
-	float _inset;
+	CGFloat _inset;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)setLeftImage:(id)image middleImage:(id)image2 rightImage:(id)image3;
 -(void)dealloc;
 -(BOOL)ignoresMouseEvents;
--(void)setInset:(float)inset;
+-(void)setInset:(CGFloat)inset;
 -(void)drawRect:(CGRect)rect;
 @end
 

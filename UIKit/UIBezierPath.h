@@ -24,17 +24,17 @@ typedef enum {
 #include_next <UIKit/UIBezierPath.h>
 
 @interface UIBezierPath ()
-+(id)_bezierPathWithRoundedRect:(CGRect)roundedRect byRoundingCorners:(unsigned)corners cornerRadius:(float)radius;
-+(id)bezierPathForBottomOfRect:(CGRect)rect withCornerRadius:(float)cornerRadius;
-+(id)bezierPathForTopOfRect:(CGRect)rect withCornerRadius:(float)cornerRadius;
++(id)_bezierPathWithRoundedRect:(CGRect)roundedRect byRoundingCorners:(unsigned)corners cornerRadius:(CGFloat)radius;
++(id)bezierPathForBottomOfRect:(CGRect)rect withCornerRadius:(CGFloat)cornerRadius;
++(id)bezierPathForTopOfRect:(CGRect)rect withCornerRadius:(CGFloat)cornerRadius;
 +(id)roundedRectBezierPath:(CGRect)path withRoundedEdges:(UIBezierPathRoundedEdges)roundedEdges;
-+(id)roundedRectBezierPath:(CGRect)path withRoundedCorners:(UIBezierPathRoundedCorners)roundedCorners withCornerRadius:(float)cornerRadius;
++(id)roundedRectBezierPath:(CGRect)path withRoundedCorners:(UIBezierPathRoundedCorners)roundedCorners withCornerRadius:(CGFloat)cornerRadius;
 +(id)roundedRectBezierPath:(CGRect)path withRoundedCorners:(UIBezierPathRoundedCorners)roundedCorners withCornerRadii:(NSArray*)cornerRadii;
 -(CGPathRef)_createMutablePathByDecodingData:(id)data;
 -(id)_initWithCGMutablePath:(CGPathRef)cgmutablePath;
 -(CGPathRef)_mutablePath;
 -(void)appendBezierPath:(id)path;
--(void)appendBezierPathWithArcWithCenter:(CGPoint)center radius:(float)radius startAngle:(float)angle endAngle:(float)angle4 clockwise:(BOOL)clockwise;
+-(void)appendBezierPathWithArcWithCenter:(CGPoint)center radius:(CGFloat)radius startAngle:(CGFloat)angle endAngle:(CGFloat)angle4 clockwise:(BOOL)clockwise;
 -(void)appendBezierPathWithOvalInRect:(CGRect)rect;
 -(void)appendBezierPathWithOvalInRect:(CGRect)rect transform:(CGAffineTransform)transform;
 -(void)appendBezierPathWithRect:(CGRect)rect;
@@ -50,17 +50,17 @@ typedef enum {
 
 @interface UIBezierPath : NSObject {
 	CGPathRef _pathRef;
-	float _width;
+	CGFloat _width;
 }
 +(id)bezierPath;
-+(id)bezierPathForBottomOfRect:(CGRect)rect withCornerRadius:(float)cornerRadius;
-+(id)bezierPathForTopOfRect:(CGRect)rect withCornerRadius:(float)cornerRadius;
-+(id)bezierPathKnockingOutTopOfRect:(CGRect)rect withCornerRadius:(float)cornerRadius;
-+(id)bezierPathKnockingOutBottomOfRect:(CGRect)rect withCornerRadius:(float)cornerRadius;
++(id)bezierPathForBottomOfRect:(CGRect)rect withCornerRadius:(CGFloat)cornerRadius;
++(id)bezierPathForTopOfRect:(CGRect)rect withCornerRadius:(CGFloat)cornerRadius;
++(id)bezierPathKnockingOutTopOfRect:(CGRect)rect withCornerRadius:(CGFloat)cornerRadius;
++(id)bezierPathKnockingOutBottomOfRect:(CGRect)rect withCornerRadius:(CGFloat)cornerRadius;
 +(id)roundedRectBezierPath:(CGRect)path withRoundedEdges:(UIBezierPathRoundedEdges)roundedEdges;
-+(id)roundedRectBezierPath:(CGRect)path withRoundedCorners:(UIBezierPathRoundedCorners)roundedCorners withCornerRadius:(float)cornerRadius;
++(id)roundedRectBezierPath:(CGRect)path withRoundedCorners:(UIBezierPathRoundedCorners)roundedCorners withCornerRadius:(CGFloat)cornerRadius;
 +(id)roundedRectBezierPath:(CGRect)path withRoundedCorners:(UIBezierPathRoundedCorners)roundedCorners withCornerRadii:(NSArray*)cornerRadii;
-+(id)roundedRectBezierPath:(CGRect)path withRoundedCorners:(UIBezierPathRoundedCorners)roundedCorners visibleEdges:(UIBezierPathRoundedEdges)edges cornerRadius:(float)radius;
++(id)roundedRectBezierPath:(CGRect)path withRoundedCorners:(UIBezierPathRoundedCorners)roundedCorners visibleEdges:(UIBezierPathRoundedEdges)edges cornerRadius:(CGFloat)radius;
 -(id)init;
 -(void)dealloc;
 -(void)moveToPoint:(CGPoint)point;
@@ -70,15 +70,15 @@ typedef enum {
 -(void)appendBezierPathWithOvalInRect:(CGRect)rect;
 -(void)appendBezierPathWithOvalInRect:(CGRect)rect transform:(CGAffineTransform)transform;
 -(void)closePath;
--(void)appendBezierPathWithArcWithCenter:(CGPoint)center radius:(float)radius startAngle:(float)angle endAngle:(float)angle4 clockwise:(BOOL)clockwise;
--(void)setLineWidth:(float)width;
+-(void)appendBezierPathWithArcWithCenter:(CGPoint)center radius:(CGFloat)radius startAngle:(CGFloat)angle endAngle:(CGFloat)angle4 clockwise:(BOOL)clockwise;
+-(void)setLineWidth:(CGFloat)width;
 -(void)fill;
 -(void)stroke;
 -(void)clip;
 @end
 
 @interface UIBezierPath (UIInternal)
-+(UIBezierPath*)roundedRectBezierPath:(CGRect)path withTopCornerRadius:(float)topCornerRadius withBottomCornerRadius:(float)bottomCornerRadius;
++(UIBezierPath*)roundedRectBezierPath:(CGRect)path withTopCornerRadius:(CGFloat)topCornerRadius withBottomCornerRadius:(CGFloat)bottomCornerRadius;
 -(CGPathRef)_pathRef;
 @end
 

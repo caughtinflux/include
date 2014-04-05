@@ -13,9 +13,9 @@
 	unsigned _hiding : 1;
 	unsigned _showAsPlus : 1;
 	unsigned _reserved : 28;
-	float _verticalOffset;
+	CGFloat _verticalOffset;
 }
-+(float)defaultWidth;
++(CGFloat)defaultWidth;
 +(id)minusImage;
 +(id)plusImage;
 -(id)initWithRemoveControl:(id)removeControl;

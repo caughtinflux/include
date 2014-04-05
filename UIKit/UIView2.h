@@ -20,8 +20,8 @@
 -(id)initWithCoder:(id)coder;
 -(void)encodeWithCoder:(id)coder;
 -(void)dealloc;
--(void)setCharge:(float)charge;
--(float)charge;
+-(void)setCharge:(CGFloat)charge;
+-(CGFloat)charge;
 -(void)_setChargeEnabled:(BOOL)enabled;
 -(BOOL)_isChargeEnabled;
 -(void)setTapDelegate:(id)delegate;
@@ -154,7 +154,7 @@
 +(void)setAnimationStartDate:(id)date;
 +(void)setAnimationStartTime:(double)time;
 +(void)setAnimationCurve:(int)curve;
-+(void)setAnimationRepeatCount:(float)count;
++(void)setAnimationRepeatCount:(CGFloat)count;
 +(void)setAnimationRepeatAutoreverses:(BOOL)autoreverses;
 +(void)setAnimationBeginsFromCurrentState:(BOOL)currentState;
 +(void)setAnimationAutoreverses:(BOOL)autoreverses;
@@ -261,7 +261,7 @@
 -(CGRect)convertRect:(CGRect)rect fromView:(id)view;
 -(CGRect)hitRect;
 -(void)setFrame:(CGRect)frame forFields:(int)fields;
--(void)setRotationBy:(float)by;
+-(void)setRotationBy:(CGFloat)by;
 -(void)setAutoresizesSubviews:(BOOL)subviews;
 -(BOOL)autoresizesSubviews;
 -(void)setAutoresizingMask:(unsigned)mask;
@@ -285,12 +285,12 @@
 -(void)_gestureEnded:(GSEventRef)ended;
 -(CGSize)_scrollerContentSize;
 -(CGPoint)_constrainedScrollPoint:(CGPoint)point contentSize:(CGSize)size;
--(void)_zoomToScrollPoint:(CGPoint)scrollPoint scale:(float)scale duration:(float)duration event:(GSEventRef)event;
--(float)_zoomAnimationDurationForScale:(float)scale;
--(void)_zoomToWindowPoint:(CGPoint)windowPoint scale:(float)scale duration:(float)duration constrainScrollPoint:(BOOL)point event:(GSEventRef)event;
+-(void)_zoomToScrollPoint:(CGPoint)scrollPoint scale:(CGFloat)scale duration:(CGFloat)duration event:(GSEventRef)event;
+-(CGFloat)_zoomAnimationDurationForScale:(CGFloat)scale;
+-(void)_zoomToWindowPoint:(CGPoint)windowPoint scale:(CGFloat)scale duration:(CGFloat)duration constrainScrollPoint:(BOOL)point event:(GSEventRef)event;
 -(void)_animateToScrollPoint:(CGPoint)scrollPoint;
--(void)_animateZoomFailureToWindowPoint:(CGPoint)windowPoint scale:(float)scale duration:(float)duration;
--(float)_zoomAnimationProgress;
+-(void)_animateZoomFailureToWindowPoint:(CGPoint)windowPoint scale:(CGFloat)scale duration:(CGFloat)duration;
+-(CGFloat)_zoomAnimationProgress;
 @end
 
 @interface UIView (Gestures)
@@ -299,24 +299,24 @@
 -(void)_gestureChanged:(int)changed event:(GSEventRef)event;
 -(void)animator:(id)animator startAnimation:(id)animation;
 -(void)animator:(id)animator stopAnimation:(id)animation;
--(CGPoint)_scrollPointForPoint:(CGPoint)point scale:(float)scale constrain:(BOOL)constrain snapToEdge:(BOOL)edge;
--(void)zoomToScale:(float)scale;
--(void)_setGestureInfoZoomScale:(float)scale;
--(void)_zoomToScale:(float)scale event:(GSEventRef)event;
--(void)_zoomToEvent:(GSEventRef)event scale:(float)scale animate:(BOOL)animate constrainScrollPoint:(BOOL)point;
--(void)_rubberbandZoomToEvent:(GSEventRef)event scale:(float)scale;
+-(CGPoint)_scrollPointForPoint:(CGPoint)point scale:(CGFloat)scale constrain:(BOOL)constrain snapToEdge:(BOOL)edge;
+-(void)zoomToScale:(CGFloat)scale;
+-(void)_setGestureInfoZoomScale:(CGFloat)scale;
+-(void)_zoomToScale:(CGFloat)scale event:(GSEventRef)event;
+-(void)_zoomToEvent:(GSEventRef)event scale:(CGFloat)scale animate:(BOOL)animate constrainScrollPoint:(BOOL)point;
+-(void)_rubberbandZoomToEvent:(GSEventRef)event scale:(CGFloat)scale;
 -(BOOL)_isRubberBanding;
 -(void)_setZoomAnimationProgress:(id)progress;
--(float)_internalScaleForScale:(float)scale;
--(float)_scaleForInternalScale:(float)internalScale;
--(float)_minimumZoomScaleDelta __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);
--(float)_rubberBandScaleForScale:(float)scale;
+-(CGFloat)_internalScaleForScale:(CGFloat)scale;
+-(CGFloat)_scaleForInternalScale:(CGFloat)internalScale;
+-(CGFloat)_minimumZoomScaleDelta __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);
+-(CGFloat)_rubberBandScaleForScale:(CGFloat)scale;
 -(BOOL)_zoomWithEvent:(GSEventRef)event;
 -(BOOL)_canStartZoomFromEvent:(GSEventRef)event;
 -(BOOL)_startZoomFromEvent:(GSEventRef)event;
 -(void)_stopZoomFromEvent:(GSEventRef)event;
--(void)rotateToDegrees:(float)degrees;
--(void)_rotateToDegrees:(float)degrees duration:(float)duration event:(GSEventRef)event;
+-(void)rotateToDegrees:(CGFloat)degrees;
+-(void)_rotateToDegrees:(CGFloat)degrees duration:(CGFloat)duration event:(GSEventRef)event;
 -(void)_setRotationAnimationProgress:(id)progress;
 -(BOOL)_canStartRotationFromEvent:(GSEventRef)event;
 -(BOOL)_startRotationFromEvent:(GSEventRef)event;
@@ -329,10 +329,10 @@
 -(int)enabledGestures;
 -(void)setValue:(id)value forGestureAttribute:(int)gestureAttribute;
 -(id)valueForGestureAttribute:(int)gestureAttribute;
--(void)setRotationDegrees:(float)degrees duration:(double)duration;
--(float)rotationDegrees;
--(void)_setZoomScale:(float)scale duration:(double)duration;
--(float)_zoomScale;
+-(void)setRotationDegrees:(CGFloat)degrees duration:(double)duration;
+-(CGFloat)rotationDegrees;
+-(void)_setZoomScale:(CGFloat)scale duration:(double)duration;
+-(CGFloat)_zoomScale;
 -(int)stateForGestureType:(int)gestureType;
 -(void)_resetZoomingWithEvent:(GSEventRef)event;
 -(void)gestureStarted:(GSEventRef)started;
@@ -341,7 +341,7 @@
 @end
 
 @interface UIView (UIAutocorrectInlinePrompt)
--(void)reduceWidth:(float)width;
+-(void)reduceWidth:(CGFloat)width;
 @end
 
 @interface UIView (UITouchInternalCompatibility)

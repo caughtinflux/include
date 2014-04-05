@@ -19,7 +19,7 @@
 }
 
 + (Class)layoutAttributesClass;
-+ (float)desiredItemHeightForWidth:(float)arg1;
++ (CGFloat)desiredItemHeightForWidth:(CGFloat)arg1;
 @property(readonly, nonatomic) struct UIEdgeInsets scrollButtonInsets; // @synthesize scrollButtonInsets=_scrollButtonInsets;
 @property(nonatomic) id <SBStarkLauncherLayoutDelegate> delegate; // @synthesize delegate=_delegate;
 - (struct CGSize)collectionViewContentSize;
@@ -27,7 +27,7 @@
 - (id)layoutAttributesForElementsInRect:(struct CGRect)arg1;
 - (void)prepareLayout;
 @property(nonatomic) BOOL layoutForScrollButtons;
-@property(nonatomic) float itemHeight;
+@property(nonatomic) CGFloat itemHeight;
 - (void)dealloc;
 
 @end

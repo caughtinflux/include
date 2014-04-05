@@ -47,8 +47,8 @@
 - (void)_removeFakeStatusBarIfNecessary;
 - (void)_addFakeStatusBarIfNecessary;
 - (id)_lockScreenView;
-- (float)_bottomBarOffset;
-- (float)_topBarOffset;
+- (CGFloat)_bottomBarOffset;
+- (CGFloat)_topBarOffset;
 - (BOOL)gestureRecognizer:(id)arg1 shouldRecognizeSimultaneouslyWithGestureRecognizer:(id)arg2;
 - (void)_touchGestureRecognizer:(id)arg1;
 - (void)_slideGestureRecognizer:(id)arg1;

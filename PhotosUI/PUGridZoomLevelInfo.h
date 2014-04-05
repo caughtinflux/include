@@ -59,7 +59,7 @@
 -(BOOL)configureSupplementaryView:(id)arg1 ofKind:(id)arg2 forIndexPath:(id)arg3 animated:(BOOL)arg4 ;
 -(BOOL)supportsIncrementalChangeNotifications;
 -(void)modelDidChange;
--(void)updateLayoutMetricsForWidth:(float)arg1 ;
+-(void)updateLayoutMetricsForWidth:(CGFloat)arg1 ;
 -(BOOL)supportsEditMode;
 -(BOOL)configureGridCell:(id)arg1 forIndexPath:(id)arg2 ;
 -(id)preheatManager;

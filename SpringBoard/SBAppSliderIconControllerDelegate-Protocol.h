@@ -8,9 +8,9 @@
 
 @protocol SBAppSliderIconControllerDelegate <NSObject>
 - (void)sliderIconScrollerDidEndScrolling:(id)arg1;
-- (unsigned int)sliderIconScroller:(id)arg1 settledIndexForNormalizedOffset:(inout float *)arg2 andXVelocity:(float)arg3;
+- (unsigned int)sliderIconScroller:(id)arg1 settledIndexForNormalizedOffset:(inout CGFloat *)arg2 andXVelocity:(CGFloat)arg3;
 - (void)sliderIconScrollerBeganPanning:(id)arg1;
 - (void)sliderIconScroller:(id)arg1 activate:(id)arg2;
-- (void)sliderIconScroller:(id)arg1 contentOffsetChanged:(float)arg2;
+- (void)sliderIconScroller:(id)arg1 contentOffsetChanged:(CGFloat)arg2;
 @end
 

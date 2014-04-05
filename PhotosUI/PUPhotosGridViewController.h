@@ -31,7 +31,7 @@
 	BOOL _contentViewInSyncWithModel;
 	BOOL _didScrollToInitialPosition;
 	UIView* _alternateContentView;
-	float _lastUpdateLayoutMetricsCollectionViewWidth;
+	CGFloat _lastUpdateLayoutMetricsCollectionViewWidth;
 	UIBarButtonItem* _selectSessionDoneBarButtonItem;
 	UIBarButtonItem* _cancelButtonItem;
 	UINavigationButton* _selectionButton;
@@ -194,7 +194,7 @@
 -(id)_shareableAssetsFromAssets:(id)arg1 ;
 -(void)_removeButtonPressed:(id)arg1 ;
 -(id)_assetsAllowingDelete:(BOOL)arg1 orRemove:(BOOL)arg2 fromAssets:(id)arg3 ;
--(id)_barButtonSpacerWithWidth:(float)arg1 ;
+-(id)_barButtonSpacerWithWidth:(CGFloat)arg1 ;
 -(BOOL)wantsAddContentInToolbar;
 -(BOOL)canAddToOtherAlbumContent;
 -(void)_addButtonPressed:(id)arg1 ;

@@ -14,11 +14,11 @@
 }
 @property(assign, nonatomic) CGSize originalImageSize;
 +(CGPoint)offsetForBubbleInsetAtPoint:(CGPoint)point;
-+(float)additionalHeightForBubbleWhenInsetAtPoint:(CGPoint)point;
++(CGFloat)additionalHeightForBubbleWhenInsetAtPoint:(CGPoint)point;
 -(void)dealloc;
 -(void)setText:(id)text;
--(float)heightForWidth:(float)width;
--(float)tightenedWidth;
+-(CGFloat)heightForWidth:(CGFloat)width;
+-(CGFloat)tightenedWidth;
 -(void)tighten;
 -(void)setImage:(id)image mimeType:(id)type;
 -(void)setImageWithFilename:(id)filename;

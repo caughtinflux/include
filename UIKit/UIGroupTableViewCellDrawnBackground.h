@@ -26,13 +26,13 @@
 -(void)_invalidatePaths;
 -(void)setFrame:(CGRect)frame;
 -(void)setSectionLocation:(int)location animated:(BOOL)animated;
--(void)_createBezierPathWithCornerRadius:(float)cornerRadius bottomRadius:(float)radius animating:(BOOL)animating;
+-(void)_createBezierPathWithCornerRadius:(CGFloat)cornerRadius bottomRadius:(CGFloat)radius animating:(BOOL)animating;
 -(void)drawRect:(CGRect)rect;
 -(void)layoutSubviews;
 @end
 
 @interface UIGroupTableViewCellDrawnBackground (Internal)
--(id)_roundRectBezierPathForRect:(CGRect)rect cornerRadius:(float)radius;
+-(id)_roundRectBezierPathForRect:(CGRect)rect cornerRadius:(CGFloat)radius;
 @end
 
 #endif

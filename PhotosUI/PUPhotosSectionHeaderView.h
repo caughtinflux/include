@@ -20,7 +20,7 @@
 	UIImageView* _locationsIconView;
 	UIButton* _actionButton;
 	CGSize _actionButtonInitialSize;
-	float _actionButtonLabelInitialMaxY;
+	CGFloat _actionButtonLabelInitialMaxY;
 	UIEdgeInsets _actionButtonInitialContentInsets;
 	BOOL _highlightViewVisible;
 	BOOL _performingBatchDateDependentUpdate;

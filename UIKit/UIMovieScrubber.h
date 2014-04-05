@@ -26,8 +26,8 @@
 	id<UIMovieScrubberDataSource> _dataSource;
 	id<UIMovieScrubberDelegate> _delegate;
 	CGRect _trackRect;
-	float _hitOffset;
-	float _zoomDelay;
+	CGFloat _hitOffset;
+	CGFloat _zoomDelay;
 	BOOL _showTimeViews;
 	BOOL _editable;
 	double _value;
@@ -71,7 +71,7 @@
 		unsigned delegateEditingAnimationFinished : 1;
 	} _sliderFlags;
 }
-@property(assign, nonatomic) float zoomDelay;
+@property(assign, nonatomic) CGFloat zoomDelay;
 @property(assign, nonatomic) BOOL showTimeViews;
 @property(assign, nonatomic) double value;
 @property(assign, nonatomic) double duration;
@@ -98,11 +98,11 @@
 -(void)animateAfterEdit;
 -(void)animateCancelEdit;
 -(void)_trimAnimationDidStop:(id)_trimAnimation finished:(id)finished context:(id)context;
--(void)setZoomAnimationDuration:(float)duration;
+-(void)setZoomAnimationDuration:(CGFloat)duration;
 -(void)_computeTrackRectForBounds:(CGRect)bounds;
 -(CGRect)trackRect;
 -(CGRect)_editingRect;
--(CGRect)thumbRectForValue:(float)value;
+-(CGRect)thumbRectForValue:(CGFloat)value;
 -(void)setFrame:(CGRect)frame;
 -(void)layoutSubviews;
 -(void)_initSubviews;
@@ -110,13 +110,13 @@
 -(void)setValue:(double)value animated:(BOOL)animated;
 -(void)_updateThumbLocation;
 -(void)_setValue:(double)value andSendAction:(BOOL)action;
--(float)_editingFrameDeltaXForValue:(float)value handle:(int)handle;
+-(CGFloat)_editingFrameDeltaXForValue:(CGFloat)value handle:(int)handle;
 -(CGRect)_editingViewFrameForStartValueWithFrame:(CGRect)frame;
 -(CGRect)_editingViewFrameForEndValueWithFrame:(CGRect)frame;
 -(void)_sliderAnimationWillStart:(id)_sliderAnimation context:(void*)context;
 -(void)_sliderAnimationDidStop:(id)_sliderAnimation finished:(id)finished context:(void*)context;
 -(void)_sendDelayedActions;
--(float)_valueForTouch:(id)touch;
+-(CGFloat)_valueForTouch:(id)touch;
 -(void)setRotationDisabled:(BOOL)disabled;
 -(void)_trackPressWasHeld;
 -(void)_beginTrackPressWithTouch:(id)touch touchesBegan:(BOOL)began;
@@ -139,8 +139,8 @@
 -(id)movieScrubberTrackView:(id)view timestampsStartingAt:(id)at endingAt:(id)at3 maxCount:(int)count;
 -(void)movieScrubberTrackView:(id)view requestThumbnailImageForTimestamp:(id)timestamp;
 -(void)setThumbnailImage:(CGImageRef)image forTimestamp:(id)timestamp;
--(float)movieScrubberTrackViewThumbnailAspectRatio:(id)ratio;
--(void)movieScrubberTrackView:(id)view sizeWidthDelta:(float)delta originXDelta:(float)delta3 minimumVisibleValue:(float)value maximumVisibleValue:(float)value5;
+-(CGFloat)movieScrubberTrackViewThumbnailAspectRatio:(id)ratio;
+-(void)movieScrubberTrackView:(id)view sizeWidthDelta:(CGFloat)delta originXDelta:(CGFloat)delta3 minimumVisibleValue:(CGFloat)value maximumVisibleValue:(CGFloat)value5;
 -(void)movieScrubberTrackViewDidExpand:(id)movieScrubberTrackView;
 -(void)movieScrubberTrackViewDidCollapse:(id)movieScrubberTrackView;
 -(void)movieScrubberTrackViewWillBeginRequestingThumbnails:(id)movieScrubberTrackView;

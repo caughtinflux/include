@@ -15,14 +15,14 @@ typedef struct __CVBuffer* CVBufferRef;
 typedef struct __IOSurface* IOSurfaceRef;
 
 typedef struct CGPoint {
-	float x;
-	float y;
+	CGFloat x;
+	CGFloat y;
 } CGPoint;
 
 typedef struct __CVOpenGLESTextureCache* CVOpenGLESTextureCacheRef;
 
 typedef struct CGSize {
-	float width;
-	float height;
+	CGFloat width;
+	CGFloat height;
 } CGSize;
 

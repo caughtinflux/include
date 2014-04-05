@@ -20,7 +20,7 @@
 - (id)displayNameForSubsectionID:(id)arg1;
 - (id)defaultSubsectionInfos;
 - (void)dataProviderDidLoad;
-- (float)attachmentAspectRatioForRecordID:(id)arg1;
+- (CGFloat)attachmentAspectRatioForRecordID:(id)arg1;
 - (id)attachmentPNGDataForRecordID:(id)arg1 sizeConstraints:(id)arg2;
 - (id)sectionParameters;
 - (id)clearedInfoForBulletins:(id)arg1;

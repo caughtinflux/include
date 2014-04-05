@@ -22,7 +22,7 @@
 	BOOL _showingArrow;
 	BOOL _arrowHighlighted;
 }
--(id)initWithFrame:(CGRect)frame candidates:(id)candidates type:(int)type maxScreenWidth:(float)width;
+-(id)initWithFrame:(CGRect)frame candidates:(id)candidates type:(int)type maxScreenWidth:(CGFloat)width;
 -(void)dealloc;
 -(int)edgeType;
 -(int)textEffectsVisibilityLevel;
@@ -30,7 +30,7 @@
 -(void)setAnimating:(BOOL)animating;
 -(void)_cellSelected:(id)selected;
 -(void)setTarget:(id)target action:(SEL)action;
--(float)_layoutCandidates:(id)candidates maxCount:(int)count height:(float)height maxScreenWidth:(float)width;
+-(CGFloat)_layoutCandidates:(id)candidates maxCount:(int)count height:(CGFloat)height maxScreenWidth:(CGFloat)width;
 -(unsigned)numberOfShownItems;
 -(BOOL)_arrowHighlighted;
 -(void)showHighlightedArrow;

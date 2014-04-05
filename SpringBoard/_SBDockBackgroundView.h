@@ -11,7 +11,7 @@
 @interface _SBDockBackgroundView : UIView
 {
     UIImage *_maskImage;
-    float _maskHeight;
+    CGFloat _maskHeight;
     SBWallpaperEffectView *_maskedView;
     SBWallpaperEffectView *_unmaskedView;
 }

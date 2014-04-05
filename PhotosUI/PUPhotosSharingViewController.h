@@ -27,7 +27,7 @@
 	NSMutableArray* _pendingSingleCollectionChangeNotifications;
 	UITapGestureRecognizer* _tapGestureRecognizer;
 	NSIndexPath* _inFlightReferenceIndexPath;
-	float _cachedEmbeddedActivityViewHeight;
+	CGFloat _cachedEmbeddedActivityViewHeight;
 	UIBarButtonItem* _nextButton;
 	UIBarButtonItem* _cancelButton;
 	UIBarButtonItem* _doneButton;
@@ -120,7 +120,7 @@
 -(void)_getMainCollectionViewFrame:(CGRect*)arg1 collectionViewLayoutInsets:(UIEdgeInsets*)arg2 embeddedActivityViewFrame:(CGRect*)arg3 ;
 -(id)photosSharingTransitionContext;
 -(id)_imageManager;
--(float)_horizontalOffsetInCollectionView:(id)arg1 forCenteringOnItemAtIndexPath:(id)arg2 ;
+-(CGFloat)_horizontalOffsetInCollectionView:(id)arg1 forCenteringOnItemAtIndexPath:(id)arg2 ;
 -(id)_assetAtIndexPath:(id)arg1 ;
 -(BOOL)_embedsActivityView;
 -(void)_prepareActivityViewControllerForUse;
@@ -163,7 +163,7 @@
 -(void)photosSharingGridCellDidEndZooming:(id)arg1 ;
 -(id)photosSharingGridCellBadgeForZooming:(id)arg1 layoutAnchor:(unsigned*)arg2 ;
 -(id)photosSharingGridCellViewForZooming:(id)arg1 ;
--(id)layout:(id)arg1 collectionView:(id)arg2 referenceIndexPathWithOffsetX:(float*)arg3 ;
+-(id)layout:(id)arg1 collectionView:(id)arg2 referenceIndexPathWithOffsetX:(CGFloat*)arg3 ;
 -(CGSize)layout:(id)arg1 collectionView:(id)arg2 sizeForItemAtIndexPath:(id)arg3 ;
 -(id)transitionCollectionView;
 -(void)setPhotosSharingTransitionContext:(id)arg1 ;

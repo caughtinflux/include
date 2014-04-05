@@ -43,7 +43,7 @@
 -(CGPoint)newOffsetWithCenteredRectFromOffset:(CGPoint)offset;
 -(BOOL)scrollCenterCellToSelectionBar;
 -(BOOL)fixupCenterCellToSelectionBar:(BOOL)selectionBar;
--(void)setRowHeight:(float)height;
+-(void)setRowHeight:(CGFloat)height;
 -(void)removeFromSuperview;
 -(void)updateSelectionBarRow;
 -(id)_resuableObjectForTableCell:(id)tableCell;

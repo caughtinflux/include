@@ -12,7 +12,7 @@
 {
     BOOL _hasSnapshot;
     int _launchingInterfaceOrientation;
-    float _launchingScale;
+    CGFloat _launchingScale;
     int _originalOrientation;
     int _currentOrientation;
     UIImage *_image;
@@ -23,7 +23,7 @@
 @property(nonatomic) BOOL hasSnapshot; // @synthesize hasSnapshot=_hasSnapshot;
 @property(nonatomic) int currentOrientation; // @synthesize currentOrientation=_currentOrientation;
 @property(nonatomic) int originalOrientation; // @synthesize originalOrientation=_originalOrientation;
-@property(nonatomic) float launchingScale; // @synthesize launchingScale=_launchingScale;
+@property(nonatomic) CGFloat launchingScale; // @synthesize launchingScale=_launchingScale;
 @property(nonatomic) int launchingInterfaceOrientation; // @synthesize launchingInterfaceOrientation=_launchingInterfaceOrientation;
 @property(nonatomic) struct CGSize launchingScreenSize; // @synthesize launchingScreenSize=_launchingScreenSize;
 - (id)description;

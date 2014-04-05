@@ -28,7 +28,7 @@
 	id _textSuggestionDelegate;
 	id _editingDelegate;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	float _doubleTapDelay;
+	CGFloat _doubleTapDelay;
 #endif
 	CGRect _doubleTapRect;
 	CGRect _mainDocumentDoubleTapRect;
@@ -104,8 +104,8 @@
 			BOOL defaultPrevented;
 			NSMutableArray* regions;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-			float originalGestureDistance;
-			float originalGestureAngle;
+			CGFloat originalGestureDistance;
+			CGFloat originalGestureAngle;
 #endif
 		} directEvents;
 #endif
@@ -118,14 +118,14 @@
 #endif
 	struct {
 		CGSize size;
-		float initialScale;
-		float minimumScale;
-		float maximumScale;
+		CGFloat initialScale;
+		CGFloat minimumScale;
+		CGFloat maximumScale;
 		BOOL allowsUserScaling;
 	} _viewportConfigurations[6];
 	CGSize _minimumSize;
 	int _documentType;
-	float _documentScale;
+	CGFloat _documentScale;
 	CGRect _documentBounds;
 	int _enabledGestures;
 	unsigned _customConfigurations;
@@ -240,13 +240,13 @@
 -(unsigned)dataDetectorTypes;
 -(void)setUsePreTimberlineTransparencyBehavior;
 -(void)setFrame:(CGRect)frame;
--(float)integralScaleForScale:(float)scale;
--(void)_setDocumentScale:(float)scale;
--(float)viewportWidth;
--(float)viewportHeight;
--(float)minimumScaleForMinimumSize:(CGSize)minimumSize;
--(float)initialScale;
--(float)minimumScale;
+-(CGFloat)integralScaleForScale:(CGFloat)scale;
+-(void)_setDocumentScale:(CGFloat)scale;
+-(CGFloat)viewportWidth;
+-(CGFloat)viewportHeight;
+-(CGFloat)minimumScaleForMinimumSize:(CGSize)minimumSize;
+-(CGFloat)initialScale;
+-(CGFloat)minimumScale;
 -(void)viewportConfigurationsDidChange:(unsigned)viewportConfigurations;
 -(void)_setDocumentType:(int)type overrideCustomConfigurations:(BOOL)configurations;
 -(void)_setDocumentType:(int)type;
@@ -270,9 +270,9 @@
 -(void)setAutoresizes:(BOOL)autoresizes;
 -(void)setMinimumSize:(CGSize)size;
 -(void)setViewportSize:(CGSize)size forDocumentTypes:(int)documentTypes;
--(void)setInitialScale:(float)scale forDocumentTypes:(int)documentTypes;
--(void)setMinimumScale:(float)scale forDocumentTypes:(int)documentTypes;
--(void)setMaximumScale:(float)scale forDocumentTypes:(int)documentTypes;
+-(void)setInitialScale:(CGFloat)scale forDocumentTypes:(int)documentTypes;
+-(void)setMinimumScale:(CGFloat)scale forDocumentTypes:(int)documentTypes;
+-(void)setMaximumScale:(CGFloat)scale forDocumentTypes:(int)documentTypes;
 -(void)setAllowsUserScaling:(BOOL)scaling forDocumentTypes:(int)documentTypes;
 -(void)_setScrollerOffset:(CGPoint)offset;
 -(void)_restoreScrollPointForce:(BOOL)force;
@@ -304,10 +304,10 @@
 -(void)_notifyContentHostingLayersOfScaleChange;
 -(void)revealedSelectionByScrollingWebFrame:(id)frame;
 -(void)webView:(id)view attachRootLayer:(id)layer;
--(void)zoomToScale:(float)scale;
+-(void)zoomToScale:(CGFloat)scale;
 -(void)_reshapePlugInViews;
 -(void)redrawScaledDocument;
--(float)_doubleTapScaleForSize:(float)size isWidth:(BOOL)width;
+-(CGFloat)_doubleTapScaleForSize:(CGFloat)size isWidth:(BOOL)width;
 -(void)_handleDoubleTapAtPoint:(CGPoint)point inWebHTMLView:(id)webHTMLView outRenderRect:(CGRect*)rect;
 -(void)_handleDoubleTapAtPoint:(CGPoint)point inWebPDFView:(id)webPDFView outRenderRect:(CGRect*)rect;
 -(CGRect)doubleTapRect;
@@ -393,7 +393,7 @@
 -(BOOL)keyboardInputChanged:(id)changed;
 -(void)keyboardInputChangedSelection:(id)selection;
 -(id)automaticallySelectedOverlay;
--(void)setBottomBufferHeight:(float)height;
+-(void)setBottomBufferHeight:(CGFloat)height;
 // in a protocol: -(BOOL)isProxyFor:(id)aFor;
 -(BOOL)requiresKeyEvents;
 // in a protocol: -(void)handleKeyEvent:(GSEventRef)event;
@@ -443,7 +443,7 @@
 @property(assign, nonatomic, getter=isDoubleTapEnabled) BOOL doubleTapEnabled;
 +(double)getTimestamp;
 -(void)setUsesUIScrollView;
--(float)_documentScale;
+-(CGFloat)_documentScale;
 -(void)_updateScrollViewBoundaryZoomScales;
 -(BOOL)isClassicMode;
 -(void)setUpdatesScrollView:(BOOL)view;
@@ -498,8 +498,8 @@
 -(void)_sendInternalEvent:(GSEventRef)event;
 -(CGPoint)_viewportLocationForEvent:(GSEventRef)event;
 -(id)hitTest:(CGPoint)test forEvent:(GSEventRef)event;
--(void)setDoubleTapDelay:(float)delay;
--(float)doubleTapDelay;
+-(void)setDoubleTapDelay:(CGFloat)delay;
+-(CGFloat)doubleTapDelay;
 // inherited: -(void)keyUp:(GSEventRef)up;
 // inherited: -(void)keyDown:(GSEventRef)down;
 // inherited: -(void)gestureStarted:(GSEventRef)started;
@@ -508,9 +508,9 @@
 -(void)setOrientation:(int)orientation;
 -(void)_zoomToNode:(id)node;
 -(void)scrollCaretToVisible:(id)visible;
--(CGPoint)_centeredScrollPointForPoint:(CGPoint)point scale:(float)scale;
--(CGPoint)_doubleTapScrollPointForRect:(CGRect)rect scale:(float)scale event:(GSEventRef)event;
--(BOOL)_doubleTapZoomToRect:(CGRect)rect scale:(float)scale fromEvent:(GSEventRef)event;
+-(CGPoint)_centeredScrollPointForPoint:(CGPoint)point scale:(CGFloat)scale;
+-(CGPoint)_doubleTapScrollPointForRect:(CGRect)rect scale:(CGFloat)scale event:(GSEventRef)event;
+-(BOOL)_doubleTapZoomToRect:(CGRect)rect scale:(CGFloat)scale fromEvent:(GSEventRef)event;
 -(void)doubleTap:(GSEventRef)tap;
 -(int)keyboardInput:(id)input positionForAutocorrection:(id)autocorrection;
 #endif

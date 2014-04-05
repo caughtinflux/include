@@ -14,6 +14,6 @@
 @property(assign, nonatomic) UISearchDisplayController* controller;
 -(void)setContentOffset:(CGPoint)offset;
 -(void)noteNumberOfRowsChanged;
--(float)_offsetForNoResultsMessage;
+-(CGFloat)_offsetForNoResultsMessage;
 @end
 

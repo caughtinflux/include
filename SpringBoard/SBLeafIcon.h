@@ -28,7 +28,7 @@
 - (id)accessoryTextForLocation:(SBIconLocation)loc;
 - (id)badgeNumberOrString;
 - (BOOL)progressIsPaused;
-- (float)progressPercent;
+- (CGFloat)progressPercent;
 - (int)progressState;
 - (BOOL)iconAppearsInNewsstand;
 - (BOOL)canEllipsizeLabel;

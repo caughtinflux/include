@@ -24,8 +24,8 @@
 	PUMapAnnotationManager* _annotationManager;
 	PUMapViewControllerSpec* _spec;
 	BOOL _useCurrentUserLocation;
-	float _annotationWidth;
-	float _borderAnnotationPadding;
+	CGFloat _annotationWidth;
+	CGFloat _borderAnnotationPadding;
 	CGSize _annotationSize;
 	BOOL _updatedInitialAnnotations;
 	BOOL _shouldShowToolbar;

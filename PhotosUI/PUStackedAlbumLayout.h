@@ -19,7 +19,7 @@
 	BOOL _isInteractive;
 	NSArray* _visibleStackedItemLayoutAttributes;
 	UICollectionViewLayoutAttributes* _referenceItemLayoutAttributes;
-	float _yAdjust;
+	CGFloat _yAdjust;
 	PUAlbumListTransitionContext* _albumListTransitionContext;
 	CGPoint _referenceCenter;
 	CGSize _contentSizeAdjust;
@@ -29,7 +29,7 @@
 @property (nonatomic,copy) NSArray * visibleStackedItemLayoutAttributes;                                  //@synthesize visibleStackedItemLayoutAttributes=_visibleStackedItemLayoutAttributes - In the implementation block
 @property (nonatomic,copy) UICollectionViewLayoutAttributes * referenceItemLayoutAttributes;              //@synthesize referenceItemLayoutAttributes=_referenceItemLayoutAttributes - In the implementation block
 @property (assign,nonatomic) CGPoint referenceCenter;                                                     //@synthesize referenceCenter=_referenceCenter - In the implementation block
-@property (assign,nonatomic) float yAdjust;                                                               //@synthesize yAdjust=_yAdjust - In the implementation block
+@property (assign,nonatomic) CGFloat yAdjust;                                                               //@synthesize yAdjust=_yAdjust - In the implementation block
 @property (assign,nonatomic) CGSize contentSizeAdjust;                                                    //@synthesize contentSizeAdjust=_contentSizeAdjust - In the implementation block
 @property (nonatomic,retain) PUAlbumListTransitionContext * albumListTransitionContext;                   //@synthesize albumListTransitionContext=_albumListTransitionContext - In the implementation block
 @property (assign,setter=setInteractive:,nonatomic) BOOL isInteractive;                                   //@synthesize isInteractive=_isInteractive - In the implementation block
@@ -45,13 +45,13 @@
 -(id)visibleStackedItemLayoutAttributes;
 -(CGPoint)referenceCenter;
 -(void)setInteractive:(BOOL)arg1 ;
--(void)setYAdjust:(float)arg1 ;
+-(void)setYAdjust:(CGFloat)arg1 ;
 -(void)setContentSizeAdjust:(CGSize)arg1 ;
 -(int)zIndexForItemAtIndexPath:(id)arg1 ;
 -(void)setReferenceItemLayoutAttributes:(id)arg1 ;
 -(void)setVisibleStackedItemLayoutAttributes:(id)arg1 ;
 -(void)setReferenceCenter:(CGPoint)arg1 ;
--(float)yAdjust;
+-(CGFloat)yAdjust;
 -(CGSize)contentSizeAdjust;
 -(id)_newAdjustedLayoutAttributes:(id)arg1 indexPath:(id)arg2 ;
 -(id)referenceItemLayoutAttributes;

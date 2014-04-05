@@ -25,7 +25,7 @@
 		unsigned reserved : 23;
 	} _removeControlFlags;
 }
-+(float)removeButtonWidth;
++(CGFloat)removeButtonWidth;
 +(BOOL)removeConfirmationsVisibleInView:(id)view;
 +(void)hideAllRemoveConfirmationsInView:(id)view;
 -(id)initWithTarget:(id)target;
@@ -45,7 +45,7 @@
 -(CGRect)defaultRemoveButtonEndingFrame;
 -(CGRect)removeButtonStartingFrame;
 -(CGRect)removeButtonEndingFrame;
--(float)removeButtonAnimationDuration;
+-(CGFloat)removeButtonAnimationDuration;
 -(void)showRemoveButton:(BOOL)button animated:(BOOL)animated;
 -(BOOL)isRemoveButtonVisible;
 -(void)_confirmationAnimationDidEnd;
@@ -62,17 +62,17 @@
 -(void)setSelected:(BOOL)selected;
 -(id)_interceptMouseEvent:(GSEventRef)event;
 -(id)_interceptEvent:(id)event;
--(void)setAlpha:(float)alpha;
+-(void)setAlpha:(CGFloat)alpha;
 -(void)hideControlsUsingRemoveAnimation;
 -(void)setLabel:(id)label;
 -(void)setRemoveConfirmationLabel:(id)label;
 -(id)removeConfirmationButton;
 -(id)_scriptingInfo;
--(float)_verticalOffsetFromTarget;
+-(CGFloat)_verticalOffsetFromTarget;
 -(BOOL)_isInsertControl;
 -(void)_setInsertControl:(BOOL)control;
 -(void)_setTableViewCellEditingStyle:(int)style;
--(void)addConfirmationButtonSubview:(id)subview withWidth:(float)width target:(id)target;
+-(void)addConfirmationButtonSubview:(id)subview withWidth:(CGFloat)width target:(id)target;
 -(void)_hideRemoveConfirmation;
 -(void)_showDeleteConfirmation:(id)confirmation;
 -(void)_doInsert:(id)insert;

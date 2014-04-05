@@ -23,7 +23,7 @@
 	CGPoint m_touchOffset;
 	UITouch* m_syntheticTouch;
 	UIEdgeInsets m_selectionInset;
-	float m_bottomBufferHeight;
+	CGFloat m_bottomBufferHeight;
 	BOOL m_editable;
 	BOOL m_editing;
 	BOOL m_becomesEditableWithGestures;
@@ -195,8 +195,8 @@
 -(BOOL)keyboardInputChanged:(id)changed;
 -(void)keyboardInputChangedSelection:(id)selection;
 -(void)webView:(id)view decidePolicyForNavigationAction:(id)navigationAction request:(id)request frame:(id)frame decisionListener:(id)listener;
--(void)setBottomBufferHeight:(float)height;
--(float)bottomBufferHeight;
+-(void)setBottomBufferHeight:(CGFloat)height;
+-(CGFloat)bottomBufferHeight;
 -(void)setShowScrollerIndicators:(BOOL)indicators;
 -(BOOL)showScrollerIndicators;
 -(void)displayScrollerIndicators;

@@ -39,7 +39,7 @@
 @property(assign, nonatomic, getter=isAccessoryEnabled) BOOL accessoryEnabled;
 @property(assign, nonatomic) CGRect inputViewBounds;
 @property(assign, nonatomic, getter=isTwoFingerPanEnabled) BOOL twoFingerPanEnabled;
-+(float)preferredScrollDecelerationFactor;
++(CGFloat)preferredScrollDecelerationFactor;
 +(id)getUIWebBrowserViewForWebFrame:(id)webFrame;
 +(BOOL)isAutoFillAllowed;
 +(id)_PDFPageNumberLabel;
@@ -82,7 +82,7 @@
 -(CGPoint)_convertWindowPointToViewport:(CGPoint)viewport;
 -(void)webViewDidPreventDefaultForEvent:(id)webView;
 -(void)_zoomToNode:(id)node;
--(void)_zoomToRect:(CGRect)rect withScale:(float)scale;
+-(void)_zoomToRect:(CGRect)rect withScale:(CGFloat)scale;
 -(void)webView:(id)view didReceiveMessage:(id)message;
 -(id)messagesMatchingMask:(int)mask;
 -(void)clearMessagesMatchingMask:(int)mask;

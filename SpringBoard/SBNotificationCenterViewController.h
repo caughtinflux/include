@@ -59,7 +59,7 @@
 - (void)_setContainerFrame:(struct CGRect)arg1;
 - (struct CGRect)_containerFrame;
 @property(nonatomic) struct UIEdgeInsets clippingInsets;
-@property(nonatomic) float contentViewAlpha;
+@property(nonatomic) CGFloat contentViewAlpha;
 - (void)dismissGrabberView;
 - (void)presentGrabberView;
 - (struct CGRect)_grabberContentViewFrameForDefaultGrabberPresentation;

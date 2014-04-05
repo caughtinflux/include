@@ -37,8 +37,8 @@
 -(BOOL)isCustomizing;
 -(void)animateToolbarItemIndex:(unsigned)index duration:(double)duration target:(id)target didFinishSelector:(SEL)selector;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
--(void)setExtraEdgeInsets:(float)insets;
--(float)extraEdgeInsets;
+-(void)setExtraEdgeInsets:(CGFloat)insets;
+-(CGFloat)extraEdgeInsets;
 -(void)setBarStyle:(int)style force:(BOOL)force;
 #endif
 @end
@@ -70,13 +70,13 @@
 -(void)_configureToolbarReplacingItem:(id)item withNewItem:(id)newItem dragging:(BOOL)dragging swapping:(BOOL)swapping;
 -(void)_updateItemsForNewFrame:(id)newFrame;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
--(float)_edgeMarginForBorderedItem:(BOOL)borderedItem;
+-(CGFloat)_edgeMarginForBorderedItem:(BOOL)borderedItem;
 #endif
 @end
 
 @interface UIToolbar (UIButtonBarInternal)
-+(float)_buttonGap;
--(void)_alertWillShow:(BOOL)_alert duration:(float)duration;
++(CGFloat)_buttonGap;
+-(void)_alertWillShow:(BOOL)_alert duration:(CGFloat)duration;
 -(void)_alertDidHide;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 -(id)_positionToolbarButtons:(id)buttons ignoringItem:(id)item actuallyRepositionButtons:(BOOL)buttons3;
@@ -93,9 +93,9 @@
 +(Class)defaultButtonClass;
 +(Class)defaultTextButtonClass;
 +(id)defaultButtonFont;
-+(float)defaultHeight;
-+(float)defaultSelectionModeHeight;
-+(float)defaultHeightForBarSize:(int)barSize;
++(CGFloat)defaultHeight;
++(CGFloat)defaultSelectionModeHeight;
++(CGFloat)defaultHeightForBarSize:(int)barSize;
 -(id)initInView:(id)view withFrame:(CGRect)frame withItemList:(id)itemList;
 -(id)initInView:(id)view withItemList:(id)itemList;
 -(id)createButtonWithDescription:(id)description;
@@ -124,7 +124,7 @@
 -(void)setBadgeAnimated:(BOOL)animated forButton:(int)button;
 -(BOOL)onStateForButton:(int)button;
 -(void)setOnStateForButton:(BOOL)button forButton:(int)button2;
--(void)animateWithDuration:(float)duration forButton:(int)button;
+-(void)animateWithDuration:(CGFloat)duration forButton:(int)button;
 -(void)setBounds:(CGRect)bounds;
 -(void)setFrame:(CGRect)frame;
 -(void)drawRect:(CGRect)rect;

@@ -12,7 +12,7 @@
 {
     UIView<SBUIPasscodeLockView> *_passcodeView;
     _UIBackdropView *_blurView;
-    float _blurRadius;
+    CGFloat _blurRadius;
     BOOL _dismissing;
     id <SBPasscodeEntryAlertViewDelegate> _delegate;
 }

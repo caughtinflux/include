@@ -10,7 +10,7 @@
 {
 }
 
-- (float)heightForReusableViewInTableView:(id)arg1;
+- (CGFloat)heightForReusableViewInTableView:(id)arg1;
 - (Class)reusableViewClass;
 - (id)identifier;
 

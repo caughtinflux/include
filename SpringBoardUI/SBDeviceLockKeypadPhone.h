@@ -24,7 +24,7 @@
 - (void)setDeleteEnabled:(_Bool)arg1;
 - (void)setShowsEmergencyCallButton:(_Bool)arg1;
 - (_Bool)showsEmergencyCallButton;
-- (float)_yFudge;
+- (CGFloat)_yFudge;
 - (void)dealloc;
 - (id)initWithFrame:(struct CGRect)arg1;
 

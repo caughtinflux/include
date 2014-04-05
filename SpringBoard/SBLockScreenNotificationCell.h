@@ -12,7 +12,7 @@
 {
     BOOL _isTopCell;
     BOOL _drawsSeparators;
-    float _currentContentAlpha;
+    CGFloat _currentContentAlpha;
     UIView *_topSeparatorView;
     UIView *_bottomSeparatorView;
     id <SBAwayListCellButtonHandler> _actionButtonHandler;
@@ -21,12 +21,12 @@
     UILabel *_unlockTextLabel;
     id <UIScrollViewDelegate> _delegate;
     BOOL _resetsScrollOnPluginWillDisable;
-    float _contentScrollViewWidth;
+    CGFloat _contentScrollViewWidth;
 }
 
-+ (float)primaryPaddingLeft;
++ (CGFloat)primaryPaddingLeft;
 + (BOOL)wantsUnlockActionText;
-+ (float)rowHeightForTitle:(id)arg1 subtitle:(id)arg2 body:(id)arg3 maxLines:(unsigned int)arg4 attachmentSize:(struct CGSize)arg5 datesVisible:(BOOL)arg6 rowWidth:(float)arg7 includeUnlockActionText:(BOOL)arg8;
++ (CGFloat)rowHeightForTitle:(id)arg1 subtitle:(id)arg2 body:(id)arg3 maxLines:(unsigned int)arg4 attachmentSize:(struct CGSize)arg5 datesVisible:(BOOL)arg6 rowWidth:(CGFloat)arg7 includeUnlockActionText:(BOOL)arg8;
 + (id)defaultColorForEventDate;
 + (id)defaultColorForRelevanceDate;
 + (id)defaultColorForSecondaryText;
@@ -40,7 +40,7 @@
 @property(nonatomic) BOOL resetsScrollOnPluginWillDisable; // @synthesize resetsScrollOnPluginWillDisable=_resetsScrollOnPluginWillDisable;
 @property(nonatomic) id <UIScrollViewDelegate> delegate; // @synthesize delegate=_delegate;
 @property(retain, nonatomic) SBUnlockActionContext *unlockActionContext; // @synthesize unlockActionContext=_unlockActionContext;
-@property(nonatomic) float contentScrollViewWidth; // @synthesize contentScrollViewWidth=_contentScrollViewWidth;
+@property(nonatomic) CGFloat contentScrollViewWidth; // @synthesize contentScrollViewWidth=_contentScrollViewWidth;
 @property(nonatomic) BOOL drawsSeparators; // @synthesize drawsSeparators=_drawsSeparators;
 @property(nonatomic) BOOL isTopCell; // @synthesize isTopCell=_isTopCell;
 - (void)layoutSubviews;
@@ -52,7 +52,7 @@
 - (void)_setSeparatorBackdropOverlayBlendMode:(int)arg1;
 - (int)_separatorBackdropOverlayBlendMode;
 - (id)_vibrantTextColor;
-- (void)setContentAlpha:(float)arg1;
+- (void)setContentAlpha:(CGFloat)arg1;
 - (void)scrollToOriginAnimated:(BOOL)arg1;
 - (void)resetScrollView;
 - (void)_notePluginWillDisable:(id)arg1;

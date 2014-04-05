@@ -12,8 +12,8 @@
 -(int)thumbnailImageFormat;
 -(id)gridViewControllerSpec;
 -(void)configureStackView:(id)arg1 ;
--(float)stackWidth;
--(float)borderAnnotationPadding;
+-(CGFloat)stackWidth;
+-(CGFloat)borderAnnotationPadding;
 -(BOOL)alwaysFadeRemoves;
 @end
 

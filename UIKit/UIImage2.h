@@ -39,12 +39,12 @@
 -(BOOL)_isCached;
 -(void)_setNamed:(BOOL)named;
 -(BOOL)_isNamed;
--(id)_flatImageWithWhite:(float)white alpha:(float)alpha;
+-(id)_flatImageWithWhite:(CGFloat)white alpha:(CGFloat)alpha;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
--(id)_bezeledImageWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha;
+-(id)_bezeledImageWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
 #else
--(id)_bezeledImageWithShadowRed:(float)shadowRed green:(float)green blue:(float)blue alpha:(float)alpha fillRed:(float)red green:(float)green6 blue:(float)blue7 alpha:(float)alpha8 drawShadow:(BOOL)shadow;
--(id)_doubleBezeledImageWithExteriorShadowRed:(float)exteriorShadowRed green:(float)green blue:(float)blue alpha:(float)alpha interiorShadowRed:(float)red green:(float)green6 blue:(float)blue7 alpha:(float)alpha8 fillRed:(float)red9 green:(float)green10 blue:(float)blue11 alpha:(float)alpha12;
+-(id)_bezeledImageWithShadowRed:(CGFloat)shadowRed green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha fillRed:(CGFloat)red green:(CGFloat)green6 blue:(CGFloat)blue7 alpha:(CGFloat)alpha8 drawShadow:(BOOL)shadow;
+-(id)_doubleBezeledImageWithExteriorShadowRed:(CGFloat)exteriorShadowRed green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha interiorShadowRed:(CGFloat)red green:(CGFloat)green6 blue:(CGFloat)blue7 alpha:(CGFloat)alpha8 fillRed:(CGFloat)red9 green:(CGFloat)green10 blue:(CGFloat)blue11 alpha:(CGFloat)alpha12;
 #endif
 -(id)_imageScaledToSize:(CGSize)size interpolationQuality:(CGInterpolationQuality)quality;
 -(id)_imageScaledToProportion:(CGFloat)proportion interpolationQuality:(CGInterpolationQuality)quality;
@@ -57,19 +57,19 @@
 -(id)initWithData:(NSData *)data cache:(BOOL)cache;
 -(id)initWithImageRef:(CGImageRef)imageRef;
 -(CGImageRef)imageRef;
--(void)compositeToRect:(CGRect)rect fromRect:(CGRect)rect2 operation:(int)operation fraction:(float)fraction;
--(void)compositeToPoint:(CGPoint)point fromRect:(CGRect)rect operation:(int)operation fraction:(float)fraction;
--(void)compositeToPoint:(CGPoint)point operation:(int)operation fraction:(float)fraction;
+-(void)compositeToRect:(CGRect)rect fromRect:(CGRect)rect2 operation:(int)operation fraction:(CGFloat)fraction;
+-(void)compositeToPoint:(CGPoint)point fromRect:(CGRect)rect operation:(int)operation fraction:(CGFloat)fraction;
+-(void)compositeToPoint:(CGPoint)point operation:(int)operation fraction:(CGFloat)fraction;
 -(void)compositeToPoint:(CGPoint)point operation:(int)operation;
 -(void)draw9PartImageWithSliceRects:(XXStruct_4cr1oD)sliceRects inRect:(CGRect)rect;
--(void)draw9PartImageWithSliceRects:(XXStruct_4cr1oD)sliceRects inRect:(CGRect)rect fraction:(float)fraction;
--(void)draw9PartImageWithSliceRects:(XXStruct_4cr1oD)sliceRects inRect:(CGRect)rect operation:(int)operation fraction:(float)fraction;
+-(void)draw9PartImageWithSliceRects:(XXStruct_4cr1oD)sliceRects inRect:(CGRect)rect fraction:(CGFloat)fraction;
+-(void)draw9PartImageWithSliceRects:(XXStruct_4cr1oD)sliceRects inRect:(CGRect)rect operation:(int)operation fraction:(CGFloat)fraction;
 -(void)draw3PartImageWithSliceRects:(XXStruct_UUz0SD)sliceRects inRect:(CGRect)rect;
--(void)draw3PartImageWithSliceRects:(XXStruct_UUz0SD)sliceRects inRect:(CGRect)rect fraction:(float)fraction;
--(void)draw3PartImageWithSliceRects:(XXStruct_UUz0SD)sliceRects inRect:(CGRect)rect operation:(int)operation fraction:(float)fraction;
+-(void)draw3PartImageWithSliceRects:(XXStruct_UUz0SD)sliceRects inRect:(CGRect)rect fraction:(CGFloat)fraction;
+-(void)draw3PartImageWithSliceRects:(XXStruct_UUz0SD)sliceRects inRect:(CGRect)rect operation:(int)operation fraction:(CGFloat)fraction;
 -(void)draw1PartImageInRect:(CGRect)rect;
--(void)draw1PartImageInRect:(CGRect)rect fraction:(float)fraction;
--(void)draw1PartImageInRect:(CGRect)rect fraction:(float)fraction operation:(int)operation;
+-(void)draw1PartImageInRect:(CGRect)rect fraction:(CGFloat)fraction;
+-(void)draw1PartImageInRect:(CGRect)rect fraction:(CGFloat)fraction operation:(int)operation;
 -(CGColorRef)_patternColor;
 -(id)patternColor;
 @end

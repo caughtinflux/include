@@ -8,18 +8,18 @@
 
 __attribute__((visibility("hidden")))
 @interface UIDeviceRGBColor : UIColor {
-	float redComponent;
-	float greenComponent;
-	float blueComponent;
-	float alphaComponent;
+	CGFloat redComponent;
+	CGFloat greenComponent;
+	CGFloat blueComponent;
+	CGFloat alphaComponent;
 	CGColorRef cachedColor;
 }
-// inherited: -(id)initWithHue:(float)hue saturation:(float)saturation brightness:(float)brightness alpha:(float)alpha;
-// inherited: -(id)initWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha;
+// inherited: -(id)initWithHue:(CGFloat)hue saturation:(CGFloat)saturation brightness:(CGFloat)brightness alpha:(CGFloat)alpha;
+// inherited: -(id)initWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
 // inherited: -(id)initWithCGColor:(CGColorRef)cgcolor;
 // inherited: -(void)dealloc;
-// inherited: -(id)colorWithAlphaComponent:(float)alphaComponent;
--(CGColorRef)_createCGColorWithAlpha:(float)alpha;
+// inherited: -(id)colorWithAlphaComponent:(CGFloat)alphaComponent;
+-(CGColorRef)_createCGColorWithAlpha:(CGFloat)alpha;
 // inherited: -(void)set;
 // inherited: -(void)setFill;
 // inherited: -(void)setStroke;
@@ -28,6 +28,6 @@ __attribute__((visibility("hidden")))
 // inherited: -(BOOL)isEqual:(id)equal;
 // inherited: -(unsigned)hash;
 // inherited: -(CGColorRef)CGColor;
-// inherited (since 3.2): -(float)alphaComponent;
+// inherited (since 3.2): -(CGFloat)alphaComponent;
 @end
 

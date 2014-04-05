@@ -26,7 +26,7 @@
 -(void)_initSubviews;
 -(id)currentThumbImage;
 -(CGRect)trackRectForBounds:(CGRect)bounds;
--(CGRect)thumbRectForBounds:(CGRect)bounds trackRect:(CGRect)rect value:(float)value;
+-(CGRect)thumbRectForBounds:(CGRect)bounds trackRect:(CGRect)rect value:(CGFloat)value;
 -(void)updateOnLabelRectForBounds:(CGRect)bounds;
 -(void)updateOffLabelRectForBounds:(CGRect)bounds;
 -(CGSize)sizeThatFits:(CGSize)fits;

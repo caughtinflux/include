@@ -11,11 +11,11 @@
 @interface UICalloutBarOverlay : UIView {
 	UIImageView* m_hiArrow;
 	CGRect m_arrowRect;
-	float m_dividerOffsets[8];
+	CGFloat m_dividerOffsets[8];
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;
--(void)setDividerOffsets:(float*)offsets;
+-(void)setDividerOffsets:(CGFloat*)offsets;
 -(void)drawRect:(CGRect)rect;
 -(void)setHighlighted:(BOOL)highlighted forFrame:(CGRect)frame;
 @end

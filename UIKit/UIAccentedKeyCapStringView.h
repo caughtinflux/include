@@ -12,7 +12,7 @@
 	BOOL m_selectedMode;
 	int m_expansion;
 	int m_orientation;
-	float m_stringWidth;
+	CGFloat m_stringWidth;
 	NSArray* m_caps;
 }
 -(void)dealloc;
@@ -20,7 +20,7 @@
 -(void)setCaps:(id)caps;
 -(void)setExpansion:(int)expansion;
 -(void)setOrientation:(int)orientation;
--(void)setStringWidth:(float)width;
+-(void)setStringWidth:(CGFloat)width;
 -(void)drawRect:(CGRect)rect;
 @end
 

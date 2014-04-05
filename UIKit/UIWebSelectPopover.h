@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	UIWebSelectTableViewController* _tableViewController;
 	UIPopoverController* _popoverController;
 	UIKeyboard* _keyboard;
-	float _popoverHeight;
+	CGFloat _popoverHeight;
 	BOOL _isRotating;
 }
 @property(retain, nonatomic) UIWebSelectTableViewController* _tableViewController;

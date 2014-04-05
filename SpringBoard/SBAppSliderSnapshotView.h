@@ -51,7 +51,7 @@
 - (BOOL)_queue_keepGoing;
 - (struct CGImage *)_queue_createDecodedImageIfPossible:(struct CGImage *)arg1;
 - (id)_snapshotImage;
-- (id)_imageAtPath:(id)arg1 preferredScale:(float)arg2 orientation:(out int *)arg3;
+- (id)_imageAtPath:(id)arg1 preferredScale:(CGFloat)arg2 orientation:(out int *)arg3;
 - (id)_snapshotInfos;
 - (id)_snapshotInfoForDefaultPNG;
 - (id)_snapshotInfoForSnapshotFromInfos:(id)arg1;

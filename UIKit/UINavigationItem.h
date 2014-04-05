@@ -17,8 +17,8 @@
 -(void)setNavigationBar:(id)bar;
 -(void)setBackButtonTitle:(id)title;
 -(id)backButtonTitle;
--(float)width;
--(void)setWidth:(float)width;
+-(CGFloat)width;
+-(void)setWidth:(CGFloat)width;
 -(void)setFont:(id)font;
 -(id)font;
 -(void)setTag:(int)tag;

@@ -9,12 +9,12 @@
 @class SBStarkFakeIconOperationController, SBStarkIconListModel;
 
 @protocol SBStarkLauncher <NSObject>
-+ (float)desiredHeightForBounds:(struct CGRect)arg1;
++ (CGFloat)desiredHeightForBounds:(struct CGRect)arg1;
 @property(nonatomic) id <SBStarkAutoHideControlBarDelegate> autoHideDelegate;
 @property(retain, nonatomic) SBStarkFakeIconOperationController *fakeIconOperationController;
 @property(readonly, nonatomic) BOOL obscuresControlBar;
 @property(readonly, nonatomic) BOOL hidesAutomatically;
 @property(readonly, nonatomic) SBStarkIconListModel *iconList;
-@property(nonatomic) float height;
+@property(nonatomic) CGFloat height;
 @end
 

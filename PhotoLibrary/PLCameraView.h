@@ -552,7 +552,7 @@
 - (void)setAllowsMultipleCameraModes:(_Bool)arg1;
 - (id)_optionsButton;
 - (id)_previewImageWell;
-- (struct CGRect)_floatingShutterButtonFrame;
+- (struct CGRect)_CGFloatingShutterButtonFrame;
 - (struct CGRect)_topBarFrame;
 - (struct CGRect)_bottomBarFrame;
 - (void)setImagePickerWantsImageData:(_Bool)arg1;

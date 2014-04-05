@@ -12,7 +12,7 @@
 	UISectionList* _sectionList;
 	NSRange _visibleHeaders;
 	NSMutableArray* _visibleHeaderViews;
-	float _rightMargin;
+	CGFloat _rightMargin;
 	NSMutableArray* _reusableHeaderCells;
 	NSMutableArray* _reusableTransparentHeaderCells;
 	int _reusableHeaderCapacity;
@@ -30,13 +30,13 @@
 -(void)setFrame:(CGRect)frame;
 -(void)setDelegate:(id)delegate;
 -(void)reloadData;
--(BOOL)floatArray:(id)array loadGapIndexes:(int*)indexes gapHeight:(float*)height count:(int)count;
--(void)floatArray:(id)array getValueCount:(int*)count gapIndexCount:(int*)count3;
+-(BOOL)CGFloatArray:(id)array loadGapIndexes:(int*)indexes gapHeight:(CGFloat*)height count:(int)count;
+-(void)CGFloatArray:(id)array getValueCount:(int*)count gapIndexCount:(int*)count3;
 -(id)createPreparedCellForRow:(int)row column:(int)column;
--(id)_createHeaderCellForHeaderAtIndex:(int)index width:(float)width opaque:(BOOL)opaque adjustOrigin:(BOOL)origin;
+-(id)_createHeaderCellForHeaderAtIndex:(int)index width:(CGFloat)width opaque:(BOOL)opaque adjustOrigin:(BOOL)origin;
 -(void)_removeHeaderCellsForRange:(NSRange)range;
--(void)_replaceCellWithTransparentOneGapIndex:(int)transparentOneGapIndex viewIndex:(int)index width:(float)width;
--(void)_replaceCellWithOpaqueOneGapIndex:(int)opaqueOneGapIndex viewIndex:(int)index width:(float)width;
+-(void)_replaceCellWithTransparentOneGapIndex:(int)transparentOneGapIndex viewIndex:(int)index width:(CGFloat)width;
+-(void)_replaceCellWithOpaqueOneGapIndex:(int)opaqueOneGapIndex viewIndex:(int)index width:(CGFloat)width;
 -(BOOL)_shouldHideHeaders;
 -(void)_updateShowScrollIndicatorsFlag;
 -(void)_updateVisibleCellsNow;
@@ -45,7 +45,7 @@
 -(void)scrollToSectionWithTitle:(id)title;
 -(void)scrollRowToVisible:(int)visible;
 -(BOOL)sectionHeaderCellWasClicked:(id)clicked;
--(void)setRightMargin:(float)margin;
+-(void)setRightMargin:(CGFloat)margin;
 -(void)setAllowsScrollIndicators:(BOOL)indicators;
 -(void)setShouldHideHeaderInShortLists:(BOOL)hideHeaderInShortLists;
 -(void)setSectionListStyle:(int)style;

@@ -32,8 +32,8 @@ __attribute__((visibility("hidden")))
 	UIView* m_animationToView;
 	CGPoint m_initialDragPoint;
 	CGPoint m_dragPrevPoint;
-	float m_dragValues[4];
-	float m_dragVelocity;
+	CGFloat m_dragValues[4];
+	CGFloat m_dragVelocity;
 	double m_prevTouchUpTime;
 	int m_prevUpActions;	
 #endif

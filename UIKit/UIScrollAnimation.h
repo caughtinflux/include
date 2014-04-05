@@ -13,6 +13,6 @@
 }
 -(void)setStartPoint:(CGPoint)point;
 -(void)setEndPoint:(CGPoint)point;
--(void)setProgress:(float)progress;
+-(void)setProgress:(CGFloat)progress;
 @end
 

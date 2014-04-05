@@ -55,7 +55,7 @@
 -(void)setTitlePadding:(CGSize)padding;
 -(void)setImageOffset:(CGSize)offset;
 -(void)setDrawsShadow:(BOOL)shadow;
--(void)setShadowOffset:(float)offset;
+-(void)setShadowOffset:(CGFloat)offset;
 -(void)setReverseShadowDirectionWhenHighlighted:(BOOL)highlighted;
 -(void)setStretchBackground:(BOOL)background;
 -(void)setDrawContentsCentered:(BOOL)centered;
@@ -81,8 +81,8 @@
 -(void)setFrame:(CGRect)frame;
 -(XXStruct_UUz0SD)_backgroundSlices:(CGSize)slices;
 -(void)_drawBezelPartInRect:(CGRect)rect;
--(void)drawImageAtPoint:(CGPoint)point fraction:(float)fraction;
--(void)drawTitleAtPoint:(CGPoint)point width:(float)width;
+-(void)drawImageAtPoint:(CGPoint)point fraction:(CGFloat)fraction;
+-(void)drawTitleAtPoint:(CGPoint)point width:(CGFloat)width;
 -(void)_drawImageAndTextPartInRect:(CGRect)rect;
 -(void)drawButtonPart:(int)part inRect:(CGRect)rect;
 -(void)drawRect:(CGRect)rect;

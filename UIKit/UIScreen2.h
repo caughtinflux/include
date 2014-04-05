@@ -12,8 +12,8 @@
 // inherited: -(id)init;
 -(CGRect)_applicationFrameForInterfaceOrientation:(int)interfaceOrientation;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-+(CGAffineTransform)transformForScreenOriginRotation:(float)screenOriginRotation;
-+(CGAffineTransform)transformToRotateScreen:(float)rotateScreen;
++(CGAffineTransform)transformForScreenOriginRotation:(CGFloat)screenOriginRotation;
++(CGAffineTransform)transformToRotateScreen:(CGFloat)rotateScreen;
 -(id)initWithDisplay:(id)display;
 // inherited: -(void)dealloc;
 // -(void)observeValueForKeyPath:(id)keyPath ofObject:(id)object change:(id)change context:(void*)context;
@@ -23,7 +23,7 @@
 -(CGFloat)scale;
 #endif
 -(void)setScale:(CGFloat)scale;
--(float)_rotation;
+-(CGFloat)_rotation;
 -(int)bitsPerComponent;
 -(void)setBitsPerComponent:(int)component;
 -(int)screenType;

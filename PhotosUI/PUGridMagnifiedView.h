@@ -30,8 +30,8 @@
 -(void)setShadowOffset:(CGSize)arg1 ;
 -(id)imageView;
 -(void)setImageView:(id)arg1 ;
--(void)setShadowOpacity:(float)arg1 ;
--(void)setShadowRadius:(float)arg1 ;
+-(void)setShadowOpacity:(CGFloat)arg1 ;
+-(void)setShadowRadius:(CGFloat)arg1 ;
 -(void)setItemIndexPath:(id)arg1 ;
 -(id)itemIndexPath;
 -(CGRect)photoFrameForViewFrame:(CGRect)arg1 ;

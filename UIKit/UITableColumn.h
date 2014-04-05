@@ -10,15 +10,15 @@
 @interface UITableColumn : NSObject {
 	NSString* _identifier;
 	NSString* _title;
-	float _width;
+	CGFloat _width;
 }
--(id)initWithTitle:(id)title identifier:(id)identifier width:(float)width;
+-(id)initWithTitle:(id)title identifier:(id)identifier width:(CGFloat)width;
 -(void)dealloc;
 -(id)title;
 -(void)setTitle:(id)title;
 -(void)setIdentifier:(id)identifier;
 -(id)identifier;
--(float)width;
--(void)setWidth:(float)width;
+-(CGFloat)width;
+-(void)setWidth:(CGFloat)width;
 @end
 

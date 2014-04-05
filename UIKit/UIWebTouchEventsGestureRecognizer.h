@@ -12,22 +12,22 @@ __attribute__((visibility("hidden")))
 	SEL _touchAction;
 	unsigned _passedHitTest : 1;
 	unsigned _defaultPrevented : 1;
-	float _originalGestureDistance;
-	float _originalGestureAngle;
+	CGFloat _originalGestureDistance;
+	CGFloat _originalGestureAngle;
 	int _type;
 	CGPoint _locationInWindow;
 	NSMutableArray* _touchLocations;
 	NSMutableArray* _touchIdentifiers;
-	float _scale;
-	float _rotation;
+	CGFloat _scale;
+	CGFloat _rotation;
 }
 @property(assign, nonatomic, getter=isDefaultPrevented) BOOL defaultPrevented;
 @property(readonly, assign, nonatomic) int type;
 @property(readonly, assign, nonatomic) CGPoint locationInWindow;
 @property(retain, nonatomic) NSMutableArray* touchLocations;
 @property(retain, nonatomic) NSMutableArray* touchIdentifiers;
-@property(readonly, assign, nonatomic) float scale;
-@property(readonly, assign, nonatomic) float rotation;
+@property(readonly, assign, nonatomic) CGFloat scale;
+@property(readonly, assign, nonatomic) CGFloat rotation;
 // inherited: -(id)initWithTarget:(id)target action:(SEL)action;
 // inherited: -(void)dealloc;
 -(id)_typeDescription;

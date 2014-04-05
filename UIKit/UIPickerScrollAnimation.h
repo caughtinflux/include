@@ -8,15 +8,15 @@
 
 
 @interface UIPickerScrollAnimation : UIAnimation {
-	float _initialDuration;
+	CGFloat _initialDuration;
 	CGPoint _originalOffset;
 	CGPoint _targetOffset;
 }
 -(CGPoint)targetOffset;
 -(void)setTargetOffset:(CGPoint)offset;
 -(void)setOriginalOffset:(CGPoint)offset;
--(void)setProgress:(float)progress;
--(float)initialDuration;
--(void)setInitialDuration:(float)duration;
+-(void)setProgress:(CGFloat)progress;
+-(CGFloat)initialDuration;
+-(void)setInitialDuration:(CGFloat)duration;
 @end
 

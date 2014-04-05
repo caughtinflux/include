@@ -10,14 +10,14 @@
 @interface UIWeekMonthDayTableCell : UIDateTableCell {
 	UILabel* _weekdayLabel;
 	NSDate* _date;
-	float _weekdayWidth;
+	CGFloat _weekdayWidth;
 	BOOL _weekdayLast;
 }
 -(void)dealloc;
 -(id)date;
 -(void)setDate:(id)date;
 -(void)setWeekdayLast:(BOOL)last;
--(void)setWeekdayWidth:(float)width;
+-(void)setWeekdayWidth:(CGFloat)width;
 -(id)_weekdayLabelColor;
 -(void)setBackgroundColor:(id)color;
 -(void)setWeekdayString:(id)string;

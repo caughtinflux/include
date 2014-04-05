@@ -15,7 +15,7 @@
     NSString *_meid;
     NSString *_imei;
     NSString *_iccid;
-    float _alertHeight;
+    CGFloat _alertHeight;
 }
 
 + (id)activeItem;

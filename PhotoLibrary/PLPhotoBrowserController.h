@@ -48,8 +48,8 @@
     _Bool _playingVideo;
     _Bool _animating;
     struct CGSize _contentStartSize;
-    float _startScale;
-    float _endScale;
+    CGFloat _startScale;
+    CGFloat _endScale;
     UIView *_remakerContainerView;
     UIActionSheet *_actionView;
     UIAlertView *_alertView;
@@ -237,7 +237,7 @@
 - (void)_externalScreenGotDisconnected;
 - (void)_configureTVOutPageController;
 - (void)videoRemakerDidEndRemaking:(id)arg1 temporaryPath:(id)arg2;
-- (void)videoRemaker:(id)arg1 progressDidChange:(float)arg2;
+- (void)videoRemaker:(id)arg1 progressDidChange:(CGFloat)arg2;
 - (void)videoRemakerDidBeginRemaking:(id)arg1;
 - (double)durationForTransition:(int)arg1;
 - (void)transitionViewDidComplete:(id)arg1 fromView:(id)arg2 toView:(id)arg3;
@@ -279,8 +279,8 @@
 - (id)photoCountFormatter;
 - (void)_commonDidEndRemaking:(id)arg1 pathToTrimmedFile:(id)arg2 didSucceed:(_Bool)arg3;
 - (void)videoViewDidEndRemaking:(id)arg1 didSucceed:(_Bool)arg2;
-- (void)_commonRemakingProgressDidChange:(float)arg1;
-- (void)videoView:(id)arg1 remakingProgressDidChange:(float)arg2;
+- (void)_commonRemakingProgressDidChange:(CGFloat)arg1;
+- (void)videoView:(id)arg1 remakingProgressDidChange:(CGFloat)arg2;
 - (void)_commonDidBeginRemaking;
 - (void)videoViewDidBeginRemaking:(id)arg1;
 - (void)trimVideo:(id)arg1;

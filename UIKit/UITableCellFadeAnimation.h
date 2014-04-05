@@ -12,6 +12,6 @@
 -(id)initWithTarget:(id)target select:(BOOL)select;
 -(void)dealloc;
 -(void)_appSuspended:(id)suspended;
--(void)setProgress:(float)progress;
+-(void)setProgress:(CGFloat)progress;
 @end
 

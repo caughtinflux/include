@@ -17,8 +17,8 @@
 	NSString* m_labelID;
 	int m_labelAdjustmentX;
 	int m_labelAdjustmentY;
-	float m_cachedFontSize;
-	float m_cachedXHeight;
+	CGFloat m_cachedFontSize;
+	CGFloat m_cachedXHeight;
 }
 @property(retain, nonatomic) NSString* labelID;
 @property(assign, nonatomic) int mode;

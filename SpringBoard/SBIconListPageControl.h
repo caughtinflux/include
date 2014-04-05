@@ -26,7 +26,7 @@
 - (void)touchesEnded:(id)arg1 withEvent:(id)arg2;
 - (void)touchesMoved:(id)arg1 withEvent:(id)arg2;
 - (void)touchesBegan:(id)arg1 withEvent:(id)arg2;
-- (float)defaultHeight;
+- (CGFloat)defaultHeight;
 - (void)dealloc;
 - (id)initWithFrame:(struct CGRect)arg1;
 

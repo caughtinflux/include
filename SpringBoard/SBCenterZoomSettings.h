@@ -8,19 +8,19 @@
 
 @interface SBCenterZoomSettings : SBIconZoomSettings
 {
-    float _centerRowCoordinate;
+    CGFloat _centerRowCoordinate;
     int _distanceEffect;
-    float _firstHopIncrement;
-    float _hopIncrementAcceleration;
-    float _dockMass;
+    CGFloat _firstHopIncrement;
+    CGFloat _hopIncrementAcceleration;
+    CGFloat _dockMass;
 }
 
 + (id)settingsControllerModule;
-@property float dockMass; // @synthesize dockMass=_dockMass;
-@property float hopIncrementAcceleration; // @synthesize hopIncrementAcceleration=_hopIncrementAcceleration;
-@property float firstHopIncrement; // @synthesize firstHopIncrement=_firstHopIncrement;
+@property CGFloat dockMass; // @synthesize dockMass=_dockMass;
+@property CGFloat hopIncrementAcceleration; // @synthesize hopIncrementAcceleration=_hopIncrementAcceleration;
+@property CGFloat firstHopIncrement; // @synthesize firstHopIncrement=_firstHopIncrement;
 @property int distanceEffect; // @synthesize distanceEffect=_distanceEffect;
-@property float centerRowCoordinate; // @synthesize centerRowCoordinate=_centerRowCoordinate;
+@property CGFloat centerRowCoordinate; // @synthesize centerRowCoordinate=_centerRowCoordinate;
 - (void)setDefaultValues;
 
 @end

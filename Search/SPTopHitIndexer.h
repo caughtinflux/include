@@ -22,7 +22,7 @@
 -(void)dealloc;
 -(id)init;
 -(BOOL)nextSearchResults:(id*)arg1 ;
--(float)_calculateMovingAverageWithLastTime:(double)arg1 andLastAverage:(float)arg2 ;
+-(CGFloat)_calculateMovingAverageWithLastTime:(double)arg1 andLastAverage:(CGFloat)arg2 ;
 -(id)_externalRecordForIdentifier:(id)arg1 domain:(unsigned)arg2 ;
 -(id)_recordForExternalID:(id)arg1 displayIdentifier:(id)arg2 category:(id)arg3 ;
 -(void)_setTopHitWithCurrentHit:(id)arg1 content:(id)arg2 stringIdentifier:(id)arg3 domain:(unsigned)arg4 query:(id)arg5 ;

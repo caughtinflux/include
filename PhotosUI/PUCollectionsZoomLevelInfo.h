@@ -23,7 +23,7 @@
 -(id)sectionHeaderElementKind;
 -(BOOL)supportsIncrementalChangeNotifications;
 -(void)modelDidChange;
--(void)updateLayoutMetricsForWidth:(float)arg1 ;
+-(void)updateLayoutMetricsForWidth:(CGFloat)arg1 ;
 -(BOOL)hasEnoughContentToDisplay;
 -(id)renderedStripsElementKind;
 -(void)configureSectionHeaderView:(id)arg1 forVisualSection:(int)arg2 ;

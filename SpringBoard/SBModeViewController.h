@@ -29,7 +29,7 @@
     } _modeViewControllerFlags;
 }
 
-+ (float)_minScreenDimension;
++ (CGFloat)_minScreenDimension;
 + (id)_buttonTitleFont;
 @property(nonatomic) id <SBBulletinActionHandler> delegate; // @synthesize delegate=_delegate;
 - (void)settings:(id)arg1 changedValueForKeyPath:(id)arg2;
@@ -69,7 +69,7 @@
 - (void)_loadContentView;
 - (id)_newSwipeGestureRecognizerWithDirection:(unsigned int)arg1;
 - (void)_loadHeaderView;
-- (float)_headerViewHeightForMode:(int)arg1;
+- (CGFloat)_headerViewHeightForMode:(int)arg1;
 - (struct CGRect)_modeControlFrameWithHeaderBounds:(struct CGRect)arg1 forMode:(int)arg2;
 - (struct CGSize)_modeControlSizeForMode:(int)arg1;
 - (int)_layoutMode;

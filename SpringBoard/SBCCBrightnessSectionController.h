@@ -18,8 +18,8 @@
 - (void)_sliderDidEndTracking:(id)arg1;
 - (void)_sliderDidBeginTracking:(id)arg1;
 - (void)_sliderValueDidChange:(id)arg1;
-- (void)_setBacklightLevel:(float)arg1;
-- (float)_backlightLevel;
+- (void)_setBacklightLevel:(CGFloat)arg1;
+- (CGFloat)_backlightLevel;
 - (void)viewDidLayoutSubviews;
 - (void)viewDidDisappear:(BOOL)arg1;
 - (void)viewWillAppear:(BOOL)arg1;

@@ -11,7 +11,7 @@
 	UILabel* _label;
 	CKEntity* _entity;
 }
-+(float)defaultHeight;
++(CGFloat)defaultHeight;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 -(void)dealloc;
 -(void)setEntity:(id)entity;

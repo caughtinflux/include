@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, SBWallpaperVariant) {
     UIColor *_wallpaperAverageColor;
     int _startStyle;
     int _endStyle;
-    float _transitionFraction;
+    CGFloat _transitionFraction;
     UIView<_SBFakeBlur> *_blurView;
     UIView *_grayscaleTintView;
     UIView *_colorTintView;
@@ -37,7 +37,7 @@ typedef NS_ENUM(NSInteger, SBWallpaperVariant) {
     BOOL _accessibilityIncreaseContrastEnabled;
 }
 
-+ (id)imageInRect:(CGRect)arg1 forVariant:(NSInteger)arg2 withStyle:(NSInteger)arg3 zoomFactor:(float)arg4 mask:(id)arg5 masksBlur:(BOOL)arg6 masksTint:(BOOL)arg7;
++ (id)imageInRect:(CGRect)arg1 forVariant:(NSInteger)arg2 withStyle:(NSInteger)arg3 zoomFactor:(CGFloat)arg4 mask:(id)arg5 masksBlur:(BOOL)arg6 masksTint:(BOOL)arg7;
 - (BOOL)_shouldAnimatePropertyWithKey:(id)arg1;
 - (void)_accessibilityEnhanceBackgroundContrastChanged:(id)arg1;
 - (void)_clearView:(id *)arg1;
@@ -45,7 +45,7 @@ typedef NS_ENUM(NSInteger, SBWallpaperVariant) {
 - (void)_configureViews;
 - (void)_configureForCurrentBlurStyle;
 - (void)_configureFromScratch;
-- (void)_setTransitionFraction:(float)arg1;
+- (void)_setTransitionFraction:(CGFloat)arg1;
 - (void)_updateWallpaperAverageColor:(id)arg1;
 - (void)wallpaperDidChangeForVariant:(NSInteger)arg1;
 - (void)wallpaperLegibilitySettingsDidChange:(id)arg1 forVariant:(NSInteger)arg2;

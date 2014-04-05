@@ -13,9 +13,9 @@
 	UIView* _view;
 	int _tapDownCount;
 	int _fingerCount;
-	float _multiTapDelay;
-	float _rejectAsTapThrehold;
-	float _viewTouchPauseThreshold;
+	CGFloat _multiTapDelay;
+	CGFloat _rejectAsTapThrehold;
+	CGFloat _viewTouchPauseThreshold;
 	CGPoint _startPosition;
 	double _startTime;
 	struct {

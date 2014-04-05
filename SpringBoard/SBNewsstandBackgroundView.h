@@ -15,8 +15,8 @@
     UIView *_bottomView;
 }
 
-+ (float)shelfHeightForOrientation:(int)arg1;
-+ (float)baselineForShelfAtIndex:(unsigned int)arg1 withOrientation:(int)arg2;
++ (CGFloat)shelfHeightForOrientation:(int)arg1;
++ (CGFloat)baselineForShelfAtIndex:(unsigned int)arg1 withOrientation:(int)arg2;
 - (void)layoutSubviews;
 - (void)dealloc;
 - (id)initWithFrame:(struct CGRect)arg1;

@@ -29,7 +29,7 @@
 @property(assign, nonatomic) int pageCount;
 @property(readonly, retain, nonatomic) UIViewController* visibleViewController;
 @property(assign, nonatomic) BOOL displaysPageControl;
-@property(assign, nonatomic) float pageSpacing;
+@property(assign, nonatomic) CGFloat pageSpacing;
 // inherited: -(void)dealloc;
 // inherited: -(void)loadView;
 // inherited: -(void)viewDidUnload;

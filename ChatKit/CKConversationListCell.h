@@ -18,7 +18,7 @@
 	UIImageView* _groupImageView;
 }
 +(id)identifier;
-+(float)cellHeight;
++(CGFloat)cellHeight;
 -(id)initWithFrame:(CGRect)frame conversation:(id)conversation;
 -(void)setConversation:(id)conversation;
 -(void)dealloc;

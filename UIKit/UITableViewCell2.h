@@ -64,7 +64,7 @@
 -(void)_delayedDeselect;
 -(void)setSelected:(BOOL)selected animated:(BOOL)animated;
 -(BOOL)isAtLeastHalfSelected;
--(float)selectionPercent;
+-(CGFloat)selectionPercent;
 -(BOOL)_isHighlighted;
 -(void)_updateHighlightColors;
 -(void)_drawContentInRect:(CGRect)rect selected:(BOOL)selected;
@@ -120,15 +120,15 @@
 -(int)style;
 -(void)setClipsContents:(BOOL)contents;
 -(BOOL)clipsContents;
--(void)setSelectionFadeDuration:(float)duration;
--(float)selectionFadeDuration;
+-(void)setSelectionFadeDuration:(CGFloat)duration;
+-(CGFloat)selectionFadeDuration;
 -(void)setAllowsIsolatedLayout:(BOOL)layout;
 -(BOOL)allowsIsolatedLayout;
 #endif
 @end
 
 @interface UITableViewCell (UITableViewEditableTextFieldCell)
-@property(assign, nonatomic, setter=setTextFieldOffset:) float textFieldOffset;
+@property(assign, nonatomic, setter=setTextFieldOffset:) CGFloat textFieldOffset;
 @property(readonly, retain, nonatomic) UITextField* editableTextField;
 -(void)setPlaceHolderValue:(id)value;
 -(void)textFieldDidBecomeFirstResponder:(id)textField;
@@ -153,7 +153,7 @@
 -(void)_removeFloatingSeparator;
 -(id)_removeControl;
 -(void)_grabberBeganReorder:(id)reorder;
--(void)_grabberDragged:(id)dragged yDelta:(float)delta;
+-(void)_grabberDragged:(id)dragged yDelta:(CGFloat)delta;
 -(void)_grabberReleased:(id)released;
 -(void)_uiRemoveControlMinusButtonHideAnimationDone:(id)done;
 -(void)_willBeDeleted;
@@ -164,7 +164,7 @@
 -(void)deleteConfirmationControlWasClicked:(id)clicked;
 -(void)deleteConfirmationControlWasCancelled:(id)cancelled;
 -(BOOL)_isReorderable;
--(float)_editingButtonOffset;
+-(CGFloat)_editingButtonOffset;
 -(id)editingData:(BOOL)data;
 -(void)removeEditingData;
 -(id)_accessoryView:(BOOL)view;
@@ -187,7 +187,7 @@
 -(void)_startToEditTextField;
 -(void)_multiselectColorChanged;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
--(float)_backgroundInset;
+-(CGFloat)_backgroundInset;
 -(id)_backgroundView:(BOOL)view;
 -(id)_selectedBackgroundView:(BOOL)view;
 -(id)_topShadowView:(BOOL)view;

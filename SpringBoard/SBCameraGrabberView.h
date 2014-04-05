@@ -26,7 +26,7 @@
 @property(retain, nonatomic) _SBFVibrantSettings *vibrantSettings; // @synthesize vibrantSettings=_vibrantSettings;
 
 - (void)updateForChangedSettings:(id)arg1;
-- (void)setStrength:(float)strength;
+- (void)setStrength:(CGFloat)strength;
 - (id)_lazyLegibilityView;
 - (void)setBackgroundView:(id)view;
 - (CGSize)sizeThatFits:(CGSize)size;

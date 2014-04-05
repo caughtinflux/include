@@ -20,13 +20,13 @@
 - (void)_updateAdaptiveColors;
 - (void)_applyEditingStateAnimated:(BOOL)arg1;
 - (void)cleanupAfterFloatyFolderCrossfade;
-- (void)setFloatyFolderCrossfadeFraction:(float)arg1;
+- (void)setFloatyFolderCrossfadeFraction:(CGFloat)arg1;
 - (void)prepareToCrossfadeWithFloatyFolderView:(id)arg1 allowFolderInteraction:(BOOL)arg2;
 - (void)removeDropGlow;
 - (void)showDropGlow:(BOOL)arg1;
 - (void)prepareDropGlow;
-- (void)setBackgroundAndIconGridImageAlpha:(float)arg1;
-- (void)setIconGridImageAlpha:(float)arg1;
+- (void)setBackgroundAndIconGridImageAlpha:(CGFloat)arg1;
+- (void)setIconGridImageAlpha:(CGFloat)arg1;
 - (double)grabDurationForEvent:(id)arg1;
 - (BOOL)allowsTapWhileEditing;
 - (id)description;

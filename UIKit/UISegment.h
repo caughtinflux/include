@@ -15,7 +15,7 @@ __attribute__((visibility("hidden")))
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 	XXStruct_V8l7SB* _appearance;
 #endif
-	float _width;
+	CGFloat _width;
 	CGSize _contentOffset;
 	UIColor* _tintColor;
 	int _barStyle;
@@ -55,7 +55,7 @@ __attribute__((visibility("hidden")))
 -(void)setEnabled:(BOOL)enabled;
 -(void)setShowDivider:(BOOL)divider;
 -(void)animateAdd:(BOOL)add;
--(void)animateRemoveForWidth:(float)width;
+-(void)animateRemoveForWidth:(CGFloat)width;
 -(CGRect)contentRect;
 -(CGSize)contentSize;
 -(void)_positionInfo;

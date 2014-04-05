@@ -12,8 +12,8 @@
 	UISectionTable* _sectionTable;
 	CGPoint _lastMousePoint;
 }
-+(float)visibleWidth;
-+(float)opaqueVisibleWidth;
++(CGFloat)visibleWidth;
++(CGFloat)opaqueVisibleWidth;
 -(id)_sectionTitles;
 -(id)initWithSectionTable:(id)sectionTable;
 -(void)drawRect:(CGRect)rect;

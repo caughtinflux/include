@@ -16,17 +16,17 @@
     _UILegibilityLabel *_timerLabel;
 }
 
-+ (float)interItemSpacing;
++ (CGFloat)interItemSpacing;
 + (id)_timerFont;
 - (struct CGSize)sizeThatFits:(struct CGSize)arg1;
 - (void)layoutSubviews;
-- (float)baselineOffsetFromBottom;
+- (CGFloat)baselineOffsetFromBottom;
 - (void)setTimerHidden:(BOOL)arg1;
 - (void)updateTimerLabel;
 - (void)setEndDate:(id)arg1;
-- (void)setLegibilitySettings:(id)arg1 textStrength:(float)arg2 dialStrength:(float)arg3;
-- (id)_newTimerDialForSettings:(id)arg1 strength:(float)arg2;
-- (id)_newLegibilityLabelForSettings:(id)arg1 strength:(float)arg2;
+- (void)setLegibilitySettings:(id)arg1 textStrength:(CGFloat)arg2 dialStrength:(CGFloat)arg3;
+- (id)_newTimerDialForSettings:(id)arg1 strength:(CGFloat)arg2;
+- (id)_newLegibilityLabelForSettings:(id)arg1 strength:(CGFloat)arg2;
 - (void)dealloc;
 - (id)initWithFrame:(struct CGRect)arg1;
 

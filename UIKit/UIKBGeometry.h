@@ -47,7 +47,7 @@
 -(id)overrideGeometry:(id)geometry;
 @end
 
-static inline UIKBGeometry* UIKBGeometryForKeyWithPercentages(UIKBGeometry *geom, float x, float y, float w, float h) {
+static inline UIKBGeometry* UIKBGeometryForKeyWithPercentages(UIKBGeometry *geom, CGFloat x, CGFloat y, CGFloat w, CGFloat h) {
 	geom.x = UIKBLengthMakePercentage(x);
 	geom.y = UIKBLengthMakePercentage(y);
 	geom.w = UIKBLengthMakePercentage(w);

@@ -7,6 +7,6 @@
 #import "UIImage.h"
 
 @interface UIImage (SBIconScales)
-+ (float)scaleForApplicationIconFormat:(int)arg1;
++ (CGFloat)scaleForApplicationIconFormat:(int)arg1;
 @end
 

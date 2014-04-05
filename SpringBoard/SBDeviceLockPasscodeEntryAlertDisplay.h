@@ -10,8 +10,8 @@
 {
 }
 
-- (float)durationForOthersActivation;
-- (float)delayForOthersActivation;
+- (CGFloat)durationForOthersActivation;
+- (CGFloat)delayForOthersActivation;
 - (void)dismiss;
 - (void)alertDisplayWillBecomeVisible;
 - (void)deviceUnlockCanceled;

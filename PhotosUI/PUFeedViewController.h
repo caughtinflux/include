@@ -349,7 +349,7 @@
 -(BOOL)collectionView:(id)arg1 layout:(id)arg2 shouldShowCaptionForTileAtIndexPath:(id)arg3 ;
 -(CGSize)collectionView:(id)arg1 layout:(id)arg2 captionSizeForTileAtIndexPath:(id)arg3 proposedSize:(CGSize)arg4 ;
 -(id)collectionView:(id)arg1 layout:(id)arg2 batchIDForTileAtIndexPath:(id)arg3 ;
--(void)collectionView:(id)arg1 layout:(id)arg2 referenceMaximumLength:(float*)arg3 minimumNumberOfTilesToOmit:(int*)arg4 forSection:(int)arg5 ;
+-(void)collectionView:(id)arg1 layout:(id)arg2 referenceMaximumLength:(CGFloat*)arg3 minimumNumberOfTilesToOmit:(int*)arg4 forSection:(int)arg5 ;
 -(CGSize)collectionView:(id)arg1 layout:(id)arg2 sizeForRowAtIndexPath:(id)arg3 proposedSize:(CGSize)arg4 ;
 -(PUFeedSeparatorMetrics)collectionView:(id)arg1 layout:(id)arg2 metricsForSeparatorBetweenRowAtIndexPath:(id)arg3 andRowAtIndexPath:(id)arg4 proposedMetrics:(PUFeedSeparatorMetrics)arg5 ;
 -(CGSize)collectionView:(id)arg1 layout:(id)arg2 sizeForThumbnailInSection:(int)arg3 ;
@@ -360,7 +360,7 @@
 -(PUFeedSeparatorMetrics)collectionView:(id)arg1 layout:(id)arg2 metricsForSeparatorBetweenSection:(int)arg3 andSection:(int)arg4 proposedMetrics:(PUFeedSeparatorMetrics)arg5 ;
 -(id)collectionView:(id)arg1 layout:(id)arg2 groupIDForSection:(int)arg3 ;
 -(CGSize)collectionView:(id)arg1 layout:(id)arg2 headerSizeForGroupID:(id)arg3 proposedSize:(CGSize)arg4 ;
--(float)collectionView:(id)arg1 layout:(id)arg2 spacingBetweenSection:(int)arg3 andHeaderForGroupID:(id)arg4 ;
+-(CGFloat)collectionView:(id)arg1 layout:(id)arg2 spacingBetweenSection:(int)arg3 andHeaderForGroupID:(id)arg4 ;
 -(void)feedSectionInfosManager:(id)arg1 sectionInfosDidChange:(id)arg2 ;
 -(void)didTapOverlayPlayButtonInFeedImageCell:(id)arg1 ;
 -(void)didTapCommentButtonInFeedImageCell:(id)arg1 ;

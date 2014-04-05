@@ -7,13 +7,13 @@
 
 
 @interface UIAlphaAnimation : UIAnimation {
-	float _startAlpha;
-	float _endAlpha;
+	CGFloat _startAlpha;
+	CGFloat _endAlpha;
 }
--(void)setStartAlpha:(float)alpha;
--(void)setEndAlpha:(float)alpha;
--(float)_alphaForMultiplier:(float)multiplier;
--(void)setProgress:(float)progress;
--(float)alphaForFraction:(float)fraction;
+-(void)setStartAlpha:(CGFloat)alpha;
+-(void)setEndAlpha:(CGFloat)alpha;
+-(CGFloat)_alphaForMultiplier:(CGFloat)multiplier;
+-(void)setProgress:(CGFloat)progress;
+-(CGFloat)alphaForFraction:(CGFloat)fraction;
 @end
 

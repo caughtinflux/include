@@ -15,7 +15,7 @@ __attribute__((visibility("hidden")))
 	id _delegate;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 	BOOL _usesRoundedCorners;
-	float _cornerRadius;
+	CGFloat _cornerRadius;
 	BOOL _fastMode;
 	UIRoundedCornerView* _roundedCornerView;
 	BOOL _usesInnerShadow;

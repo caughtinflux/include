@@ -21,7 +21,7 @@
 	unsigned _targetZoomLevel;
 	unsigned _transitionState;
 	NSIndexPath* _anchorItemIndexPath;
-	float _currentInteractiveProgress;
+	CGFloat _currentInteractiveProgress;
 	UICollectionViewTransitionLayout* __transitionLayout;
 	<UIViewControllerContextTransitioning>* _transitionContext;
 	CGSize _currentInteractiveCenterOffset;
@@ -34,7 +34,7 @@
 @property (assign,nonatomic) unsigned targetZoomLevel;                                                                       //@synthesize targetZoomLevel=_targetZoomLevel - In the implementation block
 @property (assign,nonatomic) unsigned transitionState;                                                                       //@synthesize transitionState=_transitionState - In the implementation block
 @property (nonatomic,retain) NSIndexPath * anchorItemIndexPath;                                                              //@synthesize anchorItemIndexPath=_anchorItemIndexPath - In the implementation block
-@property (assign,nonatomic) float currentInteractiveProgress;                                                               //@synthesize currentInteractiveProgress=_currentInteractiveProgress - In the implementation block
+@property (assign,nonatomic) CGFloat currentInteractiveProgress;                                                               //@synthesize currentInteractiveProgress=_currentInteractiveProgress - In the implementation block
 @property (assign,nonatomic) CGSize currentInteractiveCenterOffset;                                                          //@synthesize currentInteractiveCenterOffset=_currentInteractiveCenterOffset - In the implementation block
 @property (setter=_setTransitionLayout:,nonatomic,retain) UICollectionViewTransitionLayout * _transitionLayout;              //@synthesize _transitionLayout=__transitionLayout - In the implementation block
 @property (nonatomic,retain) <UIViewControllerContextTransitioning> * transitionContext;                                     //@synthesize transitionContext=_transitionContext - In the implementation block
@@ -43,7 +43,7 @@
 -(id)transitionContext;
 -(void)startInteractiveTransition:(id)arg1 ;
 -(id)anchorItemIndexPath;
--(void)updateInteractiveTransitionForProgress:(float)arg1 centerOffset:(CGSize)arg2 ;
+-(void)updateInteractiveTransitionForProgress:(CGFloat)arg1 centerOffset:(CGSize)arg2 ;
 -(unsigned)transitionState;
 -(void)finishInteractiveTransitionAnimated;
 -(void)cancelInteractiveTransitionAnimated;
@@ -54,12 +54,12 @@
 -(void)_setTransitionLayout:(id)arg1 ;
 -(id)_transitionLayout;
 -(void)_setTransitionState:(unsigned)arg1 ;
--(void)_setCurrentInteractiveProgress:(float)arg1 ;
+-(void)_setCurrentInteractiveProgress:(CGFloat)arg1 ;
 -(void)_setCurrentInteractiveCenterOffset:(CGSize)arg1 ;
 -(unsigned)originZoomLevel;
 -(void)_setOriginZoomLevel:(unsigned)arg1 ;
 -(void)_setTargetZoomLevel:(unsigned)arg1 ;
--(float)currentInteractiveProgress;
+-(CGFloat)currentInteractiveProgress;
 -(CGSize)currentInteractiveCenterOffset;
 -(void).cxx_destruct;
 @end

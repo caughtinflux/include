@@ -151,7 +151,7 @@
 -(id)_visibleFooterViewForSection:(int)section;
 -(BOOL)allowsHeaderViewsToFloat;
 -(BOOL)allowsFooterViewsToFloat;
--(void)_tableHeaderHeightDidChangeToHeight:(float)_tableHeaderHeight;
+-(void)_tableHeaderHeightDidChangeToHeight:(CGFloat)_tableHeaderHeight;
 -(void)_drawExtraSeparator:(CGRect)separator;
 -(BOOL)_isCellReorderable:(id)reorderable;
 -(id)titleForDeleteConfirmationButton:(id)deleteConfirmationButton;
@@ -168,7 +168,7 @@
 -(id)_indexPathForSwipeRowAtPoint:(CGPoint)point;
 -(BOOL)_wantsSwipes;
 -(BOOL)_isTableHeaderViewHidden;
--(float)_spacingForExtraSeparators;
+-(CGFloat)_spacingForExtraSeparators;
 -(BOOL)_shouldShowMenuForCell:(id)cell __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);
 -(BOOL)_canPerformAction:(SEL)action forCell:(id)cell sender:(id)sender __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);
 -(void)_performAction:(SEL)action forCell:(id)cell sender:(id)sender __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);
@@ -177,8 +177,8 @@
 -(BOOL)_delegateImplementsAlignmentForHeaderInSection;
 -(BOOL)_delegateImplementsTitleWidthForFooterInSection;
 -(BOOL)_delegateImplementsAlignmentForFooterInSection;
--(float)_heightForSeparator;
--(float)_backgroundInset;
+-(CGFloat)_heightForSeparator;
+-(CGFloat)_backgroundInset;
 #endif
 @end
 
@@ -188,7 +188,7 @@
 -(void)_scroll __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);
 -(id)_swipeGestureRecognizer;
 -(void)setUsesGestureRecognizers:(BOOL)recognizers;
--(float)_animationDuration;
+-(CGFloat)_animationDuration;
 -(void)_ensureRowDataIsLoaded;
 -(void)_updateRowData;
 -(void)_scheduleAdjustExtraSeparators;
@@ -216,7 +216,7 @@
 -(void)_updateVisibleHeadersAndFootersNow;
 -(void)_updateVisibleCellsNow;
 -(NSRange)_visibleGlobalRowsInRect:(CGRect)rect;
--(BOOL)_shouldDisplayExtraSeparatorsAtOffset:(float*)offset;
+-(BOOL)_shouldDisplayExtraSeparatorsAtOffset:(CGFloat*)offset;
 -(void)_adjustExtraSeparators;
 -(void)_addContentSubview:(id)subview atBack:(BOOL)back;
 -(id)_tableViewCellForContentView:(id)contentView;

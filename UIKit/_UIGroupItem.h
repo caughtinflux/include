@@ -9,7 +9,7 @@
 
 @interface _UIGroupItem : NSObject {
 	NSString* _title;
-	float offset;
+	CGFloat offset;
 	int _rowCountBeforeGroup;
 	int _childCount;
 	unsigned _isRadioGroup : 1;

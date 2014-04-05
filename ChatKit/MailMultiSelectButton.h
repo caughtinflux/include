@@ -11,7 +11,7 @@
 	unsigned _isChecked : 1;
 	unsigned _isSelected : 1;
 }
-+(float)defaultWidth;
++(CGFloat)defaultWidth;
 +(id)minusImage;
 +(id)plusImage;
 +(id)minusCenterImage;

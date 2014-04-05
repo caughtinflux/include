@@ -10,7 +10,7 @@
 
 @interface SBFadeAnimationSettings : _UISettings
 {
-    float _backlightFadeDuration;
+    CGFloat _backlightFadeDuration;
     SBFAnimationSettings *_dateInSettings;
     SBFAnimationSettings *_overlayInSettings;
     SBFAnimationSettings *_contentInSettings;
@@ -32,7 +32,7 @@
 @property(retain, nonatomic) SBFAnimationSettings *contentInSettings; // @synthesize contentInSettings=_contentInSettings;
 @property(retain, nonatomic) SBFAnimationSettings *overlayInSettings; // @synthesize overlayInSettings=_overlayInSettings;
 @property(retain, nonatomic) SBFAnimationSettings *dateInSettings; // @synthesize dateInSettings=_dateInSettings;
-@property(nonatomic) float backlightFadeDuration; // @synthesize backlightFadeDuration=_backlightFadeDuration;
+@property(nonatomic) CGFloat backlightFadeDuration; // @synthesize backlightFadeDuration=_backlightFadeDuration;
 - (void)setDefaultValues;
 
 @end

@@ -11,14 +11,14 @@
 
 @interface PUPhotosGridViewControllerPadSpec : PUPhotosGridViewControllerSpec {
 
-	float _gridItemSideSizePortrait;
-	float _gridItemSideSizeLandscape;
-	float _gridHSpacingPortrait;
-	float _gridHSpacingLandscape;
-	float _gridVSpacingPortrait;
-	float _gridVSpacingLandscape;
-	float _gridSideMarginsPortrait;
-	float _gridSideMarginsLandscape;
+	CGFloat _gridItemSideSizePortrait;
+	CGFloat _gridItemSideSizeLandscape;
+	CGFloat _gridHSpacingPortrait;
+	CGFloat _gridHSpacingLandscape;
+	CGFloat _gridVSpacingPortrait;
+	CGFloat _gridVSpacingLandscape;
+	CGFloat _gridSideMarginsPortrait;
+	CGFloat _gridSideMarginsLandscape;
 
 }
 -(id)init;
@@ -30,8 +30,8 @@
 -(BOOL)canDisplayOptionsInPopover;
 -(BOOL)canDisplaySlideshowButton;
 -(id)albumPickerViewControllerSpec;
--(void)configureCollectionViewGridLayout:(id)arg1 forWidth:(float)arg2 ;
--(float)globalFooterHeight;
+-(void)configureCollectionViewGridLayout:(id)arg1 forWidth:(CGFloat)arg2 ;
+-(CGFloat)globalFooterHeight;
 -(BOOL)usesStackPopTransition;
 -(id)photoBrowserSpec;
 -(void)protoSettingsDidChange;

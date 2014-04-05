@@ -15,7 +15,7 @@
     CAMediaTimingFunction *_timingFunction;
     int _fromState;
     int _toState;
-    float _fraction;
+    CGFloat _fraction;
 }
 
 + (Class)_classForTransitionFromState:(int)arg1 toState:(int)arg2;

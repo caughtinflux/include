@@ -57,7 +57,7 @@
 -(void)setPhotoDecoration:(id)arg1 ;
 -(id)photoDecoration;
 -(int)numberOfVisibleItems;
--(void)setAlpha:(float)arg1 forItemAtIndex:(int)arg2 ;
+-(void)setAlpha:(CGFloat)arg1 forItemAtIndex:(int)arg2 ;
 -(id)newLayoutAttributesForItemAtIndex:(int)arg1 relativeToView:(id)arg2 ;
 -(UIOffset)stackOffset;
 -(UIEdgeInsets)stackPerspectiveInsets;

@@ -45,6 +45,6 @@
 -(void)_hideSearchField:(BOOL)field;
 -(void)_showSearchField:(BOOL)field;
 -(void)_searchWithText:(id)text;
--(float)heightWithoutSeparator;
+-(CGFloat)heightWithoutSeparator;
 @end
 

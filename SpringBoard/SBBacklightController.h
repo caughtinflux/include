@@ -27,7 +27,7 @@
 + (instancetype)sharedInstance;
 + (instancetype)_sharedInstanceCreateIfNeeded:(BOOL)arg1;
 @property(readonly, nonatomic) BOOL isPendingScreenUnblankAfterCACommit; // @synthesize isPendingScreenUnblankAfterCACommit=_isPendingScreenUnblankAfterCACommit;
-- (void)preventIdleSleepForNumberOfSeconds:(float)arg1;
+- (void)preventIdleSleepForNumberOfSeconds:(CGFloat)arg1;
 - (void)preventIdleSleep;
 - (void)allowIdleSleep;
 - (void)_requestedUserEventNotificationOccurred;
@@ -42,9 +42,9 @@
 - (void)removeSpuriousScreenUndimmingAssertion:(id)arg1;
 - (void)addSpuriousScreenUndimmingAssertion:(id)arg1;
 - (void)autoLockPrefsChanged;
-- (void)animateBacklightToFactor:(float)arg1 duration:(double)arg2 source:(int)arg3 completion:(id)arg4;
-- (void)setBacklightFactor:(float)arg1 source:(int)arg2;
-- (void)setBacklightFactorPending:(float)arg1;
+- (void)animateBacklightToFactor:(CGFloat)arg1 duration:(double)arg2 source:(int)arg3 completion:(id)arg4;
+- (void)setBacklightFactor:(CGFloat)arg1 source:(int)arg2;
+- (void)setBacklightFactorPending:(CGFloat)arg1;
 - (id)idleTimerDisabledReasons;
 @property(readonly, nonatomic) BOOL screenIsOff;
 - (void)_deferredScreenUnblankDone;

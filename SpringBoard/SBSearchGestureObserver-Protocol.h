@@ -7,7 +7,7 @@
 #import "NSObject.h"
 
 @protocol SBSearchGestureObserver <NSObject>
-- (void)searchGesture:(id)arg1 changedPercentComplete:(float)arg2;
+- (void)searchGesture:(id)arg1 changedPercentComplete:(CGFloat)arg2;
 
 @optional
 - (void)searchGesture:(id)arg1 completedShowing:(BOOL)arg2;

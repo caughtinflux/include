@@ -35,7 +35,7 @@
 - (void)_crossfadeToTextImage:(id)arg1 withPreparation:(id)arg2 animation:(void)arg3 completion:(id)arg4;
 - (void)_configureAnimatedForText:(id)arg1 highlighted:(BOOL)arg2 withPreparation:(id)arg3 animation:(void)arg4 completion:(id)arg5;
 - (id)darkeningImageView:(id)arg1 settableImageForImage:(id)arg2;
-- (void)setAccessoryBrightness:(float)arg1;
+- (void)setAccessoryBrightness:(CGFloat)arg1;
 - (struct CGPoint)accessoryOriginForIconBounds:(struct CGRect)arg1;
 - (void)prepareForReuse;
 - (BOOL)displayingAccessory;

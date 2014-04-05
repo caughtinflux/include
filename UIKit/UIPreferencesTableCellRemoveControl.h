@@ -9,12 +9,12 @@
 
 @interface UIPreferencesTableCellRemoveControl : UIRemoveControl {
 }
--(void)addConfirmationButtonSubview:(id)subview withWidth:(float)width target:(id)target;
--(float)removeButtonAnimationDuration;
+-(void)addConfirmationButtonSubview:(id)subview withWidth:(CGFloat)width target:(id)target;
+-(CGFloat)removeButtonAnimationDuration;
 -(CGRect)removeButtonEndingFrame;
 -(CGRect)removeButtonStartingFrame;
--(float)_verticalOffsetFromTarget;
--(float)_removeConfirmationButtonVerticalOffset;
+-(CGFloat)_verticalOffsetFromTarget;
+-(CGFloat)_removeConfirmationButtonVerticalOffset;
 -(CGRect)targetContentBounds;
 @end
 

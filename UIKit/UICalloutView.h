@@ -49,21 +49,21 @@
 @property(assign, nonatomic) int subtitleLineBreakMode;
 @property(assign, nonatomic) int titleLineBreakMode;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-@property(readonly, assign, nonatomic) float UICalloutViewMinimumWidth;
-@property(readonly, assign, nonatomic) float UICalloutViewVerticalMargin;
-@property(readonly, assign, nonatomic) float UICalloutViewHorizontalPadding;
-@property(readonly, assign, nonatomic) float UICalloutViewHorizontalMargin;
-@property(readonly, assign, nonatomic) float UICalloutViewButtonPadding;
-@property(readonly, assign, nonatomic) float UICalloutViewLayoutDuration;
-@property(readonly, assign, nonatomic) float UICalloutViewCapPaddingTop;
-@property(readonly, assign, nonatomic) float UICalloutViewCapHeight;
+@property(readonly, assign, nonatomic) CGFloat UICalloutViewMinimumWidth;
+@property(readonly, assign, nonatomic) CGFloat UICalloutViewVerticalMargin;
+@property(readonly, assign, nonatomic) CGFloat UICalloutViewHorizontalPadding;
+@property(readonly, assign, nonatomic) CGFloat UICalloutViewHorizontalMargin;
+@property(readonly, assign, nonatomic) CGFloat UICalloutViewButtonPadding;
+@property(readonly, assign, nonatomic) CGFloat UICalloutViewLayoutDuration;
+@property(readonly, assign, nonatomic) CGFloat UICalloutViewCapPaddingTop;
+@property(readonly, assign, nonatomic) CGFloat UICalloutViewCapHeight;
 #endif
 +(id)_backgroundImage;
 +(id)_leftCapImage;
 +(id)_rightCapImage;
 +(id)_topAnchorImage;
 +(id)_bottomAnchorImage;
-+(float)defaultHeight;
++(CGFloat)defaultHeight;
 +(UICalloutView*)sharedCalloutView;
 -(void)_setLeftView:(id)view;
 -(void)_setRightView:(id)view;
@@ -88,11 +88,11 @@
 -(CGPoint)offset;
 -(CGPoint)anchorPoint;
 -(void)getActualAnchorPoint:(CGPoint*)point frame:(CGRect*)frame position:(int*)position forDesiredAnchorPoint:(CGPoint)desiredAnchorPoint boundaryRect:(CGRect)rect;
--(void)_setOriginForScale:(float)scale;
+-(void)_setOriginForScale:(CGFloat)scale;
 -(void)_layoutSubviews:(BOOL)subviews;
 -(void)setAnchorPoint:(CGPoint)point boundaryRect:(CGRect)rect animate:(BOOL)animate;
 -(void)animationDidStop:(id)animation finished:(id)finished context:(void*)context;
--(void)fadeOutWithDuration:(float)duration;
+-(void)fadeOutWithDuration:(CGFloat)duration;
 -(void)_markDidMoveCalled;
 -(void)completeBounceAnimation;
 -(void)addTarget:(id)target action:(SEL)action;

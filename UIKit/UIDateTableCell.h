@@ -8,12 +8,12 @@
 
 
 @interface UIDateTableCell : UIImageAndTextTableCell {
-	float _horizontalOffset;
-	float _verticalOffset;
+	CGFloat _horizontalOffset;
+	CGFloat _verticalOffset;
 }
 -(id)initWithFrame:(CGRect)frame;
--(void)setHorizontalOffset:(float)offset;
--(void)setVerticalOffset:(float)offset;
+-(void)setHorizontalOffset:(CGFloat)offset;
+-(void)setVerticalOffset:(CGFloat)offset;
 -(CGRect)contentBounds;
 -(id)shadowColor;
 @end

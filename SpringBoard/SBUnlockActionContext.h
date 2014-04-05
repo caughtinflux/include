@@ -14,7 +14,7 @@
     NSString *_shortLockLabel;
     id _unlockAction;
     NSString *_identifier;
-    float _fontSize;
+    CGFloat _fontSize;
     BOOL _requiresUnlock;
     BOOL _deactivateAwayController;
     BOOL _canBypassPinLock;

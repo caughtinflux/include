@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 	CGSize _stringImageSize;
 	BOOL _isLastInLine;
 	BOOL _highlighted;
-	float _atBottom;
+	CGFloat _atBottom;
 	id _target;
 	SEL _action;
 	BOOL _drawDone;
@@ -30,8 +30,8 @@ __attribute__((visibility("hidden")))
 -(void)dealloc;
 -(CGSize)stringImageSize;
 -(unsigned)index;
--(void)setGap:(float)gap;
--(float)dividorOriginX;
+-(void)setGap:(CGFloat)gap;
+-(CGFloat)dividorOriginX;
 -(void)setLastInLine:(BOOL)line;
 -(void)setStringMayBeTooLong:(BOOL)aLong;
 -(void)setAtBottom:(BOOL)bottom;

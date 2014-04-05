@@ -12,7 +12,7 @@
 	CKSendingProgressView* _statusView;
 	NSString* _title;
 	CKConversation* _conversation;
-	float _lastVal;
+	CGFloat _lastVal;
 	NSString* _lastMsg;
 	NSTimer* _progressUpdateTimer;
 	NSMutableSet* _currentMessages;
@@ -41,6 +41,6 @@
 -(id)_title;
 -(void)_resetProgress;
 -(id)_generateStatusTitle;
--(float)_generateVal;
+-(CGFloat)_generateVal;
 @end
 

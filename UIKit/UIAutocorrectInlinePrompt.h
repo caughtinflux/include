@@ -33,8 +33,8 @@ __attribute__((visibility("hidden")))
 -(void)removePromptSubviews;
 -(CGRect)shadowFrameForFrame:(CGRect)frame;
 // in a protocol: -(void)setUIKeyboardCandidateListDelegate:(id)delegate;
-// in a protocol: -(void)setCandidates:(id)candidates inlineText:(id)text inlineRect:(CGRect)rect maxX:(float)x layout:(BOOL)layout;
-// in a protocol: -(void)setCandidates:(id)candidates type:(int)type inlineText:(id)text inlineRect:(CGRect)rect maxX:(float)x layout:(BOOL)layout;
+// in a protocol: -(void)setCandidates:(id)candidates inlineText:(id)text inlineRect:(CGRect)rect maxX:(CGFloat)x layout:(BOOL)layout;
+// in a protocol: -(void)setCandidates:(id)candidates type:(int)type inlineText:(id)text inlineRect:(CGRect)rect maxX:(CGFloat)x layout:(BOOL)layout;
 // in a protocol: -(unsigned)currentIndex;
 // in a protocol: -(void)candidateAcceptedAtIndex:(unsigned)index;
 // in a protocol: -(unsigned)count;
@@ -48,13 +48,13 @@ __attribute__((visibility("hidden")))
 // in a protocol: -(void)showPreviousPage;
 // in a protocol: -(id)currentCandidate;
 // in a protocol: -(id)candidateAtIndex:(unsigned)index;
--(void)setCorrection:(id)correction typedText:(id)text inRect:(CGRect)rect maxX:(float)x;
--(void)setCandidateObject:(id)object type:(int)type typedText:(id)text inRect:(CGRect)rect maxX:(float)x;
--(BOOL)isAcceptableTextEffectsFrame:(CGRect)frame afterScrollBy:(float)by;
--(float)maximumCandidateWidth;
+-(void)setCorrection:(id)correction typedText:(id)text inRect:(CGRect)rect maxX:(CGFloat)x;
+-(void)setCandidateObject:(id)object type:(int)type typedText:(id)text inRect:(CGRect)rect maxX:(CGFloat)x;
+-(BOOL)isAcceptableTextEffectsFrame:(CGRect)frame afterScrollBy:(CGFloat)by;
+-(CGFloat)maximumCandidateWidth;
 -(CGRect)horizontallySquishedCorrectionFrame:(CGRect)frame;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
--(CGRect)correctionFrameFromDesiredFrame:(CGRect)desiredFrame textHeight:(int)height withExtraGap:(float)extraGap;
+-(CGRect)correctionFrameFromDesiredFrame:(CGRect)desiredFrame textHeight:(int)height withExtraGap:(CGFloat)extraGap;
 #else
 -(CGRect)correctionFrameFromDesiredFrame:(CGRect)desiredFrame textHeight:(int)height;
 #endif
@@ -82,7 +82,7 @@ __attribute__((visibility("hidden")))
 -(BOOL)prepareForAnimation:(CGRect)animation;
 -(BOOL)needsWebDocumentViewEventsDirectly;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
--(float)minimumWidthForCorrection;
+-(CGFloat)minimumWidthForCorrection;
 -(void)accept;
 -(void)updateHighlighting:(GSEventRef)highlighting;
 #endif

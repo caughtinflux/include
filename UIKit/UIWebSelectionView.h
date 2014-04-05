@@ -22,8 +22,8 @@ __attribute__((visibility("hidden")))
 	UIWebDocumentView* _documentView;
 	UIWebSelectionNode* _selectionNode;
 	UIWebSelectionGraph* _selectionGraph;
-	float _growThreshold;
-	float _shrinkThreshold;
+	CGFloat _growThreshold;
+	CGFloat _shrinkThreshold;
 	struct {
 		UIWebSelectionHandle* scrollingHandle;
 		double startTime;
@@ -33,7 +33,7 @@ __attribute__((visibility("hidden")))
 	struct {
 		UIWebSelectionHandle* activeHandle;
 		CGPoint handleCenterStart;
-		float handleOffset;
+		CGFloat handleOffset;
 	} _blockSelectionData;
 	struct {
 		UIWebSelectionHandle* start;

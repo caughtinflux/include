@@ -16,7 +16,7 @@
 +(CGSize)defaultSizeForCurrentOrientation;
 -(CGSize)defaultSize;
 -(BOOL)_isLandscapeOrientation;
--(float)_tableRowHeight;
+-(CGFloat)_tableRowHeight;
 -(id)_orientationImageSuffix;
 -(void)setSoundsEnabled:(BOOL)enabled;
 -(id)initWithFrame:(CGRect)frame;
@@ -27,7 +27,7 @@
 -(void)setNeedsLayout;
 -(void)_updateSound;
 -(void)setHidden:(BOOL)hidden;
--(void)setAlpha:(float)alpha;
+-(void)setAlpha:(CGFloat)alpha;
 -(void)didMoveToWindow;
 -(void)reload;
 -(void)reloadData;
@@ -37,7 +37,7 @@
 -(id)_selectionBarSuffix;
 -(id)_popoverSuffix __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_2);
 -(id)imageForPickerPiece:(int)pickerPiece;
--(CGRect)_selectionBarRectForHeight:(float)height;
+-(CGRect)_selectionBarRectForHeight:(CGFloat)height;
 -(id)_createViewForPickerPiece:(int)pickerPiece;
 -(id)createDividerWithFrame:(CGRect)frame;
 -(CGSize)sizeThatFits:(CGSize)fits;
@@ -45,8 +45,8 @@
 -(int)_delegateNumberOfComponents;
 -(int)_delegateNumberOfRowsInComponent:(int)component;
 -(id)_delegateTitleForRow:(int)row forComponent:(int)component;
--(float)_delegateWidthForComponent:(int)component ofCount:(int)count withSizeLeft:(float)sizeLeft;
--(float)_delegateRowHeightForComponent:(int)component;
+-(CGFloat)_delegateWidthForComponent:(int)component ofCount:(int)count withSizeLeft:(CGFloat)sizeLeft;
+-(CGFloat)_delegateRowHeightForComponent:(int)component;
 -(id)_createTableWithFrame:(CGRect)frame forComponent:(int)component;
 -(int)numberOfRowsInColumn:(int)column;
 -(int)numberOfColumns;

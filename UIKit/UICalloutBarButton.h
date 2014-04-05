@@ -16,8 +16,8 @@
 	int m_type;
 #endif
 	NSTimer* m_flashTimer;
-	float m_contentWidth;
-	float m_contentScale;
+	CGFloat m_contentWidth;
+	CGFloat m_contentScale;
 	int m_flashCount;
 	BOOL m_isText;
 	BOOL m_configured;
@@ -28,8 +28,8 @@
 #endif
 }
 @property(readonly, assign, nonatomic) SEL action;
-@property(readonly, assign, nonatomic) float contentWidth;
-@property(readonly, assign, nonatomic) float contentScale;
+@property(readonly, assign, nonatomic) CGFloat contentWidth;
+@property(readonly, assign, nonatomic) CGFloat contentScale;
 // inherited: -(void)dealloc;
 -(void)configureLabel;
 // inherited: -(void)layoutSubviews;
@@ -37,7 +37,7 @@
 // inherited: -(CGRect)titleRectForContentRect:(CGRect)contentRect;
 // inherited: -(CGRect)imageRectForContentRect:(CGRect)contentRect;
 -(void)configureForMiddlePosition;
--(void)setContentScale:(float)scale;
+-(void)setContentScale:(CGFloat)scale;
 // inherited: -(void)setHighlighted:(BOOL)highlighted;
 -(void)sendCallback;
 -(void)cancelFlash;

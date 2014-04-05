@@ -11,38 +11,38 @@
 __attribute__((visibility("hidden")))
 @interface UISectionRowData : NSObject <NSCopying> {
 	BOOL _valid;
-	float _headerHeight;
+	CGFloat _headerHeight;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	float _maxHeaderTitleWidth;
+	CGFloat _maxHeaderTitleWidth;
 #endif
-	float _footerHeight;
-	float _headerOffset;
+	CGFloat _footerHeight;
+	CGFloat _headerOffset;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	float _maxFooterTitleWidth;
+	CGFloat _maxFooterTitleWidth;
 #endif
-	float _footerOffset;
+	CGFloat _footerOffset;
 	int _numRows;
 	int _arrayLength;
-	float* _rowHeights;
-	float* _rowOffsets;
-	float _sectionHeight;
+	CGFloat* _rowHeights;
+	CGFloat* _rowOffsets;
+	CGFloat _sectionHeight;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 	int _headerAlignment;
 	int _footerAlignment;
 #endif
 	BOOL _sectionOffsetValid;
-	float _sectionOffset;
+	CGFloat _sectionOffset;
 }
 -(void)dealloc;
 -(void)invalidate;
 -(void)invalidateSectionOffset;
--(float)_headerOrFooterSizeForTable:(id)table title:(id)title isHeader:(BOOL)header;
--(void)addOffset:(float)offset fromRow:(int)row;
--(void)setHeight:(float)height forRow:(int)row;
--(float)_defaultSectionHeaderHeightForSection:(int)section tableView:(id)view tableViewRowData:(id)data;
--(float)_defaultSectionFooterHeightForSection:(int)section tableView:(id)view tableViewRowData:(id)data;
+-(CGFloat)_headerOrFooterSizeForTable:(id)table title:(id)title isHeader:(BOOL)header;
+-(void)addOffset:(CGFloat)offset fromRow:(int)row;
+-(void)setHeight:(CGFloat)height forRow:(int)row;
+-(CGFloat)_defaultSectionHeaderHeightForSection:(int)section tableView:(id)view tableViewRowData:(id)data;
+-(CGFloat)_defaultSectionFooterHeightForSection:(int)section tableView:(id)view tableViewRowData:(id)data;
 -(void)refreshWithSection:(int)section tableView:(id)view tableViewRowData:(id)data;
--(void)insertRowAtIndex:(int)index inSection:(int)section rowHeight:(float)height tableViewRowData:(id)data;
+-(void)insertRowAtIndex:(int)index inSection:(int)section rowHeight:(CGFloat)height tableViewRowData:(id)data;
 -(void)deleteRowAtIndex:(int)index;
 -(int)sectionLocationForRow:(int)row;
 -(int)sectionLocationForReorderedRow:(int)reorderedRow;

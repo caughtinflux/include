@@ -12,31 +12,31 @@
 {
     BOOL _highlightUsesPlusL;
     BOOL _backgroundDarkensCC;
-    float _controlAlpha;
-    float _controlAlpha1x;
-    float _disabledAlpha;
-    float _disabledAlpha1x;
-    float _highlightAlpha;
-    float _glowAlpha;
+    CGFloat _controlAlpha;
+    CGFloat _controlAlpha1x;
+    CGFloat _disabledAlpha;
+    CGFloat _disabledAlpha1x;
+    CGFloat _highlightAlpha;
+    CGFloat _glowAlpha;
     UIColor *_highlightColor;
-    float _bounceFriction;
-    float _backgroundColorAlpha;
+    CGFloat _bounceFriction;
+    CGFloat _backgroundColorAlpha;
 }
 
 + (id)settingsControllerModule;
-@property float backgroundColorAlpha; // @synthesize backgroundColorAlpha=_backgroundColorAlpha;
+@property CGFloat backgroundColorAlpha; // @synthesize backgroundColorAlpha=_backgroundColorAlpha;
 @property BOOL backgroundDarkensCC; // @synthesize backgroundDarkensCC=_backgroundDarkensCC;
-@property float bounceFriction; // @synthesize bounceFriction=_bounceFriction;
+@property CGFloat bounceFriction; // @synthesize bounceFriction=_bounceFriction;
 @property(retain) UIColor *highlightColor; // @synthesize highlightColor=_highlightColor;
-@property float glowAlpha; // @synthesize glowAlpha=_glowAlpha;
+@property CGFloat glowAlpha; // @synthesize glowAlpha=_glowAlpha;
 @property BOOL highlightUsesPlusL; // @synthesize highlightUsesPlusL=_highlightUsesPlusL;
-@property float highlightAlpha; // @synthesize highlightAlpha=_highlightAlpha;
-@property float disabledAlpha1x; // @synthesize disabledAlpha1x=_disabledAlpha1x;
-@property float disabledAlpha; // @synthesize disabledAlpha=_disabledAlpha;
-@property float controlAlpha1x; // @synthesize controlAlpha1x=_controlAlpha1x;
-@property float controlAlpha; // @synthesize controlAlpha=_controlAlpha;
-- (float)resolvedDisabledAlpha;
-- (float)resolvedControlAlpha;
+@property CGFloat highlightAlpha; // @synthesize highlightAlpha=_highlightAlpha;
+@property CGFloat disabledAlpha1x; // @synthesize disabledAlpha1x=_disabledAlpha1x;
+@property CGFloat disabledAlpha; // @synthesize disabledAlpha=_disabledAlpha;
+@property CGFloat controlAlpha1x; // @synthesize controlAlpha1x=_controlAlpha1x;
+@property CGFloat controlAlpha; // @synthesize controlAlpha=_controlAlpha;
+- (CGFloat)resolvedDisabledAlpha;
+- (CGFloat)resolvedControlAlpha;
 - (void)setDefaultValues;
 
 @end

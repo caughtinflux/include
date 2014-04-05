@@ -22,7 +22,7 @@
 -(double)progress;
 -(void)updateForProgress;
 -(CGPoint)extrapolationReferencePoint;
--(float)_rubberbandFromFloat:(float)arg1 toFloat:(float)arg2 withExtrapolatedFloat:(float)arg3 ;
+-(CGFloat)_rubberbandFromFloat:(CGFloat)arg1 toFloat:(CGFloat)arg2 withExtrapolatedFloat:(CGFloat)arg3 ;
 -(CGPoint)extrapolatedPointFromReferencePointToPoint:(CGPoint)arg1 forProgress:(double)arg2 ;
 -(CGPoint)rubberbandFromInitialPoint:(CGPoint)arg1 toPoint:(CGPoint)arg2 withExtrapolatedPoint:(CGPoint)arg3 ;
 -(void)setExtrapolationReferencePoint:(CGPoint)arg1 ;

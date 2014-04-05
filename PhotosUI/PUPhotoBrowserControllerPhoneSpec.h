@@ -13,6 +13,6 @@
 -(int)photoThumbnailFormat;
 -(id)photosSharingViewControllerSpec;
 -(id)avalancheReviewControllerSpec;
--(float)commentsButtonLandscapeVerticalOffset;
+-(CGFloat)commentsButtonLandscapeVerticalOffset;
 @end
 

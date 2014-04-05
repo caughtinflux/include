@@ -11,8 +11,8 @@
 - (id)effectiveCustomSlideToUnlockText;
 - (BOOL)lockScreenViewPhonePluginIsActive;
 - (void)lockScreenView:(id)arg1 didEndScrollingOnPage:(int)arg2;
-- (void)lockScreenViewWillEndDraggingWithPercentScrolled:(float)arg1 percentScrolledVelocity:(float)arg2 targetScrollPercentage:(float)arg3;
-- (void)lockScreenViewDidScrollWithNewScrollPercentage:(float)arg1 tracking:(BOOL)arg2;
+- (void)lockScreenViewWillEndDraggingWithPercentScrolled:(CGFloat)arg1 percentScrolledVelocity:(CGFloat)arg2 targetScrollPercentage:(CGFloat)arg3;
+- (void)lockScreenViewDidScrollWithNewScrollPercentage:(CGFloat)arg1 tracking:(BOOL)arg2;
 - (void)lockScreenViewDidBeginScrolling:(id)arg1;
 - (void)lockScreenView:(id)arg1 didScrollToPage:(int)arg2;
 @end

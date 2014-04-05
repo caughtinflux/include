@@ -54,19 +54,19 @@ extern "C" {
 		CFMutableSetRef removalNotifications;	// 20, set of IOHIDNotification's
 		CFMutableDictionaryRef properties;	// 24
 		int logLevel;	// 28
-		float brightness;	// 34
-		float brightnessMin;	// 38
-		float brightnessMax;	// 3c
-		float brightnessFactor;	// 40;
-		float x44;	// 44
-		float ambient;	// 4c
-		float brightnessAutoWeightMin;	// 54
-		float brightnessAutoWeightMax;	// 58
-		float x60;	// 60
-		float x64;	// 64
-		float x68;	// 68
-		float x70;	// 70
-		float x74;	// 74
+		CGFloat brightness;	// 34
+		CGFloat brightnessMin;	// 38
+		CGFloat brightnessMax;	// 3c
+		CGFloat brightnessFactor;	// 40;
+		CGFloat x44;	// 44
+		CGFloat ambient;	// 4c
+		CGFloat brightnessAutoWeightMin;	// 54
+		CGFloat brightnessAutoWeightMax;	// 58
+		CGFloat x60;	// 60
+		CGFloat x64;	// 64
+		CGFloat x68;	// 68
+		CGFloat x70;	// 70
+		CGFloat x74;	// 74
 		int x78;	// 78
 		int x80;	// 80
 		CFTimeInterval fadePeriod;	// 84
@@ -83,15 +83,15 @@ extern "C" {
 #pragma mark -
 #pragma mark Accessors
 	
-	float _IOHIDDisplayGetAmbient(IOHIDDisplayRef display);
-	void _IOHIDDisplaySetAmbient(IOHIDDisplayRef display, float ambient);
+	CGFloat _IOHIDDisplayGetAmbient(IOHIDDisplayRef display);
+	void _IOHIDDisplaySetAmbient(IOHIDDisplayRef display, CGFloat ambient);
 	
-	float _IOHIDDisplayGetBrightness(IOHIDDisplayRef display);
-	void _IOHIDDisplaySetBrightness(IOHIDDisplayRef display, float brightness);
-	void _IOHIDDisplaySetBrightnessMax(IOHIDDisplayRef display, float brightnessMax);
+	CGFloat _IOHIDDisplayGetBrightness(IOHIDDisplayRef display);
+	void _IOHIDDisplaySetBrightness(IOHIDDisplayRef display, CGFloat brightness);
+	void _IOHIDDisplaySetBrightnessMax(IOHIDDisplayRef display, CGFloat brightnessMax);
 	
-	void _IOHIDDisplaySetBrightnessFactor(IOHIDDisplayRef display, float factor);
-	float _IOHIDDisplayGetBrightnessFactor(IOHIDDisplayRef display);
+	void _IOHIDDisplaySetBrightnessFactor(IOHIDDisplayRef display, CGFloat factor);
+	CGFloat _IOHIDDisplayGetBrightnessFactor(IOHIDDisplayRef display);
 		
 	void IOHIDDisplaySetProperty(IOHIDDisplayRef display, CFStringRef property, CFTypeRef value);
 	CFTypeRef IOHIDDisplayGetProperty(IOHIDDisplayRef display, CFStringRef property);
@@ -112,15 +112,15 @@ extern "C" {
 #pragma mark -
 #pragma mark Constants
 	
-	static const CFStringRef kIOHIDDisplayPropertyBrightness = CFSTR("DisplayBrightness");	// float
+	static const CFStringRef kIOHIDDisplayPropertyBrightness = CFSTR("DisplayBrightness");	// CGFloat
 	static const CFStringRef kIOHIDDisplayPropertyBrightnessAuto = CFSTR("DisplayBrightnessAuto");	// boolean
-	static const CFStringRef kIOHIDDisplayPropertyBrightnessMin = CFSTR("DisplayBrightnessMin");	// float
-	static const CFStringRef kIOHIDDisplayPropertyBrightnessMax = CFSTR("DisplayBrightnessMax");	// float
-	static const CFStringRef kIOHIDDisplayPropertyBrightnessAutoWeightMax = CFSTR("DisplayBrightnessAutoWeightMax");	// float
-	static const CFStringRef kIOHIDDisplayPropertyBrightnessAutoWeightMin = CFSTR("DisplayBrightnessAutoWeightMin");	// float
-	static const CFStringRef kIOHIDDisplayPropertyBrightnessFactor = CFSTR("DisplayBrightnessFactor");	// float
-	static const CFStringRef kIOHIDDisplayPropertyBrightnessFactorWithFade = CFSTR("DisplayBrightnessFactorWithFade");	// float
-	static const CFStringRef kIOHIDDisplayPropertyBrightnessFadePeriod = CFSTR("DisplayBrightnessFadePeriod");	// float
+	static const CFStringRef kIOHIDDisplayPropertyBrightnessMin = CFSTR("DisplayBrightnessMin");	// CGFloat
+	static const CFStringRef kIOHIDDisplayPropertyBrightnessMax = CFSTR("DisplayBrightnessMax");	// CGFloat
+	static const CFStringRef kIOHIDDisplayPropertyBrightnessAutoWeightMax = CFSTR("DisplayBrightnessAutoWeightMax");	// CGFloat
+	static const CFStringRef kIOHIDDisplayPropertyBrightnessAutoWeightMin = CFSTR("DisplayBrightnessAutoWeightMin");	// CGFloat
+	static const CFStringRef kIOHIDDisplayPropertyBrightnessFactor = CFSTR("DisplayBrightnessFactor");	// CGFloat
+	static const CFStringRef kIOHIDDisplayPropertyBrightnessFactorWithFade = CFSTR("DisplayBrightnessFactorWithFade");	// CGFloat
+	static const CFStringRef kIOHIDDisplayPropertyBrightnessFadePeriod = CFSTR("DisplayBrightnessFadePeriod");	// CGFloat
 	static const CFStringRef kIOHIDDisplayPropertyLogLevel = CFSTR("LogLevel");	// int	
 	
 #if __cplusplus

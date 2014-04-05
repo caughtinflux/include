@@ -13,11 +13,11 @@
 	UIImage* _balloonImage;
 }
 +(CGPoint)offsetForBubbleInsetAtPoint:(CGPoint)point;
-+(float)additionalHeightForBubbleWhenInsetAtPoint:(CGPoint)point;
++(CGFloat)additionalHeightForBubbleWhenInsetAtPoint:(CGPoint)point;
 -(void)dealloc;
 -(void)setImage:(id)image;
--(float)heightForWidth:(float)width;
--(float)tightenedWidth;
+-(CGFloat)heightForWidth:(CGFloat)width;
+-(CGFloat)tightenedWidth;
 -(void)tighten;
 -(id)balloonImage;
 -(void)drawRect:(CGRect)rect;

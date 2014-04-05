@@ -10,7 +10,7 @@
 @interface CKMessage : NSObject {
 	unsigned _height;
 	NSArray* _messageParts;
-	float _cachedPercentComplete;
+	CGFloat _cachedPercentComplete;
 	unsigned _dateLoaded : 1;
 	unsigned _heightAndFlagsLoaded : 1;
 	unsigned _failedSendCountLoaded : 1;
@@ -71,7 +71,7 @@
 -(int)failedSendCount;
 -(BOOL)completelyFailedSend;
 -(void)reloadFailedSendCount;
--(float)percentComplete;
+-(CGFloat)percentComplete;
 -(CKEntity*)sender;
 -(NSString*)address;
 -(NSData*)alertImageData;

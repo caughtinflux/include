@@ -12,7 +12,7 @@ __attribute__((visibility("hidden")))
 @interface UITableViewCellLayoutManagerEditable1 : UITableViewCellLayoutManager <UITextFieldDelegate> {
 }
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
--(float)defaultTextFieldFontSizeForCell:(id)cell;
+-(CGFloat)defaultTextFieldFontSizeForCell:(id)cell;
 #else
 +(id)layoutTextfield;
 #endif

@@ -27,7 +27,7 @@ __attribute__((visibility("hidden")))
 // in a protocol: -(int)numberOfComponentsInPickerView:(id)pickerView;
 // in a protocol: -(int)pickerView:(id)view numberOfRowsInComponent:(int)component;
 -(void)pickerView:(id)view row:(int)row column:(int)column checked:(BOOL)checked;
-// in a protocol: -(float)pickerView:(id)view widthForComponent:(int)component;
+// in a protocol: -(CGFloat)pickerView:(id)view widthForComponent:(int)component;
 @end
 
 #endif

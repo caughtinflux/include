@@ -23,7 +23,7 @@
 @property (assign,nonatomic) int selectedItemIndex;                                                            //@synthesize selectedItemIndex=_selectedItemIndex - In the implementation block
 @property (setter=_setSegmentedControl:,nonatomic,retain) UISegmentedControl * _segmentedControl;              //@synthesize _segmentedControl=__segmentedControl - In the implementation block
 -(id)view;
--(float)height;
+-(CGFloat)height;
 -(void)_setItemTitles:(id)arg1 ;
 -(id)itemTitles;
 -(void)_segmentedControlAction:(id)arg1 ;

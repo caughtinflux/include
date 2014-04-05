@@ -14,7 +14,7 @@
 @class UIImage;
 
 @interface UIClipCornerView : UIView {
-	float _cornerRadius;
+	CGFloat _cornerRadius;
 	int _rectCorner;
 	CGPoint _pathOrigin;
 	CGPathRef _clipPath;
@@ -23,13 +23,13 @@
 	CGAffineTransform _backgroundTransform;
 	BOOL _useSnapshot;
 }
-@property(assign, nonatomic) float cornerRadius;
+@property(assign, nonatomic) CGFloat cornerRadius;
 @property(retain, nonatomic) UIImage* backgroundImage;
 @property(assign, nonatomic) CGRect backgroundImageSubrect;
 @property(assign, nonatomic) BOOL useSnapshot;
 -(void)_updateCornerPath;
 -(void)_updateSnapshot;
--(id)initWithCornerRadius:(float)cornerRadius forCorner:(int)corner;
+-(id)initWithCornerRadius:(CGFloat)cornerRadius forCorner:(int)corner;
 // -(void)drawRect:(CGRect)rect;
 // -(void)setFrame:(CGRect)frame;
 // -(void)dealloc;

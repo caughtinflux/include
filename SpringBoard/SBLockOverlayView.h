@@ -29,7 +29,7 @@
 @property(readonly, nonatomic) UILabel *subtitleLabel; // @synthesize subtitleLabel=_subtitleLabel;
 @property(readonly, nonatomic) UILabel *titleLabel; // @synthesize titleLabel=_titleLabel;
 @property(nonatomic) id <SBLockOverlayViewDelegate> delegate; // @synthesize delegate=_delegate;
-- (float)_maxLabelWidth;
+- (CGFloat)_maxLabelWidth;
 - (void)_sizeView:(id)arg1 forFixedWith:(BOOL)arg2;
 - (unsigned int)_numberOfLinesForText:(id)arg1 font:(id)arg2 size:(struct CGSize)arg3;
 - (void)_buttonPressed;

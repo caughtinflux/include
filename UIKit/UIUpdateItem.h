@@ -11,12 +11,12 @@
 	int _action;
 	NSIndexPath* _indexPath;
 	int _animation;
-	float _offset;
+	CGFloat _offset;
 }
 @property(readonly, assign, nonatomic) int action;
 @property(readonly, assign, nonatomic) NSIndexPath* indexPath;
 @property(readonly, assign, nonatomic) int animation;
-@property(assign, nonatomic) float offset;
+@property(assign, nonatomic) CGFloat offset;
 -(id)initWithAction:(int)action forIndexPath:(id)indexPath animation:(int)animation;
 -(void)dealloc;
 -(id)_actionDescription;

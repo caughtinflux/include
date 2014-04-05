@@ -29,7 +29,7 @@
 	NSPointerArray* _realToVisualSections;
 	NSArray* _visualToRealSectionIndexes;
 	NSPointerArray* _samplingHelpersByVisualSection;
-	float* _visualSectionStartYs;
+	CGFloat* _visualSectionStartYs;
 	int* _realSectionItemCounts;
 	int* _visualSectionMaxRows;
 	NSArray* _cachedNonHeaderLayoutAttributesInRect;
@@ -38,9 +38,9 @@
 	NSSet* _deletedItemIndexPaths;
 	BOOL _isRotating;
 	NSIndexPath* _rotationAnchorItem;
-	float _rotationAnchorItemNormalizedYOffset;
-	BOOL _floatingHeadersLayoutIsValid;
-	int _floatingHeaderVisualSectionIndex;
+	CGFloat _rotationAnchorItemNormalizedYOffset;
+	BOOL _CGFloatingHeadersLayoutIsValid;
+	int _CGFloatingHeaderVisualSectionIndex;
 	NSDictionary* _transitionSectionInfosByTransitionSection;
 	NSDictionary* _transitionSectionInfosByVisualSection;
 	BOOL _delegateSupportsGroupedSections;
@@ -59,15 +59,15 @@
 	BOOL _transitionIsAnimated;
 	BOOL _transitionAnchorShiftsColumns;
 	BOOL _transitionZoomingOut;
-	BOOL _floatingSectionHeadersEnabled;
+	BOOL _CGFloatingSectionHeadersEnabled;
 	BOOL _usesRenderedStripTopExtendersForTransitions;
 	NSSet* _hiddenItemIndexPaths;
 	NSString* _sectionHeaderElementKind;
-	float _sectionHeaderHeight;
-	float _sectionTopPadding;
+	CGFloat _sectionHeaderHeight;
+	CGFloat _sectionTopPadding;
 	<PUCollectionViewLayoutTransitioningDelegate>* _transitioningDelegate;
-	float _globalTopPadding;
-	float _globalBottomPadding;
+	CGFloat _globalTopPadding;
+	CGFloat _globalBottomPadding;
 	UICollectionViewLayout* _transitionLayout;
 	int _transitionAnchorColumnOffset;
 	NSIndexPath* _transitionExplicitAnchorItemIndexPath;
@@ -76,11 +76,11 @@
 	<PUSectionedGridLayoutDelegate>* _delegate;
 	int _columnsPerRow;
 	PULayoutSampledSectioning* _layoutSectioning;
-	float _sectionBottomPadding;
-	float _globalFooterHeight;
+	CGFloat _sectionBottomPadding;
+	CGFloat _globalFooterHeight;
 	NSString* _renderedStripsElementKind;
 	int _cropType;
-	float _cropAmount;
+	CGFloat _cropAmount;
 	CGPoint _transitionStartContentOffset;
 	CGPoint _transitionEndContentOffset;
 	CGSize _interItemSpacing;
@@ -95,13 +95,13 @@
 @property (nonatomic,readonly) PULayoutSampledSectioning * layoutSectioning;                                            //@synthesize layoutSectioning=_layoutSectioning - In the implementation block
 @property (assign,nonatomic) CGSize interItemSpacing;                                                                   //@synthesize interItemSpacing=_interItemSpacing - In the implementation block
 @property (assign,nonatomic) CGSize itemSize;                                                                           //@synthesize itemSize=_itemSize - In the implementation block
-@property (assign,nonatomic) float sectionBottomPadding;                                                                //@synthesize sectionBottomPadding=_sectionBottomPadding - In the implementation block
+@property (assign,nonatomic) CGFloat sectionBottomPadding;                                                                //@synthesize sectionBottomPadding=_sectionBottomPadding - In the implementation block
 @property (assign,nonatomic) UIEdgeInsets sectionContentInset;                                                          //@synthesize sectionContentInset=_sectionContentInset - In the implementation block
-@property (assign,nonatomic) BOOL floatingSectionHeadersEnabled;                                                        //@synthesize floatingSectionHeadersEnabled=_floatingSectionHeadersEnabled - In the implementation block
-@property (assign,nonatomic) float globalFooterHeight;                                                                  //@synthesize globalFooterHeight=_globalFooterHeight - In the implementation block
+@property (assign,nonatomic) BOOL CGFloatingSectionHeadersEnabled;                                                        //@synthesize CGFloatingSectionHeadersEnabled=_CGFloatingSectionHeadersEnabled - In the implementation block
+@property (assign,nonatomic) CGFloat globalFooterHeight;                                                                  //@synthesize globalFooterHeight=_globalFooterHeight - In the implementation block
 @property (nonatomic,copy) NSString * renderedStripsElementKind;                                                        //@synthesize renderedStripsElementKind=_renderedStripsElementKind - In the implementation block
 @property (assign,nonatomic) int cropType;                                                                              //@synthesize cropType=_cropType - In the implementation block
-@property (assign,nonatomic) float cropAmount;                                                                          //@synthesize cropAmount=_cropAmount - In the implementation block
+@property (assign,nonatomic) CGFloat cropAmount;                                                                          //@synthesize cropAmount=_cropAmount - In the implementation block
 @property (assign,nonatomic) BOOL usesRenderedStripTopExtendersForTransitions;                                          //@synthesize usesRenderedStripTopExtendersForTransitions=_usesRenderedStripTopExtendersForTransitions - In the implementation block
 @property (nonatomic,readonly) UICollectionViewLayout * transitionLayout;                                               //@synthesize transitionLayout=_transitionLayout - In the implementation block
 @property (assign,nonatomic) CGPoint transitionStartContentOffset;                                                      //@synthesize transitionStartContentOffset=_transitionStartContentOffset - In the implementation block
@@ -119,20 +119,20 @@
 @property (nonatomic,readonly) NSIndexPath * transitionFirstVisibleRowVisualPath;                                       //@synthesize transitionFirstVisibleRowVisualPath=_transitionFirstVisibleRowVisualPath - In the implementation block
 @property (nonatomic,readonly) NSIndexPath * transitionLastVisibleRowVisualPath;                                        //@synthesize transitionLastVisibleRowVisualPath=_transitionLastVisibleRowVisualPath - In the implementation block
 @property (assign,nonatomic,__weak) <PUCollectionViewLayoutTransitioningDelegate> * transitioningDelegate;              //@synthesize transitioningDelegate=_transitioningDelegate - In the implementation block
-@property (assign,nonatomic) float globalTopPadding;                                                                    //@synthesize globalTopPadding=_globalTopPadding - In the implementation block
-@property (assign,nonatomic) float globalBottomPadding;                                                                 //@synthesize globalBottomPadding=_globalBottomPadding - In the implementation block
+@property (assign,nonatomic) CGFloat globalTopPadding;                                                                    //@synthesize globalTopPadding=_globalTopPadding - In the implementation block
+@property (assign,nonatomic) CGFloat globalBottomPadding;                                                                 //@synthesize globalBottomPadding=_globalBottomPadding - In the implementation block
 @property (nonatomic,copy) NSSet * hiddenItemIndexPaths;                                                                //@synthesize hiddenItemIndexPaths=_hiddenItemIndexPaths - In the implementation block
 @property (nonatomic,copy) NSString * sectionHeaderElementKind;                                                         //@synthesize sectionHeaderElementKind=_sectionHeaderElementKind - In the implementation block
-@property (assign,nonatomic) float sectionHeaderHeight;                                                                 //@synthesize sectionHeaderHeight=_sectionHeaderHeight - In the implementation block
-@property (assign,nonatomic) float sectionTopPadding;                                                                   //@synthesize sectionTopPadding=_sectionTopPadding - In the implementation block
+@property (assign,nonatomic) CGFloat sectionHeaderHeight;                                                                 //@synthesize sectionHeaderHeight=_sectionHeaderHeight - In the implementation block
+@property (assign,nonatomic) CGFloat sectionTopPadding;                                                                   //@synthesize sectionTopPadding=_sectionTopPadding - In the implementation block
 +(Class)invalidationContextClass;
 -(void)dealloc;
 -(void)setDelegate:(id)arg1 ;
 -(id)init;
 -(id)description;
 -(id)delegate;
--(void)setSectionHeaderHeight:(float)arg1 ;
--(float)sectionHeaderHeight;
+-(void)setSectionHeaderHeight:(CGFloat)arg1 ;
+-(CGFloat)sectionHeaderHeight;
 -(id)transitioningDelegate;
 -(void)setTransitioningDelegate:(id)arg1 ;
 -(CGSize)collectionViewContentSize;
@@ -211,18 +211,18 @@
 -(BOOL)transitionIsAppearing;
 -(void)invalidateLayoutForVerticalScroll;
 -(id)assetIndexPathsForElementsInRect:(CGRect)arg1 ;
--(float)globalFooterHeight;
--(void)setGlobalFooterHeight:(float)arg1 ;
+-(CGFloat)globalFooterHeight;
+-(void)setGlobalFooterHeight:(CGFloat)arg1 ;
 -(id)globalFooterIndexPath;
--(float)globalTopPadding;
--(void)setGlobalTopPadding:(float)arg1 ;
--(float)globalBottomPadding;
--(void)setGlobalBottomPadding:(float)arg1 ;
+-(CGFloat)globalTopPadding;
+-(void)setGlobalTopPadding:(CGFloat)arg1 ;
+-(CGFloat)globalBottomPadding;
+-(void)setGlobalBottomPadding:(CGFloat)arg1 ;
 -(id)hiddenItemIndexPaths;
 -(void)setHiddenItemIndexPaths:(id)arg1 ;
 -(void)setSectionHeaderElementKind:(id)arg1 ;
--(float)sectionTopPadding;
--(void)setSectionTopPadding:(float)arg1 ;
+-(CGFloat)sectionTopPadding;
+-(void)setSectionTopPadding:(CGFloat)arg1 ;
 -(id)_pl_debugItems;
 -(id)renderedStripsElementKind;
 -(void)setRenderedStripsElementKind:(id)arg1 ;
@@ -230,7 +230,7 @@
 -(UIEdgeInsets)sectionContentInset;
 -(void)setSectionContentInset:(UIEdgeInsets)arg1 ;
 -(void)setCropType:(int)arg1 ;
--(void)setCropAmount:(float)arg1 ;
+-(void)setCropAmount:(CGFloat)arg1 ;
 -(void)beginReorderingItemAtIndexPath:(id)arg1 ;
 -(id)reorderedIndexPath:(id)arg1 ;
 -(void)updateReorderingTargetIndexPath:(id)arg1 ;
@@ -244,16 +244,16 @@
 -(void)_clearSamplingCaches;
 -(void)_clearSectioningCaches;
 -(void)_prepareSectioningDataIfNeeded;
--(float)_sectionWidth;
--(int)numberOfColumnsForWidth:(float)arg1 ;
+-(CGFloat)_sectionWidth;
+-(int)numberOfColumnsForWidth:(CGFloat)arg1 ;
 -(void)_prepareFloatingHeadersLayoutIfNeeded;
 -(void)_prepareSamplingDataIfNeeded;
--(float)sectionBottomPadding;
+-(CGFloat)sectionBottomPadding;
 -(BOOL)shouldHideVisualSection:(int)arg1 ;
 -(void)_invalidateFloatingHeadersLayout;
 -(id)supplementaryViewIndexPathForVisualSection:(int)arg1 supplementaryViewItemIndex:(int)arg2 ;
 -(CGPoint)_visibleRectOriginForScrollOffset:(CGPoint)arg1 ;
--(int)_floatingHeaderVisualSectionForVisibleOrigin:(CGPoint)arg1 ;
+-(int)_CGFloatingHeaderVisualSectionForVisibleOrigin:(CGPoint)arg1 ;
 -(NSRange)visualSectionsInRect:(CGRect)arg1 ;
 -(id)_layoutAttributesForSupplementaryViewOfKind:(id)arg1 forVisualSection:(int)arg2 supplementaryViewIndex:(int)arg3 ;
 -(NSRange)visualRowsInRect:(CGRect)arg1 inVisualSection:(int)arg2 totalVisualSectionRows:(int*)arg3 ;
@@ -268,7 +268,7 @@
 -(int)_firstVisualItemIndexForRenderedStripIndex:(int)arg1 ;
 -(id)_gridTransitionLayout;
 -(int)_visualSectionAtPoint:(CGPoint)arg1 ;
--(float)_startYOfVisualSectionAtIndex:(int)arg1 ;
+-(CGFloat)_startYOfVisualSectionAtIndex:(int)arg1 ;
 -(CGPoint)_currentVisibleRectOrigin;
 -(void)_prepareForTransitionToOrFromGridLayout:(id)arg1 isAppearing:(BOOL)arg2 ;
 -(void)_prepareForTransitionFromStackedLayout:(id)arg1 ;
@@ -286,17 +286,17 @@
 -(void)_adjustRenderedStripLayoutAttributes:(id)arg1 toOrFromGridLayout:(id)arg2 isAppearing:(BOOL)arg3 ;
 -(void)invalidateLayoutForMetricsChange;
 -(void)_invalidateSupplementaryViewKinds;
--(float)_startYOfContentAtVisualSectionIndex:(int)arg1 ;
+-(CGFloat)_startYOfContentAtVisualSectionIndex:(int)arg1 ;
 -(CGSize)layoutItemSizeForColumn:(int)arg1 ;
--(float)_heightOfSectionAtVisualIndex:(int)arg1 ;
+-(CGFloat)_heightOfSectionAtVisualIndex:(int)arg1 ;
 -(int)cropType;
--(float)cropAmount;
+-(CGFloat)cropAmount;
 -(int)numberOfRealItemsInVisualSection:(int)arg1 ;
 -(id)_realItemIndexPathClosestToPoint:(CGPoint)arg1 inRect:(CGRect)arg2 withTest:(/*^block*/ id)arg3 ;
 -(PUSimpleIndexPath)_itemVisualIndexPathAtPoint:(CGPoint)arg1 ;
 -(PUSimpleIndexPath)_visualIndexPathForTransitionCoordinates:(PUGridCoordinates)arg1 inTransitionSection:(int)arg2 ;
 -(void)_enumerateVisualItemFramesInRect:(CGRect)arg1 usingBlock:(/*^block*/ id)arg2 ;
--(void)setSectionBottomPadding:(float)arg1 ;
+-(void)setSectionBottomPadding:(CGFloat)arg1 ;
 -(CGRect)frameForSectionHeaderOfRealItem:(id)arg1 ;
 -(int)numberOfVisualSectionsForSectioning:(id)arg1 ;
 -(int)maximumNumberOfItemsInVisualSection:(int)arg1 forSectioning:(id)arg2 ;
@@ -309,7 +309,7 @@
 -(id)pu_layoutAttributesForElementClosestToPoint:(CGPoint)arg1 inRect:(CGRect)arg2 passingTest:(/*^block*/ id)arg3 ;
 -(void)_setColumnsPerRow:(int)arg1 ;
 -(id)layoutSectioning;
--(BOOL)floatingSectionHeadersEnabled;
+-(BOOL)CGFloatingSectionHeadersEnabled;
 -(BOOL)usesRenderedStripTopExtendersForTransitions;
 -(void).cxx_destruct;
 @end

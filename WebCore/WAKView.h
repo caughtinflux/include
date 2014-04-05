@@ -100,8 +100,8 @@ extern NSString *WAKViewDidScrollNotification;
 - (void)layout;
 - (void)layoutIfNeeded;
 
-- (void)setScale:(float)scale;
-- (float)scale;
+- (void)setScale:(CGFloat)scale;
+- (CGFloat)scale;
 
 - (void)_setDrawsOwnDescendants:(BOOL)draw;
 

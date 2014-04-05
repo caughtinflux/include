@@ -11,7 +11,7 @@
 @optional
 - (void)scrollViewDidScrollToTop:(id)arg1;
 - (BOOL)scrollViewShouldScrollToTop:(id)arg1;
-- (void)scrollViewDidEndZooming:(id)arg1 withView:(id)arg2 atScale:(float)arg3;
+- (void)scrollViewDidEndZooming:(id)arg1 withView:(id)arg2 atScale:(CGFloat)arg3;
 - (void)scrollViewWillBeginZooming:(id)arg1 withView:(id)arg2;
 - (id)viewForZoomingInScrollView:(id)arg1;
 - (void)scrollViewDidEndScrollingAnimation:(id)arg1;

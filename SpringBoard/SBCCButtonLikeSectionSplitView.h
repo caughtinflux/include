@@ -11,7 +11,7 @@
 @interface SBCCButtonLikeSectionSplitView : SBControlCenterSectionView
 {
     SBControlCenterSeparatorView *_separatorView;
-    float _separatorWidth;
+    CGFloat _separatorWidth;
     BOOL _leftHidden;
     BOOL _rightHidden;
     SBCCButtonLikeSectionView *_leftSection;

@@ -185,9 +185,9 @@
 - (void)didDismissMiniAlert;
 - (void)didDismissActionSheet;
 - (void)applicationDidOrderOutContext:(id)arg1 screen:(id)arg2;
-- (void)applicationWillOrderInContext:(id)arg1 windowLevel:(float)arg2 screen:(id)arg3;
+- (void)applicationWillOrderInContext:(id)arg1 windowLevel:(CGFloat)arg2 screen:(id)arg3;
 - (void)frontDisplayDidChange:(id)arg1;
-- (void)_setAmbiguousControlCenterActivationMargin:(float)arg1;
+- (void)_setAmbiguousControlCenterActivationMargin:(CGFloat)arg1;
 - (void)updateOrientationAndAccelerometerSettings;
 - (void)updateProximitySettings;
 - (void)setExpectsFaceContact:(BOOL)arg1;
@@ -219,9 +219,9 @@
 - (void)removeActiveOrientationObserver:(id)arg1;
 - (void)addActiveOrientationObserver:(id)arg1;
 - (void)noteAlertView:(id)arg1 willChangeInterfaceOrientation:(NSInteger)arg2 duration:(double)arg3;
-- (void)noteInterfaceOrientationChanged:(NSInteger)arg1 duration:(float)arg2 updateMirroredDisplays:(BOOL)arg3 force:(BOOL)arg4;
-- (void)noteInterfaceOrientationChanged:(NSInteger)arg1 duration:(float)arg2 updateMirroredDisplays:(BOOL)arg3;
-- (void)noteInterfaceOrientationChanged:(NSInteger)arg1 duration:(float)arg2;
+- (void)noteInterfaceOrientationChanged:(NSInteger)arg1 duration:(CGFloat)arg2 updateMirroredDisplays:(BOOL)arg3 force:(BOOL)arg4;
+- (void)noteInterfaceOrientationChanged:(NSInteger)arg1 duration:(CGFloat)arg2 updateMirroredDisplays:(BOOL)arg3;
+- (void)noteInterfaceOrientationChanged:(NSInteger)arg1 duration:(CGFloat)arg2;
 - (void)noteInterfaceOrientationChanged:(NSInteger)arg1 force:(BOOL)arg2;
 - (void)noteInterfaceOrientationChanged:(NSInteger)arg1;
 - (void)updateMirroredDisplayOrientation;

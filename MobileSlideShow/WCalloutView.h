@@ -81,7 +81,7 @@
 +(id)_flatBottomCenterImage;
 +(id)_flatBottomRightCornerImage;
 +(id)sharedPLWCalloutView;
-+(float)defaultHeight;
++(CGFloat)defaultHeight;
 +(id)_backgroundImage;
 +(id)_bottomAnchorImage;
 +(id)_leftCapImage;
@@ -124,7 +124,7 @@
 -(void)setRightView:(id)arg1 animated:(BOOL)arg2 ;
 -(void)setSubtitle:(id)arg1 animated:(BOOL)arg2 ;
 -(void)getActualAnchorPoint:(CGPoint*)arg1 frame:(CGRect*)arg2 position:(int*)arg3 forDesiredAnchorPoint:(CGPoint)arg4 boundaryRect:(CGRect)arg5 ;
--(void)_setOriginForScale:(float)arg1 ;
+-(void)_setOriginForScale:(CGFloat)arg1 ;
 -(void)_markDidMoveCalled;
 -(void)setLeftView:(id)arg1 ;
 -(void)setRightView:(id)arg1 ;
@@ -143,7 +143,7 @@
 -(void)setCanAnchorFromBottom:(BOOL)arg1 ;
 -(BOOL)canAnchorFromBottom;
 -(void)setAnchorPoint:(CGPoint)arg1 boundaryRect:(CGRect)arg2 animate:(BOOL)arg3 ;
--(void)fadeOutWithDuration:(float)arg1 ;
+-(void)fadeOutWithDuration:(CGFloat)arg1 ;
 -(void)addTarget:(id)arg1 action:(SEL)arg2 ;
 -(void)removeTarget:(id)arg1 ;
 -(id)leftView;

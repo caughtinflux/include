@@ -11,14 +11,14 @@
     CDStruct_812d5f7b _pixelDeltas;
     CDStruct_812d5f7b _smoothedDeltas;
     CDStruct_812d5f7b _allPixelDeltas;
-    float _averageTranslation;
-    float _farthestFingerSeparation;
+    CGFloat _averageTranslation;
+    CGFloat _farthestFingerSeparation;
     struct CGPoint _movementVelocityInPointsPerSecond;
 }
 
 @property(readonly, nonatomic) struct CGPoint movementVelocityInPointsPerSecond; // @synthesize movementVelocityInPointsPerSecond=_movementVelocityInPointsPerSecond;
-@property(readonly, nonatomic) float farthestFingerSeparation; // @synthesize farthestFingerSeparation=_farthestFingerSeparation;
-@property(readonly, nonatomic) float averageTranslation; // @synthesize averageTranslation=_averageTranslation;
+@property(readonly, nonatomic) CGFloat farthestFingerSeparation; // @synthesize farthestFingerSeparation=_farthestFingerSeparation;
+@property(readonly, nonatomic) CGFloat averageTranslation; // @synthesize averageTranslation=_averageTranslation;
 @property(readonly, nonatomic) CDStruct_812d5f7b averageVelocities; // @synthesize averageVelocities=_smoothedDeltas;
 @property(readonly, nonatomic) CDStruct_812d5f7b allPixelDeltas; // @synthesize allPixelDeltas=_allPixelDeltas;
 @property(readonly, nonatomic) CDStruct_812d5f7b pixelDeltas; // @synthesize pixelDeltas=_pixelDeltas;

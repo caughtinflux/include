@@ -15,8 +15,8 @@
 -(int)cellFillMode;
 -(BOOL)canDisplayOptionsInPopover;
 -(id)albumPickerViewControllerSpec;
--(void)configureCollectionViewGridLayout:(id)arg1 forWidth:(float)arg2 ;
--(float)globalFooterHeight;
+-(void)configureCollectionViewGridLayout:(id)arg1 forWidth:(CGFloat)arg2 ;
+-(CGFloat)globalFooterHeight;
 -(id)photoBrowserSpec;
 -(CGSize)baseInterItemSpacing;
 -(id)photosPickerViewControllerSpec;

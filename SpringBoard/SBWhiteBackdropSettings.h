@@ -10,7 +10,7 @@
 {
 }
 
-- (float)blurRadius;
+- (CGFloat)blurRadius;
 - (id)combinedTintColor;
 
 @end

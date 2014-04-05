@@ -10,17 +10,17 @@
 #import <PhotosUI/PhotosUI-Structs.h>
 @interface PUMapViewControllerSpec : NSObject
 
-@property (readonly) float annotationWidth; 
-@property (readonly) float borderAnnotationPadding; 
+@property (readonly) CGFloat annotationWidth; 
+@property (readonly) CGFloat borderAnnotationPadding; 
 @property (readonly) CGSize annotationSize; 
 @property (readonly) int thumbnailImageFormat; 
 @property (readonly) BOOL alwaysFadeRemoves; 
 -(int)thumbnailImageFormat;
 -(id)gridViewControllerSpec;
 -(void)configureStackView:(id)arg1 ;
--(float)stackWidth;
--(float)annotationWidth;
--(float)borderAnnotationPadding;
+-(CGFloat)stackWidth;
+-(CGFloat)annotationWidth;
+-(CGFloat)borderAnnotationPadding;
 -(CGSize)annotationSize;
 -(BOOL)alwaysFadeRemoves;
 @end

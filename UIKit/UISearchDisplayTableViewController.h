@@ -13,7 +13,7 @@ __attribute__((visibility("hidden")))
 }
 -(id)initWithStyle:(int)style searchDisplayController:(id)controller;
 // inherited: -(void)viewDidDisappear:(BOOL)view;
-// inherited: -(float)heightForViewInPopoverView;
+// inherited: -(CGFloat)heightForViewInPopoverView;
 @end
 
 #endif

@@ -17,9 +17,9 @@
     SBStarkBannerItem *_bannerItem;
     UIImageView *_categoryImageView;
     UILabel *_titleLabel;
-    float _titleAscender;
+    CGFloat _titleAscender;
     UILabel *_subTitleLabel;
-    float _subTitleAscender;
+    CGFloat _subTitleAscender;
     UIImageView *_actionImageView;
     struct UIEdgeInsets _contentInsets;
 }

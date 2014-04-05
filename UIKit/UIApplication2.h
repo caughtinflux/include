@@ -96,7 +96,7 @@
 -(void)statusBarMouseUp:(GSEventRef)up;
 -(void)ringerChanged:(int)changed;
 -(void)volumeChanged:(GSEventRef)changed;
--(void)acceleratedInX:(float)x Y:(float)y Z:(float)z;
+-(void)acceleratedInX:(CGFloat)x Y:(CGFloat)y Z:(CGFloat)z;
 -(void)deviceOrientationChanged:(GSEventRef)changed;
 -(void)proximityStateChanged:(BOOL)changed;
 -(void)accessoryAvailabilityChanged:(GSEventRef)changed;
@@ -177,14 +177,14 @@
 -(id)_exclusiveTouchWindows;
 -(BOOL)_isTrackingAnyTouch;
 -(void)_setUserDefaultsSyncEnabled:(BOOL)enabled;
--(void)_prepareToSetStatusBarMode:(int)setStatusBarMode orientation:(int)orientation duration:(float)duration;
+-(void)_prepareToSetStatusBarMode:(int)setStatusBarMode orientation:(int)orientation duration:(CGFloat)duration;
 -(void)_finishedSettingStatusBarMode:(int)mode oldMode:(int)mode2 newOrientation:(int)orientation oldOrientation:(int)orientation4;
 -(BOOL)_useDoubleHeightStatusBarForMode:(int)mode orientation:(int)orientation;
--(void)setStatusBarMode:(int)mode orientation:(int)orientation duration:(float)duration fenceID:(int)id animation:(int)animation startTime:(double)time;
--(void)setStatusBarMode:(int)mode orientation:(int)orientation duration:(float)duration fenceID:(int)id animation:(int)animation;
--(void)setStatusBarMode:(int)mode orientation:(int)orientation duration:(float)duration fenceID:(int)id;
--(void)setStatusBarMode:(int)mode orientation:(int)orientation duration:(float)duration;
--(void)setStatusBarMode:(int)mode duration:(float)duration;
+-(void)setStatusBarMode:(int)mode orientation:(int)orientation duration:(CGFloat)duration fenceID:(int)id animation:(int)animation startTime:(double)time;
+-(void)setStatusBarMode:(int)mode orientation:(int)orientation duration:(CGFloat)duration fenceID:(int)id animation:(int)animation;
+-(void)setStatusBarMode:(int)mode orientation:(int)orientation duration:(CGFloat)duration fenceID:(int)id;
+-(void)setStatusBarMode:(int)mode orientation:(int)orientation duration:(CGFloat)duration;
+-(void)setStatusBarMode:(int)mode duration:(CGFloat)duration;
 -(void)setStatusBarCustomText:(id)text;
 -(void)removeStatusBarCustomText;
 -(void)_setStatusBarShowsProgress:(BOOL)progress;
@@ -203,7 +203,7 @@
 -(void)_unregisterForUserDefaultsChanges;
 -(void)vibrateForDuration:(int)duration;
 -(void)setBacklightFactor:(int)factor;
--(void)setBacklightLevel:(float)level;
+-(void)setBacklightLevel:(CGFloat)level;
 -(void)setProximitySensorEnabled:(BOOL)enabled;
 -(void)setSuspensionAnimationDelay:(double)delay;
 -(void)setSystemVolumeHUDEnabled:(BOOL)enabled forAudioCategory:(id)audioCategory;
@@ -220,14 +220,14 @@
 -(void)_unregisterForDisplayOnOff;
 -(void)didTurnOnDisplay;
 -(void)didTurnOffDisplay;
--(void)_noteStatusBarHeightChanged:(float)changed fence:(int)fence;
--(void)statusBarWillAnimateToHeight:(float)statusBar duration:(double)duration fence:(int)fence;
+-(void)_noteStatusBarHeightChanged:(CGFloat)changed fence:(int)fence;
+-(void)statusBarWillAnimateToHeight:(CGFloat)statusBar duration:(double)duration fence:(int)fence;
 -(void)_purgeSharedInstances;
 -(void)_playbackTimerCallback:(id)callback;
 -(void)_startPlaybackTimer;
 -(void)_addRecorder:(id)recorder;
 -(void)_removeRecorder:(id)recorder;
--(void)_playbackEvents:(id)events atPlaybackRate:(float)playbackRate messageWhenDone:(id)done withSelector:(SEL)selector;
+-(void)_playbackEvents:(id)events atPlaybackRate:(CGFloat)playbackRate messageWhenDone:(id)done withSelector:(SEL)selector;
 -(int)lastEventType;
 -(void)_cancelGestureRecognizers:(id)recognizers;
 -(void)_cancelGestureRecognizersForView:(id)view;
@@ -241,7 +241,7 @@
 -(void)setUIOrientation:(int)orientation;
 -(void)setExpectsFaceContact:(BOOL)contact;
 -(void)setRelaunchesAfterAbnormalExit:(BOOL)relaunches;
--(void)applicationWillOrderInContext:(unsigned)application windowLevel:(float)level windowOutput:(int)anOutput;
+-(void)applicationWillOrderInContext:(unsigned)application windowLevel:(CGFloat)level windowOutput:(int)anOutput;
 -(void)applicationDidOrderOutContext:(unsigned)application;
 -(void)_sendOrderedOutContexts;
 -(void)didDismissMiniAlert;
@@ -281,13 +281,13 @@
 -(int)interfaceOrientation;
 -(void)_setRotationDisabledDuringTouch:(BOOL)touch;
 -(BOOL)_rotationDisabledDuringTouch;
--(void)_prepareToSetStatusBarOrientation:(int)setStatusBarOrientation duration:(float)duration;
+-(void)_prepareToSetStatusBarOrientation:(int)setStatusBarOrientation duration:(CGFloat)duration;
 -(void)_finishedSettingStatusBarOrientation:(int)orientation oldOrientation:(int)orientation2;
 -(CGRect)statusBarFrameForOrientation:(int)orientation;
--(float)statusBarHeightForOrientation:(int)orientation ignoreHidden:(BOOL)hidden;
--(float)statusBarHeightForOrientation:(int)orientation;
--(void)_setStatusBarHeight:(float)height;
--(float)statusBarHeight;
+-(CGFloat)statusBarHeightForOrientation:(int)orientation ignoreHidden:(BOOL)hidden;
+-(CGFloat)statusBarHeightForOrientation:(int)orientation;
+-(void)_setStatusBarHeight:(CGFloat)height;
+-(CGFloat)statusBarHeight;
 -(int)activeInterfaceOrientation;
 -(int)_getSpringBoardOrientation;
 -(double)windowRotationDuration;
@@ -296,7 +296,7 @@
 -(BOOL)_isClassic;
 -(BOOL)_shouldZoom;
 -(void)_setShouldZoom:(BOOL)shouldZoom;
--(void)setStatusBarModeBlockingWithOrientation:(int)orientation duration:(float)duration fenceID:(int)anId sender:(id)sender;
+-(void)setStatusBarModeBlockingWithOrientation:(int)orientation duration:(CGFloat)duration fenceID:(int)anId sender:(id)sender;
 -(BOOL)shouldFenceStatusBarRotation;
 #else
 -(void)_performInitializationWithURL:(id)url sourceBundleID:(id)bundleID;
@@ -307,7 +307,7 @@
 -(CGRect)statusBarRect;
 -(void)handleOutOfLineDataResponse:(id)lineDataResponse requestID:(unsigned)requestID;
 -(void)handleOutOfLineDataRequest:(GSEventRef)lineDataRequest;
--(float)currentStatusBarHeightForMode:(int)mode orientation:(int)orientation;
+-(CGFloat)currentStatusBarHeightForMode:(int)mode orientation:(int)orientation;
 -(int)_getCurrentStatusBarOrientationFromSB;
 #endif
 @end

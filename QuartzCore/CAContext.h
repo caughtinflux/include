@@ -16,7 +16,7 @@
 @property(retain) CALayer* layer;
 @property(assign) CGColorSpaceRef colorSpace;
 @property(readonly, assign) BOOL valid;
-@property(assign) float level;
+@property(assign) CGFloat level;
 +(id)allContexts;
 +(id)currentContext;
 +(id)localContext;

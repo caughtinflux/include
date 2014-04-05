@@ -8,8 +8,8 @@
 
 @interface PLSlalomRampConfiguration : NSObject
 {
-    float _playbackRampCurveExponent;
-    float _exportRampCurveExponent;
+    CGFloat _playbackRampCurveExponent;
+    CGFloat _exportRampCurveExponent;
     double _rampTime;
     double _introTime;
     double _outroTime;
@@ -19,8 +19,8 @@
     unsigned long long _exportNumIntermediateSteps;
 }
 
-@property(nonatomic) float exportRampCurveExponent; // @synthesize exportRampCurveExponent=_exportRampCurveExponent;
-@property(nonatomic) float playbackRampCurveExponent; // @synthesize playbackRampCurveExponent=_playbackRampCurveExponent;
+@property(nonatomic) CGFloat exportRampCurveExponent; // @synthesize exportRampCurveExponent=_exportRampCurveExponent;
+@property(nonatomic) CGFloat playbackRampCurveExponent; // @synthesize playbackRampCurveExponent=_playbackRampCurveExponent;
 @property(nonatomic) unsigned long long exportNumIntermediateSteps; // @synthesize exportNumIntermediateSteps=_exportNumIntermediateSteps;
 @property(nonatomic) unsigned long long playbackNumIntermediateSteps; // @synthesize playbackNumIntermediateSteps=_playbackNumIntermediateSteps;
 @property(nonatomic) double volumeSuppressionOutroTime; // @synthesize volumeSuppressionOutroTime=_volumeSuppressionOutroTime;
@@ -28,7 +28,7 @@
 @property(nonatomic) double outroTime; // @synthesize outroTime=_outroTime;
 @property(nonatomic) double introTime; // @synthesize introTime=_introTime;
 @property(nonatomic) double rampTime; // @synthesize rampTime=_rampTime;
-- (void)_computeRampToTargetRate:(float)arg1 forExport:(_Bool)arg2 outTimeSteps:(id *)arg3 outIntermediateRates:(id *)arg4;
+- (void)_computeRampToTargetRate:(CGFloat)arg1 forExport:(_Bool)arg2 outTimeSteps:(id *)arg3 outIntermediateRates:(id *)arg4;
 - (id)init;
 - (id)initForRampDown:(_Bool)arg1;
 

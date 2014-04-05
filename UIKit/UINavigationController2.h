@@ -63,7 +63,7 @@
 -(void)_updateBarsForCurrentInterfaceOrientation;
 -(void)_updateLayoutForStatusBarAndInterfaceOrientation;
 -(void)_applyScrollContentInsetDelta:(UIEdgeInsets)delta toScrollView:(id)scrollView;
--(void)_applyScrollContentOffsetDelta:(float)delta toScrollView:(id)scrollView;
+-(void)_applyScrollContentOffsetDelta:(CGFloat)delta toScrollView:(id)scrollView;
 -(void)_restoreOriginalInsetAndOffsetToScrollView:(id)scrollView;
 -(BOOL)_hasTranslucentNavigationBarIncludingViewController:(id)controller;
 -(BOOL)_isNavigationBarVisible;

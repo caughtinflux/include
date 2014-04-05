@@ -9,17 +9,17 @@
 @interface SBFAnimationFactorySettings : _UISettings
 {
     BOOL _slowAnimations;
-    float _slowDownFactor;
-    float _springMassFactor;
-    float _springStiffnessFactor;
-    float _springDampingFactor;
+    CGFloat _slowDownFactor;
+    CGFloat _springMassFactor;
+    CGFloat _springStiffnessFactor;
+    CGFloat _springDampingFactor;
 }
 
 + (id)settingsControllerModule;
-@property(nonatomic) float springDampingFactor; // @synthesize springDampingFactor=_springDampingFactor;
-@property(nonatomic) float springStiffnessFactor; // @synthesize springStiffnessFactor=_springStiffnessFactor;
-@property(nonatomic) float springMassFactor; // @synthesize springMassFactor=_springMassFactor;
-@property(nonatomic) float slowDownFactor; // @synthesize slowDownFactor=_slowDownFactor;
+@property(nonatomic) CGFloat springDampingFactor; // @synthesize springDampingFactor=_springDampingFactor;
+@property(nonatomic) CGFloat springStiffnessFactor; // @synthesize springStiffnessFactor=_springStiffnessFactor;
+@property(nonatomic) CGFloat springMassFactor; // @synthesize springMassFactor=_springMassFactor;
+@property(nonatomic) CGFloat slowDownFactor; // @synthesize slowDownFactor=_slowDownFactor;
 @property(nonatomic) BOOL slowAnimations; // @synthesize slowAnimations=_slowAnimations;
 - (void)setValue:(id)arg1 forKey:(id)arg2;
 - (id)valueForKey:(id)arg1;

@@ -13,10 +13,10 @@
 
 @interface NSString (UIStringDrawing2)
 -(CGSize)_drawInRect:(CGRect)rect withFont:(id)font lineBreakMode:(int)mode alignment:(int)alignment lineSpacing:(int)spacing includeEmoji:(BOOL)emoji truncationRect:(CGRect*)rect7 __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_2);
--(CGSize)drawAtPoint:(CGPoint)point forWidth:(float)width withFont:(id)font lineBreakMode:(int)mode letterSpacing:(float)spacing includeEmoji:(BOOL)emoji;
+-(CGSize)drawAtPoint:(CGPoint)point forWidth:(CGFloat)width withFont:(id)font lineBreakMode:(int)mode letterSpacing:(CGFloat)spacing includeEmoji:(BOOL)emoji;
 -(CGSize)drawInRect:(CGRect)rect withFont:(id)font lineBreakMode:(int)mode alignment:(int)alignment lineSpacing:(int)spacing includeEmoji:(BOOL)emoji;
--(CGSize)drawAtPoint:(CGPoint)point forWidth:(float)width withFont:(id)font fontSize:(float)size lineBreakMode:(int)mode baselineAdjustment:(int)adjustment includeEmoji:(BOOL)emoji;
--(CGSize)drawAtPoint:(CGPoint)point forWidth:(float)width withFont:(id)font minFontSize:(float)size actualFontSize:(float*)size5 lineBreakMode:(int)mode baselineAdjustment:(int)adjustment includeEmoji:(BOOL)emoji;
+-(CGSize)drawAtPoint:(CGPoint)point forWidth:(CGFloat)width withFont:(id)font fontSize:(CGFloat)size lineBreakMode:(int)mode baselineAdjustment:(int)adjustment includeEmoji:(BOOL)emoji;
+-(CGSize)drawAtPoint:(CGPoint)point forWidth:(CGFloat)width withFont:(id)font minFontSize:(CGFloat)size actualFontSize:(CGFloat*)size5 lineBreakMode:(int)mode baselineAdjustment:(int)adjustment includeEmoji:(BOOL)emoji;
 -(NSString*)securedStringIncludingLastCharacter:(BOOL)character;
 @end
 
@@ -65,15 +65,15 @@
 -(void)drawInRect:(CGRect)rect withStyle:(id)style;
 -(void)drawMarkupAtPoint:(CGPoint)point;
 -(void)drawMarkupInRect:(CGRect)rect;
--(CGSize)sizeWithStyle:(id)style forWidth:(float)width;
--(CGSize)sizeWithMarkupForWidth:(float)width;
+-(CGSize)sizeWithStyle:(id)style forWidth:(CGFloat)width;
+-(CGSize)sizeWithMarkupForWidth:(CGFloat)width;
 -(void)setStringDrawingOrigin:(CGPoint)origin;
 -(void)clearStringDrawingOrigin;
--(CGSize)sizeWithFont:(id)font forWidth:(float)width ellipsis:(int)ellipsis;
--(CGSize)drawAtPoint:(CGPoint)point forWidth:(float)width withFont:(id)font ellipsis:(int)ellipsis;
--(CGSize)sizeWithFont:(id)font minFontSize:(float)size actualFontSize:(float*)size3 forWidth:(float)width ellipsis:(int)ellipsis;
--(CGSize)drawAtPoint:(CGPoint)point forWidth:(float)width withFont:(id)font fontSize:(float)size ellipsis:(int)ellipsis baselineAdjustment:(int)adjustment;
--(CGSize)drawAtPoint:(CGPoint)point forWidth:(float)width withFont:(id)font minFontSize:(float)size actualFontSize:(float*)size5 ellipsis:(int)ellipsis baselineAdjustment:(int)adjustment;
+-(CGSize)sizeWithFont:(id)font forWidth:(CGFloat)width ellipsis:(int)ellipsis;
+-(CGSize)drawAtPoint:(CGPoint)point forWidth:(CGFloat)width withFont:(id)font ellipsis:(int)ellipsis;
+-(CGSize)sizeWithFont:(id)font minFontSize:(CGFloat)size actualFontSize:(CGFloat*)size3 forWidth:(CGFloat)width ellipsis:(int)ellipsis;
+-(CGSize)drawAtPoint:(CGPoint)point forWidth:(CGFloat)width withFont:(id)font fontSize:(CGFloat)size ellipsis:(int)ellipsis baselineAdjustment:(int)adjustment;
+-(CGSize)drawAtPoint:(CGPoint)point forWidth:(CGFloat)width withFont:(id)font minFontSize:(CGFloat)size actualFontSize:(CGFloat*)size5 ellipsis:(int)ellipsis baselineAdjustment:(int)adjustment;
 -(CGSize)drawInRect:(CGRect)rect withFont:(id)font ellipsis:(int)ellipsis;
 -(CGSize)drawInRect:(CGRect)rect withFont:(id)font ellipsis:(int)ellipsis alignment:(int)alignment;
 -(CGSize)drawInRect:(CGRect)rect withFont:(id)font;

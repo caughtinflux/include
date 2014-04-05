@@ -14,9 +14,9 @@
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;
 -(void)addImage:(id)image;
--(void)addImage:(id)image operation:(int)operation fraction:(float)fraction;
+-(void)addImage:(id)image operation:(int)operation fraction:(CGFloat)fraction;
 -(void)addImage:(id)image toRect:(CGRect)rect fromRect:(CGRect)rect3;
--(void)addImage:(id)image toRect:(CGRect)rect fromRect:(CGRect)rect3 operation:(int)operation fraction:(float)fraction;
+-(void)addImage:(id)image toRect:(CGRect)rect fromRect:(CGRect)rect3 operation:(int)operation fraction:(CGFloat)fraction;
 -(void)removeAllImages;
 -(void)drawRect:(CGRect)rect;
 @end

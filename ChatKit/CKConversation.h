@@ -76,6 +76,6 @@
 -(int)identifier;
 -(void)resetCaches;
 -(id)groupMessageWithAssociationID:(int)associationID;
--(void)pendingMessagesTotalMessages:(int*)messages percentComplete:(float*)complete;
+-(void)pendingMessagesTotalMessages:(int*)messages percentComplete:(CGFloat*)complete;
 @end
 

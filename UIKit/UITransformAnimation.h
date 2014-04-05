@@ -13,8 +13,8 @@
 }
 -(void)setStartTransform:(CGAffineTransform)transform;
 -(void)setEndTransform:(CGAffineTransform)transform;
--(CGAffineTransform)_transformWithMultiplier:(float)multiplier;
--(void)setProgress:(float)progress;
--(CGAffineTransform)transformForFraction:(float)fraction;
+-(CGAffineTransform)_transformWithMultiplier:(CGFloat)multiplier;
+-(void)setProgress:(CGFloat)progress;
+-(CGAffineTransform)transformForFraction:(CGFloat)fraction;
 @end
 

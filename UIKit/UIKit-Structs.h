@@ -19,8 +19,8 @@ typedef struct {
 	unsigned char pathIndex;
 	unsigned char pathIdentity;
 	unsigned char pathProximity;
-	float pathPressure;
-	float pathMajorRadius;
+	CGFloat pathPressure;
+	CGFloat pathMajorRadius;
 	CGPoint pathLocation;
 	void* pathWindow;
 } UIPathInfo;
@@ -30,23 +30,23 @@ typedef struct {
 	int _field1;
 	unsigned short _field2;
 	unsigned short _field3;
-	float _field4;
-	float _field5;
-	float _field6;
-	float _field7;
-	float _field8;
-	float _field9;
+	CGFloat _field4;
+	CGFloat _field5;
+	CGFloat _field6;
+	CGFloat _field7;
+	CGFloat _field8;
+	CGFloat _field9;
 	unsigned char _field10;
 	unsigned char _field11;
 	XXStruct__FxRIA _field12[0];
 } XXStruct_$jUSvD;
 
 typedef struct {
-	float _field1;
-	float _field2;
-	float _field3;
-	float _field4;
-	float _field5;
+	CGFloat _field1;
+	CGFloat _field2;
+	CGFloat _field3;
+	CGFloat _field4;
+	CGFloat _field5;
 } XXStruct_iyXfGC;
 
 typedef struct {
@@ -68,8 +68,8 @@ typedef struct {
 	BOOL _field1;
 	BOOL _field2;
 	BOOL _field3;
-	float _field4;
-	float _field5;
+	CGFloat _field4;
+	CGFloat _field5;
 	int _field6;
 	CGRect _field7;
 	CGRect _field8;
@@ -124,9 +124,9 @@ typedef union {
 } XXUnion_a01swB;
 
 typedef struct {
-	float _field1;
-	float _field2;
-	float _field3;
+	CGFloat _field1;
+	CGFloat _field2;
+	CGFloat _field3;
 } XXStruct_NwkmQC;
 
 typedef struct USet* USetRef;
@@ -218,18 +218,18 @@ enum UIKBLengthUnit {
 };
 
 typedef struct {
-	float amount;
+	CGFloat amount;
 	int unit;
 } UIKBLength;
 typedef UIKBLength XXStruct_tp$7nC;
 
-static inline UIKBLength UIKBLengthMakePixel(float x) {
+static inline UIKBLength UIKBLengthMakePixel(CGFloat x) {
 	UIKBLength r;
 	r.amount = x;
 	r.unit = UIKBLengthUnitPixel;
 	return r;
 }
-static inline UIKBLength UIKBLengthMakePercentage(float x) {
+static inline UIKBLength UIKBLengthMakePercentage(CGFloat x) {
 	UIKBLength r;
 	r.amount = x;
 	r.unit = UIKBLengthUnitPercentage;
@@ -311,7 +311,7 @@ typedef struct {
 	int _field2;
 	id _field3;
 	id _field4;
-	float _field5;
+	CGFloat _field5;
 	int _field6;
 	SEL _field7;
 	id _field8;
@@ -329,10 +329,10 @@ typedef struct {
 	BOOL animateContentRotation;
 	BOOL preserveHeight;
 	BOOL avoidFadingBottomOfContent;
-	float contentStretchRightEdgeInset;
+	CGFloat contentStretchRightEdgeInset;
 	BOOL slideFooterOutAndIn;
 	int edgeClip;
-	float contentBottomInset;
+	CGFloat contentBottomInset;
 	int startContentOrientation;
 	CGRect startContentBounds;
 	CGRect endContentBounds;
@@ -349,8 +349,8 @@ typedef struct {
 
 typedef struct {
 	UIFont* _field1;
-	float _field2;
-	float _field3;
+	CGFloat _field2;
+	CGFloat _field3;
 	XXStruct_KYn_rD _field4;
 	XXStruct_KYn_rD _field5;
 	XXStruct_KYn_rD _field6;

@@ -15,8 +15,8 @@
 	int _numRows;
 	int _numCols;
 	int _numPages;
-	float _horizontalGap;
-	float _verticalGap;
+	CGFloat _horizontalGap;
+	CGFloat _verticalGap;
 	CGRect _keyActivationRect;
 	NSString* _optionalText;
 	id<UIKeyboardEmojiController> _controller;

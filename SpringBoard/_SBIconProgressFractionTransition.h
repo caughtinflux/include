@@ -8,15 +8,15 @@
 
 @interface _SBIconProgressFractionTransition : _SBIconProgressTransition
 {
-    float _targetFraction;
+    CGFloat _targetFraction;
 }
 
-+ (id)newTransitionToFraction:(float)arg1;
++ (id)newTransitionToFraction:(CGFloat)arg1;
 - (BOOL)isCompleteWithView:(id)arg1;
-- (void)_updateView:(id)arg1 forDisplayedFraction:(float)arg2;
+- (void)_updateView:(id)arg1 forDisplayedFraction:(CGFloat)arg2;
 - (void)completeTransitionAndUpdateView:(id)arg1;
 - (void)updateView:(id)arg1 withElapsedTime:(double)arg2;
-- (void)updateToFraction:(float)arg1;
+- (void)updateToFraction:(CGFloat)arg1;
 
 @end
 

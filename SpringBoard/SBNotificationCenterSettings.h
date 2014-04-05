@@ -11,18 +11,18 @@
 @interface SBNotificationCenterSettings : _UISettings
 {
     SBBounceSettings *_bounceSettings;
-    float _modeButtonTintLevel;
-    float _modeButtonTintAlpha;
-    float _modeLabelTintLevel;
-    float _modeLabelTintAlpha;
+    CGFloat _modeButtonTintLevel;
+    CGFloat _modeButtonTintAlpha;
+    CGFloat _modeLabelTintLevel;
+    CGFloat _modeLabelTintAlpha;
     double _grabberAnimationDuration;
 }
 
 + (id)settingsControllerModule;
-@property(nonatomic) float modeLabelTintAlpha; // @synthesize modeLabelTintAlpha=_modeLabelTintAlpha;
-@property(nonatomic) float modeLabelTintLevel; // @synthesize modeLabelTintLevel=_modeLabelTintLevel;
-@property(nonatomic) float modeButtonTintAlpha; // @synthesize modeButtonTintAlpha=_modeButtonTintAlpha;
-@property(nonatomic) float modeButtonTintLevel; // @synthesize modeButtonTintLevel=_modeButtonTintLevel;
+@property(nonatomic) CGFloat modeLabelTintAlpha; // @synthesize modeLabelTintAlpha=_modeLabelTintAlpha;
+@property(nonatomic) CGFloat modeLabelTintLevel; // @synthesize modeLabelTintLevel=_modeLabelTintLevel;
+@property(nonatomic) CGFloat modeButtonTintAlpha; // @synthesize modeButtonTintAlpha=_modeButtonTintAlpha;
+@property(nonatomic) CGFloat modeButtonTintLevel; // @synthesize modeButtonTintLevel=_modeButtonTintLevel;
 @property double grabberAnimationDuration; // @synthesize grabberAnimationDuration=_grabberAnimationDuration;
 @property(retain, nonatomic) SBBounceSettings *bounceSettings; // @synthesize bounceSettings=_bounceSettings;
 - (void)setDefaultValues;

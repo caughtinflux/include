@@ -72,7 +72,7 @@
 	UIToolbar* _actionsToolbar;
 	NSOperationQueue* _mediaPreviewQueue;
 	UIKeyboard* _keyboardLayer;
-	float _transcriptTableBottomOffset;
+	CGFloat _transcriptTableBottomOffset;
 }
 @property(assign, nonatomic) CKService* currentService;
 @property(retain, nonatomic) CKMessage* messageToThrow;
@@ -106,8 +106,8 @@
 -(id)conversation;
 -(void)_setupRecipientSelectionView;
 -(void)updateEnablednessOfSendButton;
--(void)_adjustMessageEntryViewOriginDelta:(float)delta heightDelta:(float)delta2 animate:(BOOL)animate animationLength:(float)length fastAnimate:(BOOL)animate5;
--(void)_adjustTranscriptContentOffset:(CGPoint)offset animate:(BOOL)animate animationLength:(float)length fastAnimate:(BOOL)animate4;
+-(void)_adjustMessageEntryViewOriginDelta:(CGFloat)delta heightDelta:(CGFloat)delta2 animate:(BOOL)animate animationLength:(CGFloat)length fastAnimate:(BOOL)animate5;
+-(void)_adjustTranscriptContentOffset:(CGPoint)offset animate:(BOOL)animate animationLength:(CGFloat)length fastAnimate:(BOOL)animate4;
 -(BOOL)isSendingMessage;
 -(id)entryView;
 -(void)_resetTranscriptAndKeyboard;
@@ -145,13 +145,13 @@
 -(void)_decrementRotationBlockingAnimationCount;
 -(void)animator:(id)animator startAnimation:(id)animation;
 -(void)animator:(id)animator stopAnimation:(id)animation;
--(CGPoint)_transcriptScrollToBottomOffsetWithHeightDelta:(float)heightDelta;
+-(CGPoint)_transcriptScrollToBottomOffsetWithHeightDelta:(CGFloat)heightDelta;
 -(void)transitionFromNewMessageToConversation;
 -(void)throwOutboundMessageToTable:(id)table;
 -(void)bubbilizationFinished:(id)finished forAnimation:(id)animation;
--(float)_topPaddingForBubbleRow:(int)bubbleRow;
--(float)_bottomPaddingForBubbleRow:(int)bubbleRow;
--(float)_topPaddingForRow:(int)row forEditing:(BOOL)editing;
+-(CGFloat)_topPaddingForBubbleRow:(int)bubbleRow;
+-(CGFloat)_bottomPaddingForBubbleRow:(int)bubbleRow;
+-(CGFloat)_topPaddingForRow:(int)row forEditing:(BOOL)editing;
 -(void)didBeginSendingComposition:(id)composition message:(id)message;
 -(void)displayAlertSheet:(id)sheet;
 -(void)dismissAlertSheet:(id)sheet;
@@ -199,7 +199,7 @@
 -(BOOL)_disclosureSupportsMediaType:(int)type;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(void)tableView:(id)view accessoryButtonTappedForRowWithIndexPath:(id)indexPath;
--(float)tableView:(id)view heightForRowAtIndexPath:(id)indexPath;
+-(CGFloat)tableView:(id)view heightForRowAtIndexPath:(id)indexPath;
 -(id)_abPersonViewControllerForPerson:(void*)person property:(int)property withIdentifier:(int)identifier;
 -(void)_displayABPersonViewController:(id)controller;
 -(void)showABCardForPerson:(void*)person highlightedProperty:(int)property identifier:(int)identifier;
@@ -261,8 +261,8 @@
 -(void)_hideKeyboardAndDeactivateContent:(BOOL)content;
 -(void)_showKeyboard:(BOOL)keyboard;
 -(void)_showKeyboard:(BOOL)keyboard activateContent:(BOOL)content;
--(float)_maxHeightForOverlayView:(id)overlayView entryViewResize:(int)resize;
--(float)_overlayViewMinHeight;
+-(CGFloat)_maxHeightForOverlayView:(id)overlayView entryViewResize:(int)resize;
+-(CGFloat)_overlayViewMinHeight;
 -(id)_overlayView;
 -(void)_showRecipientListView;
 -(void)_hideRecipientListView;
@@ -273,9 +273,9 @@
 -(void)_refreshTranscript;
 -(void)_refreshTranscript:(BOOL)transcript;
 -(void)_resetTranscriptInsets;
--(void)_calculateTopVisibleRow:(int*)row andOffset:(float*)offset forTransitionToEditing:(BOOL)editing;
--(CGPoint)_offsetForRow:(int)row withInternalOffset:(float)internalOffset;
--(float)_maximumContentOffset;
+-(void)_calculateTopVisibleRow:(int*)row andOffset:(CGFloat*)offset forTransitionToEditing:(BOOL)editing;
+-(CGPoint)_offsetForRow:(int)row withInternalOffset:(CGFloat)internalOffset;
+-(CGFloat)_maximumContentOffset;
 @end
 
 @interface CKTranscriptController (MediaEntry)

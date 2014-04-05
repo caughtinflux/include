@@ -13,7 +13,7 @@
 	int _editingCellRow;
 	NSMutableArray* _groupItems;
 	UIKeyboard* _keyboard;
-	float _textOffset;
+	CGFloat _textOffset;
 	CFDictionaryRef _piecesForCell;
 	unsigned _datasourceCellForGroup : 1;
 	unsigned _datasourceIsRadioGroup : 1;
@@ -45,7 +45,7 @@
 -(int)_cellOutlineForRow:(int)row withChildCount:(int)childCount isLabelGroup:(BOOL)group;
 -(id)dataSourceCreateCellForRow:(int)row column:(int)column reusing:(id)reusing;
 -(CGRect)frameOfPreferencesCellAtRow:(int)row inGroup:(int)group;
--(BOOL)floatArray:(id)array loadValues:(float*)values count:(int)count;
+-(BOOL)CGFloatArray:(id)array loadValues:(CGFloat*)values count:(int)count;
 -(int)_paddingForCenteringContent;
 -(void)_updatePaddingForCenteringContent;
 -(void)setCentersContent:(BOOL)content;
@@ -55,10 +55,10 @@
 -(void)animateDeletionOfRowWithCell:(id)cell viaEdge:(int)edge;
 -(BOOL)shouldIndentRow:(int)row;
 -(void)deleteRows:(id)rows viaEdge:(int)edge;
--(void)_setAlpha:(float)alpha forSubviewsOf:(id)of;
+-(void)_setAlpha:(CGFloat)alpha forSubviewsOf:(id)of;
 -(id)_existingPieceForCell:(id)cell;
 -(id)_copyPieceOfCell:(id)cell withContentsPosition:(int)contentsPosition;
--(float)animationDuration;
+-(CGFloat)animationDuration;
 -(void)reloadData;
 -(void)insertItems:(id)items;
 -(void)deleteItems:(id)items;
@@ -77,7 +77,7 @@
 -(void)setKeyboardVisible:(BOOL)visible;
 -(BOOL)_scrollsToMakeFirstResponderVisible;
 -(void)resumeWithNotification:(id)notification;
--(void)setBottomBufferHeight:(float)height;
+-(void)setBottomBufferHeight:(CGFloat)height;
 -(void)scrollAndCenterTableCell:(id)cell animated:(BOOL)animated;
 -(void)setKeyboardVisible:(BOOL)visible animated:(BOOL)animated;
 -(id)_editingCell;

@@ -25,9 +25,9 @@
     long long _maxValue;
     long long _normalizedCurrentValue;
     long long _normalizedMaxValue;
-    float _percentComplete;
-    float _remakingPercentComplete;
-    float _progressMultiplier;
+    CGFloat _percentComplete;
+    CGFloat _remakingPercentComplete;
+    CGFloat _progressMultiplier;
     NSMutableArray *_snapshotTimes;
     NSMutableArray *_snapshotValues;
     UIViewController *_parentNavigationController;
@@ -54,7 +54,7 @@
 + (id)publishingAgentForBundleNamed:(id)arg1 toPublishMedia:(id)arg2;
 @property(nonatomic) _Bool shouldCancelPublish; // @synthesize shouldCancelPublish=_shouldCancelPublish;
 @property(nonatomic) _Bool allowsHDOver3GUpload; // @synthesize allowsHDOver3GUpload=_allowsHDOver3GUpload;
-@property(nonatomic) float progressMultiplier; // @synthesize progressMultiplier=_progressMultiplier;
+@property(nonatomic) CGFloat progressMultiplier; // @synthesize progressMultiplier=_progressMultiplier;
 @property(nonatomic) int selectedOption; // @synthesize selectedOption=_selectedOption;
 @property(nonatomic) int remakerMode; // @synthesize remakerMode=_remakerMode;
 @property(nonatomic) _Bool needsTrimming; // @synthesize needsTrimming=_needsTrimming;
@@ -68,7 +68,7 @@
 - (void)showAlertWithError:(id)arg1;
 - (int)_remakerModeForSelectedOption;
 - (id)progressViewMessageDuringRemake;
-- (void)videoRemaker:(id)arg1 progressDidChange:(float)arg2;
+- (void)videoRemaker:(id)arg1 progressDidChange:(CGFloat)arg2;
 - (void)videoRemakerDidEndRemaking:(id)arg1 temporaryPath:(id)arg2;
 - (void)_remakerDidFinish:(id)arg1;
 - (void)videoRemakerDidBeginRemaking:(id)arg1;
@@ -76,8 +76,8 @@
 - (void)_cancelRemaking:(id)arg1;
 - (_Bool)isRemaking;
 - (void)cancelRemaking;
-- (float)remakingPercentComplete;
-- (float)percentComplete;
+- (CGFloat)remakingPercentComplete;
+- (CGFloat)percentComplete;
 - (double)estimatedTimeRemaining;
 - (void)_updateStatisticsFromSnapshots;
 - (void)snapshot;

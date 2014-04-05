@@ -67,12 +67,12 @@ extern "C" {
 	typedef struct GSHandInfo {
 		GSHandInfoType type;	// 0x0 == 0x3C
 		short deltaX, deltaY;	// 2, 4 = 0x40, 0x42
-		float _0x44;
-		float _0x48;
-		float width;			// 0x10 == 0x4C
-		float _0x50;
-		float height;			// 0x18 == 0x54
-		float _0x58;
+		CGFloat _0x44;
+		CGFloat _0x48;
+		CGFloat width;			// 0x10 == 0x4C
+		CGFloat _0x50;
+		CGFloat height;			// 0x18 == 0x54
+		CGFloat _0x58;
 		unsigned char _0x5C;
 		unsigned char pathInfosCount;	// 0x22 == 0x5D
 		GSPathInfo pathInfos[0];		// 0x60
@@ -384,14 +384,14 @@ extern "C" {
 	void GSEventRotateSimulator(int x);	// -1 = home button on the left, 0 = portrait, 1 = home button on the right.
 	
 	void GSEventRestoreSensitivity();
-	void GSEventSetSensitivity(int sensitivity);	// or float?
+	void GSEventSetSensitivity(int sensitivity);	// or CGFloat?
 	
 	void GSEventLockDevice();	// 1014.
 
 	void GSEventResetIdleTimer();
 	void GSEventResetIdleDuration(int a, int b);
 	
-	void GSEventSetBacklightLevel(float level);
+	void GSEventSetBacklightLevel(CGFloat level);
 	void GSEventSetBacklightFactor(int factor);
 	
 #pragma mark -
@@ -425,7 +425,7 @@ extern "C" {
 	void GSEventLoopSoundAtPath(CFStringRef path);// Equivalent to _GSEventPlayAlertOrSystemSoundAtPath(path, 1, 0)
 	void GSEventPlaySoundAtPath(CFStringRef path);// Equivalent to _GSEventPlayAlertOrSystemSoundAtPath(path, 0, 0)
 	
-	void GSEventVibrateForDuration(float secs);
+	void GSEventVibrateForDuration(CGFloat secs);
 	void GSEventStopVibrator();	///< Equivalent to GSEventVibrateForDuration(0)
 
 #pragma mark -

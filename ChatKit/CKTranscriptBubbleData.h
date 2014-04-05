@@ -10,10 +10,10 @@
 
 @interface CKTranscriptBubbleData : NSObject {
 	NSMutableArray* _bubbleDataArray;
-	float _balloonWidth;
+	CGFloat _balloonWidth;
 	NSDate* _nextEligibleTimestamp;
 }
-@property(assign, nonatomic) float balloonWidth;
+@property(assign, nonatomic) CGFloat balloonWidth;
 +(Class)balloonClassForMessagePart:(id)messagePart;
 +(Class)balloonClassForFlags:(unsigned long)flags;
 +(Class)balloonClassForMessage:(id)message;

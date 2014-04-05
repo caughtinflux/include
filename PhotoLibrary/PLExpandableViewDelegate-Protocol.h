@@ -9,7 +9,7 @@
 @protocol PLExpandableViewDelegate <NSObject>
 
 @optional
-- (void)expandableView:(id)arg1 expansionFractionChanged:(float)arg2;
+- (void)expandableView:(id)arg1 expansionFractionChanged:(CGFloat)arg2;
 - (void)expandableViewDidCancelCollapsing:(id)arg1;
 - (void)expandableView:(id)arg1 willCancelCollapsingWithDuration:(double)arg2;
 - (void)expandableViewDidCompleteCollapsing:(id)arg1;

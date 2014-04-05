@@ -19,7 +19,7 @@
 	UITabBarItem* _replaceItem;
 	CGPoint _startPoint;
 	int _gridCount;
-	float _gridOffset;
+	CGFloat _gridOffset;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)setTabBar:(id)bar currentItems:(id)items availableItems:(id)items3;

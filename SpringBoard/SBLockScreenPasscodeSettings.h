@@ -9,13 +9,13 @@
 @interface SBLockScreenPasscodeSettings : _UISettings
 {
     int _scrollBehavior;
-    float _fixedHysteresis;
-    float _percentOfNextButtonIncluded;
+    CGFloat _fixedHysteresis;
+    CGFloat _percentOfNextButtonIncluded;
 }
 
 + (id)settingsControllerModule;
-@property(nonatomic) float percentOfNextButtonIncluded; // @synthesize percentOfNextButtonIncluded=_percentOfNextButtonIncluded;
-@property(nonatomic) float fixedHysteresis; // @synthesize fixedHysteresis=_fixedHysteresis;
+@property(nonatomic) CGFloat percentOfNextButtonIncluded; // @synthesize percentOfNextButtonIncluded=_percentOfNextButtonIncluded;
+@property(nonatomic) CGFloat fixedHysteresis; // @synthesize fixedHysteresis=_fixedHysteresis;
 @property(nonatomic) int scrollBehavior; // @synthesize scrollBehavior=_scrollBehavior;
 - (void)setDefaultValues;
 

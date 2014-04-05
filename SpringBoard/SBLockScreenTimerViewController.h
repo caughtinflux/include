@@ -26,7 +26,7 @@
 - (void)observer:(id)arg1 noteInvalidatedBulletinIDs:(id)arg2;
 - (void)observer:(id)arg1 removeBulletin:(id)arg2;
 - (void)observer:(id)arg1 addBulletin:(id)arg2 forFeed:(unsigned int)arg3;
-- (void)setContentAlpha:(float)arg1;
+- (void)setContentAlpha:(CGFloat)arg1;
 - (void)_updateTimerLabelView;
 - (void)_updateTimerFired;
 - (void)_startTimer;

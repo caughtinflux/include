@@ -24,7 +24,7 @@
 	UIView* _customImageView;
 	NSString* _title;
 	NSString* _subtitle;
-	float _xInset;
+	CGFloat _xInset;
 	int _layout;
 	unsigned _editCapabilities;
 	UITextField* __titleTextField;
@@ -38,7 +38,7 @@
 @property (nonatomic,retain) UIView * customImageView;                                                   //@synthesize customImageView=_customImageView - In the implementation block
 @property (nonatomic,copy) NSString * title;                                                             //@synthesize title=_title - In the implementation block
 @property (nonatomic,copy) NSString * subtitle;                                                          //@synthesize subtitle=_subtitle - In the implementation block
-@property (assign,nonatomic) float xInset;                                                               //@synthesize xInset=_xInset - In the implementation block
+@property (assign,nonatomic) CGFloat xInset;                                                               //@synthesize xInset=_xInset - In the implementation block
 @property (assign,nonatomic) int layout;                                                                 //@synthesize layout=_layout - In the implementation block
 @property (assign,nonatomic) unsigned editCapabilities;                                                  //@synthesize editCapabilities=_editCapabilities - In the implementation block
 @property (assign,getter=isEditing,nonatomic) BOOL editing;                                              //@synthesize editing=_editing - In the implementation block
@@ -76,7 +76,7 @@
 -(void)_setTitleTextField:(id)arg1 ;
 -(id)_subtitleLabel;
 -(id)_titleTextField;
--(float)xInset;
+-(CGFloat)xInset;
 -(CGPoint)_deleteButtonCenter;
 -(id)stackView;
 -(id)customImageView;
@@ -92,10 +92,10 @@
 -(BOOL)showsDeleteButtonWhenEditing;
 -(void)_deleteAction:(id)arg1 ;
 -(int)_textAlignmentForLayout:(int)arg1 ;
--(float)_titleTextFieldAlpha;
+-(CGFloat)_titleTextFieldAlpha;
 -(void)setShowsTitle:(BOOL)arg1 animated:(BOOL)arg2 ;
 -(void)setCustomImageView:(id)arg1 ;
--(void)setXInset:(float)arg1 ;
+-(void)setXInset:(CGFloat)arg1 ;
 -(void)setShowsDeleteButtonWhenEditing:(BOOL)arg1 ;
 -(unsigned)editCapabilities;
 -(void)setEditCapabilities:(unsigned)arg1 ;

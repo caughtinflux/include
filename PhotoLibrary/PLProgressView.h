@@ -20,7 +20,7 @@
     UIView *_backgroundView;
     UIView *_backgroundTintedView;
     _UIBackdropView *_backgroundBlurredView;
-    float _percentComplete;
+    CGFloat _percentComplete;
 }
 
 @property(retain, nonatomic) UILabel *labelView; // @synthesize labelView=_labelView;
@@ -28,7 +28,7 @@
 @property(retain, nonatomic) UIView *backgroundTintedView; // @synthesize backgroundTintedView=_backgroundTintedView;
 @property(retain, nonatomic) UIView *backgroundView; // @synthesize backgroundView=_backgroundView;
 @property(nonatomic) long long backgroundType; // @synthesize backgroundType=_backgroundType;
-@property(nonatomic) float percentComplete; // @synthesize percentComplete=_percentComplete;
+@property(nonatomic) CGFloat percentComplete; // @synthesize percentComplete=_percentComplete;
 - (void)setFrame:(struct CGRect)arg1;
 - (void)setLabelText:(id)arg1;
 - (void)updateUIForPublishingAgent:(id)arg1;

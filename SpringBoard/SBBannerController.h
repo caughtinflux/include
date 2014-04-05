@@ -59,8 +59,8 @@
 - (void)_tryToDismissWithAnimation:(BOOL)arg1 reason:(int)arg2 forceEvenIfBusy:(BOOL)arg3 completion:(id)arg4;
 - (void)_handleBannerTapGesture:(id)arg1;
 - (void)_handleBannerPanGesture:(id)arg1;
-- (void)_handleDismissGestureType:(int)arg1 withState:(int)arg2 displacement:(float)arg3 velocity:(float)arg4;
-- (void)_updateDismissGestureState:(struct SBBannerDismissGestureState *)arg1 withDisplacement:(float)arg2 velocity:(float)arg3;
+- (void)_handleDismissGestureType:(int)arg1 withState:(int)arg2 displacement:(CGFloat)arg3 velocity:(CGFloat)arg4;
+- (void)_updateDismissGestureState:(struct SBBannerDismissGestureState *)arg1 withDisplacement:(CGFloat)arg2 velocity:(CGFloat)arg3;
 - (void)_presentBannerForContext:(id)arg1 reason:(int)arg2;
 - (BOOL)_shouldPendStickyBannerContext:(id)arg1 withReason:(int)arg2;
 - (BOOL)_dequeueBannerIfPossibleIgnoringStickyBanner:(BOOL)arg1 existingDismissReason:(int)arg2;
@@ -90,8 +90,8 @@
 - (void)registerSource:(id)arg1;
 @property(readonly, nonatomic) int bannerTargetIdiom;
 - (id)newBannerSnapshotViewRotatedForOrientation:(int)arg1;
-- (void)setBannerAlpha:(float)arg1;
-- (void)handleSystemDismissGestureWithState:(int)arg1 position:(struct CGPoint)arg2 velocity:(float)arg3;
+- (void)setBannerAlpha:(CGFloat)arg1;
+- (void)handleSystemDismissGestureWithState:(int)arg1 position:(struct CGPoint)arg2 velocity:(CGFloat)arg3;
 - (BOOL)isTrackingDismissGesture;
 - (void)dismissBannerWithAnimation:(BOOL)arg1 reason:(int)arg2 forceEvenIfBusy:(BOOL)arg3;
 - (void)dismissBannerWithAnimation:(BOOL)arg1 reason:(int)arg2;

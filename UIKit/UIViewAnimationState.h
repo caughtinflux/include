@@ -20,13 +20,13 @@
 	double _frameInterval;
 	double _start;
 	int _curve;
-	float _repeatCount;
+	CGFloat _repeatCount;
 	int _transition;
 	UIView* _transitionView;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 	int _filter;
 	UIView* _filterView;
-	float _filterValue;	
+	CGFloat _filterValue;	
 #endif
 	SEL _willStartSelector;
 	SEL _didEndSelector;

@@ -13,8 +13,8 @@
 }
 
 @property(retain, nonatomic) UIColor *borderColor; // @dynamic borderColor;
-@property(nonatomic) float borderWidth; // @dynamic borderWidth;
-@property(nonatomic) float cornerRadius; // @dynamic cornerRadius;
+@property(nonatomic) CGFloat borderWidth; // @dynamic borderWidth;
+@property(nonatomic) CGFloat cornerRadius; // @dynamic cornerRadius;
 - (void)dealloc;
 - (id)initWithFrame:(struct CGRect)arg1;
 

@@ -10,7 +10,7 @@
 #import <PhotosUI/PUAvalancheReviewControllerSpec.h>
 
 @interface PUAvalancheReviewControllerPhoneSpec : PUAvalancheReviewControllerSpec
--(float)interItemSpacing;
+-(CGFloat)interItemSpacing;
 -(int)fastImageFormat;
 -(int)qualityImageFormat;
 -(int)zoomingImageFormat;

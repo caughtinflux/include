@@ -9,10 +9,10 @@
 @interface SBWindowHideState : NSObject
 {
     BOOL _hidden;
-    float _desiredAlpha;
+    CGFloat _desiredAlpha;
 }
 
-@property float desiredAlpha; // @synthesize desiredAlpha=_desiredAlpha;
+@property CGFloat desiredAlpha; // @synthesize desiredAlpha=_desiredAlpha;
 @property(getter=isHidden) BOOL hidden; // @synthesize hidden=_hidden;
 - (id)description;
 

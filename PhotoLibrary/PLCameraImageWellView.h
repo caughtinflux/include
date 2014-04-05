@@ -35,7 +35,7 @@
 - (id)thumbnailImage;
 - (struct CGRect)thumbnailFrame;
 - (void)addMaskedSubview:(id)arg1;
-- (void)beginContentFadeOutWithDuration:(float)arg1;
+- (void)beginContentFadeOutWithDuration:(CGFloat)arg1;
 - (void)buttonBar:(id)arg1 didChangeMode:(int)arg2;
 - (void)setThumbnailImage:(id)arg1;
 - (void)setFrame:(struct CGRect)arg1;

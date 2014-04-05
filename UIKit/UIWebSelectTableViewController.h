@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	NSArray* _cachedItems;
 	unsigned _singleSelectionIndex;
 	BOOL _allowsMultipleSelection;
-	float _popoverHeight;
+	CGFloat _popoverHeight;
 	UIWebSelectPopover* _popover;
 }
 @property(retain, nonatomic) DOMHTMLSelectElement* _selectionNode;
@@ -28,7 +28,7 @@ __attribute__((visibility("hidden")))
 // in a protocol: @property(assign, nonatomic) BOOL enablesReturnKeyAutomatically;
 // in a protocol: @property(assign, nonatomic, getter=isSecureTextEntry) BOOL secureTextEntry;
 // inherited: -(void)dealloc;
--(void)setUpDOMSelectNode:(id)node cachedItems:(id)items singleSelectionIndex:(unsigned)index multipleSelection:(BOOL)selection popoverHeight:(float)height;
+-(void)setUpDOMSelectNode:(id)node cachedItems:(id)items singleSelectionIndex:(unsigned)index multipleSelection:(BOOL)selection popoverHeight:(CGFloat)height;
 // inherited: -(void)viewWillAppear:(BOOL)view;
 // inherited: -(CGSize)contentSizeForViewInPopoverView;
 -(int)numberOfSectionsInTableView:(id)tableView;

@@ -37,7 +37,7 @@
 -(void)writeString:(id)arg1 forTag:(unsigned short)arg2 ;
 -(void)writeBOOL:(BOOL)arg1 forTag:(unsigned short)arg2 ;
 -(void)writeFixed32:(unsigned)arg1 forTag:(unsigned short)arg2 ;
--(void)writeFloat:(float)arg1 forTag:(unsigned short)arg2 ;
+-(void)writeFloat:(CGFloat)arg1 forTag:(unsigned short)arg2 ;
 -(void)writeInt32:(int)arg1 forTag:(unsigned short)arg2 ;
 -(void)writeSint32:(int)arg1 forTag:(unsigned short)arg2 ;
 -(BOOL)writeData:(id)arg1 ;

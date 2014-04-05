@@ -27,7 +27,7 @@
 -(void)removeAnimationsForTarget:(id)target ofKind:(Class)kind;
 -(void)startAnimation:(id)animation;
 -(void)stopAnimation:(id)animation;
--(float)fractionForAnimation:(id)animation;
+-(CGFloat)fractionForAnimation:(id)animation;
 @end
 
 @interface UIAnimator (Static)

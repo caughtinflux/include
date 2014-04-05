@@ -12,19 +12,19 @@
 	UIImage* _icon;
 	NSString* _text;
 	NSString* _subtext;
-	float _originalWidth;
+	CGFloat _originalWidth;
 }
 @property(copy, nonatomic) NSString* text;
 @property(copy, nonatomic) NSString* subtext;
 @property(retain, nonatomic) UIImage* icon;
 +(CGPoint)offsetForBubbleInsetAtPoint:(CGPoint)point;
-+(float)additionalHeightForBubbleWhenInsetAtPoint:(CGPoint)point;
-+(float)fixedHeight;
++(CGFloat)additionalHeightForBubbleWhenInsetAtPoint:(CGPoint)point;
++(CGFloat)fixedHeight;
 +(BOOL)shouldHaveAccessoryDiclosure;
 -(id)initWithFrame:(CGRect)frame delegate:(id)delegate;
 -(void)dealloc;
 -(void)drawRect:(CGRect)rect;
--(float)tightenedWidth;
+-(CGFloat)tightenedWidth;
 -(void)tighten;
 -(id)_titleFont;
 -(id)_subtitleFont;

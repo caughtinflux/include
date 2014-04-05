@@ -10,9 +10,9 @@
 {
 }
 
-+ (float)_labelHeight;
++ (CGFloat)_labelHeight;
 + (struct CGSize)maxLabelSize;
-- (float)_labelVerticalOffset;
+- (CGFloat)_labelVerticalOffset;
 
 @end
 

@@ -30,7 +30,7 @@ __attribute__((visibility("hidden")))
 -(void)updateKeyboard:(id)keyboard key:(id)key;
 -(id)candidateList;
 -(void)nextCandidatesAction;
-// in a protocol: -(void)setCandidates:(id)candidates inlineText:(id)text inlineRect:(CGRect)rect maxX:(float)x layout:(BOOL)layout;
+// in a protocol: -(void)setCandidates:(id)candidates inlineText:(id)text inlineRect:(CGRect)rect maxX:(CGFloat)x layout:(BOOL)layout;
 // in a protocol: -(void)layout;
 // in a protocol: -(void)setUIKeyboardCandidateListDelegate:(id)delegate;
 // in a protocol: -(void)showCandidateAtIndex:(unsigned)index;

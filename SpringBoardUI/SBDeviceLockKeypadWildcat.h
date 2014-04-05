@@ -18,7 +18,7 @@
 - (BOOL)cancelKeyChar;
 - (BOOL)deleteKeyChar;
 - (struct CGRect)_rectForKey:(unsigned long long)arg1;
-- (float)_yFudge;
+- (CGFloat)_yFudge;
 - (void)setHighlighted:(_Bool)arg1;
 - (void)dealloc;
 - (id)initWithFrame:(struct CGRect)arg1;

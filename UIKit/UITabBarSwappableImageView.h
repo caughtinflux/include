@@ -22,7 +22,7 @@
 -(void)setCurrentImage;
 -(void)showAlternateImage:(BOOL)image;
 -(void)setFlipped:(BOOL)flipped;
--(void)animateImage:(float)image withTabBar:(id)tabBar withTag:(int)tag;
+-(void)animateImage:(CGFloat)image withTabBar:(id)tabBar withTag:(int)tag;
 -(void)animationDidStop:(id)animation finished:(BOOL)finished;
 @end
 

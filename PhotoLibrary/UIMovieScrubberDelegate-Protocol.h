@@ -18,7 +18,7 @@
 - (void)movieScrubberWillBeginEditing:(id)arg1;
 - (void)movieScrubberDidFinishRequestingThumbnails:(id)arg1;
 - (void)movieScrubberWillBeginRequestingThumbnails:(id)arg1;
-- (void)movieScrubber:(id)arg1 widthDelta:(float)arg2 originXDelta:(float)arg3;
+- (void)movieScrubber:(id)arg1 widthDelta:(CGFloat)arg2 originXDelta:(CGFloat)arg3;
 - (void)movieScrubberDidEndScrubbing:(id)arg1 withHandle:(int)arg2;
 - (void)movieScrubberDidBeginScrubbing:(id)arg1 withHandle:(int)arg2;
 - (void)movieScrubber:(id)arg1 editingEndValueDidChange:(double)arg2;

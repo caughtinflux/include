@@ -16,11 +16,11 @@
 }
 
 - (void)enumerateScaledRegionsUsingBlock:(id)arg1;
-- (void)markScaledRegionWithRate:(float)arg1 rampInStartTime:(float)arg2 rampInEndTime:(float)arg3 rampOutStartTime:(float)arg4 rampOutEndTime:(float)arg5;
-- (float)_mapTime:(float)arg1 fromLengths:(id)arg2 toLengths:(id)arg3;
-- (float)originalTimeForScaledTime:(float)arg1;
-- (float)scaledTimeForOriginalTime:(float)arg1;
-- (void)addNextRange:(float)arg1 scaledLength:(float)arg2;
+- (void)markScaledRegionWithRate:(CGFloat)arg1 rampInStartTime:(CGFloat)arg2 rampInEndTime:(CGFloat)arg3 rampOutStartTime:(CGFloat)arg4 rampOutEndTime:(CGFloat)arg5;
+- (CGFloat)_mapTime:(CGFloat)arg1 fromLengths:(id)arg2 toLengths:(id)arg3;
+- (CGFloat)originalTimeForScaledTime:(CGFloat)arg1;
+- (CGFloat)scaledTimeForOriginalTime:(CGFloat)arg1;
+- (void)addNextRange:(CGFloat)arg1 scaledLength:(CGFloat)arg2;
 - (void)dealloc;
 - (id)init;
 

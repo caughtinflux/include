@@ -14,22 +14,22 @@
 {
     unsigned int m_offscreenEdge;
     BOOL m_shouldUseUIKitHeuristics;
-    float m_edgeMargin;
-    float m_falseEdge;
+    CGFloat m_edgeMargin;
+    CGFloat m_falseEdge;
     int m_touchesChecked;
     struct CGPoint m_firstTouch;
-    float m_edgeCenter;
-    float m_allowableDistanceFromEdgeCenter;
+    CGFloat m_edgeCenter;
+    CGFloat m_allowableDistanceFromEdgeCenter;
     BOOL m_requiresSecondTouchInRange;
     _UIScreenEdgePanRecognizer *m_recognizer;
 }
 
 + (void)reloadDefaults;
-@property(nonatomic) float edgeCenter; // @synthesize edgeCenter=m_edgeCenter;
+@property(nonatomic) CGFloat edgeCenter; // @synthesize edgeCenter=m_edgeCenter;
 @property(nonatomic) BOOL requiresSecondTouchInRange; // @synthesize requiresSecondTouchInRange=m_requiresSecondTouchInRange;
-@property(nonatomic) float allowableDistanceFromEdgeCenter; // @synthesize allowableDistanceFromEdgeCenter=m_allowableDistanceFromEdgeCenter;
-@property(nonatomic) float falseEdge; // @synthesize falseEdge=m_falseEdge;
-@property(nonatomic) float edgeMargin; // @synthesize edgeMargin=m_edgeMargin;
+@property(nonatomic) CGFloat allowableDistanceFromEdgeCenter; // @synthesize allowableDistanceFromEdgeCenter=m_allowableDistanceFromEdgeCenter;
+@property(nonatomic) CGFloat falseEdge; // @synthesize falseEdge=m_falseEdge;
+@property(nonatomic) CGFloat edgeMargin; // @synthesize edgeMargin=m_edgeMargin;
 @property(nonatomic) BOOL shouldUseUIKitHeuristics; // @synthesize shouldUseUIKitHeuristics=m_shouldUseUIKitHeuristics;
 - (void)screenEdgePanRecognizerStateDidChange:(id)arg1;
 - (void)updateForBeganOrMovedTouches:(struct __SBGestureContext *)arg1;

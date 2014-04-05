@@ -18,7 +18,7 @@
 	UIWindow* _originalWindow;
 #endif
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-	float _fromViewAlpha;
+	CGFloat _fromViewAlpha;
 #endif
 	unsigned _isTransitioning : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2

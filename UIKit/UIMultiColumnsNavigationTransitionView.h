@@ -10,7 +10,7 @@
 	int _transition;
 	UIView* _firstResponderViewToRestore;
 	unsigned _isTransitioning : 1;
-	float _columnWidth;
+	CGFloat _columnWidth;
 	int _columnCount;
 	NSArray* _fromViews;
 	NSArray* _toViews;
@@ -20,10 +20,10 @@
 	CFDictionaryRef _dividerViews;
 	CFDictionaryRef _containerViews;
 	UIColor* _dividersColor;
-	float _dividersWidth;
+	CGFloat _dividersWidth;
 }
 @property(assign, nonatomic) id delegate;
-@property(assign, nonatomic) float columnWidth;
+@property(assign, nonatomic) CGFloat columnWidth;
 @property(assign, nonatomic) int columnCount;
 +(double)defaultDurationForTransition:(int)transition;
 // inherited: -(id)initWithFrame:(CGRect)frame;

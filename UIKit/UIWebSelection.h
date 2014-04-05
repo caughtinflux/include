@@ -41,7 +41,7 @@
 -(id)blockAtPoint:(CGPoint)point;
 -(id)elementAtPoint:(CGPoint)point;
 -(id)blockOfSameWidthAtPoint:(CGPoint)point;
--(float)distanceBetweenFirstRect:(CGRect)rect second:(CGRect)second edge:(int)edge;
+-(CGFloat)distanceBetweenFirstRect:(CGRect)rect second:(CGRect)second edge:(int)edge;
 -(void)growFromEdge:(int)edge;
 -(void)shrinkFromEdge:(int)edge;
 -(BOOL)isEqual:(id)equal;

@@ -13,10 +13,10 @@
 }
 -(void)dealloc;
 -(void)setLabel:(id)label;
--(void)setLabelFontSize:(float)size;
--(float)labelFontSize;
+-(void)setLabelFontSize:(CGFloat)size;
+-(CGFloat)labelFontSize;
 -(void)layoutSubviews;
 -(void)setHighlighted:(BOOL)highlighted;
--(void)drawTitleAtPoint:(CGPoint)point width:(float)width;
+-(void)drawTitleAtPoint:(CGPoint)point width:(CGFloat)width;
 @end
 

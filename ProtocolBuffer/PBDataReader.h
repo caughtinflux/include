@@ -31,7 +31,7 @@
 -(unsigned)offset;
 -(void)setLength:(unsigned)arg1 ;
 -(BOOL)isAtEnd;
--(float)readFloat;
+-(CGFloat)readFloat;
 -(id)readString;
 -(id)readBytes:(unsigned)arg1 ;
 -(BOOL)seekToOffset:(unsigned)arg1 ;

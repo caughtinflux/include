@@ -10,11 +10,11 @@
 #import <PhotosUI/PhotosUI-Structs.h>
 @interface PUPhotosPanoramaViewControllerSpec : NSObject
 -(unsigned)supportedInterfaceOrientations;
--(float)sectionHeaderHeight;
+-(CGFloat)sectionHeaderHeight;
 -(id)gridSpec;
 -(int)thumbnailImageFormat;
 -(int)cellFillMode;
--(float)globalFooterHeight;
+-(CGFloat)globalFooterHeight;
 -(id)photoBrowserSpec;
 -(void)configureCollectionViewGridLayout:(id)arg1 ;
 -(CGSize)itemSizeForOrientation:(int)arg1 ;

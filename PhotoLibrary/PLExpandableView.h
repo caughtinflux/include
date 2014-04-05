@@ -59,8 +59,8 @@
 - (void)setDelegate:(id)arg1;
 - (void)expandWithAnimation:(_Bool)arg1 completion:(id)arg2;
 - (void)collapseWithAnimation:(_Bool)arg1 completion:(id)arg2;
-- (float)completeTrackingPinch:(id)arg1 toState:(int)arg2 duration:(double)arg3;
-- (float)continueTrackingPinch:(id)arg1;
+- (CGFloat)completeTrackingPinch:(id)arg1 toState:(int)arg2 duration:(double)arg3;
+- (CGFloat)continueTrackingPinch:(id)arg1;
 - (void)beginTrackingPinch:(id)arg1;
 - (struct CGRect)pinchRect:(struct CGRect)arg1 inView:(id)arg2 insetTouches:(_Bool)arg3;
 - (void)updatePinchState:(id)arg1;
@@ -71,7 +71,7 @@
 - (void)finishedPinch:(id)arg1;
 - (void)continuedPinch:(id)arg1;
 - (void)startedPinch:(id)arg1;
-- (void)notifyExpansionFraction:(float)arg1 force:(_Bool)arg2;
+- (void)notifyExpansionFraction:(CGFloat)arg1 force:(_Bool)arg2;
 - (void)didMoveToWindow;
 - (void)willMoveToWindow:(id)arg1;
 - (void)stateDidChangeFrom:(int)arg1;

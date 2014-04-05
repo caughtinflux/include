@@ -26,7 +26,7 @@ __attribute__((visibility("hidden")))
 	CGPoint m_extentPoint;
 	CGPoint m_initialBasePoint;
 	CGPoint m_initialExtentPoint;
-	float m_initialDistance;
+	CGFloat m_initialDistance;
 	CGPoint m_touchOffset;
 	double m_firstMovedTime;
 	UISelectionGrabber* m_startGrabber;
@@ -50,7 +50,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) CGPoint extentPoint;
 @property(assign, nonatomic) CGPoint initialBasePoint;
 @property(assign, nonatomic) CGPoint initialExtentPoint;
-@property(assign, nonatomic) float initialDistance;
+@property(assign, nonatomic) CGFloat initialDistance;
 @property(assign, nonatomic) CGPoint touchOffset;
 @property(assign, nonatomic) double firstMovedTime;
 @property(retain, nonatomic) UISelectionGrabber* startGrabber;

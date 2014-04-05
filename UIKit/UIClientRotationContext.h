@@ -30,21 +30,21 @@ __attribute__((visibility("hidden")))
 	BOOL _skipHeaderRotation;
 	int _fromOrientation;
 	int _toOrientation;
-	float _duration;
+	CGFloat _duration;
 	UIView* _headerSnapshotViewStart;
 	UIView* _footerSnapshotViewStart;
 	UIView* _contentSnapshotViewStart;
-	float _contentTopAdjustment;
+	CGFloat _contentTopAdjustment;
 	id _rotatingClient;
 	XXStruct_Nw9VXC _rotationSettings;
 	UIWindow* _window;
 }
 @property(readonly, assign, nonatomic) id rotatingClient;
 @property(readonly, assign, nonatomic) UIView* contentView;
-@property(readonly, assign, nonatomic) float duration;
+@property(readonly, assign, nonatomic) CGFloat duration;
 @property(readonly, assign, nonatomic) int fromOrientation;
 @property(readonly, assign, nonatomic) int toOrientation;
--(id)initWithClient:(id)client toOrientation:(int)orientation duration:(float)duration andWindow:(id)window;
+-(id)initWithClient:(id)client toOrientation:(int)orientation duration:(CGFloat)duration andWindow:(id)window;
 -(void)dealloc;
 -(void)_slideHeaderView:(id)view andFooterView:(id)view2 offScreen:(BOOL)screen forInterfaceOrientation:(int)interfaceOrientation;
 -(void)slideHeaderViewAndFooterViewOffScreen:(BOOL)screen forInterfaceOrientation:(int)interfaceOrientation;

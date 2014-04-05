@@ -17,7 +17,7 @@
 -(void)dealloc;
 -(void)layoutSubviews;
 -(void)setStatus:(id)status;
--(float)progressValue;
--(void)setProgressValue:(float)value;
+-(CGFloat)progressValue;
+-(void)setProgressValue:(CGFloat)value;
 @end
 

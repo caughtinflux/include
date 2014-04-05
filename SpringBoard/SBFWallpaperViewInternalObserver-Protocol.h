@@ -8,7 +8,7 @@
 
 @protocol SBFWallpaperViewInternalObserver <NSObject>
 - (void)wallpaperViewDidChangeWantsRasterization:(id)arg1;
-- (void)wallpaperView:(id)arg1 didChangeZoomFactor:(float)arg2;
+- (void)wallpaperView:(id)arg1 didChangeZoomFactor:(CGFloat)arg2;
 - (void)wallpaperViewDidInvalidateGeometry:(id)arg1;
 - (void)wallpaperViewDidInvalidateBlurs:(id)arg1;
 @end

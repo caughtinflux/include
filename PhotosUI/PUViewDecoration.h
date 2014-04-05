@@ -14,19 +14,19 @@
 @interface PUViewDecoration : NSObject <NSCopying> {
 
 	UIColor* _shadowColor;
-	float _shadowRadius;
+	CGFloat _shadowRadius;
 	UIColor* _borderColor;
-	float _borderWidth;
+	CGFloat _borderWidth;
 	UIColor* _edgeColor;
 	CGSize _shadowOffset;
 
 }
 
 @property (nonatomic,retain) UIColor * shadowColor;                     //@synthesize shadowColor=_shadowColor - In the implementation block
-@property (assign,nonatomic) float shadowRadius;                        //@synthesize shadowRadius=_shadowRadius - In the implementation block
+@property (assign,nonatomic) CGFloat shadowRadius;                        //@synthesize shadowRadius=_shadowRadius - In the implementation block
 @property (assign,nonatomic) CGSize shadowOffset;                       //@synthesize shadowOffset=_shadowOffset - In the implementation block
 @property (nonatomic,retain) UIColor * borderColor;                     //@synthesize borderColor=_borderColor - In the implementation block
-@property (assign,nonatomic) float borderWidth;                         //@synthesize borderWidth=_borderWidth - In the implementation block
+@property (assign,nonatomic) CGFloat borderWidth;                         //@synthesize borderWidth=_borderWidth - In the implementation block
 @property (nonatomic,retain) UIColor * edgeColor;                       //@synthesize edgeColor=_edgeColor - In the implementation block
 @property (nonatomic,readonly) UIEdgeInsets overlayInsets; 
 @property (nonatomic,readonly) UIImage * overlayImage; 
@@ -35,12 +35,12 @@
 -(void)setShadowOffset:(CGSize)arg1 ;
 -(CGSize)shadowOffset;
 -(id)shadowColor;
--(void)setBorderWidth:(float)arg1 ;
+-(void)setBorderWidth:(CGFloat)arg1 ;
 -(void)setBorderColor:(id)arg1 ;
--(float)borderWidth;
+-(CGFloat)borderWidth;
 -(id)borderColor;
--(void)setShadowRadius:(float)arg1 ;
--(float)shadowRadius;
+-(void)setShadowRadius:(CGFloat)arg1 ;
+-(CGFloat)shadowRadius;
 -(id)edgeColor;
 -(void)setEdgeColor:(id)arg1 ;
 -(BOOL)_displayShadow;

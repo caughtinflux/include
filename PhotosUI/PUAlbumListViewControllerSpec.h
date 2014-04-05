@@ -22,9 +22,9 @@
 	PUPhotoDecoration* _emptyStackPhotoDecoration;
 	int _collageFastImageFormat;
 	int _collageQualityImageFormat;
-	float _collageSpacing;
-	float _sectionHeaderHeight;
-	float _sectionFooterHeight;
+	CGFloat _collageSpacing;
+	CGFloat _sectionHeaderHeight;
+	CGFloat _sectionFooterHeight;
 	int _albumDeletionConfirmationStyle;
 	PUPhotosGridViewControllerSpec* _gridViewControllerSpec;
 	PUPhotosPanoramaViewControllerSpec* _panoramaViewControllerSpec;
@@ -49,11 +49,11 @@
 @property (nonatomic,readonly) UIOffset stackPerspectiveOffset;                                                //@synthesize stackPerspectiveOffset=_stackPerspectiveOffset - In the implementation block
 @property (nonatomic,readonly) int collageFastImageFormat;                                                     //@synthesize collageFastImageFormat=_collageFastImageFormat - In the implementation block
 @property (nonatomic,readonly) int collageQualityImageFormat;                                                  //@synthesize collageQualityImageFormat=_collageQualityImageFormat - In the implementation block
-@property (nonatomic,readonly) float collageSpacing;                                                           //@synthesize collageSpacing=_collageSpacing - In the implementation block
+@property (nonatomic,readonly) CGFloat collageSpacing;                                                           //@synthesize collageSpacing=_collageSpacing - In the implementation block
 @property (nonatomic,readonly) BOOL allowsAlbumCountSubtitle;                                                  //@synthesize allowsAlbumCountSubtitle=_allowsAlbumCountSubtitle - In the implementation block
 @property (nonatomic,readonly) BOOL usesStackTransitionToGrid;                                                 //@synthesize usesStackTransitionToGrid=_usesStackTransitionToGrid - In the implementation block
-@property (nonatomic,readonly) float sectionHeaderHeight;                                                      //@synthesize sectionHeaderHeight=_sectionHeaderHeight - In the implementation block
-@property (nonatomic,readonly) float sectionFooterHeight;                                                      //@synthesize sectionFooterHeight=_sectionFooterHeight - In the implementation block
+@property (nonatomic,readonly) CGFloat sectionHeaderHeight;                                                      //@synthesize sectionHeaderHeight=_sectionHeaderHeight - In the implementation block
+@property (nonatomic,readonly) CGFloat sectionFooterHeight;                                                      //@synthesize sectionFooterHeight=_sectionFooterHeight - In the implementation block
 @property (nonatomic,readonly) UIImage * emptyAlbumPlaceholderImage; 
 @property (nonatomic,readonly) UIImage * emptySharedAlbumPlaceholderImage; 
 @property (nonatomic,readonly) UIImage * addSharedAlbumPlaceholderImage; 
@@ -64,12 +64,12 @@
 @property (nonatomic,readonly) PUPhotosPickerViewControllerSpec * photosPickerViewControllerSpec;              //@synthesize photosPickerViewControllerSpec=_photosPickerViewControllerSpec - In the implementation block
 @property (nonatomic,readonly) PUFeedViewControllerSpec * feedViewControllerSpec;                              //@synthesize feedViewControllerSpec=_feedViewControllerSpec - In the implementation block
 -(CGSize)stackSize;
--(float)sectionHeaderHeight;
--(float)sectionFooterHeight;
+-(CGFloat)sectionHeaderHeight;
+-(CGFloat)sectionFooterHeight;
 -(CGSize)contentSizeForViewInPopover;
 -(CGSize)cellSizeForBounds:(CGRect)arg1 ;
 -(id)photosPickerViewControllerSpec;
--(id)_centeredGlyphImage:(id)arg1 withBackgroundColor:(id)arg2 size:(CGSize)arg3 imageAlpha:(float)arg4 ;
+-(id)_centeredGlyphImage:(id)arg1 withBackgroundColor:(id)arg2 size:(CGSize)arg3 imageAlpha:(CGFloat)arg4 ;
 -(id)_nameOfEmptySharedAlbumPlaceholderImage;
 -(id)_nameOfAddSharedAlbumPlaceholderImage;
 -(id)_centeredTintedGlyphImage:(id)arg1 withBackgroundColor:(id)arg2 size:(CGSize)arg3 ;
@@ -88,7 +88,7 @@
 -(UIOffset)stackPerspectiveOffset;
 -(int)collageFastImageFormat;
 -(int)collageQualityImageFormat;
--(float)collageSpacing;
+-(CGFloat)collageSpacing;
 -(BOOL)allowsAlbumCountSubtitle;
 -(BOOL)usesStackTransitionToGrid;
 -(BOOL)shouldUseCollageForCloudFeedPlaceholder;

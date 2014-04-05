@@ -22,7 +22,7 @@
     NSMapTable *_displayValues;
     NSHashTable *_displayFlags;
     BOOL _orientationChangedEventsEnabled;
-    float _accelerometerSampleInterval;
+    CGFloat _accelerometerSampleInterval;
     BOOL _requestedDismissal;
     UIScreen *_targetScreen;
     SBAlertManager *_alertManager;
@@ -86,7 +86,7 @@
 - (void)activate;
 - (int)statusBarStyleOverridesToCancel;
 - (void)displayDidDisappear;
-- (float)finalAlpha;
+- (CGFloat)finalAlpha;
 - (BOOL)showsSpringBoardStatusBar;
 - (BOOL)undimsDisplay;
 - (BOOL)allowsStackingOfAlert:(id)arg1;

@@ -40,7 +40,7 @@
 - (void)updateEnabledSections;
 - (void)_removeSectionController:(id)arg1;
 - (void)_addSectionController:(id)arg1;
-- (float)contentHeightForOrientation:(int)arg1;
+- (CGFloat)contentHeightForOrientation:(int)arg1;
 - (id)_separatorAtIndex:(unsigned int)arg1;
 - (id)_allSections;
 - (void)dealloc;

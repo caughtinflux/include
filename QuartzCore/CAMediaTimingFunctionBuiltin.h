@@ -12,7 +12,7 @@ __attribute__((visibility("hidden")))
 @private
 	unsigned _index;
 }
-// inherited: -(void)_getPoints:(float*)points;
+// inherited: -(void)_getPoints:(CGFloat*)points;
 // inherited: -(id)description;
 @end
 

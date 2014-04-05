@@ -12,7 +12,7 @@
 __attribute__((visibility("hidden")))
 @interface UITapAndAHalfRecognizer : UIGestureRecognizer {
 	CGPoint _startPoint;
-	float _allowableMovement;
+	CGFloat _allowableMovement;
 	int _numberOfFullTaps;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 	double _minimumFinalPressDuration;
@@ -24,7 +24,7 @@ __attribute__((visibility("hidden")))
 }
 @property(assign, nonatomic) int numberOfFullTaps;
 @property(retain, nonatomic) UITouch* touch;
-@property(assign, nonatomic) float allowableMovement;
+@property(assign, nonatomic) CGFloat allowableMovement;
 @property(assign, nonatomic) double minimumFinalPressDuration __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_2);
 // inherited: -(id)initWithTarget:(id)target action:(SEL)action;
 // inherited: -(void)dealloc;

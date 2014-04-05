@@ -11,11 +11,11 @@
 @interface CKProgressBar : UIView {
 	UIImageView* _well;
 	UIImageView* _fill;
-	float _progressValue;
+	CGFloat _progressValue;
 }
-@property(assign, nonatomic) float progressValue;
-+(float)defaultHeight;
-+(float)_minFillWidth;
+@property(assign, nonatomic) CGFloat progressValue;
++(CGFloat)defaultHeight;
++(CGFloat)_minFillWidth;
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;
 -(void)layoutSubviews;

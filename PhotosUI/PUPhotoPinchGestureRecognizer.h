@@ -17,13 +17,13 @@
 	CGPoint _latestTouchLocations[2];
 	BOOL _initialTouchLocationsSet;
 	BOOL __touchesNeedUpdate;
-	float _rotationHysteresisDegrees;
+	CGFloat _rotationHysteresisDegrees;
 	PUValueFilter* __rotationFilter;
 	CGRect _initialPinchRect;
 
 }
 
-@property (assign,nonatomic) float rotationHysteresisDegrees;                                         //@synthesize rotationHysteresisDegrees=_rotationHysteresisDegrees - In the implementation block
+@property (assign,nonatomic) CGFloat rotationHysteresisDegrees;                                         //@synthesize rotationHysteresisDegrees=_rotationHysteresisDegrees - In the implementation block
 @property (assign,nonatomic) CGRect initialPinchRect;                                                 //@synthesize initialPinchRect=_initialPinchRect - In the implementation block
 @property (assign,setter=_setTouchesNeedUpdate:,nonatomic) BOOL _touchesNeedUpdate;                   //@synthesize _touchesNeedUpdate=__touchesNeedUpdate - In the implementation block
 @property (setter=_setRotationFilter:,nonatomic,retain) PUValueFilter * _rotationFilter;              //@synthesize _rotationFilter=__rotationFilter - In the implementation block
@@ -35,20 +35,20 @@
 -(void)reset;
 -(CGPoint)adjustedInitialCenterInView:(id)arg1 ;
 -(CGPoint)adjustedTranslationInView:(id)arg1 ;
--(float)adjustedScaleInView:(id)arg1 ;
+-(CGFloat)adjustedScaleInView:(id)arg1 ;
 -(CGPoint)adjustedTranslationVelocityInView:(id)arg1 ;
--(float)adjustedScaleVelocityInView:(id)arg1 ;
--(void)setRotationHysteresisDegrees:(float)arg1 ;
+-(CGFloat)adjustedScaleVelocityInView:(id)arg1 ;
+-(void)setRotationHysteresisDegrees:(CGFloat)arg1 ;
 -(void)_setRotationFilter:(id)arg1 ;
 -(void)_setTouchesNeedUpdate:(BOOL)arg1 ;
 -(void)_updateIfNeeded;
 -(id)_rotationFilter;
--(float)rotationHysteresisDegrees;
+-(CGFloat)rotationHysteresisDegrees;
 -(BOOL)_touchesNeedUpdate;
 -(CGRect)initialPinchRect;
 -(void)setInitialPinchRect:(CGRect)arg1 ;
--(float)adjustedRotationInView:(id)arg1 ;
--(float)adjustedRotationVelocityInView:(id)arg1 ;
+-(CGFloat)adjustedRotationInView:(id)arg1 ;
+-(CGFloat)adjustedRotationVelocityInView:(id)arg1 ;
 -(void).cxx_destruct;
 @end
 

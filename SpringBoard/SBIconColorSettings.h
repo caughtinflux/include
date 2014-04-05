@@ -12,23 +12,23 @@
     BOOL _blurryCloseBoxes;
     BOOL _suppressJitter;
     BOOL _closeBoxesEverywhere;
-    float _maxSaturationBoost;
-    float _maxSaturation;
-    float _maxBrightnessBoost;
-    float _maxBrightness;
-    float _colorAlpha;
-    float _whiteAlpha;
+    CGFloat _maxSaturationBoost;
+    CGFloat _maxSaturation;
+    CGFloat _maxBrightnessBoost;
+    CGFloat _maxBrightness;
+    CGFloat _colorAlpha;
+    CGFloat _whiteAlpha;
 }
 
 + (id)settingsControllerModule;
 @property(nonatomic) BOOL closeBoxesEverywhere; // @synthesize closeBoxesEverywhere=_closeBoxesEverywhere;
 @property(nonatomic) BOOL suppressJitter; // @synthesize suppressJitter=_suppressJitter;
-@property(nonatomic) float whiteAlpha; // @synthesize whiteAlpha=_whiteAlpha;
-@property(nonatomic) float colorAlpha; // @synthesize colorAlpha=_colorAlpha;
-@property(nonatomic) float maxBrightness; // @synthesize maxBrightness=_maxBrightness;
-@property(nonatomic) float maxBrightnessBoost; // @synthesize maxBrightnessBoost=_maxBrightnessBoost;
-@property(nonatomic) float maxSaturation; // @synthesize maxSaturation=_maxSaturation;
-@property(nonatomic) float maxSaturationBoost; // @synthesize maxSaturationBoost=_maxSaturationBoost;
+@property(nonatomic) CGFloat whiteAlpha; // @synthesize whiteAlpha=_whiteAlpha;
+@property(nonatomic) CGFloat colorAlpha; // @synthesize colorAlpha=_colorAlpha;
+@property(nonatomic) CGFloat maxBrightness; // @synthesize maxBrightness=_maxBrightness;
+@property(nonatomic) CGFloat maxBrightnessBoost; // @synthesize maxBrightnessBoost=_maxBrightnessBoost;
+@property(nonatomic) CGFloat maxSaturation; // @synthesize maxSaturation=_maxSaturation;
+@property(nonatomic) CGFloat maxSaturationBoost; // @synthesize maxSaturationBoost=_maxSaturationBoost;
 @property(nonatomic) BOOL blurryCloseBoxes; // @synthesize blurryCloseBoxes=_blurryCloseBoxes;
 @property(nonatomic) BOOL blurryFolderIcons; // @synthesize blurryFolderIcons=_blurryFolderIcons;
 - (void)setDefaultValues;

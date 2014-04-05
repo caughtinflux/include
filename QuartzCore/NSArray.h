@@ -10,6 +10,6 @@
 
 @interface NSArray (CAAnimatableValue)
 -(id)CA_addValue:(id)value multipliedBy:(int)by;
--(id)CA_interpolateValue:(id)value byFraction:(float)fraction;
+-(id)CA_interpolateValue:(id)value byFraction:(CGFloat)fraction;
 @end
 

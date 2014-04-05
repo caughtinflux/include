@@ -12,14 +12,14 @@
 @interface UIScrubberControl : UIOldSliderControl {
 	XXUnion_a01swB _sliderAvailableFill;
 	double _duration;
-	float _lastDisplayedWidth;
-	float _maxTrackWidth;
+	CGFloat _lastDisplayedWidth;
+	CGFloat _maxTrackWidth;
 	UIView* _elapsedTimeView;
 	UIView* _remainingTimeView;
 	id _delegate;
 	double _trackingStartTime;
 	CGPoint _lastUpdatedPoint;
-	float _valueAvailable;
+	CGFloat _valueAvailable;
 	unsigned _didDrag : 1;
 	unsigned _sentScrubbingStart : 1;
 	unsigned _autoSizesToFitDuration : 1;
@@ -44,8 +44,8 @@
 	unsigned _unused : 3;
 }
 +(BOOL)allowLayeredFillForKnob;
--(id)initWithFrame:(CGRect)frame maxTrackWidth:(float)width showTimes:(BOOL)times knobStyle:(int)style;
--(id)initWithFrame:(CGRect)frame maxTrackWidth:(float)width showTimes:(BOOL)times showKnob:(BOOL)knob;
+-(id)initWithFrame:(CGRect)frame maxTrackWidth:(CGFloat)width showTimes:(BOOL)times knobStyle:(int)style;
+-(id)initWithFrame:(CGRect)frame maxTrackWidth:(CGFloat)width showTimes:(BOOL)times showKnob:(BOOL)knob;
 // inherited: -(id)createSliderKnobView;
 -(void)setPinTimeToOutsideEdges:(BOOL)outsideEdges;
 -(void)setShowTimeCenteredInAvailableArea:(BOOL)availableArea;
@@ -55,7 +55,7 @@
 -(void)_resetTimeFrames;
 // inherited: -(void)dealloc;
 -(void)setDelegate:(id)delegate;
--(float)scrubValue;
+-(CGFloat)scrubValue;
 -(void)sizeToFit;
 -(void)setDuration:(double)duration;
 -(double)duration;
@@ -72,8 +72,8 @@
 -(void)setAllowsAnyValue:(BOOL)value;
 // inherited: -(void)drawSliderPiece:(int)piece inRect:(CGRect)rect;
 -(void)_updateAvailableFill;
-// inherited: -(void)_setValue:(float)value andSendAction:(BOOL)action;
-// inherited: -(void)setValue:(float)value animated:(BOOL)animated animationCurve:(int)curve;
+// inherited: -(void)_setValue:(CGFloat)value andSendAction:(BOOL)action;
+// inherited: -(void)setValue:(CGFloat)value animated:(BOOL)animated animationCurve:(int)curve;
 -(void)_updateTimes:(BOOL)times;
 -(void)disableTimesLayout;
 -(void)enableTimesLayout;
@@ -87,7 +87,7 @@
 // inherited: -(BOOL)beginTrackingWithTouch:(id)touch withEvent:(id)event;
 // inherited: -(BOOL)continueTrackingWithTouch:(id)touch withEvent:(id)event;
 // inherited: -(void)endTrackingWithTouch:(id)touch withEvent:(id)event;
--(void)setValueAvailable:(float)available;
+-(void)setValueAvailable:(CGFloat)available;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 -(void)setTimeColor:(id)color;
 -(void)setTimeShadowColor:(id)color;

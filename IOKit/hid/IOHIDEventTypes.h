@@ -353,7 +353,7 @@ typedef uint32_t IOHIDEventOptionBits;
 #ifdef __LP64__
 typedef double IOHIDFloat;
 #else
-typedef float IOHIDFloat;
+typedef CGFloat IOHIDFloat;
 #endif
 /*!
 	@typedef IOHID3DPoint

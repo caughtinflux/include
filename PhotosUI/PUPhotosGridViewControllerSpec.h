@@ -23,7 +23,7 @@
 }
 
 @property (nonatomic,readonly) CGSize contentSizeForViewInPopover; 
-@property (nonatomic,readonly) float globalFooterHeight; 
+@property (nonatomic,readonly) CGFloat globalFooterHeight; 
 @property (nonatomic,readonly) CGSize baseInterItemSpacing;                                                    //@synthesize baseInterItemSpacing=_baseInterItemSpacing - In the implementation block
 @property (nonatomic,readonly) int thumbnailImageFormat; 
 @property (nonatomic,readonly) int cellFillMode; 
@@ -44,8 +44,8 @@
 -(BOOL)canDisplayOptionsInPopover;
 -(BOOL)canDisplaySlideshowButton;
 -(id)albumPickerViewControllerSpec;
--(void)configureCollectionViewGridLayout:(id)arg1 forWidth:(float)arg2 ;
--(float)globalFooterHeight;
+-(void)configureCollectionViewGridLayout:(id)arg1 forWidth:(CGFloat)arg2 ;
+-(CGFloat)globalFooterHeight;
 -(BOOL)displaysAvalancheStacks;
 -(BOOL)usesStackPopTransition;
 -(id)photoBrowserSpec;

@@ -45,7 +45,7 @@
 - (void)_updateHiddenViewsForFlashExpansion;
 - (void)_updateBackgroundStyleAnimated:(_Bool)arg1;
 - (void)_updateStyleAnimated:(_Bool)arg1;
-@property(readonly, nonatomic, getter=isFloating) _Bool floating;
+@property(readonly, nonatomic, getter=isFloating) _Bool CGFloating;
 - (void)setBackgroundStyle:(long long)arg1 animated:(_Bool)animated;
 - (void)setStyle:(long long)arg1 animated:(_Bool)arg2;
 - (void)layoutSubviews;

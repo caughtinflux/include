@@ -41,8 +41,8 @@
 @property(readonly, nonatomic) UIScreen *screen; // @synthesize screen=_screen;
 - (void)settings:(id)arg1 changedValueForKey:(id)arg2;
 - (void)statusBar:(id)arg1 didTriggerButtonType:(int)arg2 withAction:(int)arg3;
-- (void)statusBar:(id)arg1 didAnimateFromHeight:(float)arg2 toHeight:(float)arg3 animation:(int)arg4;
-- (void)statusBar:(id)arg1 willAnimateFromHeight:(float)arg2 toHeight:(float)arg3 duration:(double)arg4 animation:(int)arg5;
+- (void)statusBar:(id)arg1 didAnimateFromHeight:(CGFloat)arg2 toHeight:(CGFloat)arg3 animation:(int)arg4;
+- (void)statusBar:(id)arg1 willAnimateFromHeight:(CGFloat)arg2 toHeight:(CGFloat)arg3 duration:(double)arg4 animation:(int)arg5;
 - (int)statusBar:(id)arg1 styleForRequestedStyle:(int)arg2 overrides:(int)arg3;
 - (BOOL)allowNavigationOverrideStyle;
 - (BOOL)allowInCallOverrideStyle;

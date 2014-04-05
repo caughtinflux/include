@@ -36,7 +36,7 @@
     _Bool _useLessThanMinZoomForZoomedOutTest;
     _Bool _allowZoomToFill;
     id _orientationDelegate;
-    float _cropRectZoomScale;
+    CGFloat _cropRectZoomScale;
     struct CGRect _cropOverlayRect;
     struct CGRect _cropRect;
     double _doubleTapZoomScale;
@@ -46,9 +46,9 @@
     long long _lastDisplayedOrientation;
     _Bool _clientIsTemporarilyWallpaper;
     _Bool _userDidAdjustWallpaper;
-    float _wallpaperPortraitZoomScale;
-    float _wallpaperLandscapeZoomScale;
-    float _zoomScaleBeforeZooming;
+    CGFloat _wallpaperPortraitZoomScale;
+    CGFloat _wallpaperLandscapeZoomScale;
+    CGFloat _zoomScaleBeforeZooming;
     struct CGRect _cropRectBeforeDragging;
     _Bool _force1XCroppedImage;
     _Bool _forceNativeScreenScale;
@@ -116,7 +116,7 @@
 - (double)zoomToFitScale;
 - (double)zoomToFillScale;
 - (double)minZoomScale;
-- (float)_calculateZoomScale:(_Bool)arg1 inView:(id)arg2;
+- (CGFloat)_calculateZoomScale:(_Bool)arg1 inView:(id)arg2;
 - (double)minRotatedScale;
 - (void)_performDidEndZoomBlock;
 - (void)_setDidEndZoomingBlock:(id)arg1;
@@ -207,7 +207,7 @@
 - (void)forceZoomingGesturesEnabled;
 - (void)setZoomingGesturesEnabled:(_Bool)arg1;
 - (void)setCropOverlayRect:(struct CGRect)arg1 forCropRect:(struct CGRect)arg2;
-- (void)setZoomScale:(float)arg1;
+- (void)setZoomScale:(CGFloat)arg1;
 - (id)description;
 @property(nonatomic) struct CGRect tileFrame;
 @property(retain, nonatomic) UIImage *thumbnailImage;

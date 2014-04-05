@@ -15,8 +15,8 @@
 @end
 
 @interface CABasicAnimation (CAAnimationPrivate)
-@property(assign) float endAngle;
-@property(assign) float startAngle;
+@property(assign) CGFloat endAngle;
+@property(assign) CGFloat startAngle;
 @property(assign) BOOL roundsToInteger;
 @end
 

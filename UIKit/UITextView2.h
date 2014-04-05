@@ -107,8 +107,8 @@
 -(BOOL)keyboardInputChanged:(id)changed;
 -(void)keyboardInputChangedSelection:(id)selection;
 -(void)webView:(id)view decidePolicyForNavigationAction:(id)navigationAction request:(id)request frame:(id)frame decisionListener:(id)listener;
--(void)setBottomBufferHeight:(float)height;
--(float)bottomBufferHeight;
+-(void)setBottomBufferHeight:(CGFloat)height;
+-(CGFloat)bottomBufferHeight;
 -(void)setShowScrollerIndicators:(BOOL)indicators;
 -(BOOL)showScrollerIndicators;
 -(void)displayScrollerIndicators;

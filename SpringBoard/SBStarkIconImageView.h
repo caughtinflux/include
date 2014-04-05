@@ -12,7 +12,7 @@
 {
     UIImageView *_imageView;
     UIImage *_image;
-    float _brightness;
+    CGFloat _brightness;
     unsigned int _outerStripes;
     unsigned int _innerStripes;
     BOOL _needsStripeUpdating;
@@ -21,12 +21,12 @@
     UIView *_brightnessView;
 }
 
-- (id)_viewsForEdges:(unsigned int)arg1 ofWidth:(float)arg2 inFrame:(struct CGRect)arg3 withBGColor:(id)arg4 outRect:(struct CGRect *)arg5;
+- (id)_viewsForEdges:(unsigned int)arg1 ofWidth:(CGFloat)arg2 inFrame:(struct CGRect)arg3 withBGColor:(id)arg4 outRect:(struct CGRect *)arg5;
 - (void)_updateStripesIfNeeded;
 - (void)layoutSubviews;
 @property(nonatomic) unsigned int innerStripes;
 @property(nonatomic) unsigned int outerStripes;
-@property(nonatomic) float brightness;
+@property(nonatomic) CGFloat brightness;
 @property(retain, nonatomic) UIImage *image;
 - (void)dealloc;
 - (id)initWithFrame:(struct CGRect)arg1;

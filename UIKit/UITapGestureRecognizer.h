@@ -10,7 +10,7 @@
 #include_next <UIKit/UITapGestureRecognizer.h>
 
 @interface UITapGestureRecognizer (UITapGestureRecognizerPrivate)
-@property(assign, nonatomic) float allowableMovement;
+@property(assign, nonatomic) CGFloat allowableMovement;
 @property(assign, nonatomic) double maximumSingleTapDuration;
 @property(assign, nonatomic) double maximumIntervalBetweenSuccessiveTaps;
 // inherited: -(void)_appendSubclassDescription:(id)description;

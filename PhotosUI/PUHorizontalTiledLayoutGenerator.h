@@ -12,15 +12,15 @@
 @interface PUHorizontalTiledLayoutGenerator : PUTiledLayoutGenerator {
 
 	CGPoint _origin;
-	float _referenceHeight;
+	CGFloat _referenceHeight;
 
 }
 
-@property (assign,nonatomic) float referenceHeight;              //@synthesize referenceHeight=_referenceHeight - In the implementation block
--(void)setReferenceHeight:(float)arg1 ;
+@property (assign,nonatomic) CGFloat referenceHeight;              //@synthesize referenceHeight=_referenceHeight - In the implementation block
+-(void)setReferenceHeight:(CGFloat)arg1 ;
 -(void)willParseTiles;
 -(BOOL)parseNextTiles;
--(float)referenceDistanceForMagneticGuidelines;
+-(CGFloat)referenceDistanceForMagneticGuidelines;
 -(BOOL)_parseSpecialSequence;
 -(BOOL)_parseSpecialTileTriplet;
 -(BOOL)_parseTileTriplet;
@@ -30,7 +30,7 @@
 -(BOOL)_scanSpecialSequenceBlock:(SCD_Struct_PU15*)arg1 ;
 -(BOOL)_addSpecialSequenceBlock:(SCD_Struct_PU15*)arg1 ;
 -(BOOL)_scanNonPanoramaSequence:(SCD_Struct_PU15*)arg1 count:(int)arg2 ;
--(float)referenceHeight;
+-(CGFloat)referenceHeight;
 -(BOOL)_addColumnWithTiles:(SCD_Struct_PU15*)arg1 imageFrames:(CGRect*)arg2 count:(int)arg3 ;
 -(BOOL)_addColumnWithContiguousTiles:(SCD_Struct_PU15*)arg1 count:(int)arg2 ;
 -(BOOL)_hasLeftSuboptimalColumn;

@@ -11,24 +11,24 @@
 
 @interface PBMirrorFilter : PBFilter {
 
-	float lastInputX;
-	float lastInputY;
-	float lastInputAngle;
+	CGFloat lastInputX;
+	CGFloat lastInputY;
+	CGFloat lastInputAngle;
 	bool firstTime;
-	float inputOrientation;
+	CGFloat inputOrientation;
 	CGPoint inputPoint;
 
 }
 
 @property (assign) CGPoint inputPoint; 
-@property (assign) float inputOrientation; 
+@property (assign) CGFloat inputOrientation; 
 -(void)setDefaults;
 -(CGPoint)inputPoint;
 -(void)setInputPoint:(CGPoint)arg1 ;
 -(id)ciFilterName;
 -(BOOL)needsWrapMirror;
 -(void)applyParametersToCIFilter:(BOOL)arg1 extent:(CGRect)arg2 ;
--(void)setInputOrientation:(float)arg1 ;
--(float)inputOrientation;
+-(void)setInputOrientation:(CGFloat)arg1 ;
+-(CGFloat)inputOrientation;
 @end
 

@@ -15,7 +15,7 @@
 	id _delegate;
 	int _mouseUpCount;
 	int _mouseDraggedCount;
-	float _delay;
+	CGFloat _delay;
 	CGPoint _offset;
 }
 -(void)_mouseDraggedMemberListTest;
@@ -27,7 +27,7 @@
 -(void)setTarget:(id)target;
 -(void)setStartLocation:(CGPoint)location;
 -(void)setIterations:(int)iterations;
--(void)setDelay:(float)delay;
+-(void)setDelay:(CGFloat)delay;
 -(void)setDelegate:(id)delegate;
 -(void)run;
 @end

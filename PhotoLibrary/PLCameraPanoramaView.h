@@ -13,7 +13,7 @@
 @interface PLCameraPanoramaView : UIView <UIAccelerometerDelegate>
 {
     id <PLCameraPanoramaViewDelegate> _delegate;
-    float _previewScale;
+    CGFloat _previewScale;
     _Bool _isCapturing;
     _Bool _isProcessing;
     int _direction;
@@ -43,8 +43,8 @@
     long long _frameCounter;
     CMMotionManager *_motionManager;
     NSOperationQueue *_accelerometerQueue;
-    float _initialAcceleration;
-    float _currentAcceleration;
+    CGFloat _initialAcceleration;
+    CGFloat _currentAcceleration;
     long long _deviceOrientation;
     long long _deferredDeviceOrientation;
 }
@@ -79,7 +79,7 @@
 - (void)viewWillDisappear;
 - (void)viewWillAppear;
 - (void)dealloc;
-- (id)initWithFrame:(struct CGRect)arg1 centerYOffset:(double)arg2 panoramaPreviewScale:(float)arg3;
+- (id)initWithFrame:(struct CGRect)arg1 centerYOffset:(double)arg2 panoramaPreviewScale:(CGFloat)arg3;
 
 @end
 

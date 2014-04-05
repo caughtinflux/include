@@ -78,7 +78,7 @@ struct WKView {
     
     unsigned int autoresizingMask;
     
-    float scale;
+    CGFloat scale;
     
     bool drawsOwnDescendants;
 };
@@ -101,8 +101,8 @@ void WKViewSetBoundsSize (WKViewRef view, CGSize newSize);
 
 CGRect WKViewGetFrame (WKViewRef view);
 
-void WKViewSetScale (WKViewRef view, float scale);
-float WKViewGetScale (WKViewRef view);
+void WKViewSetScale (WKViewRef view, CGFloat scale);
+CGFloat WKViewGetScale (WKViewRef view);
 
 WKWindowRef WKViewGetWindow (WKViewRef view);
 

@@ -12,19 +12,19 @@
 @interface PUZoomableGridViewControllerPadSpec : PUZoomableGridViewControllerSpec
 -(CGSize)magnifiedImageSize;
 -(UIEdgeInsets)magnifiedDragEdgeInsets;
--(void)configureFullMomentsLevelGridLayout:(id)arg1 forWidth:(float)arg2 ;
+-(void)configureFullMomentsLevelGridLayout:(id)arg1 forWidth:(CGFloat)arg2 ;
 -(int)fullMomentsSectionHeaderStyle;
 -(unsigned)fullMomentsSectionHeaderBackgroundStyle;
 -(UIEdgeInsets)fullMomentsLevelSectionHeaderContentInset;
 -(UIEdgeInsets)fullMomentsLevelSectionHeaderHighlightInset;
 -(int)fullMomentsLevelThumbnailFormat;
 -(int)yearsLevelThumbnailFormat;
--(void)configureYearsLevelGridLayout:(id)arg1 forWidth:(float)arg2 ;
+-(void)configureYearsLevelGridLayout:(id)arg1 forWidth:(CGFloat)arg2 ;
 -(int)yearsSectionHeaderStyle;
 -(UIEdgeInsets)yearsLevelSectionHeaderContentInset;
 -(UIEdgeInsets)yearsLevelSectionHeaderHighlightInset;
 -(int)collectionsLevelThumbnailFormat;
--(void)configureCollectionsLevelGridLayout:(id)arg1 forWidth:(float)arg2 ;
+-(void)configureCollectionsLevelGridLayout:(id)arg1 forWidth:(CGFloat)arg2 ;
 -(int)collectionsSectionHeaderStyle;
 -(UIEdgeInsets)collectionsLevelSectionHeaderContentInset;
 -(UIEdgeInsets)collectionsLevelSectionHeaderHighlightInset;
@@ -32,6 +32,6 @@
 -(id)mapViewControllerSpec;
 -(BOOL)canDisplayMultipleRightBarButtonItems;
 -(int)magnifiedImageFormat;
--(float)magnifiedYOffset;
+-(CGFloat)magnifiedYOffset;
 @end
 

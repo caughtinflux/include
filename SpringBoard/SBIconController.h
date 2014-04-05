@@ -48,8 +48,8 @@
     BOOL _grabbedIconIsDraggedOutOfFolderView;
     SBFolder *_grabbedIconSourceFolder;
     BOOL _allowsUninstall;
-    float _iconAlpha;
-    float _oldScrollOffset;
+    CGFloat _iconAlpha;
+    CGFloat _oldScrollOffset;
     UITouch *_lastTouch;
     NSTimer *_folderSpringloadTimer;
     BOOL _keyboardIsRotating;
@@ -66,7 +66,7 @@
 
 + (instancetype)sharedInstance;
 @property(retain, nonatomic) _UILegibilitySettings *legibilitySettings; // @synthesize legibilitySettings=_legibilitySettings;
-- (void)searchGesture:(id)arg1 changedPercentComplete:(float)arg2;
+- (void)searchGesture:(id)arg1 changedPercentComplete:(CGFloat)arg2;
 - (void)folderControllerDidEndScrolling:(id)arg1;
 - (void)folderControllerShouldBeginEditing:(id)arg1;
 - (void)folderControllerShouldClose:(id)arg1;
@@ -119,7 +119,7 @@
 - (void)_noteUserIsInteractingWithIcons;
 - (BOOL)isIconVisiblyRepresented:(id)arg1;
 - (BOOL)_iconListIndexIsValid:(NSInteger)arg1;
-- (void)layoutIconLists:(float)arg1 domino:(BOOL)arg2 forceRelayout:(BOOL)arg3;
+- (void)layoutIconLists:(CGFloat)arg1 domino:(BOOL)arg2 forceRelayout:(BOOL)arg3;
 - (void)compactIconsInIconListsInFolder:(id)arg1 moveNow:(BOOL)arg2 limitToIconList:(id)arg3;
 - (void)compactRootIconLists;
 - (void)compactFolders:(id)arg1;
@@ -215,7 +215,7 @@
 - (NSUInteger)_folderRowsForFolder:(id)arg1;
 - (NSUInteger)_folderRowsForFolder:(id)arg1 inOrientation:(NSInteger)arg2;
 - (CGRect)_contentViewRelativeFrameForIcon:(id)arg1;
-- (void)shiftFolderViewsForKeyboardAppearing:(BOOL)arg1 keyboardHeight:(float)arg2;
+- (void)shiftFolderViewsForKeyboardAppearing:(BOOL)arg1 keyboardHeight:(CGFloat)arg2;
 - (id)_proposedFolderNameForGrabbedIcon:(id)arg1 recipientIcon:(id)arg2;
 - (void)_snapshotFadeDidStop:(id)arg1 finished:(id)arg2 snapshot:(id)arg3;
 - (void)_addToFolderAnimation:(id)arg1 didFinish:(id)arg2 context:(id)arg3;

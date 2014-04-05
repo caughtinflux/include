@@ -7,6 +7,6 @@
 #import "NSObject.h"
 
 @protocol _UISiriWaveyViewDelegate <NSObject>
-- (float)audioLevelForWaveyView:(id)arg1;
+- (CGFloat)audioLevelForWaveyView:(id)arg1;
 @end
 

@@ -14,20 +14,20 @@
 @interface PUPhotoDecoration : NSObject <NSCopying> {
 
 	UIColor* _borderColor;
-	float _borderWidth;
+	CGFloat _borderWidth;
 	UIColor* _foregroundColor;
 
 }
 
 @property (nonatomic,copy) UIColor * borderColor;                  //@synthesize borderColor=_borderColor - In the implementation block
-@property (assign,nonatomic) float borderWidth;                    //@synthesize borderWidth=_borderWidth - In the implementation block
+@property (assign,nonatomic) CGFloat borderWidth;                    //@synthesize borderWidth=_borderWidth - In the implementation block
 @property (nonatomic,copy) UIColor * foregroundColor;              //@synthesize foregroundColor=_foregroundColor - In the implementation block
 -(BOOL)isEqual:(id)arg1 ;
 -(unsigned)hash;
 -(id)copyWithZone:(NSZone)arg1 ;
--(void)setBorderWidth:(float)arg1 ;
+-(void)setBorderWidth:(CGFloat)arg1 ;
 -(void)setBorderColor:(id)arg1 ;
--(float)borderWidth;
+-(CGFloat)borderWidth;
 -(id)borderColor;
 -(id)foregroundColor;
 -(void)setForegroundColor:(id)arg1 ;
@@ -35,7 +35,7 @@
 -(id)photoDecorationVariantsWithIncreasingAlpha:(int)arg1 ;
 -(UIEdgeInsets)overlayInsets;
 -(id)overlayImage;
--(BOOL)_displaysBorderForWidth:(float)arg1 color:(id)arg2 ;
+-(BOOL)_displaysBorderForWidth:(CGFloat)arg1 color:(id)arg2 ;
 -(void).cxx_destruct;
 @end
 

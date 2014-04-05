@@ -31,14 +31,14 @@
 	int _timerOn;
 	CGPoint _location;
 	CGPoint _startPoint;
-	float _allowableMovement;
+	CGFloat _allowableMovement;
 	NSMutableArray* _touches;
 }
 @property(readonly, assign, nonatomic) CGPoint location;
 @property(assign, nonatomic) int numberOfTaps;
 @property(assign, nonatomic) int numberOfFingers;
 @property(readonly, assign, nonatomic) NSArray* touches;
-@property(assign, nonatomic) float allowableMovement;
+@property(assign, nonatomic) CGFloat allowableMovement;
 @property(readonly, assign, nonatomic) CGPoint centroid;
 -(id)initWithTarget:(id)target action:(SEL)action;
 -(void)dealloc;

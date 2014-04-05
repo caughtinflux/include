@@ -11,6 +11,6 @@
 @optional
 - (id)customizedTitleForItemInBar:(id)arg1 withActionType:(int)arg2;
 - (void)bottomBarActionPerformed:(int)arg1 fromBar:(id)arg2;
-- (void)sliderActionFromBar:(id)arg1 slidToProportion:(float)arg2;
+- (void)sliderActionFromBar:(id)arg1 slidToProportion:(CGFloat)arg2;
 @end
 

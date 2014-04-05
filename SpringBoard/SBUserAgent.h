@@ -23,7 +23,7 @@
 - (BOOL)isUsingLegacyStyle;
 - (void)activateRemoteAlertService:(id)arg1 options:(id)arg2;
 - (void)activateStarkRemoteAlertService:(id)arg1 ofType:(id)arg2;
-- (void)setMinimumBacklightLevel:(float)arg1 animated:(BOOL)arg2;
+- (void)setMinimumBacklightLevel:(CGFloat)arg1 animated:(BOOL)arg2;
 - (BOOL)isSBUILoggingEnabled;
 - (void)removeActiveInterfaceOrientationObserver:(id)arg1;
 - (void)addActiveInterfaceOrientationObserver:(id)arg1;
@@ -59,7 +59,7 @@
 - (void)_cleanupFromBannerLaunch;
 - (id)_safeValue:(id)arg1 forKey:(id)arg2 ofType:(Class)arg3;
 - (BOOL)openURL:(id)arg1 allowUnlock:(BOOL)arg2 animated:(BOOL)arg3;
-- (void)openURL:(id)arg1 animateIn:(BOOL)arg2 scale:(float)arg3 start:(double)arg4 duration:(float)arg5 animateOut:(BOOL)arg6;
+- (void)openURL:(id)arg1 animateIn:(BOOL)arg2 scale:(CGFloat)arg3 start:(double)arg4 duration:(CGFloat)arg5 animateOut:(BOOL)arg6;
 - (void)prepareToAnswerCall;
 - (BOOL)launchDisplayWithURL:(id)arg1 forCall:(BOOL)arg2 sender:(id)arg3;
 - (void)setFlipBackAttributeForSEODisplayWithIdentifier:(id)arg1;

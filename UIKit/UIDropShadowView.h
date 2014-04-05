@@ -7,13 +7,13 @@
 __attribute__((visibility("hidden")))
 @interface UIDropShadowView : UIView {
 @private
-	float _shadowRadius;
-	float _shadowOpacity;
-	float _cornerRadius;
+	CGFloat _shadowRadius;
+	CGFloat _shadowOpacity;
+	CGFloat _cornerRadius;
 }
-@property(assign) float shadowRadius;
-@property(assign) float shadowOpacity;
-@property(assign) float cornerRadius;
+@property(assign) CGFloat shadowRadius;
+@property(assign) CGFloat shadowOpacity;
+@property(assign) CGFloat cornerRadius;
 -(id)initWithView:(id)view;
 -(void)animateShadow;
 //-(void)setFrame:(CGRect)frame;

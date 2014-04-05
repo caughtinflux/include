@@ -19,9 +19,9 @@
     NSMutableArray *_iconViewCenters;
     UIScrollView *_scrollView;
     UIView *_iconContainer;
-    float _distanceBetweenCenters;
-    float _nominalDistanceBetweenCenters3;
-    float _nominalDistanceBetweenCenters5;
+    CGFloat _distanceBetweenCenters;
+    CGFloat _nominalDistanceBetweenCenters3;
+    CGFloat _nominalDistanceBetweenCenters5;
     unsigned int _iconTransitionIndex;
     BOOL _dragMaster;
     BOOL _preventScroll;
@@ -33,8 +33,8 @@
     NSArray *_displayIdentifiers;
 }
 
-+ (float)nominalDistanceBetween5IconCentersForSize:(struct CGSize)arg1;
-+ (float)nominalDistanceBetween3IconCentersForSize:(struct CGSize)arg1;
++ (CGFloat)nominalDistanceBetween5IconCentersForSize:(struct CGSize)arg1;
++ (CGFloat)nominalDistanceBetween3IconCentersForSize:(struct CGSize)arg1;
 @property(copy, nonatomic) NSArray *displayIdentifiers; // @synthesize displayIdentifiers=_displayIdentifiers;
 @property(nonatomic) unsigned int iconTransitionIndex; // @synthesize iconTransitionIndex=_iconTransitionIndex;
 @property(nonatomic) id <SBAppSliderIconControllerDelegate> delegate; // @synthesize delegate=_delegate;
@@ -46,7 +46,7 @@
 - (void)scrollViewDidEndDragging:(id)arg1 willDecelerate:(BOOL)arg2;
 - (void)scrollViewWillBeginDragging:(id)arg1;
 - (void)_iconsReloaded;
-- (float)iconLabelWidth;
+- (CGFloat)iconLabelWidth;
 - (void)iconTouchBegan:(id)arg1;
 - (void)iconHandleLongPress:(id)arg1;
 - (BOOL)iconShouldAllowTap:(id)arg1;
@@ -57,19 +57,19 @@
 - (int)_windowInterfaceOrientation;
 - (unsigned int)_centeredIndex;
 - (void)_handleStopScrollingGesture:(id)arg1;
-- (float)_recalculateLayout:(BOOL)arg1;
-- (float)_calculateDistanceBetweenCentersBasedOnCurrentContentOffset;
-- (float)_calculateDistanceBetweenCentersBasedOnCenteredIndex:(unsigned int)arg1;
-- (void)_layoutForDistance:(float)arg1;
+- (CGFloat)_recalculateLayout:(BOOL)arg1;
+- (CGFloat)_calculateDistanceBetweenCentersBasedOnCurrentContentOffset;
+- (CGFloat)_calculateDistanceBetweenCentersBasedOnCenteredIndex:(unsigned int)arg1;
+- (void)_layoutForDistance:(CGFloat)arg1;
 - (void)_updateVisibleIconViewsWithPadding:(BOOL)arg1;
 - (struct CGPoint)_adjustedCenter:(struct CGPoint)arg1 forIconView:(id)arg2;
 - (BOOL)_isIndexVisible:(unsigned int)arg1 withPadding:(BOOL)arg2;
-- (struct CGPoint)_centerOfIndex:(unsigned int)arg1 forDistance:(float)arg2 inOrientation:(int)arg3;
-- (float)_distanceBetweenCenters;
+- (struct CGPoint)_centerOfIndex:(unsigned int)arg1 forDistance:(CGFloat)arg2 inOrientation:(int)arg3;
+- (CGFloat)_distanceBetweenCenters;
 - (void)reloadInOrientation:(int)arg1;
 - (void)_cleanupAllIcons;
 - (void)_cleanupIcon:(id)arg1;
-- (float)_halfWidth;
+- (CGFloat)_halfWidth;
 - (void)_recalculateBaseIconSpacingValues;
 - (unsigned int)supportedInterfaceOrientations;
 - (BOOL)shouldAutorotate;
@@ -79,9 +79,9 @@
 - (void)switcherWasDismissed:(BOOL)arg1;
 - (void)loadView;
 - (BOOL)isScrolling;
-- (void)setNormalizedOffset:(float)arg1;
+- (void)setNormalizedOffset:(CGFloat)arg1;
 - (void)setOffsetToIndex:(unsigned int)arg1 animated:(BOOL)arg2;
-- (float)_maxXOffsetForDistance:(float)arg1;
+- (CGFloat)_maxXOffsetForDistance:(CGFloat)arg1;
 - (id)_iconViewForIndex:(unsigned int)arg1;
 - (struct CGRect)_iconFaultRectForIndex:(unsigned int)arg1;
 - (void)dealloc;

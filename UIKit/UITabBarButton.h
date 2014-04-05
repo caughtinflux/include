@@ -41,7 +41,7 @@
 -(void)layoutSubviews;
 -(void)_setOn:(BOOL)on;
 -(BOOL)_isOn;
--(void)_setBarHeight:(float)height;
+-(void)_setBarHeight:(CGFloat)height;
 -(BOOL)_useBarHeight;
 @end
 

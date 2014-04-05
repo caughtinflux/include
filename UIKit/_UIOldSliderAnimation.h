@@ -8,10 +8,10 @@
 
 
 @interface _UIOldSliderAnimation : UIAnimation {
-	float _startValue;
-	float _endValue;
+	CGFloat _startValue;
+	CGFloat _endValue;
 	BOOL _sendAction;
 }
--(void)setProgress:(float)progress;
+-(void)setProgress:(CGFloat)progress;
 @end
 

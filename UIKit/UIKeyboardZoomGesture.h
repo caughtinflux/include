@@ -9,7 +9,7 @@ __attribute__((visibility("hidden")))
 @private
 	BOOL _waiting;
 	int _zoomType;
-	float _initialDistance;
+	CGFloat _initialDistance;
 	double _maximumWaitForMultitouch;
 	double _maximumWaitForMovement;
 }
@@ -26,7 +26,7 @@ __attribute__((visibility("hidden")))
 -(void)clearTimers;
 -(void)failAfterDelay:(double)delay;
 -(CGPoint)centroidForTouches:(id)touches;
--(float)averageDistanceForTouches:(id)touches;
+-(CGFloat)averageDistanceForTouches:(id)touches;
 @end
 
 #endif

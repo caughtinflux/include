@@ -13,7 +13,7 @@
 - (BOOL)isUsingLegacyStyle;
 - (void)activateRemoteAlertService:(id)arg1 options:(id)arg2;
 - (void)activateStarkRemoteAlertService:(id)arg1 ofType:(id)arg2;
-- (void)setMinimumBacklightLevel:(float)arg1 animated:(BOOL)arg2;
+- (void)setMinimumBacklightLevel:(CGFloat)arg1 animated:(BOOL)arg2;
 - (void)notifyOnNextUserEvent;
 - (BOOL)isSBUILoggingEnabled;
 - (void)removeActiveInterfaceOrientationObserver:(id)arg1;
@@ -46,7 +46,7 @@
 - (BOOL)launchApplicationFromSource:(int)arg1 withURL:(id)arg2 options:(id)arg3;
 - (BOOL)launchApplicationFromSource:(int)arg1 withDisplayID:(id)arg2 options:(id)arg3;
 - (BOOL)canLaunchFromSource:(int)arg1 withURL:(id)arg2 bundleID:(id)arg3;
-- (void)openURL:(id)arg1 animateIn:(BOOL)arg2 scale:(float)arg3 start:(double)arg4 duration:(float)arg5 animateOut:(BOOL)arg6;
+- (void)openURL:(id)arg1 animateIn:(BOOL)arg2 scale:(CGFloat)arg3 start:(double)arg4 duration:(CGFloat)arg5 animateOut:(BOOL)arg6;
 - (BOOL)openURL:(id)arg1 allowUnlock:(BOOL)arg2 animated:(BOOL)arg3;
 - (BOOL)canUserLaunchIcon;
 - (BOOL)alertIsActive;

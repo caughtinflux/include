@@ -11,18 +11,18 @@
     _Bool _autorotationEnabled;
     _Bool _watchingOrientationChanges;
     long long _orientation;
-    float _hitRectExtension;
+    CGFloat _hitRectExtension;
     _Bool _isInButtonBar;
     _Bool _isAnimatingAlpha;
     _Bool _animatingOrientationChange;
-    float _endCapRadius;
+    CGFloat _endCapRadius;
     struct CGPoint _defaultAnchorCenter;
     struct CGAffineTransform _defaultAnchorTransform;
 }
 
 @property(nonatomic) _Bool isInButtonBar; // @synthesize isInButtonBar=_isInButtonBar;
-@property(nonatomic) float endCapRadius; // @synthesize endCapRadius=_endCapRadius;
-@property(nonatomic) float hitRectExtension; // @synthesize hitRectExtension=_hitRectExtension;
+@property(nonatomic) CGFloat endCapRadius; // @synthesize endCapRadius=_endCapRadius;
+@property(nonatomic) CGFloat hitRectExtension; // @synthesize hitRectExtension=_hitRectExtension;
 - (int)_modeForRotationFromOrientation:(long long)arg1 toOrientation:(long long)arg2;
 - (void)setButtonOrientation:(long long)arg1 animated:(_Bool)arg2;
 - (void)rotationAnimationDidStop;

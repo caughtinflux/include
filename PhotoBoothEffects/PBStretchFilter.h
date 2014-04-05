@@ -12,8 +12,8 @@
 @interface PBStretchFilter : PBFilter {
 
 	bool firstTime;
-	float lastInputX;
-	float lastInputY;
+	CGFloat lastInputX;
+	CGFloat lastInputY;
 	CGPoint inputPoint;
 
 }

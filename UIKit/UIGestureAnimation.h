@@ -12,7 +12,7 @@
 	int _gestureType;
 }
 -(id)initWithTarget:(id)target progressSelector:(SEL)selector gestureType:(int)type;
--(void)setProgress:(float)progress;
+-(void)setProgress:(CGFloat)progress;
 -(int)gestureType;
 @end
 

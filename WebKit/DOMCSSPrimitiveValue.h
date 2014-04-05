@@ -63,8 +63,8 @@ enum {
 @interface DOMCSSPrimitiveValue : DOMCSSValue
 @property(readonly) unsigned short primitiveType;
 
-- (void)setFloatValue:(unsigned short)unitType floatValue:(float)floatValue;
-- (float)getFloatValue:(unsigned short)unitType;
+- (void)setFloatValue:(unsigned short)unitType CGFloatValue:(CGFloat)CGFloatValue;
+- (CGFloat)getFloatValue:(unsigned short)unitType;
 - (void)setStringValue:(unsigned short)stringType stringValue:(NSString *)stringValue;
 - (NSString *)getStringValue;
 - (DOMCounter *)getCounterValue;
@@ -73,6 +73,6 @@ enum {
 @end
 
 @interface DOMCSSPrimitiveValue (DOMCSSPrimitiveValueDeprecated)
-- (void)setFloatValue:(unsigned short)unitType :(float)floatValue DEPRECATED_IN_MAC_OS_X_VERSION_10_5_AND_LATER;
+- (void)setFloatValue:(unsigned short)unitType :(CGFloat)CGFloatValue DEPRECATED_IN_MAC_OS_X_VERSION_10_5_AND_LATER;
 - (void)setStringValue:(unsigned short)stringType :(NSString *)stringValue DEPRECATED_IN_MAC_OS_X_VERSION_10_5_AND_LATER;
 @end

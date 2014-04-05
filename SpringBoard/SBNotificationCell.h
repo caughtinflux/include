@@ -24,13 +24,13 @@
     struct CGSize _attachmentSize;
     BOOL _secondaryTextNumberOfLinesIsUpperBound;
     unsigned int _secondaryTextNumberOfLines;
-    float _secondaryTextHeight;
+    CGFloat _secondaryTextHeight;
     UIImage *_icon;
 }
 
-+ (float)paddingBetweenTitleAndRelevanceDate;
-+ (float)xInsetForOrientation:(int)arg1;
-+ (float)contentWidthWithRowWidth:(float)arg1 andAttachmentSize:(struct CGSize)arg2;
++ (CGFloat)paddingBetweenTitleAndRelevanceDate;
++ (CGFloat)xInsetForOrientation:(int)arg1;
++ (CGFloat)contentWidthWithRowWidth:(CGFloat)arg1 andAttachmentSize:(struct CGSize)arg2;
 + (void)setupEventDateLabel:(id)arg1;
 + (void)setupRelevanceDateLabel:(id)arg1;
 + (id)defaultColorForEventDate;
@@ -43,12 +43,12 @@
 + (id)defaultFontForSecondaryText;
 + (id)defaultFontForSubtitleText;
 + (id)defaultFontForPrimaryText;
-+ (float)actionButtonPaddingLeft;
-+ (float)iconPaddingLeft;
-+ (float)primaryPaddingRight;
-+ (float)primaryPaddingLeft;
++ (CGFloat)actionButtonPaddingLeft;
++ (CGFloat)iconPaddingLeft;
++ (CGFloat)primaryPaddingRight;
++ (CGFloat)primaryPaddingLeft;
 @property(retain, nonatomic) UIImage *icon; // @synthesize icon=_icon;
-@property(nonatomic) float secondaryTextHeight; // @synthesize secondaryTextHeight=_secondaryTextHeight;
+@property(nonatomic) CGFloat secondaryTextHeight; // @synthesize secondaryTextHeight=_secondaryTextHeight;
 @property(readonly, nonatomic) UIView *attachmentView; // @synthesize attachmentView=_attachmentView;
 @property(retain, nonatomic) UIButton *actionButton; // @synthesize actionButton=_actionButton;
 @property(readonly, nonatomic) UIView *iconView; // @synthesize iconView=_iconImageView;
@@ -59,13 +59,13 @@
 @property(readonly, nonatomic) BOOL secondaryTextNumberOfLinesIsUpperBound; // @synthesize secondaryTextNumberOfLinesIsUpperBound=_secondaryTextNumberOfLinesIsUpperBound;
 @property(readonly, nonatomic) unsigned int secondaryTextNumberOfLines; // @synthesize secondaryTextNumberOfLines=_secondaryTextNumberOfLines;
 - (void)layoutSubviews;
-@property(nonatomic) float attachmentAlpha;
-@property(nonatomic) float iconAlpha;
-@property(nonatomic) float eventDateAlpha;
-@property(nonatomic) float relevanceDateAlpha;
-@property(nonatomic) float secondaryTextAlpha;
-@property(nonatomic) float subtitleTextAlpha;
-@property(nonatomic) float primaryTextAlpha;
+@property(nonatomic) CGFloat attachmentAlpha;
+@property(nonatomic) CGFloat iconAlpha;
+@property(nonatomic) CGFloat eventDateAlpha;
+@property(nonatomic) CGFloat relevanceDateAlpha;
+@property(nonatomic) CGFloat secondaryTextAlpha;
+@property(nonatomic) CGFloat subtitleTextAlpha;
+@property(nonatomic) CGFloat primaryTextAlpha;
 - (void)setAttachmentImage:(id)arg1;
 - (void)dateLabelDidChange:(id)arg1;
 @property(retain, nonatomic) UIColor *eventDateColor;

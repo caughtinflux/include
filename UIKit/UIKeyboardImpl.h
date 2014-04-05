@@ -365,7 +365,7 @@
 @property(readonly, assign, nonatomic, getter=isZoomEnabled) BOOL zoomEnabled;
 @property(assign, nonatomic, getter=isInHardwareKeyboardMode) BOOL inHardwareKeyboardMode;
 +(CGSize)sizeForInterfaceOrientation:(int)interfaceOrientation;
-+(float)additionalInstanceHeight;
++(CGFloat)additionalInstanceHeight;
 -(BOOL)zoomPreference;
 -(BOOL)isClientVariantSupportEnabled;
 -(id)clientVariantDelegate;

@@ -13,7 +13,7 @@ __attribute__((visibility("hidden")))
 }
 // inherited: -(id)initWithCGColor:(CGColorRef)cgcolor;
 // inherited: -(void)dealloc;
-// inherited: -(id)colorWithAlphaComponent:(float)alphaComponent;
+// inherited: -(id)colorWithAlphaComponent:(CGFloat)alphaComponent;
 // inherited: -(void)set;
 // inherited: -(void)setFill;
 // inherited: -(void)setStroke;
@@ -22,6 +22,6 @@ __attribute__((visibility("hidden")))
 // inherited: -(BOOL)isEqual:(id)equal;
 // inherited: -(unsigned)hash;
 // inherited: -(CGColorRef)CGColor;
-// inherited: -(float)alphaComponent;
+// inherited: -(CGFloat)alphaComponent;
 @end
 

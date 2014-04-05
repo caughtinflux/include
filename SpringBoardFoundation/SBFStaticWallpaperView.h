@@ -22,7 +22,7 @@
 - (id)_wallpaperImageForAnalysis;
 - (void)_resetColorBoxes;
 - (struct CGSize)_imageSize;
-- (float)_zoomScale;
+- (CGFloat)_zoomScale;
 - (unsigned long long)_colorBoxSize;
 - (void)_removeMappedBlurs;
 - (id)_treatedImageKey;

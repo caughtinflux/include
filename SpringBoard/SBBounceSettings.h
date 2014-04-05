@@ -9,27 +9,27 @@
 @interface SBBounceSettings : _UISettings
 {
     BOOL _resistanceAppliesAfterBounce;
-    float _gravity;
-    float _velocity;
-    float _elasticity;
-    float _friction;
-    float _resistance;
-    float _multiplier;
-    float _minVelocityToAssist;
-    float _maxVelocityToAssist;
-    float _maxVelocityAssistance;
+    CGFloat _gravity;
+    CGFloat _velocity;
+    CGFloat _elasticity;
+    CGFloat _friction;
+    CGFloat _resistance;
+    CGFloat _multiplier;
+    CGFloat _minVelocityToAssist;
+    CGFloat _maxVelocityToAssist;
+    CGFloat _maxVelocityAssistance;
 }
 
-@property float maxVelocityAssistance; // @synthesize maxVelocityAssistance=_maxVelocityAssistance;
-@property float maxVelocityToAssist; // @synthesize maxVelocityToAssist=_maxVelocityToAssist;
-@property float minVelocityToAssist; // @synthesize minVelocityToAssist=_minVelocityToAssist;
-@property float multiplier; // @synthesize multiplier=_multiplier;
+@property CGFloat maxVelocityAssistance; // @synthesize maxVelocityAssistance=_maxVelocityAssistance;
+@property CGFloat maxVelocityToAssist; // @synthesize maxVelocityToAssist=_maxVelocityToAssist;
+@property CGFloat minVelocityToAssist; // @synthesize minVelocityToAssist=_minVelocityToAssist;
+@property CGFloat multiplier; // @synthesize multiplier=_multiplier;
 @property BOOL resistanceAppliesAfterBounce; // @synthesize resistanceAppliesAfterBounce=_resistanceAppliesAfterBounce;
-@property float resistance; // @synthesize resistance=_resistance;
-@property float friction; // @synthesize friction=_friction;
-@property float elasticity; // @synthesize elasticity=_elasticity;
-@property float velocity; // @synthesize velocity=_velocity;
-@property float gravity; // @synthesize gravity=_gravity;
+@property CGFloat resistance; // @synthesize resistance=_resistance;
+@property CGFloat friction; // @synthesize friction=_friction;
+@property CGFloat elasticity; // @synthesize elasticity=_elasticity;
+@property CGFloat velocity; // @synthesize velocity=_velocity;
+@property CGFloat gravity; // @synthesize gravity=_gravity;
 - (void)setDefaultValues;
 
 @end

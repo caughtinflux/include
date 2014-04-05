@@ -42,13 +42,13 @@
 - (void)viewDidAppear:(BOOL)arg1;
 - (void)viewDidLoad;
 - (void)loadView;
-@property(nonatomic) float revealPercentage;
+@property(nonatomic) CGFloat revealPercentage;
 - (void)controlCenterDidFinishTransition;
 - (void)controlCenterWillFinishTransitionOpen:(BOOL)arg1 withDuration:(double)arg2;
 - (void)controlCenterWillBeginTransition;
 - (void)controlCenterDidDismiss;
 - (void)controlCenterWillPresent;
-- (float)contentHeightForOrientation:(int)arg1;
+- (CGFloat)contentHeightForOrientation:(int)arg1;
 - (void)trackChevronView:(id)arg1;
 - (id)chevronView;
 - (void)dealloc;

@@ -14,10 +14,10 @@
 {
     _UIBackdropView *_backdropView;
     SBControlCenterContentView *_contentView;
-    float _contentHeight;
+    CGFloat _contentHeight;
 }
 
-@property float contentHeight; // @synthesize contentHeight=_contentHeight;
+@property CGFloat contentHeight; // @synthesize contentHeight=_contentHeight;
 @property(retain, nonatomic) SBControlCenterContentView *contentView; // @synthesize contentView=_contentView;
 @property(retain, nonatomic) _UIBackdropView *backdropView; // @synthesize backdropView=_backdropView;
 - (void)controlCenterDidFinishTransition;

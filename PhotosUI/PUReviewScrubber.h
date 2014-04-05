@@ -84,7 +84,7 @@
 -(void)toggleSelectedIndexAnimated:(BOOL)arg1 ;
 -(void)reloadSelectedIndexAnimated:(BOOL)arg1 ;
 -(void)beginInteractiveUpdate;
--(void)updateWithAbsoluteProgress:(float)arg1 ;
+-(void)updateWithAbsoluteProgress:(CGFloat)arg1 ;
 -(void)setScrubberDelegate:(id)arg1 ;
 -(unsigned)_numberOfPhotos;
 -(id)_arrowImageView;

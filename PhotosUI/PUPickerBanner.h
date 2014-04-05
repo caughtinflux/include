@@ -18,7 +18,7 @@
 
 @property (nonatomic,readonly) PUPickerBannerView * bannerView; 
 -(id)view;
--(float)height;
+-(CGFloat)height;
 -(id)bannerView;
 -(void).cxx_destruct;
 @end

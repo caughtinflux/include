@@ -25,11 +25,11 @@
 @property(retain, nonatomic) NSString* title;
 +(id)defaultFont;
 -(void)_updateStyle;
--(id)initWithValue:(id)value width:(float)width style:(int)style barStyle:(int)style4 possibleTitles:(id)titles tintColor:(id)color;
+-(id)initWithValue:(id)value width:(CGFloat)width style:(int)style barStyle:(int)style4 possibleTitles:(id)titles tintColor:(id)color;
 -(id)initWithTitle:(id)title;
 -(id)initWithTitle:(id)title style:(int)style;
 -(id)initWithTitle:(id)title possibleTitles:(id)titles style:(int)style;
--(id)initWithImage:(id)image width:(float)width style:(int)style;
+-(id)initWithImage:(id)image width:(CGFloat)width style:(int)style;
 -(id)initWithImage:(id)image;
 -(id)initWithImage:(id)image style:(int)style;
 -(void)dealloc;

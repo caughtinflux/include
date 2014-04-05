@@ -11,12 +11,12 @@
 @interface SBNotificationsBulletinInfo : SBBBBulletinInfo
 {
     SBNotificationsSectionInfo *_sectionInfo;
-    float _heightForReusableView;
+    CGFloat _heightForReusableView;
     struct CGSize _referenceSize;
     UIImage *_icon;
     UIImage *_attachmentImage;
     struct CGSize _attachmentImageSize;
-    float _secondaryTextHeight;
+    CGFloat _secondaryTextHeight;
     BOOL _suppressingMessageForPrivacy;
     BOOL _isCachedMessageSuppressionValid;
     UIColor *_secondaryTextColor;
@@ -28,7 +28,7 @@
 @property(retain, nonatomic) UIImage *attachmentImage; // @synthesize attachmentImage=_attachmentImage;
 @property(retain, nonatomic) UIImage *icon; // @synthesize icon=_icon;
 - (void)populateReusableView:(id)arg1;
-- (float)heightForReusableViewInTableView:(id)arg1;
+- (CGFloat)heightForReusableViewInTableView:(id)arg1;
 - (BOOL)_isLayoutValidWithReferenceSize:(struct CGSize)arg1;
 - (struct CGSize)_effectiveAttachmentImageSize;
 - (id)_attachmentImageToDisplay;

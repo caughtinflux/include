@@ -123,7 +123,7 @@
     NSHashTable *_activationFlags;
     NSHashTable *_deactivationFlags;
     NSMutableSet *_suppressVolumeHudCategories;
-    float _accelerometerSampleInterval;
+    CGFloat _accelerometerSampleInterval;
     NSMutableSet *_idleTimerDisabledReasons;
     unsigned int _expectsFaceContact:1;
     unsigned int _expectsFaceContactInLandscape:1;
@@ -135,7 +135,7 @@
     unsigned int _isAnimatingDeactivation:1;
     unsigned int _showsProgress;
     int _applicationRestorationCheckState;
-    float _minimumBrightnessLevel;
+    CGFloat _minimumBrightnessLevel;
     NSArray *_domainsToPreheat;
     int _starkLaunchModes;
     BOOL _starkStatusBarStartsTranslucent;
@@ -183,7 +183,7 @@
 - (id)iconBadgeNumberOrString:(id)arg1;
 - (int)iconAccessoryType:(id)arg1;
 - (BOOL)iconProgressIsPaused:(id)arg1;
-- (float)iconProgressPercent:(id)arg1;
+- (CGFloat)iconProgressPercent:(id)arg1;
 - (int)iconProgressState:(id)arg1;
 - (BOOL)iconAppearsInNewsstand:(id)arg1;
 - (BOOL)iconCanEllipsizeLabel:(id)arg1;
@@ -218,7 +218,7 @@
 - (BOOL)suppressesControlCenter;
 - (BOOL)suppressesNotificationCenter;
 - (BOOL)suppressesBanners;
-- (float)minimumBrightnessLevel;
+- (CGFloat)minimumBrightnessLevel;
 - (BOOL)showSystemVolumeHUDForCategory:(id)arg1;
 - (void)setSystemVolumeHUDEnabled:(BOOL)arg1 forCategory:(id)arg2;
 - (BOOL)showsProgress;
@@ -272,7 +272,7 @@
 - (id)copyWithZone:(struct _NSZone *)arg1;
 - (void)_noteSnapshotDidUpdate;
 - (void)_deleteSnapshotForScreen:(id)arg1 name:(id)arg2;
-- (void)_saveSnapshotForScreen:(id)arg1 frame:(struct CGRect)arg2 name:(id)arg3 overrideScale:(float)arg4;
+- (void)_saveSnapshotForScreen:(id)arg1 frame:(struct CGRect)arg2 name:(id)arg3 overrideScale:(CGFloat)arg4;
 - (void)_saveSuspendSnapshot:(id)arg1 forScreen:(id)arg2;
 - (id)_snapshotCreationDeletionQueueForScreen:(id)arg1;
 - (id)defaultImagePathForSnapshotWithName:(id)arg1 screen:(id)arg2;
@@ -448,8 +448,8 @@
 - (void)setDisplayName:(id)arg1;
 - (id)displayName;
 - (Class)iconClass;
-- (id)_preferredImagePathInBundle:(id)arg1 baseResourceName:(id)arg2 ofType:(id)arg3 screen:(id)arg4 outScale:(float *)arg5;
-- (id)_preferredImagePathByScaleInBundle:(id)arg1 resourceName:(id)arg2 ofType:(id)arg3 screen:(id)arg4 outScale:(float *)arg5;
+- (id)_preferredImagePathInBundle:(id)arg1 baseResourceName:(id)arg2 ofType:(id)arg3 screen:(id)arg4 outScale:(CGFloat *)arg5;
+- (id)_preferredImagePathByScaleInBundle:(id)arg1 resourceName:(id)arg2 ofType:(id)arg3 screen:(id)arg4 outScale:(CGFloat *)arg5;
 - (id)defaultImageForScreen:(id)arg1 snapshot:(char *)arg2 originalOrientation:(int *)arg3 currentOrientation:(int *)arg4 canUseIOSurface:(BOOL)arg5;
 - (id)_pathIfFileExistsAtPath:(id)arg1;
 - (id)_additionalDisplayQualification;
@@ -509,17 +509,17 @@
 - (id)initWithBundleIdentifier:(id)arg1 webClip:(id)arg2 path:(id)arg3 bundle:(id)arg4 infoDictionary:(id)arg5 isSystemApplication:(BOOL)arg6 signerIdentity:(id)arg7 provisioningProfileValidated:(BOOL)arg8 entitlements:(id)arg9;
 - (void)_configureDisplayNameForInfoDictionary:(id)arg1 atBundlePath:(id)arg2;
 - (BOOL)isNewsstandApplication;
-- (id)_infoplist_defaultPNGPathForScreen:(id)arg1 launchingOrientation:(int)arg2 imageOrientation:(int *)arg3 resultingScale:(float *)arg4;
+- (id)_infoplist_defaultPNGPathForScreen:(id)arg1 launchingOrientation:(int)arg2 imageOrientation:(int *)arg3 resultingScale:(CGFloat *)arg4;
 - (BOOL)_infoplist_defaultPNGCalculateContainsCorgiImage;
 - (struct CGSize)_screenSizeForScreen:(id)arg1;
 - (id)_sanitizedImageNameFromName:(id)arg1 withExtension:(id)arg2 actualExtension:(out id *)arg3;
-- (id)_pathForExistingImageInCandidates:(id)arg1 forScreen:(id)arg2 launchingOrientation:(int)arg3 imageOrientation:(int *)arg4 resultingScale:(float *)arg5;
+- (id)_pathForExistingImageInCandidates:(id)arg1 forScreen:(id)arg2 launchingOrientation:(int)arg3 imageOrientation:(int *)arg4 resultingScale:(CGFloat *)arg5;
 - (void)_addImageName:(id)arg1 toImageNamesArray:(id)arg2 screen:(id)arg3;
 - (id)_cachedImageForSnapshotPath:(id)arg1 screen:(id)arg2;
 - (id)_imageForSnapshotAtPath:(id)arg1 fileOrientation:(int *)arg2;
 - (id)_defaultPNGNameUsingFallbacks:(id)arg1;
 - (id)_defaultImageName:(id)arg1;
-- (id)_scaleSuffixForScale:(float)arg1;
+- (id)_scaleSuffixForScale:(CGFloat)arg1;
 - (int)_fallbackImageOrientationForLaunchingOrientation:(int)arg1;
 - (id)_fallbackOrientationImageTagForLaunchingOrientation:(int)arg1;
 - (id)_orientationImageTagForLaunchingOrientation:(int)arg1;
@@ -532,7 +532,7 @@
 - (id)_snapshotImageInfoForScreen:(id)arg1 named:(id)arg2 launchingOrientation:(int)arg3;
 - (id)_snapshotImageInfoForScreen:(id)arg1 launchingOrientation:(int)arg2;
 - (id)_defaultPNGForScreen:(id)arg1 launchingOrientation:(int)arg2 orientation:(int *)arg3;
-- (id)_defaultPNGPathForScreen:(id)arg1 launchingOrientation:(int)arg2 imageOrientation:(int *)arg3 resultingScale:(float *)arg4;
+- (id)_defaultPNGPathForScreen:(id)arg1 launchingOrientation:(int)arg2 imageOrientation:(int *)arg3 resultingScale:(CGFloat *)arg4;
 - (id)_defaultPNGNameFromSuspensionSettings;
 - (BOOL)_applicationDoesNotHaveRestorationArchive;
 - (id)_defaultPNGNameWhenActivatingFromURLSetting:(id)arg1;

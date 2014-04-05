@@ -22,7 +22,7 @@
 -(void)layoutSubviews;
 -(void)setZoomingImage:(id)arg1 ;
 -(id)initWithFrame:(CGRect)arg1 exampleCell:(id)arg2 badgeView:(id)arg3 layoutAnchor:(unsigned)arg4 ;
--(void)setZoomScale:(float)arg1 translation:(CGPoint)arg2 rotation:(float)arg3 animated:(BOOL)arg4 completion:(/*^block*/ id)arg5 ;
+-(void)setZoomScale:(CGFloat)arg1 translation:(CGPoint)arg2 rotation:(CGFloat)arg3 animated:(BOOL)arg4 completion:(/*^block*/ id)arg5 ;
 -(void).cxx_destruct;
 @end
 

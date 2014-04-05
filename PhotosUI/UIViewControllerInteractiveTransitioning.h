@@ -10,7 +10,7 @@
 @protocol UIViewControllerInteractiveTransitioning <NSObject>
 @optional
 -(int)completionCurve;
--(float)completionSpeed;
+-(CGFloat)completionSpeed;
 
 @required
 -(void)startInteractiveTransition:(id)arg1;

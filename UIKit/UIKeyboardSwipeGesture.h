@@ -9,24 +9,24 @@ __attribute__((visibility("hidden")))
 @interface UIKeyboardSwipeGesture : UIGestureRecognizer {
 @private
 	double _maximumDuration;
-	float _verticalScale;
-	float _horizontalScale;
-	float _minimumHorizontalMovement;
-	float _maximumHorizontalMovement;
-	float _minimumVerticalMovement;
-	float _maximumVerticalMovement;
+	CGFloat _verticalScale;
+	CGFloat _horizontalScale;
+	CGFloat _minimumHorizontalMovement;
+	CGFloat _maximumHorizontalMovement;
+	CGFloat _minimumVerticalMovement;
+	CGFloat _maximumVerticalMovement;
 	double _startTime;
 	int _numberOfFingers;
 	NSMutableArray* _activeTouches;
 	unsigned _timerOn : 1;
 }
 @property(assign, nonatomic) int numberOfFingers;
-@property(assign, nonatomic) float minimumVerticalMovement;
+@property(assign, nonatomic) CGFloat minimumVerticalMovement;
 // inherited: -(id)initWithTarget:(id)target action:(SEL)action;
--(float)minimumVerticalMovementForTimeInterval:(double)timeInterval;
--(float)minimumHorizontalMovementForTimeInterval:(double)timeInterval;
--(float)maximumVerticalMovementForTimeInterval:(double)timeInterval;
--(float)maximumHorizontalMovementForTimeInterval:(double)timeInterval;
+-(CGFloat)minimumVerticalMovementForTimeInterval:(double)timeInterval;
+-(CGFloat)minimumHorizontalMovementForTimeInterval:(double)timeInterval;
+-(CGFloat)maximumVerticalMovementForTimeInterval:(double)timeInterval;
+-(CGFloat)maximumHorizontalMovementForTimeInterval:(double)timeInterval;
 -(void)clearTimer;
 // inherited: -(void)dealloc;
 // inherited: -(void)reset;

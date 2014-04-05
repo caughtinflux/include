@@ -15,7 +15,7 @@
 	unsigned m_count;
 	int m_expansion;
 	int m_orientation;
-	float m_stringWidth;
+	CGFloat m_stringWidth;
 	UIImage* m_tubeImage;
 	CGRect m_tubeRect;
 	UIImage* m_grabberImage;

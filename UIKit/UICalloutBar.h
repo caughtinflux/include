@@ -69,9 +69,9 @@
 -(BOOL)pointInside:(CGPoint)inside withEvent:(id)event;
 -(int)textEffectsVisibilityLevel;
 -(BOOL)rectClear:(CGRect)clear;
--(BOOL)calculateControlFrameForPointBelowControls:(float)pointBelowControls;
--(BOOL)calculateControlFrameForPointAboveControls:(float)pointAboveControls;
--(BOOL)calculateControlFrameInsideTargetRect:(float)rect;
+-(BOOL)calculateControlFrameForPointBelowControls:(CGFloat)pointBelowControls;
+-(BOOL)calculateControlFrameForPointAboveControls:(CGFloat)pointAboveControls;
+-(BOOL)calculateControlFrameInsideTargetRect:(CGFloat)rect;
 -(id)visibleButtons;
 -(BOOL)positionIsValid;
 -(void)setTargetRect:(CGRect)rect pointBelowControls:(CGPoint)controls pointAboveControls:(CGPoint)controls3;

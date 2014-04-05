@@ -10,7 +10,7 @@
 
 @interface UIHighlightView : UIView {
 	UIColor* _color;
-	float _cornerRadius;
+	CGFloat _cornerRadius;
 	CGRect _invertedHighlightClipRect;
 	NSArray* _cornerRadii;
 	NSMutableArray* _innerBounds;
@@ -21,7 +21,7 @@
 -(void)cleanUp;
 -(void)dealloc;
 -(void)setColor:(id)color;
--(void)setCornerRadius:(float)radius;
+-(void)setCornerRadius:(CGFloat)radius;
 -(void)setCornerRadii:(id)radii;
 -(void)setFrames:(id)frames boundaryRect:(CGRect)rect;
 -(void)setQuads:(id)quads boundaryRect:(CGRect)rect;

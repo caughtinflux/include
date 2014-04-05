@@ -12,7 +12,7 @@
 
 - (id)hitTest:(struct CGPoint)arg1 withEvent:(id)arg2;
 - (void)drawRect:(struct CGRect)arg1;
-- (void)_drawLinesWithInset:(float)arg1;
+- (void)_drawLinesWithInset:(CGFloat)arg1;
 - (id)initWithFrame:(struct CGRect)arg1;
 
 @end

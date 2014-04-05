@@ -71,7 +71,7 @@
 -(BOOL)requiresKeyEvents;
 -(void)handleKeyEvent:(GSEventRef)event;
 -(id)automaticallySelectedOverlay;
--(void)setBottomBufferHeight:(float)height;
+-(void)setBottomBufferHeight:(CGFloat)height;
 -(id)window;
 @end
 

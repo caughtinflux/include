@@ -17,17 +17,17 @@
     struct CGAffineTransform _folderIconViewScaleTransform;
 }
 
-- (void)_calculateZoomedOffset:(struct CGPoint *)arg1 scale:(float *)arg2 forIcon:(id)arg3 withView:(id)arg4;
-- (void)_applyFolderFadeForZoomFraction:(float)arg1;
-- (void)_applyIconTransformForZoomFraction:(float)arg1;
-- (void)_applyIconCrossfadeForZoomFraction:(float)arg1;
-- (void)_animateToFraction:(float)arg1 afterDelay:(double)arg2 withSharedCompletion:(id)arg3;
+- (void)_calculateZoomedOffset:(struct CGPoint *)arg1 scale:(CGFloat *)arg2 forIcon:(id)arg3 withView:(id)arg4;
+- (void)_applyFolderFadeForZoomFraction:(CGFloat)arg1;
+- (void)_applyIconTransformForZoomFraction:(CGFloat)arg1;
+- (void)_applyIconCrossfadeForZoomFraction:(CGFloat)arg1;
+- (void)_animateToFraction:(CGFloat)arg1 afterDelay:(double)arg2 withSharedCompletion:(id)arg3;
 - (unsigned int)_numberOfSignificantAnimations;
 - (void)_cleanupAnimation;
-- (void)_setAnimationFraction:(float)arg1;
+- (void)_setAnimationFraction:(CGFloat)arg1;
 - (void)_prepareAnimation;
 - (void)dealloc;
-- (id)initWithFolderController:(id)arg1 iconView:(id)arg2 iconZoomScale:(float)arg3;
+- (id)initWithFolderController:(id)arg1 iconView:(id)arg2 iconZoomScale:(CGFloat)arg3;
 
 // Remaining properties
 @property(retain, nonatomic) SBFolderZoomSettings *settings;

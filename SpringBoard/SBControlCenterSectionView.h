@@ -8,10 +8,10 @@
 
 @interface SBControlCenterSectionView : UIView
 {
-    float _edgePadding;
+    CGFloat _edgePadding;
 }
 
-@property(nonatomic) float edgePadding; // @synthesize edgePadding=_edgePadding;
+@property(nonatomic) CGFloat edgePadding; // @synthesize edgePadding=_edgePadding;
 - (BOOL)_shouldAnimatePropertyWithKey:(id)arg1;
 
 @end

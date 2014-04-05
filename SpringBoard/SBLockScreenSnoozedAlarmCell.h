@@ -16,9 +16,9 @@
 }
 
 + (BOOL)wantsUnlockActionText;
-+ (float)rowHeight;
++ (CGFloat)rowHeight;
 - (void)dateLabelDidChange:(id)arg1;
-- (void)setContentAlpha:(float)arg1;
+- (void)setContentAlpha:(CGFloat)arg1;
 - (void)setFireDate:(id)arg1;
 - (void)layoutSubviews;
 - (void)dealloc;

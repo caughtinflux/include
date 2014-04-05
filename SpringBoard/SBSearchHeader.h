@@ -21,7 +21,7 @@
 
 @property(nonatomic) id <SBSearchHeaderDelegate> delegate; // @synthesize delegate=_delegate;
 @property(readonly, nonatomic) UITextField *searchField; // @synthesize searchField=_searchField;
-- (void)searchGesture:(id)arg1 changedPercentComplete:(float)arg2;
+- (void)searchGesture:(id)arg1 changedPercentComplete:(CGFloat)arg2;
 - (void)_cancelButtonPressed;
 - (id)hitTest:(struct CGPoint)arg1 withEvent:(id)arg2;
 - (void)layoutSubviews;

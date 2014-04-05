@@ -14,7 +14,7 @@
     SBStarkIconImageView *_iconImageView;
     UIView<SBIconAccessoryView> *_accessoryView;
     BOOL _disableFrameChangeOnHighlight;
-    float _initialHeight;
+    CGFloat _initialHeight;
     BOOL _temporarilyEnableHighlightDimming;
 }
 

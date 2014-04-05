@@ -21,7 +21,7 @@
     NSMutableArray *_statusReasonQueue;
 }
 
-+ (float)defaultHeightForOrientation:(int)arg1;
++ (CGFloat)defaultHeightForOrientation:(int)arg1;
 - (void)controlConfigurationDidChangeForState:(int)arg1;
 - (void)controlAppearanceDidChangeForState:(int)arg1;
 - (void)controlCenterDidFinishTransition;

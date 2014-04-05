@@ -17,9 +17,9 @@
     int _orientation;
 }
 
-+ (float)_edgeBorderForOrientation:(int)arg1;
++ (CGFloat)_edgeBorderForOrientation:(int)arg1;
 + (struct CGSize)sizeForOrientation:(int)arg1;
-+ (float)scale;
++ (CGFloat)scale;
 @property(nonatomic) int orientation; // @synthesize orientation=_orientation;
 @property(retain, nonatomic) UIView *overlay; // @synthesize overlay=_overlayView;
 @property(retain, nonatomic) UIView<SBAppSwitcherPageContentView> *view; // @synthesize view=_view;
@@ -28,7 +28,7 @@
 - (struct CGRect)_viewFrame;
 - (struct CGAffineTransform)_transformForScale;
 - (struct CGAffineTransform)_transformForOrientation:(int)arg1;
-@property(nonatomic) float shadowAlpha;
+@property(nonatomic) CGFloat shadowAlpha;
 - (void)setView:(id)arg1 animated:(BOOL)arg2;
 - (void)layoutSubviews;
 - (struct CGSize)sizeThatFits:(struct CGSize)arg1;

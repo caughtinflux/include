@@ -42,7 +42,7 @@
     NSTimer *_trimProgressTimer;
     PLManagedAsset *_trimmedVideoClip;
     PLProgressStack *_trimProgressStack;
-    float _progress;
+    CGFloat _progress;
     long long _interfaceOrientation;
     PLMoviePlayerController *_moviePlayer;
     long long _orientationWhenLastDisplayed;
@@ -181,7 +181,7 @@
 - (void)_didBeginPlayback;
 - (_Bool)isPlaying;
 - (void)handleDoubleTap;
-- (void)toggleScaleMode:(float)arg1;
+- (void)toggleScaleMode:(CGFloat)arg1;
 @property(nonatomic) PLPhotoTileViewController *imageTile;
 @property(readonly, nonatomic) PLManagedAsset *videoCameraImage;
 @property(readonly, nonatomic) UIImageView *previewImageView;
@@ -204,7 +204,7 @@
 - (void)_trimProgressChanged:(id)arg1;
 - (void)setProgress:(id)arg1;
 - (void)_updateTrimProgress;
-- (void)_informDelegateAboutProgressChange:(float)arg1;
+- (void)_informDelegateAboutProgressChange:(CGFloat)arg1;
 - (void)_resetTrimProgressTimer;
 - (void)_removeTrimProgressTimer;
 - (void)importerFinishedProcessingTrimmedVideo:(id)arg1;
@@ -218,14 +218,14 @@
 @property(nonatomic, getter=isEditing) _Bool editing;
 - (void)setEditing:(_Bool)arg1 animated:(_Bool)arg2;
 - (void)hideTrimMessage;
-- (void)showTrimMessage:(id)arg1 withBottomY:(float)arg2;
+- (void)showTrimMessage:(id)arg1 withBottomY:(CGFloat)arg2;
 - (void)setMaximumTrimLength:(double)arg1;
 - (void)_clearImageGenerators;
 - (void)_configureImageGenerator:(id)arg1 thumbnailSize:(struct CGSize)arg2 forSummaryThumbnails:(_Bool)arg3;
 - (void)_serviceImageGenerationRequests;
 - (void)_addThumbnailRequestForTimestamp:(id)arg1 isSummaryThumbnail:(_Bool)arg2;
 - (void)movieScrubber:(id)arg1 willZoomToMinimumValue:(double)arg2 maximumValue:(double)arg3;
-- (void)movieScrubber:(id)arg1 widthDelta:(float)arg2 originXDelta:(float)arg3;
+- (void)movieScrubber:(id)arg1 widthDelta:(CGFloat)arg2 originXDelta:(CGFloat)arg3;
 - (void)movieScrubberDidCancelEditing:(id)arg1;
 - (void)movieScrubberDidBeginEditing:(id)arg1;
 - (void)movieScrubberWillBeginEditing:(id)arg1;
@@ -240,7 +240,7 @@
 - (void)_resetScrubberUpdateTimer;
 - (void)_removeScrubberUpdateTimer;
 - (double)movieScrubberThumbnailAspectRatio:(id)arg1;
-- (id)_loadThumbnailsIntoDictionary:(id)arg1 isLandscape:(_Bool)arg2 aspectRatio:(float)arg3;
+- (id)_loadThumbnailsIntoDictionary:(id)arg1 isLandscape:(_Bool)arg2 aspectRatio:(CGFloat)arg3;
 - (void)movieScrubber:(id)arg1 requestThumbnailImageForTimestamp:(id)arg2 isSummaryThumbnail:(_Bool)arg3;
 - (void)movieScrubber:(id)arg1 requestThumbnailImageForTimestamp:(id)arg2;
 @property(readonly, nonatomic) _Bool _didSetPhotoData;

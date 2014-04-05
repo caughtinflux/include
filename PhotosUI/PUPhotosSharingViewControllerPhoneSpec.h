@@ -10,7 +10,7 @@
 #import <PhotosUI/PUPhotosSharingViewControllerSpec.h>
 
 @interface PUPhotosSharingViewControllerPhoneSpec : PUPhotosSharingViewControllerSpec
--(float)interItemSpacing;
+-(CGFloat)interItemSpacing;
 -(int)fastImageFormat;
 -(int)qualityImageFormat;
 -(BOOL)embedsActivityViewForOrientation:(int)arg1 ;

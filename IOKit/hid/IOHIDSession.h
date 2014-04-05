@@ -64,22 +64,22 @@ extern "C" {
 		CFMutableSetRef ALSStates;	// 80
 		CFMutableDictionaryRef properties;	// 84
 		Boolean     displayStatus;	// 88, initially = true
-		float       factor;	// brightnessFactor. 8c, initially = 1
-		float       deviceAmbient;	// 94, initially = 0.5
-		float       interval;	// displayInternval. 98, initially = 0.402
-		float       ALSIntPeriod;	// 9c, initially = 5.5
-		float       xa4;	// a4, initially = 0
-		float       xa8;	// a8, initially = 5.5
-		float       xac;	// ac, initially = -1
-		float       xb0;	// b0, initially = 1
-		float       backlight;	// b4, initially = 1
+		CGFloat       factor;	// brightnessFactor. 8c, initially = 1
+		CGFloat       deviceAmbient;	// 94, initially = 0.5
+		CGFloat       interval;	// displayInternval. 98, initially = 0.402
+		CGFloat       ALSIntPeriod;	// 9c, initially = 5.5
+		CGFloat       xa4;	// a4, initially = 0
+		CGFloat       xa8;	// a8, initially = 5.5
+		CGFloat       xac;	// ac, initially = -1
+		CGFloat       xb0;	// b0, initially = 1
+		CGFloat       backlight;	// b4, initially = 1
 		CFTypeRef   xe0;	// e0
 		int         displayOrientation;	// e8, initially = 1
 		Boolean     orientationEnabled;	// ec, initially = false
 		Boolean     ALSIntPeriodOrientationEnabled;	// ed, initially = false
-		float       ALSIntPeriodOrientationPortrait;	// f0, initially = 5.5
-		float       ALSIntPeriodOrientationPortraitInv;	// f4, initially = 0
-		float       ALSIntPeriodOrientationLandscape;	// f8, initially = 0
+		CGFloat       ALSIntPeriodOrientationPortrait;	// f0, initially = 5.5
+		CGFloat       ALSIntPeriodOrientationPortraitInv;	// f4, initially = 0
+		CGFloat       ALSIntPeriodOrientationLandscape;	// f8, initially = 0
 		int         lockStateToken;	// fc. (for the "com.apple.springboard.lockstate" Darwin notification)
 		uint64_t    lockState;	// 100, 104
 		mach_port_t lockStateNotifyPort;	// 108 (leads to __IOHIDSessionLockCallback)

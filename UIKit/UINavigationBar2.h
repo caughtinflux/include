@@ -18,7 +18,7 @@
 +(CGSize)defaultSizeWithPrompt;
 +(id)defaultPromptFont;
 +(void)setDefaultAnimationDuration:(double)duration;
--(float)defaultButtonHeight;
+-(CGFloat)defaultButtonHeight;
 -(CGSize)defaultSizeForOrientation:(int)orientation;
 -(void)_updateOpacity;
 -(id)initWithFrame:(CGRect)frame;
@@ -65,7 +65,7 @@
 -(BOOL)isMinibar;
 -(BOOL)forceFullHeightInLandscape;
 -(void)setForceFullHeightInLandscape:(BOOL)landscape;
--(void)setRightMargin:(float)margin;
+-(void)setRightMargin:(CGFloat)margin;
 -(void)setTitleAutoresizesToFit:(BOOL)fit;
 -(BOOL)titleAutoresizesToFit;
 -(void)updateTitleView;
@@ -92,7 +92,7 @@
 -(void)_setLeftView:(id)view rightView:(id)view2;
 -(void)_showLeftRightButtonsAnimationDidStop:(id)_showLeftRightButtonsAnimation finished:(id)finished context:(void*)context;
 -(void)setButton:(int)button enabled:(BOOL)enabled;
--(id)createButtonWithContents:(id)contents width:(float)width barStyle:(int)style buttonStyle:(int)style4 isRight:(BOOL)right;
+-(id)createButtonWithContents:(id)contents width:(CGFloat)width barStyle:(int)style buttonStyle:(int)style4 isRight:(BOOL)right;
 -(void)hideButtons;
 -(void)_hideButtonsAnimationDidStop:(id)_hideButtonsAnimation finished:(id)finished context:(void*)context;
 -(void)showBackButton:(BOOL)button animated:(BOOL)animated;
@@ -110,8 +110,8 @@
 -(void)_fadeViewOut:(id)anOut;
 -(void)_fadeViewsOut:(id)anOut;
 -(void)_fadeViewsIn:(id)anIn;
--(void)_adjustVisibleItemsByDelta:(float)delta;
--(float)_barWidth;
+-(void)_adjustVisibleItemsByDelta:(CGFloat)delta;
+-(CGFloat)_barWidth;
 -(void)layoutSubviews;
 -(int)_barStyle:(BOOL)style;
 -(void)_navBarButtonPressed:(id)pressed;
@@ -119,8 +119,8 @@
 -(id)buttonItemShadowColor;
 -(id)buttonItemTextColor;
 -(void)showHideBackButtomAnimationDidStop:(id)showHideBackButtomAnimation finished:(id)finished context:(void*)context;
--(float)topItemAlpha;
--(void)setTopItemAlpha:(float)alpha;
+-(CGFloat)topItemAlpha;
+-(void)setTopItemAlpha:(CGFloat)alpha;
 -(id)_allViews;
 -(void)_fadeAllViewsOut;
 -(void)_fadeAllViewsIn;

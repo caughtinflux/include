@@ -11,9 +11,9 @@ __attribute__((visibility("hidden")))
 // inherited: -(void)dealloc;
 // inherited: -(void)minimize;
 // inherited: -(void)maximize;
-// inherited: -(UIPeripheralAnimationGeometry)geometryForImplHeightDelta:(float)implHeightDelta;
-// inherited: -(void)prepareForImplBoundsHeightChange:(float)implBoundsHeightChange suppressNotification:(BOOL)notification;
-// inherited: -(void)implBoundsHeightChangeDone:(float)done suppressNotification:(BOOL)notification;
+// inherited: -(UIPeripheralAnimationGeometry)geometryForImplHeightDelta:(CGFloat)implHeightDelta;
+// inherited: -(void)prepareForImplBoundsHeightChange:(CGFloat)implBoundsHeightChange suppressNotification:(BOOL)notification;
+// inherited: -(void)implBoundsHeightChangeDone:(CGFloat)done suppressNotification:(BOOL)notification;
 -(void)didResume:(id)resume;
 -(BOOL)_isAutomaticKeyboard;
 @end

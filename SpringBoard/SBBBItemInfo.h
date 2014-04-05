@@ -19,7 +19,7 @@
 - (unsigned int)hash;
 - (BOOL)isEqual:(id)arg1;
 - (void)invalidateCachedLayoutData;
-- (float)heightForReusableViewInTableView:(id)arg1;
+- (CGFloat)heightForReusableViewInTableView:(id)arg1;
 - (void)populateReusableView:(id)arg1;
 - (Class)reusableViewClass;
 @property(readonly, nonatomic) NSString *identifier;

@@ -12,12 +12,12 @@
 @interface UIPreferencesTextTableCell : UIPreferencesTableCell <UITextFieldDelegate> {
 	UITextField* _textField;
 	UILabel* _valueSuffixLabel;
-	float _textFieldOffset;
+	CGFloat _textFieldOffset;
 	SEL _returnAction;
 }
 -(id)initWithFrame:(CGRect)frame;
--(void)setTextFieldOffset:(float)offset;
--(float)textFieldOffset;
+-(void)setTextFieldOffset:(CGFloat)offset;
+-(CGFloat)textFieldOffset;
 -(void)setReturnAction:(SEL)action;
 -(void)dealloc;
 -(id)_disabledFontColor;

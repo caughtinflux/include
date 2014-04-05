@@ -18,7 +18,7 @@
     double _trimEndTime;
     int _mode;
     AVAssetExportSession *_exportSession;
-    float _percentComplete;
+    CGFloat _percentComplete;
     NSTimer *_progressTimer;
     PLProgressView *_progressView;
     id _delegate;

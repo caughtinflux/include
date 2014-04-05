@@ -10,7 +10,7 @@
 -(double)movieScrubberTrackViewDuration:(id)duration;
 -(id)movieScrubberTrackView:(id)view evenlySpacedTimestamps:(int)timestamps startingAt:(id)at endingAt:(id)at4;
 -(id)movieScrubberTrackView:(id)view timestampsStartingAt:(id)at endingAt:(id)at3 maxCount:(int)count;
--(float)movieScrubberTrackViewThumbnailAspectRatio:(id)ratio;
+-(CGFloat)movieScrubberTrackViewThumbnailAspectRatio:(id)ratio;
 -(void)movieScrubberTrackView:(id)view requestThumbnailImageForTimestamp:(id)timestamp;
 @end
 

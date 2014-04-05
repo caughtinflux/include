@@ -8,7 +8,7 @@
 #import <Availability2.h>
 
 @protocol UIKeyboardCandidateList <NSObject>
--(void)setCandidates:(id)candidates inlineText:(id)text inlineRect:(CGRect)rect maxX:(float)x layout:(BOOL)layout;
+-(void)setCandidates:(id)candidates inlineText:(id)text inlineRect:(CGRect)rect maxX:(CGFloat)x layout:(BOOL)layout;
 -(void)layout;
 -(void)setUIKeyboardCandidateListDelegate:(id)delegate;
 -(void)showCandidateAtIndex:(unsigned)index;
@@ -24,7 +24,7 @@
 -(unsigned)count;
 -(void)configureKeyboard:(id)keyboard;
 @optional
--(void)setCandidates:(id)candidates type:(int)type inlineText:(id)text inlineRect:(CGRect)rect maxX:(float)x layout:(BOOL)layout;
+-(void)setCandidates:(id)candidates type:(int)type inlineText:(id)text inlineRect:(CGRect)rect maxX:(CGFloat)x layout:(BOOL)layout;
 -(void)showCaret:(BOOL)caret gradually:(BOOL)gradually;
 -(void)setCompletionContext:(id)context;
 -(void)obsoleteCandidates;

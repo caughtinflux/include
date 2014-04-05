@@ -28,7 +28,7 @@
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)dealloc;
 -(CGSize)sizeThatFits:(CGSize)fits;
--(unsigned)maximumNumberOfTitlesWithoutTruncationForHeight:(float)height;
+-(unsigned)maximumNumberOfTitlesWithoutTruncationForHeight:(CGFloat)height;
 -(void)drawRect:(CGRect)rect;
 -(void)_selectSectionForTouch:(id)touch withEvent:(id)event;
 // inherited: -(BOOL)beginTrackingWithTouch:(id)touch withEvent:(id)event;

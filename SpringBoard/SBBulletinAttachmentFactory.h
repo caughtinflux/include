@@ -26,8 +26,8 @@
 + (id)bannerThumbnailConstraintsForAttachmentType:(int)arg1;
 + (id)lockScreenFloatingThumbnailContraintsForAttachmentType:(int)arg1;
 + (id)listThumbnailConstraintsForAttachmentType:(int)arg1;
-+ (struct CGSize)bannerImageSizeForAttachmentType:(int)arg1 thumbnailWidth:(float)arg2 height:(float)arg3;
-+ (struct CGSize)listImageSizeForAttachmentType:(int)arg1 thumbnailWidth:(float)arg2 height:(float)arg3;
++ (struct CGSize)bannerImageSizeForAttachmentType:(int)arg1 thumbnailWidth:(CGFloat)arg2 height:(CGFloat)arg3;
++ (struct CGSize)listImageSizeForAttachmentType:(int)arg1 thumbnailWidth:(CGFloat)arg2 height:(CGFloat)arg3;
 
 @end
 

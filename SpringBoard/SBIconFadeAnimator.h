@@ -14,11 +14,11 @@
     BOOL _addedToWindow;
 }
 
-- (void)_applyAlphaForFraction:(float)arg1;
-- (void)_animateToFraction:(float)arg1 afterDelay:(double)arg2 withSharedCompletion:(id)arg3;
+- (void)_applyAlphaForFraction:(CGFloat)arg1;
+- (void)_animateToFraction:(CGFloat)arg1 afterDelay:(double)arg2 withSharedCompletion:(id)arg3;
 - (unsigned int)_numberOfSignificantAnimations;
 - (void)_cleanupAnimation;
-- (void)_setAnimationFraction:(float)arg1;
+- (void)_setAnimationFraction:(CGFloat)arg1;
 - (void)_prepareAnimation;
 - (void)dealloc;
 - (id)initWithFolderController:(id)arg1 crossfadeView:(id)arg2;

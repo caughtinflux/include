@@ -12,11 +12,11 @@
 
 @interface CAMediaTimingFunction ()
 // inherited: -(void)dealloc;
--(void)_getPoints:(float*)points;
+-(void)_getPoints:(CGFloat*)points;
 // inherited: -(id)description;
 @end
 
 @interface CAMediaTimingFunction (CAMediaTimingFunctionPrivate)
--(float)_solveForInput:(float)input;
+-(CGFloat)_solveForInput:(CGFloat)input;
 @end
 
