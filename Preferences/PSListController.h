@@ -14,8 +14,6 @@
 @interface PSListController : PSViewController {
 	NSMutableDictionary* _cells;
 	BOOL _cachesCells;
-	NSString* _title;
-	UITransitionView* _view;
 	UIPreferencesTable* _table;
 	NSArray* _specifiers;
 	id<PSBaseView> _detailController;

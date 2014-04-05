@@ -11,7 +11,7 @@
 
 @class PSRootController;
 
-@interface PSViewController : NSObject <PSBaseView> {
+@interface PSViewController : UIViewController <PSBaseView> {
 	id<PSBaseView> _parentController;
 	PSRootController* _rootController;
 }

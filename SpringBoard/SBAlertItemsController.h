@@ -6,10 +6,10 @@
 
 #import "NSObject.h"
 
-#import "BBObserverDelegate.h"
-#import "SBAssertionDelegate.h"
-#import "SBVolumePressBandit.h"
-#import "_UISettingsKeyObserver.h"
+#import "BBObserverDelegate-Protocol.h"
+#import "SBAssertionDelegate-Protocol.h"
+#import "SBVolumePressBandit-Protocol.h"
+#import "_UISettingsKeyObserver-Protocol.h"
 
 @class BBObserver, CPDistributedNotificationCenter, NSArray, NSHashTable, NSMutableArray, NSMutableSet, NSTimer, SBAlertItem, SBAlertItemsSettings;
 

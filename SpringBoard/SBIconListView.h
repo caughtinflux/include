@@ -52,7 +52,7 @@ inline SBIconCoordinate SBIconCoordinateMake(NSInteger row, NSInteger col)
 - (void)_sendLayoutDelegateLayoutInvalidated;
 - (void)_sendLayoutDelegateWouldHaveMovedIcon:(SBIcon *)icon;
 - (void)cleanupAfterRotation;
-- (void)performRotationWithDuration:(double)arg1;
+- (void)performRotationWithDuration:(NSTimeInterval)arg1;
 - (void)prepareToRotateToInterfaceOrientation:(UIInterfaceOrientation)orient;
 - (NSUInteger)rowAtPoint:(CGPoint)point;
 - (NSUInteger)columnAtPoint:(CGPoint)point;

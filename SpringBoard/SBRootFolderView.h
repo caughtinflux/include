@@ -17,12 +17,12 @@
     SBDockIconListView *_dockListView;
     TPLegacyLCDTextView *_idleTextView;
     SBFParallaxSettings *_parallaxSettings;
-    float _searchGestureProgress;
+    CGFloat _searchGestureProgress;
     SBSearchViewController *_searchViewController;
 }
 
 @property(readonly, nonatomic) SBSearchViewController *searchViewController; // @synthesize searchViewController=_searchViewController;
-- (void)searchGesture:(id)arg1 changedPercentComplete:(float)arg2;
+- (void)searchGesture:(id)arg1 changedPercentComplete:(CGFloat)arg2;
 - (void)settings:(id)arg1 changedValueForKey:(id)arg2;
 - (void)_configureParallax;
 - (void)lcdTextViewCompletedScroll:(id)arg1;
@@ -32,15 +32,15 @@
 - (void)_updateEditingStateAnimated:(BOOL)arg1;
 - (void)resetIconListViews;
 - (id)iconListViewAtPoint:(CGPoint)arg1;
-- (id)iconListViewAtIndex:(unsigned int)arg1;
+- (id)iconListViewAtIndex:(NSUInteger)arg1;
 - (void)_enableUserInteractionAfterSignificantAnimation;
 - (void)_disableUserInteractionBeforeSignificantAnimation;
-- (void)fadeContentForMinificationFraction:(float)arg1;
-- (void)fadeContentForMagnificationFraction:(float)arg1;
+- (void)fadeContentForMinificationFraction:(CGFloat)arg1;
+- (void)fadeContentForMagnificationFraction:(CGFloat)arg1;
 - (void)didAnimate;
 - (void)willAnimate;
-- (void)setDockVerticalStretch:(float)arg1;
-- (void)setDockOffscreenFraction:(float)arg1;
+- (void)setDockVerticalStretch:(CGFloat)arg1;
+- (void)setDockOffscreenFraction:(CGFloat)arg1;
 - (id)dockView;
 - (void)_layoutSubviews;
 - (void)layoutViewsForSearch;

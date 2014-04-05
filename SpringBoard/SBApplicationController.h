@@ -31,11 +31,12 @@
     NSCountedSet *_pendingRequestedUninstallsBundleID;
 }
 
-+ (id)sharedInstanceIfExists;
-+ (id)sharedInstance;
-+ (id)_sharedInstanceCreateIfNecessary:(BOOL)arg1;
-- (void)applicationsUninstalled:(id)arg1;
-- (void)applicationsInstalled:(id)arg1;
++ (instancetype)sharedInstanceIfExists;
++ (instancetype)sharedInstance;
++ (instancetype)_sharedInstanceCreateIfNecessary:(BOOL)arg1;
+
+- (void)applicationsUninstalled:(id)uninstalled;
+- (void)applicationsInstalled:(id)applications;
 - (id)restrictionController;
 - (void)_removePendingRequestedUninstalledBundleID:(id)arg1;
 - (BOOL)updateAppIconVisibilityOverridesShowing:(id *)arg1 hiding:(id *)arg2;
@@ -63,19 +64,19 @@
 - (id)_getLSApplicationProxies;
 - (id)newsstandApps;
 - (id)webApplications;
-- (id)clockApplication;
-- (id)faceTimeApp;
-- (id)mobilePhone;
-- (id)setupApplication;
+- (SBApplication *)clockApplication;
+- (SBApplication *)faceTimeApp;
+- (SBApplication *)mobilePhone;
+- (SBApplication *)setupApplication;
 - (id)dataActivation;
 - (id)applicationCurrentlyRecordingAudio;
-- (id)iPod;
-- (id)applicationWithPid:(int)arg1;
-- (id)applicationWithDisplayIdentifier:(id)arg1;
-- (id)applicationsWithPid:(int)arg1;
-- (id)applicationsWithBundleIdentifier:(id)arg1;
-- (id)allApplications;
-- (id)allDisplayIdentifiers;
+- (SBApplication *)iPod;
+- (SBApplication *)applicationWithPid:(int)arg1;
+- (SBApplication *)applicationWithDisplayIdentifier:(id)arg1;
+- (SBApplication *)applicationsWithPid:(int)arg1;
+- (SBApplication *)applicationsWithBundleIdentifier:(id)arg1;
+- (NSArray *)allApplications;
+- (NSArray *)allDisplayIdentifiers;
 - (void)autoLaunchAppsIfNecessaryAfterBoot;
 - (void)_deviceFirstUnlocked;
 - (int)locationStatusBarIconType;
@@ -88,8 +89,6 @@
 - (void)_mediaServerConnectionDied:(id)arg1;
 - (void)_registerForAVSystemControllerNotifications;
 - (void)_unregisterForAVSystemControllerNotifications;
-- (void)dealloc;
-- (id)init;
 
 @end
 

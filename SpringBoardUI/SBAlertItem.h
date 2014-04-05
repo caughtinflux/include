@@ -4,85 +4,81 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2012 by Steve Nygard.
  */
 
-#import "NSObject.h"
-
-#import "UIAlertViewDelegate.h"
-
-@class NSArray, UIAlertView;
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface SBAlertItem : NSObject <UIAlertViewDelegate>
 {
     UIAlertView *_alertSheet;
-    _Bool _orderOverSBAlert;
-    _Bool _preventLockOver;
-    _Bool _didEverActivate;
-    _Bool _ignoreIfAlreadyDisplaying;
-    _Bool _didPlayPresentationSound;
-    _Bool _allowInSetup;
-    _Bool _pendInSetupIfNotAllowed;
-    _Bool _pendWhileKeyBagLocked;
+    BOOL _orderOverSBAlert;
+    BOOL _preventLockOver;
+    BOOL _didEverActivate;
+    BOOL _ignoreIfAlreadyDisplaying;
+    BOOL _didPlayPresentationSound;
+    BOOL _allowInSetup;
+    BOOL _pendInSetupIfNotAllowed;
+    BOOL _pendWhileKeyBagLocked;
     NSArray *_allowedBundleIDs;
-    _Bool _allowInStark;
+    BOOL _allowInStark;
 }
 
 + (void)activateAlertItem:(id)arg1;
 + (id)_alertItemsController;
-@property(nonatomic) _Bool allowInStark; // @synthesize allowInStark=_allowInStark;
+@property(nonatomic) BOOL allowInStark; // @synthesize allowInStark=_allowInStark;
 @property(retain, nonatomic) NSArray *allowedBundleIDs; // @synthesize allowedBundleIDs=_allowedBundleIDs;
-@property(nonatomic) _Bool pendWhileKeyBagLocked; // @synthesize pendWhileKeyBagLocked=_pendWhileKeyBagLocked;
-@property(nonatomic) _Bool pendInSetupIfNotAllowed; // @synthesize pendInSetupIfNotAllowed=_pendInSetupIfNotAllowed;
-@property(nonatomic) _Bool allowInSetup; // @synthesize allowInSetup=_allowInSetup;
-@property(nonatomic) _Bool ignoreIfAlreadyDisplaying; // @synthesize ignoreIfAlreadyDisplaying=_ignoreIfAlreadyDisplaying;
-- (id)prepareNewAlertSheetWithLockedState:(_Bool)arg1 requirePasscodeForActions:(_Bool)arg2;
-- (void)alertView:(id)arg1 clickedButtonAtIndex:(long long)arg2;
-- (_Bool)displayActionButtonOnLockScreen;
-- (_Bool)hasActiveKeyboardOnScreen;
-- (int)alertPriority;
-- (_Bool)preventInterruption;
-- (_Bool)reappearsAfterUnlock;
-- (_Bool)reappearsAfterLock;
-- (_Bool)behavesSuperModally;
-- (_Bool)forcesModalAlertAppearance;
+@property(nonatomic) BOOL pendWhileKeyBagLocked; // @synthesize pendWhileKeyBagLocked=_pendWhileKeyBagLocked;
+@property(nonatomic) BOOL pendInSetupIfNotAllowed; // @synthesize pendInSetupIfNotAllowed=_pendInSetupIfNotAllowed;
+@property(nonatomic) BOOL allowInSetup; // @synthesize allowInSetup=_allowInSetup;
+@property(nonatomic) BOOL ignoreIfAlreadyDisplaying; // @synthesize ignoreIfAlreadyDisplaying=_ignoreIfAlreadyDisplaying;
+- (id)prepareNewAlertSheetWithLockedState:(BOOL)arg1 requirePasscodeForActions:(BOOL)arg2;
+- (void)alertView:(id)arg1 clickedButtonAtIndex:(NSInteger)arg2;
+- (BOOL)displayActionButtonOnLockScreen;
+- (BOOL)hasActiveKeyboardOnScreen;
+- (NSInteger)alertPriority;
+- (BOOL)preventInterruption;
+- (BOOL)reappearsAfterUnlock;
+- (BOOL)reappearsAfterLock;
+- (BOOL)behavesSuperModally;
+- (BOOL)forcesModalAlertAppearance;
 - (id)alertItemNotificationSender;
 - (id)alertItemNotificationDate;
-- (int)alertItemNotificationType;
+- (NSInteger)alertItemNotificationType;
 - (void)noteVolumeOrLockPressed;
-- (void)didDeactivateForReason:(int)arg1;
-- (void)willDeactivateForReason:(int)arg1;
+- (void)didDeactivateForReason:(NSInteger)arg1;
+- (void)willDeactivateForReason:(NSInteger)arg1;
 - (void)didFailToActivate;
 - (void)screenWillUndim;
-- (void)dismiss:(int)arg1;
+- (void)dismiss:(NSInteger)arg1;
 - (void)dismiss;
 - (void)buttonDismissed;
-- (void)willRelockForButtonPress:(_Bool)arg1;
+- (void)willRelockForButtonPress:(BOOL)arg1;
 - (void)didActivate;
 - (void)willActivate;
-- (_Bool)_didEverActivate;
-- (void)setPreventLockOver:(_Bool)arg1;
-- (_Bool)preventLockOver;
-- (void)setOrderOverSBAlert:(_Bool)arg1;
+- (BOOL)_didEverActivate;
+- (void)setPreventLockOver:(BOOL)arg1;
+- (BOOL)preventLockOver;
+- (void)setOrderOverSBAlert:(BOOL)arg1;
 - (void)performUnlockAction;
 - (double)autoDismissInterval;
 - (id)shortLockLabel;
 - (id)lockLabel;
-- (void)configure:(_Bool)arg1 requirePasscodeForActions:(_Bool)arg2;
+- (void)configure:(BOOL)arg1 requirePasscodeForActions:(BOOL)arg2;
 - (void)cleanPreviousConfiguration;
 - (void)playPresentationSound;
 - (void)_playPresentationSound;
 - (id)sound;
-- (_Bool)didPlayPresentationSound;
-- (_Bool)isCriticalAlert;
-- (_Bool)dismissOnModalDisplayActivation;
-- (_Bool)dismissOnLock;
-- (_Bool)togglesMediaControls;
-- (int)unlockSource;
-- (_Bool)unlocksScreen;
-- (_Bool)undimsScreen;
-- (_Bool)shouldShowInEmergencyCall;
-- (_Bool)shouldShowInLockScreen;
-- (_Bool)allowAutoUnlock;
-- (_Bool)allowMenuButtonDismissal;
-- (void)dealloc;
+- (BOOL)didPlayPresentationSound;
+- (BOOL)isCriticalAlert;
+- (BOOL)dismissOnModalDisplayActivation;
+- (BOOL)dismissOnLock;
+- (BOOL)togglesMediaControls;
+- (NSInteger)unlockSource;
+- (BOOL)unlocksScreen;
+- (BOOL)undimsScreen;
+- (BOOL)shouldShowInEmergencyCall;
+- (BOOL)shouldShowInLockScreen;
+- (BOOL)allowAutoUnlock;
+- (BOOL)allowMenuButtonDismissal;
 - (id)init;
 - (id)alertSheet;
 - (Class)alertSheetClass;
