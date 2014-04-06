@@ -6,8 +6,8 @@
 
 #import "NSObject.h"
 
-#import "SBApplicationRestrictionDataSource.h"
-#import "SBLSApplicationLifecycleObserver.h"
+#import "SBApplicationRestrictionDataSource-Protocol.h"
+#import "SBLSApplicationLifecycleObserver-Protocol.h"
 
 @class BKSApplicationStateMonitor, NSCountedSet, NSDictionary, NSLock, NSMutableDictionary, NSMutableSet, NSOperationQueue, SBApplication, SBApplicationRestrictionController, SBLSApplicationWorkspaceObserver;
 

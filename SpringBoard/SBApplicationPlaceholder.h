@@ -4,9 +4,8 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2012 by Steve Nygard.
  */
 
-#import "NSObject.h"
-
-#import "SBLeafIconDataSource.h"
+#import <Foundation/Foundation.h>
+#import <SpringBoard/SBLeafIcon.h>
 
 @class LSApplicationProxy, NSMutableDictionary, NSMutableSet, NSProgress, NSString;
 
@@ -84,7 +83,6 @@
 - (id)description;
 - (BOOL)isEqual:(id)arg1;
 - (void)invalidate;
-- (void)dealloc;
 - (id)initWithProxy:(id)arg1;
 
 @end
