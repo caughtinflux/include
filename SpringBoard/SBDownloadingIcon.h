@@ -16,8 +16,8 @@
     SBApplicationPlaceholder *_appPlaceholder;
 }
 
-+ (instancetype)leafIdentifierForApplicationPlaceholder:(SBApplicationPlaceholder *)placeholder;
-+ (instancetype)leafIdentifierForApplicationPlaceholderBundleID:(NSString *)bundleID;
++ (NSString *)leafIdentifierForApplicationPlaceholder:(SBApplicationPlaceholder *)placeholder;
++ (NSString *)leafIdentifierForApplicationPlaceholderBundleID:(NSString *)bundleID;
 
 - (void)cancelDownload;
 - (BOOL)iconAppearsInNewsstand;

@@ -230,7 +230,7 @@
 - (void)dismissSwitcherForAlert:(id)arg1;
 - (void)openNewsstand;
 - (id)switcherWindow;
-- (BOOL)_activateAppSwitcherFromSide:(int)arg1;
+- (BOOL)_activateAppSwitcherFromSide:(NSInteger)side;
 - (void)_accessibilityWillBeginAppSwitcherRevealAnimation;
 - (CGFloat)_appSwitcherRevealAnimationDelay;
 - (BOOL)handleMenuDoubleTap;

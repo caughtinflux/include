@@ -9,9 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "_UISettingsGroupObserver-Protocol.h"
+#import "_UISettingsKeyPathObserver-Protocol.h"
+
 @class NSHashTable, NSSet, NSDictionary;
 
-@interface _UISettings : NSObject </*_UISettingsGroupObserver, _UISettingsKeyPathObserver,*/ NSCopying> {
+@interface _UISettings : NSObject <_UISettingsGroupObserver, _UISettingsKeyPathObserver, NSCopying> {
 
 	NSHashTable* _internal_keyObservers;
 	NSHashTable* _internal_keyPathObservers;

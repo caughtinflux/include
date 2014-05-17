@@ -34,8 +34,8 @@
 - (void)_windowFinishedRotating;
 - (void)_invalidateCompletions;
 - (id)_centralAnimationFactory;
-- (void)_animateToFraction:(CGFloat)arg1 afterDelay:(double)arg2 withSharedCompletion:(id)arg3;
-- (unsigned int)_numberOfSignificantAnimations;
+- (void)_animateToFraction:(CGFloat)fraction afterDelay:(NSTimeInterval)arg2 withSharedCompletion:(id)arg3;
+- (NSUInteger)_numberOfSignificantAnimations;
 - (void)_cleanupAnimation;
 - (void)_setAnimationFraction:(CGFloat)arg1;
 - (void)_prepareAnimation;
@@ -43,7 +43,7 @@
 - (void)_animateToFractionFromContext:(id)arg1;
 - (void)_animateToFractionFromPendingContexts;
 - (void)cleanup;
-- (void)animateToFraction:(CGFloat)arg1 afterDelay:(double)arg2 withCompletion:(void(^)(void))arg3;
+- (void)animateToFraction:(CGFloat)fraction afterDelay:(NSTimeInterval)delay withCompletion:(void(^)(void))completion;
 - (void)setFraction:(CGFloat)arg1;
 - (void)prepare;
 - (id)centralAnimationFactory;

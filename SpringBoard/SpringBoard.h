@@ -33,6 +33,7 @@
 #import "SBIconListView.h"
 #import "SBDockIconListView.h"
 #import "SBRootIconListView.h"
+#import "SBIconListPageControl.h"
 #import "SBFolder.h"
 #import "SBFolderIcon.h"
 #import "SBRootFolder.h"

@@ -106,10 +106,10 @@ typedef struct {
 } CDStruct_812d5f7b;
 
 typedef struct {
-    int startStyle;
-    int endStyle;
+    NSInteger startStyle;
+    NSInteger endStyle;
     CGFloat transitionFraction;
-} CDStruct_04b3617e;
+} SBWallpaperTransitionState;
 
 typedef struct {
     int _field1;
@@ -118,7 +118,7 @@ typedef struct {
 
 typedef struct {
     char valid;
-    CDStruct_04b3617e styleTransitionState;
+    SBWallpaperTransitionState styleTransitionState;
 } CDStruct_f206ec99;
 
 typedef struct {

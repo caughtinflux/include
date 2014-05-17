@@ -10,13 +10,13 @@
 + (id)_moduleWithSectionTitle:(id)arg1 delay:(_Bool)arg2;
 + (id)_moduleWithSectionTitle:(id)arg1;
 + (id)settingsControllerModule;
-@property(nonatomic) double calculatedDuration; // @synthesize calculatedDuration=_calculatedDuration;
-@property(nonatomic) double epsilon; // @synthesize epsilon=_epsilon;
-@property(nonatomic) double damping; // @synthesize damping=_damping;
-@property(nonatomic) double stiffness; // @synthesize stiffness=_stiffness;
-@property(nonatomic) double mass; // @synthesize mass=_mass;
-@property(nonatomic) double duration; // @synthesize duration=_duration;
-@property(nonatomic) double delay; // @synthesize delay=_delay;
+@property(nonatomic) NSTimeInterval calculatedDuration; // @synthesize calculatedDuration=_calculatedDuration;
+@property(nonatomic) CGFloat epsilon; // @synthesize epsilon=_epsilon;
+@property(nonatomic) CGFloat damping; // @synthesize damping=_damping;
+@property(nonatomic) CGFloat stiffness; // @synthesize stiffness=_stiffness;
+@property(nonatomic) CGFloat mass; // @synthesize mass=_mass;
+@property(nonatomic) NSTimeInterval duration; // @synthesize duration=_duration;
+@property(nonatomic) NSTimeInterval delay; // @synthesize delay=_delay;
 @property(nonatomic) long long animationType; // @synthesize animationType=_animationType;
 - (void)setDefaultValues;
 

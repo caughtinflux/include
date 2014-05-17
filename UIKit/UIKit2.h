@@ -599,3 +599,4 @@
 #import "UIStatusBar.h"
 
 #import "_UILegibilityView.h"
+#import "_UILegibilitySettings.h"

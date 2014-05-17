@@ -7,6 +7,7 @@
 #import <UIKit/UIView.h>
 #import "CDStructures.h"
 #import "SBIconListLayoutDelegate-Protocol.h"
+#import "SBIcon.h"
 
 inline SBIconCoordinate SBIconCoordinateMake(NSInteger row, NSInteger col)
 {
@@ -111,7 +112,7 @@ inline SBIconCoordinate SBIconCoordinateMake(NSInteger row, NSInteger col)
 - (NSString *)description;
 - (SBIconCoordinate)iconCoordinateForIndex:(NSUInteger)index forOrientation:(UIInterfaceOrientation)orientation;
 - (NSUInteger)indexForCoordinate:(SBIconCoordinate)coordinate forOrientation:(UIInterfaceOrientation)orientation;
-- (NSInteger)iconLocation;
+- (SBIconLocation)iconLocation;
 - (NSUInteger)iconRowsForSpacingCalculation;
 - (NSUInteger)iconsInRowForSpacingCalculation;
 - (NSUInteger)iconColumnsForCurrentOrientation;

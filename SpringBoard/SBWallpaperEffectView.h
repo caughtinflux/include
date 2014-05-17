@@ -50,11 +50,17 @@ typedef NS_ENUM(NSInteger, SBWallpaperVariant) {
 - (void)wallpaperDidChangeForVariant:(NSInteger)arg1;
 - (void)wallpaperLegibilitySettingsDidChange:(id)arg1 forVariant:(NSInteger)arg2;
 - (void)fakeBlurView:(id)arg1 didChangeStyle:(NSInteger)arg2;
-- (void)layoutSubviews;
-- (void)setMaskImage:(id)arg1 masksBlur:(BOOL)arg2 masksTint:(BOOL)arg3;
+
+/*
+    Setting a mask on the layer of this view does not work correctly; it gets removed when -layoutSubviews is called.
+    Convert the CALayer mask to an image and then set it here.
+    Mask gets weirdly compressed, however.
+*/
+- (void)setMaskImage:(UIImage *)maskImage masksBlur:(BOOL)maskBlur masksTint:(BOOL)maskTint;
+
 - (BOOL)currentTransitionStateIsOpaque;
-- (void)setTransitionState:(CDStruct_04b3617e)arg1;
-- (BOOL)prepareToAnimateToTransitionState:(inout CDStruct_04b3617e *)arg1;
+- (void)setTransitionState:(SBWallpaperTransitionState)state;
+- (BOOL)prepareToAnimateToTransitionState:(inout SBWallpaperTransitionState *)state;
 - (void)setStyle:(NSInteger)style;
 
 - (instancetype)initWithWallpaperVariant:(SBWallpaperVariant)variant;

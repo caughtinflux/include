@@ -4,32 +4,9 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2012 by Steve Nygard.
  */
 
-#pragma mark Named Structures
-
-struct CGPoint {
-    double x;
-    double y;
-};
-
-struct CGRect {
-    struct CGPoint origin;
-    struct CGSize size;
-};
-
-struct CGSize {
-    double width;
-    double height;
-};
-
-struct UIEdgeInsets {
-    double _field1;
-    double _field2;
-    double _field3;
-    double _field4;
-};
+#import <QuartzCore/QuartzCore.h>
 
 #pragma mark Typedef'd Structures
-
 typedef struct {
     long long _field1;
     long long _field2;

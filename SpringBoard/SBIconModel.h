@@ -70,7 +70,7 @@
 - (id)indexPathForIconInPlatformState:(id)arg1;
 - (void)removeIconForIdentifier:(id)arg1;
 - (void)removeIcon:(id)arg1;
-- (void)addIcon:(id)arg1;
+- (void)addIcon:(SBIcon *)icon;
 - (void)_createIconLists;
 - (NSDictionary *)_iconState;
 - (NSDictionary *)iconState;

@@ -10,12 +10,14 @@
 {
 }
 
-+ (unsigned int)maxVisibleIconRowsInterfaceOrientation:(int)arg1;
-+ (unsigned int)iconColumnsForInterfaceOrientation:(int)arg1;
-- (int)iconLocation;
+/*
+Only overrides methods in SBIconListView to adjust positioning/ayout.
++ (NSUInteger)maxVisibleIconRowsInterfaceOrientation:(UIInterfaceOrientation)orientation;
++ (NSUInteger)iconColumnsForInterfaceOrientation:(UIInterfaceOrientation)orientation;
+- (NSInteger)iconLocation;
 - (CGFloat)sideIconInset;
 - (CGFloat)bottomIconInset;
 - (CGFloat)topIconInset;
-
+*/
 @end
 

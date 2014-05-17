@@ -10,25 +10,21 @@
 
 @interface SBIconListPageControl : UIPageControl
 {
-    id _delegate;
+    id<SBIconListPageControlDelegate> _delegate;
     _UILegibilityImageSet *_pageIndicatorImageSet;
     _UILegibilityImageSet *_enabledPageIndicatorImageSet;
 }
 
 @property(nonatomic, retain) _UILegibilityImageSet *enabledPageIndicatorImageSet; // @synthesize enabledPageIndicatorImageSet=_enabledPageIndicatorImageSet;
 @property(nonatomic, retain) _UILegibilityImageSet *pageIndicatorImageSet; // @synthesize pageIndicatorImageSet=_pageIndicatorImageSet;
-@property(nonatomic, assign) id <SBIconListPageControlDelegate> delegate; // @synthesize delegate=_delegate;
+@property(nonatomic, assign) id<SBIconListPageControlDelegate> delegate; // @synthesize delegate=_delegate;
 - (void)_transitionIndicator:(id)arg1 toEnabled:(BOOL)arg2 index:(int)arg3;
 - (id)_indicatorViewEnabled:(BOOL)arg1 index:(int)arg2;
 - (void)_setIndicatorImage:(id)arg1 toEnabled:(BOOL)arg2;
 - (void)setLegibilitySettings:(id)arg1;
-- (void)setFrame:(struct CGRect)arg1;
-- (void)touchesEnded:(id)arg1 withEvent:(id)arg2;
-- (void)touchesMoved:(id)arg1 withEvent:(id)arg2;
-- (void)touchesBegan:(id)arg1 withEvent:(id)arg2;
 - (CGFloat)defaultHeight;
-- (void)dealloc;
-- (id)initWithFrame:(struct CGRect)arg1;
+
+- (instancetype)initWithFrame:(CGRect)arg1;
 
 @end
 

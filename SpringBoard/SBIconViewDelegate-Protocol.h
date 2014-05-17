@@ -14,7 +14,7 @@
 - (BOOL)iconViewDisplaysBadges:(SBIconView *)iconView;
 - (void)iconCloseBoxTapped:(SBIconView *)iconView;
 - (void)icon:(SBIconView *)iconView openFolder:(SBFolder *)folder animated:(BOOL)animated;
-- (BOOL)icon:(SBIconView *)iconView canReceiveGrabbedIcon:(SBIcon *)grabbedIcon;
+- (BOOL)icon:(SBIconView *)iconView canReceiveGrabbedIcon:(SBIconView *)grabbedIconView;
 - (void)iconTapped:(SBIconView *)iconView;
 - (BOOL)iconShouldAllowTap:(SBIconView *)iconView;
 - (void)icon:(SBIconView *)iconView touchEnded:(BOOL)ended;
