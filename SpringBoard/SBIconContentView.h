@@ -10,18 +10,18 @@
 
 @interface SBIconContentView : UIView
 {
-    int _orientation;
+    UIInterfaceOrientation _orientation;
     NSMutableArray *_folderContentViews;
     CGFloat _searchGestureProgress;
 }
 
-@property(nonatomic) int orientation; // @synthesize orientation=_orientation;
+@property(nonatomic) UIInterfaceOrientation orientation; // @synthesize orientation=_orientation;
 
 - (void)clearAllFolderContentViews;
-- (void)popFolderContentView:(id)arg1;
-- (void)pushFolderContentView:(id)arg1;
-- (void)updateLayoutWithDuration:(double)arg1;
-- (id)initWithOrientation:(int)arg1;
+- (void)popFolderContentView:(UIView *)view;
+- (void)pushFolderContentView:(UIView *)view;
+- (void)updateLayoutWithDuration:(NSTimeInterval)duration;
+- (instancetype)initWithOrientation:(UIInterfaceOrientation)arg1;
 
 @end
 

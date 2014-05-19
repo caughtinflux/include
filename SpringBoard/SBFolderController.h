@@ -38,7 +38,7 @@
     SBFolderContext *_lastContext;
 }
 
-+ (CGFloat)wallpaperScaleForDepth:(NSUInteger)arg1;
++ (CGFloat)wallpaperScaleForDepth:(NSUInteger)depth;
 + (NSUInteger)maxFolderDepth;
 
 @property(retain, nonatomic) SBFolderContext *lastContext; // @synthesize lastContext=_lastContext;
@@ -88,7 +88,7 @@
 - (NSUInteger)_depth;
 - (id)_newAnimatorForZoomUp:(BOOL)arg1;
 - (void)_clearIconAnimator;
-- (void)unscatterAnimated:(BOOL)arg1 afterDelay:(double)arg2 withCompletion:(id)arg3;
+- (void)unscatterAnimated:(BOOL)arg1 afterDelay:(NSTimeInterval)arg2 withCompletion:(id)arg3;
 - (void)scatterAnimated:(BOOL)arg1 withCompletion:(id)arg2;
 - (void)noteGrabbedIcon:(id)arg1 locationDidChangeWithTouch:(id)arg2;
 - (void)noteGrabbedIconDidChange:(id)arg1;
@@ -113,7 +113,7 @@
 - (void)_compactFolder;
 - (id)_addEmptyListForce:(BOOL)arg1;
 - (id)addEmptyListView;
-- (void)layoutIconLists:(double)arg1 domino:(BOOL)arg2 forceRelayout:(BOOL)arg3;
+- (void)layoutIconLists:(NSTimeInterval)duration domino:(BOOL)domino forceRelayout:(BOOL)force;
 - (void)_resetIconLists;
 - (void)prepareToTearDown;
 - (void)_updateAssociatedControllerStateAnimated:(BOOL)arg1;

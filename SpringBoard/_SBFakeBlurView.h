@@ -19,7 +19,7 @@
     UIImageView *_imageView;
 }
 
-+ (id)_imageForStyle:(inout int *)arg1 withSource:(id)arg2;
++ (id)_imageForStyle:(inout NSInteger *)arg1 withSource:(id)arg2;
 @property(nonatomic) id <_SBFakeBlurObserver> observer; // @synthesize observer=_observer;
 - (void)didMoveToWindow;
 - (void)willMoveToWindow:(id)arg1;
@@ -27,15 +27,15 @@
 - (void)rotateToInterfaceOrientation:(int)arg1;
 - (void)setBlurImage:(id)arg1;
 - (id)blurImageWithSource:(id)arg1;
-- (void)_setImage:(id)arg1 style:(int)arg2 notify:(BOOL)arg3;
+- (void)_setImage:(id)arg1 style:(NSInteger)arg2 notify:(BOOL)arg3;
 - (void)_updateImageWithSource:(id)arg1 notifyObserver:(BOOL)arg2;
 - (void)updateImageWithSource:(id)arg1;
 - (void)reconfigureWithSource:(id)arg1;
-@property(readonly, nonatomic) int variant;
+@property(readonly, nonatomic) NSInteger variant;
 - (void)dealloc;
-- (id)initWithVariant:(int)arg1;
-- (int)effectiveStyle;
-- (void)requestStyle:(int)arg1;
+- (id)initWithVariant:(NSInteger)arg1;
+- (NSInteger)effectiveStyle;
+- (void)requestStyle:(NSInteger)arg1;
 
 @end
 

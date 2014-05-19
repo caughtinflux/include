@@ -21,7 +21,7 @@
 + (CGFloat)cornerRadiusToInsetContent;
 + (CGSize)folderBackgroundSize;
 
-- (void)wallpaperDidChangeForVariant:(int)arg1;
+- (void)wallpaperDidChangeForVariant:(NSInteger)arg1;
 - (void)settings:(id)settings changedValueForKey:(id)key;
 - (void)_configureBackground;
 - (void)adjustCornerRadiusForMagnificationFraction:(CGFloat)arg1;
