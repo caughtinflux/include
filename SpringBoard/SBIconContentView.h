@@ -6,7 +6,7 @@
 
 #import <UIKit/UIView.h>
 
-@class NSMutableArray;
+@class NSMutableArray, SBFolderView;
 
 @interface SBIconContentView : UIView
 {
@@ -18,8 +18,8 @@
 @property(nonatomic) UIInterfaceOrientation orientation; // @synthesize orientation=_orientation;
 
 - (void)clearAllFolderContentViews;
-- (void)popFolderContentView:(UIView *)view;
-- (void)pushFolderContentView:(UIView *)view;
+- (void)popFolderContentView:(SBFolderView *)view;
+- (void)pushFolderContentView:(SBFolderView *)view;
 - (void)updateLayoutWithDuration:(NSTimeInterval)duration;
 - (instancetype)initWithOrientation:(UIInterfaceOrientation)arg1;
 
