@@ -24,7 +24,7 @@
 - (void)setLegibilitySettings:(id)arg1;
 - (CGFloat)defaultHeight;
 
-- (instancetype)initWithFrame:(CGRect)arg1;
+- (instancetype)initWithFrame:(CGRect)frame;
 
 @end
 

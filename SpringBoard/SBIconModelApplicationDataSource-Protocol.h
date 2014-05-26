@@ -10,7 +10,7 @@
 - (id)firstPageLeafIdentifiers;
 - (BOOL)isNewsstandEnabled;
 - (id)defaultIconState;
-- (int)appVisibilityOverrideForBundleIdentifier:(id)arg1;
+- (NSInteger)appVisibilityOverrideForBundleIdentifier:(id)arg1;
 - (BOOL)updateAppIconVisibilityOverridesShowing:(id *)arg1 hiding:(id *)arg2;
 - (id)allApplications;
 @end

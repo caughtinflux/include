@@ -37,7 +37,13 @@
 - (NSUInteger)listIconCount;
 - (void)enumerateIconsAndIconViewsWithHandler:(id)arg1;
 - (id)iconViewForIcon:(SBIcon *)icon;
+
 - (instancetype)initWithFolderController:(SBFolderController *)folderController;
+
+/*
+	Use this on 7.0!
+*/
+- (void)animateToZoomFraction:(CGFloat)fraction afterDelay:(NSTimeInterval)delay withCompletion:(void(^)(void))completion;
 
 // Remaining properties
 @property(retain, nonatomic) SBIconZoomSettings *settings;

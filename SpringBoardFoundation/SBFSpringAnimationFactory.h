@@ -8,22 +8,22 @@
 
 @interface SBFSpringAnimationFactory : SBFAnimationFactory
 {
-    double _mass;
-    double _stiffness;
-    double _damping;
-    double _epsilon;
+    CGFloat _mass;
+    CGFloat _stiffness;
+    CGFloat _damping;
+    CGFloat _epsilon;
 }
 
-+ (id)factoryWithMass:(double)arg1 stiffness:(double)arg2 damping:(double)arg3 epsilon:(double)arg4;
-+ (id)factoryWithMass:(double)arg1 stiffness:(double)arg2 damping:(double)arg3;
-@property(readonly, nonatomic) double epsilon; // @synthesize epsilon=_epsilon;
-@property(readonly, nonatomic) double damping; // @synthesize damping=_damping;
-@property(readonly, nonatomic) double stiffness; // @synthesize stiffness=_stiffness;
-@property(readonly, nonatomic) double mass; // @synthesize mass=_mass;
++ (instancetype)factoryWithMass:(CGFloat)arg1 stiffness:(CGFloat)arg2 damping:(CGFloat)arg3 epsilon:(CGFloat)arg4;
++ (instancetype)factoryWithMass:(CGFloat)arg1 stiffness:(CGFloat)arg2 damping:(CGFloat)arg3;
+@property(readonly, nonatomic) CGFloat epsilon; // @synthesize epsilon=_epsilon;
+@property(readonly, nonatomic) CGFloat damping; // @synthesize damping=_damping;
+@property(readonly, nonatomic) CGFloat stiffness; // @synthesize stiffness=_stiffness;
+@property(readonly, nonatomic) CGFloat mass; // @synthesize mass=_mass;
 - (id)_animation;
 - (id)_springAnimation;
 - (void)_calculateDuration;
-- (id)_initWithMass:(double)arg1 stiffness:(double)arg2 damping:(double)arg3 epsilon:(double)arg4;
+- (instancetype)_initWithMass:(CGFloat)arg1 stiffness:(CGFloat)arg2 damping:(CGFloat)arg3 epsilon:(CGFloat)arg4;
 
 @end
 

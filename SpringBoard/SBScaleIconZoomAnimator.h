@@ -32,16 +32,17 @@
 - (CGPoint)_zoomedIconCenter;
 - (CGRect)_zoomedFrame;
 - (void)_animateToFraction:(CGFloat)fraction afterDelay:(NSTimeInterval)delay withSharedCompletion:(id)arg3;
-- (unsigned int)_numberOfSignificantAnimations;
+- (NSUInteger)_numberOfSignificantAnimations;
 - (void)_cleanupAnimation;
 - (void)_setAnimationFraction:(CGFloat)arg1;
 - (void)_prepareAnimation;
 @property(readonly, nonatomic) SBIconView *targetIconView;
 - (void)dealloc;
-- (id)initWithFolderController:(id)arg1 targetIcon:(id)arg2;
+- (id)initWithFolderController:(SBFolderController *)folderController targetIcon:(id)arg2;
 
 // Remaining properties
-@property(retain, nonatomic) SBScaleZoomSettings *settings;
+@property(retain, nonatomic) SBScaleZoomSettings *settings; // 7.0.x+
+@property(retain, nonatomic) SBScaleZoomSettings *zoomSettings; // 7.0
 
 @end
 

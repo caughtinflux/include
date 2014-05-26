@@ -6,7 +6,7 @@
 
 #import <UIKit/_UISettings.h>
 
-@class NSString, SBAlertItemsSettings, SBAppParallaxSettings, SBAppSliderSettings, SBCarDisplaySettings, SBControlCenterSettings, SBFAnimationFactorySettings, SBFWallpaperSettings, SBFadeAnimationSettings, SBFolderSettings, SBIconColorSettings, SBLegibilitySettings, SBLockScreenSettings, SBLockScreenTestPluginSettings, SBNotificationCenterSettings, SBRootAnimationSettings;
+@class NSString, SBAlertItemsSettings, SBAppParallaxSettings, SBAppSliderSettings, SBCarDisplaySettings, SBControlCenterSettings, SBFAnimationFactorySettings, SBFWallpaperSettings, SBFadeAnimationSettings, SBFolderSettings, SBIconColorSettings, SBLegibilitySettings, SBLockScreenSettings, SBLockScreenTestPluginSettings, SBNotificationCenterSettings, SBRootAnimationSettings, SBRootZoomSettings;
 
 @interface SBRootSettings : _UISettings
 {
@@ -47,6 +47,11 @@
 @property(retain) SBRootAnimationSettings *rootAnimationSettings; // @synthesize rootAnimationSettings=_rootAnimationSettings;
 @property(retain) SBFolderSettings *folderSettings; // @synthesize folderSettings=_folderSettings;
 @property(retain) SBAppParallaxSettings *parallaxSettings; // @synthesize parallaxSettings=_parallaxSettings;
+
+// iOS 7.0sbi
+@property(retain) SBRootZoomSettings *rootZoomSettings;
+
+
 - (BOOL)_hasPreviousSettings;
 - (void)setDefaultValues;
 

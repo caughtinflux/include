@@ -7,7 +7,7 @@
 #import "NSObject.h"
 #import "SBIconAnimatorDelegate-Protocol.h"
 
-@class NSMutableArray, NSString, SBFolderController, SBIconAnimationSettings, UIView, UIWindow;
+@class NSMutableArray, NSString, SBFolderController, SBIconAnimationSettings, UIView, UIWindow, SBFAnimationFactory;
 
 @interface SBIconAnimator : NSObject
 {
@@ -33,7 +33,7 @@
 
 - (void)_windowFinishedRotating;
 - (void)_invalidateCompletions;
-- (id)_centralAnimationFactory;
+- (SBFAnimationFactory *)_centralAnimationFactory;
 - (void)_animateToFraction:(CGFloat)fraction afterDelay:(NSTimeInterval)arg2 withSharedCompletion:(id)arg3;
 - (NSUInteger)_numberOfSignificantAnimations;
 - (void)_cleanupAnimation;

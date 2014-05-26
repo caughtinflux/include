@@ -5,8 +5,8 @@
  */
 
 #import "NSObject.h"
-
 #import "SBIconIndexNode-Protocol.h"
+#import "SBIconObserver-Protocol.h"
 
 @class NSHashTable, UIImage, SBFolder;
 
@@ -86,9 +86,9 @@ typedef NS_ENUM(NSInteger, SBIconLocation) {
 - (NSSet *)containedNodeIdentifiers;
 - (BOOL)containsNodeIdentifier:(id)arg1;
 - (id)nodeIdentifier;
-- (BOOL)hasObserver:(id)arg1;
-- (void)removeObserver:(id)arg1;
-- (void)addObserver:(id)arg1;
+- (BOOL)hasObserver:(id<SBIconObserver>)observer;
+- (void)removeObserver:(id<SBIconObserver>)observer;
+- (void)addObserver:(id<SBIconObserver>)observer;
 - (id)description;
 - (id)application;
 - (BOOL)isApplicationIcon;

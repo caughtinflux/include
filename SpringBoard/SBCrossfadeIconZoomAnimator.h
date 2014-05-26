@@ -5,6 +5,7 @@
  */
 
 #import "SBScaleIconZoomAnimator.h"
+#import "SBCrossfadeZoomSettings.h"
 
 @class SBCrossfadeZoomSettings, UIView;
 
@@ -17,20 +18,19 @@
 
 @property(nonatomic) BOOL masksCorners; // @synthesize masksCorners=_masksCorners;
 @property(nonatomic) BOOL performsTrueCrossfade; // @synthesize performsTrueCrossfade=_performsTrueCrossfade;
-- (struct CGPoint)_zoomedIconCenter;
-- (struct CGRect)_zoomedFrame;
-- (void)_animateToFraction:(CGFloat)arg1 afterDelay:(double)arg2 withSharedCompletion:(id)arg3;
-- (unsigned int)_numberOfSignificantAnimations;
+// Remaining properties
+@property(retain, nonatomic) SBCrossfadeZoomSettings *settings;
+
+- (CGPoint)_zoomedIconCenter;
+- (CGRect)_zoomedFrame;
+- (void)_animateToFraction:(CGFloat)fraction afterDelay:(NSTimeInterval)delay withSharedCompletion:(id)completion;
+- (NSUInteger)_numberOfSignificantAnimations;
 - (void)_cleanupAnimation;
 - (void)_setAnimationFraction:(CGFloat)arg1;
 - (void)_prepareAnimation;
 - (void)_delayedForRotation;
-- (void)dealloc;
-- (id)initWithFolderController:(id)arg1 crossfadeView:(id)arg2 icon:(id)arg3;
+- (id)initWithFolderController:(id)folderController crossfadeView:(id)view icon:(id)icon;
 - (void)_assertCrossfadeViewSizeIfNecessary;
-
-// Remaining properties
-@property(retain, nonatomic) SBCrossfadeZoomSettings *settings;
 
 @end
 

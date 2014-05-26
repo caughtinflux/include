@@ -4,7 +4,7 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2012 by Steve Nygard.
  */
 
-#import "UIView.h"
+#import <UIKit/UIKit.h>
 
 @interface SBZoomableCrossfadeView : UIView
 {
@@ -16,7 +16,7 @@
 
 + (id)crossfadeViewWithStartView:(id)arg1 endView:(id)arg2 translucent:(BOOL)arg3;
 - (BOOL)_shouldAnimatePropertyWithKey:(id)arg1;
-- (void)crossfadeWithCompletion:(id)arg1;
+- (void)crossfadeWithCompletion:(id)completionBlock;
 - (id)animationFactory;
 - (void)layoutSubviews;
 - (void)dealloc;

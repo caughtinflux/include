@@ -4,27 +4,27 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2012 by Steve Nygard.
  */
 
+#import "SBIcon.h"
 #import "SBRootIconListView.h"
 #import "CDStructures.h"
 
+@class SBIconListModel;
 @interface SBDockIconListView : SBRootIconListView
-{
-}
-
-+ (NSUInteger)iconRowsForInterfaceOrientation:(int)arg1;
-+ (NSUInteger)iconColumnsForInterfaceOrientation:(int)arg1;
++ (NSUInteger)iconRowsForInterfaceOrientation:(UIInterfaceOrientation)orientation;
++ (NSUInteger)iconColumnsForInterfaceOrientation:(UIInterfaceOrientation)orientation;
 + (CGPoint)defaultHeight;
-- (NSUInteger)columnAtPoint:(CGPoint)arg1;
-- (CGPoint)originForIconAtCoordinate:(SBIconCoordinate)arg1;
+
+- (NSUInteger)columnAtPoint:(CGPoint)point;
+- (CGPoint)originForIconAtCoordinate:(SBIconCoordinate)coordinate;
 - (CGPoint)_additionalSideInsetToCenterIcons;
-- (NSUInteger)rowAtPoint:(CGPoint)arg1;
-- (SBIcon *)iconAtPoint:(CGPoint)arg1 index:(NSUInteger *)arg2 proposedOrder:(int *)arg3 grabbedIcon:(id)arg4;
+- (NSUInteger)rowAtPoint:(CGPoint)point;
+- (SBIcon *)iconAtPoint:(CGPoint)point index:(NSUInteger *)index proposedOrder:(NSInteger *)order grabbedIcon:(id)icon;
 - (CGPoint)sideIconInset;
 - (CGPoint)topIconInset;
 - (NSUInteger)iconsInRowForSpacingCalculation;
-- (BOOL)_shouldAnimatePropertyWithKey:(id)arg1;
-- (int)iconLocation;
-- (instancetype)initWithModel:(id)arg1 orientation:(int)arg2 viewMap:(id)arg3;
+- (BOOL)_shouldAnimatePropertyWithKey:(id)key;
+- (SBIconLocation)iconLocation;
+- (instancetype)initWithModel:(SBIconListModel *)model orientation:(UIInterfaceOrientation)ori viewMap:(id)viewMap;
 
 @end
 

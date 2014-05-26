@@ -9,31 +9,33 @@
 
 @class CAMediaTimingFunction;
 
+typedef void (^SBFAnimationFactoryBlock)(void);
+
 @interface SBFAnimationFactory : NSObject <_UIBasicAnimationFactory>
 {
-    double _duration;
-    double _delay;
+    NSTimeInterval _duration;
+    NSTimeInterval _delay;
     CAMediaTimingFunction *_timingFunction;
-    double _frameInterval;
+    NSTimeInterval _frameInterval;
 }
 
-+ (void)animateWithFactory:(id)arg1 animations:(id)arg2 completion:(void)arg3;
-+ (void)animateWithSettings:(id)arg1 delay:(double)arg2 options:(unsigned long long)arg3 animations:(id)arg4 completion:(void)arg5;
-+ (void)animateWithSettings:(id)arg1 delay:(double)arg2 animations:(id)arg3 completion:(void)arg4;
-+ (void)animateWithSettings:(id)arg1 options:(unsigned long long)arg2 animations:(id)arg3 completion:(void)arg4;
-+ (void)animateWithSettings:(id)arg1 animations:(id)arg2 completion:(void)arg3;
++ (void)animateWithFactory:(id)arg1 animations:(SBFAnimationFactoryBlock)arg2 completion:(SBFAnimationFactoryBlock)arg3;
++ (void)animateWithSettings:(id)arg1 delay:(NSTimeInterval)arg2 options:(unsigned long long)arg3 animations:(id)arg4 completion:(SBFAnimationFactoryBlock)arg5;
++ (void)animateWithSettings:(id)arg1 delay:(NSTimeInterval)arg2 animations:(SBFAnimationFactoryBlock)arg3 completion:(SBFAnimationFactoryBlock)arg4;
++ (void)animateWithSettings:(id)arg1 options:(unsigned long long)arg2 animations:(SBFAnimationFactoryBlock)arg3 completion:(SBFAnimationFactoryBlock)arg4;
++ (void)animateWithSettings:(id)settings animations:(SBFAnimationFactoryBlock)animations completion:(SBFAnimationFactoryBlock)completion;
 + (id)factoryWithAnimationAttributes:(id)arg1;
 + (id)factoryWithSettings:(id)arg1;
-@property(nonatomic) double frameInterval; // @synthesize frameInterval=_frameInterval;
+@property(nonatomic) NSTimeInterval frameInterval; // @synthesize frameInterval=_frameInterval;
 @property(retain, nonatomic) CAMediaTimingFunction *timingFunction; // @synthesize timingFunction=_timingFunction;
-@property(nonatomic) double delay; // @synthesize delay=_delay;
-@property(nonatomic) double duration; // @synthesize duration=_duration;
+@property(nonatomic) NSTimeInterval delay; // @synthesize delay=_delay;
+@property(nonatomic) NSTimeInterval duration; // @synthesize duration=_duration;
 - (id)_animation;
 - (id)_timingFunctionForAnimation;
 - (id)_basicAnimationForView:(id)arg1 withKeyPath:(id)arg2;
 - (void)setTimingFunctionFromSettings:(id)arg1;
-- (void)animateWithDelay:(double)delay options:(unsigned long long)arg2 animations:(id)arg3 completion:(id)arg4;
-- (void)animateWithDelay:(double)delay animations:(void(^)(void))animations completion:(id)arg3;
+- (void)animateWithDelay:(NSTimeInterval)delay options:(unsigned long long)arg2 animations:(SBFAnimationFactoryBlock)arg3 completion:(SBFAnimationFactoryBlock)arg4;
+- (void)animateWithDelay:(NSTimeInterval)delay animations:(SBFAnimationFactoryBlock)animations completion:(SBFAnimationFactoryBlock)arg3;
 
 @end
 

@@ -18,7 +18,7 @@
     CGFloat _containerScaleY;
     BOOL _masksCorners;
     BOOL _performsTrueCrossfade;
-    struct CGPoint _stretchAnchorPoint;
+    CGPoint _stretchAnchorPoint;
 }
 
 @property(nonatomic) struct CGPoint stretchAnchorPoint; // @synthesize stretchAnchorPoint=_stretchAnchorPoint;
@@ -26,12 +26,12 @@
 @property(nonatomic) BOOL masksCorners; // @synthesize masksCorners=_masksCorners;
 - (void)_updateCornerMask;
 - (void)cleanup;
-- (void)setMorphFraction:(CGFloat)arg1;
-- (void)setFadeFraction:(CGFloat)arg1;
+- (void)setMorphFraction:(CGFloat)fraction;
+- (void)setFadeFraction:(CGFloat)fraction;
 - (void)layoutSubviews;
 - (void)prepareGeometry;
-- (void)dealloc;
-- (id)initWithImageView:(id)arg1 crossfadeView:(id)arg2;
+
+- (instancetype)initWithImageView:(SBIconImageView *)iconImageView crossfadeView:(UIView *)crossfadeView;
 
 @end
 

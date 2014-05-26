@@ -48,7 +48,7 @@
 - (void)loadWebclipAndIcon:(id)arg1;
 - (void)loadApplicationsAndIcons:(id)arg1 reveal:(BOOL)arg2 popIn:(BOOL)arg3;
 - (void)_loadApplicationsAndIcons:(id)arg1 removed:(id)arg2 applicationProxies:(id)arg3 reveal:(BOOL)arg4 popIn:(BOOL)arg5 reloadAllIcons:(BOOL)arg6;
-- (void)_updateIconControllerAndModelForLoadedApplications:(id)arg1 reveal:(BOOL)arg2 popIn:(BOOL)arg3 reloadAllIcons:(BOOL)arg4;
+- (void)_updateIconControllerAndModelForLoadedApplications:(id)apps reveal:(BOOL)reveal popIn:(BOOL)popIn reloadAllIcons:(BOOL)reloadAllTHETHINGS;
 - (void)waitForOperationsToComplete;
 - (void)uninstallApplication:(id)arg1;
 - (void)removeApplicationsFromModelWithBundleIdentifier:(id)arg1;

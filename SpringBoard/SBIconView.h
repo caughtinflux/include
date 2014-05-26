@@ -106,7 +106,7 @@
 - (void)cleanupAfterImageCrossfade;
 - (void)setImageCrossfadeMorphFraction:(CGFloat)arg1;
 - (void)setImageCrossfadeFadeFraction:(CGFloat)arg1;
-- (void)prepareToCrossfadeImageWithView:(id)arg1 maskCorners:(BOOL)arg2 trueCrossfade:(BOOL)arg3 anchorPoint:(CGPoint)arg4;
+- (void)prepareToCrossfadeImageWithView:(id)view maskCorners:(BOOL)maskCorners trueCrossfade:(BOOL)trueCrossfade anchorPoint:(CGPoint)anchorPoint;
 - (void)prepareToCrossfadeImageWithView:(id)arg1 maskCorners:(BOOL)arg2 trueCrossfade:(BOOL)arg3;
 - (id)dropGlow;
 - (void)removeDropGlow;
