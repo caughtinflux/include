@@ -27,8 +27,8 @@
 - (void)_applyOuterFadeFraction:(double)arg1;
 - (void)_applyZoomFraction:(double)arg1;
 - (double)_zoomedVisualAltitude;
-- (struct CGPoint)_zoomedIconCenter;
-- (struct CGRect)_zoomedFrame;
+- (CGPoint)_zoomedIconCenter;
+- (CGRect)_zoomedFrame;
 - (void)_animateToZoomFraction:(double)arg1 afterDelay:(double)arg2 withSharedCompletion:(CDUnknownBlockType)arg3;
 - (unsigned long long)_numberOfSignificantAnimations;
 - (void)_cleanupZoom;

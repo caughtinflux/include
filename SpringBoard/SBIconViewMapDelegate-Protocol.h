@@ -5,13 +5,14 @@
  */
 
 #import "NSObject.h"
+#import <SpringBoard/SBIcon.h>
 
 @protocol SBIconViewMapDelegate <NSObject>
-- (int)viewMap:(id)arg1 locationForIcon:(id)arg2;
-- (unsigned int)viewMap:(id)arg1 maxRecycledIconViewsOfClass:(Class)arg2;
+- (SBIconLocation)viewMap:(id)arg1 locationForIcon:(id)arg2;
+- (NSUInteger)viewMap:(id)arg1 maxRecycledIconViewsOfClass:(Class)arg2;
 
 @optional
-- (unsigned int)viewMap:(id)arg1 numberOfViewsToPrepareOfClass:(Class)arg2;
+- (NSUInteger)viewMap:(id)arg1 numberOfViewsToPrepareOfClass:(Class)arg2;
 - (id)viewMapShouldPrepareViewsOfClasses:(id)arg1;
 @end
 

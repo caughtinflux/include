@@ -74,8 +74,8 @@
 - (void)_createIconLists;
 - (NSDictionary *)_iconState;
 - (NSDictionary *)iconState;
-- (SBApplicationIcon *)applicationIconForDisplayIdentifier:(id)arg1;
-- (SBLeafIcon *)leafIconForIdentifier:(id)arg1;
+- (SBApplicationIcon *)applicationIconForDisplayIdentifier:(NSString *)identifier;
+- (SBLeafIcon *)leafIconForIdentifier:(NSString *)identifier;
 - (SBIcon *)expectedIconForDisplayIdentifier:(NSString *)identifier;
 - (NSSet *)_applicationIcons;
 - (NSSet *)leafIcons;
