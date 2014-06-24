@@ -16,6 +16,7 @@
 #import "SBIconViewDelegate-Protocol.h"
 #import "SBIconViewMapDelegate-Protocol.h"
 #import "SBSearchGestureObserver-Protocol.h"
+#import "SBIcon.h"
 
 @class BBObserver, SBFolder, SBIcon, SBFolder, SBRootFolder, SBIconColorSettings, SBIconListView, SBRootIconListView, SBDockIconListView, SBFolderController, SBFolderIconListView, SBIconContentView, SBIconModel, SBLeafIcon, SBRootFolderController, _UILegibilitySettings;
 
@@ -245,6 +246,9 @@
 - (void)_noteFolderAnimationStateDidChange;
 - (id)iconListViewAtIndex:(NSUInteger)arg1 inFolder:(id)arg2 createIfNecessary:(BOOL)arg3;
 - (void)getListView:(SBIconListView **)arg1 folder:(SBFolder **)arg2 relativePath:(id *)arg3 forIndexPath:(NSIndexPath *)indexPath createIfNecessary:(BOOL)create;
+
+// 7.1
+- (Class)iconViewClassForIcon:(SBIcon *)icon location:(SBIconLocation)location;
 
 @end
 
