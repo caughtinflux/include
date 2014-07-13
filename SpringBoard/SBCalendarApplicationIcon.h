@@ -11,13 +11,13 @@
 }
 
 + (id)countriesRequiringBlackDayOfWeek;
-- (void)_drawIconIntoCurrentContextWithImageSize:(struct CGSize)arg1 iconBase:(id)arg2;
+- (void)_drawIconIntoCurrentContextWithImageSize:(CGSize)size iconBase:(id)base;
 - (id)numberFont;
 - (id)colorForDayOfWeek;
 - (BOOL)isBlackDayOfWeekRequiredForLocale:(id)arg1;
-- (BOOL)canGenerateImageInBackgroundForFormat:(int)arg1;
-- (id)getUnmaskedIconImage:(int)arg1;
-- (id)generateIconImage:(int)arg1;
+- (BOOL)canGenerateImageInBackgroundForFormat:(NSInteger)arg1;
+- (id)getUnmaskedIconImage:(NSInteger)arg1;
+- (id)generateIconImage:(NSInteger)arg1;
 - (void)localeChanged;
 - (void)dealloc;
 - (id)initWithApplication:(id)arg1;

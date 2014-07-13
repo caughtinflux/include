@@ -18,6 +18,7 @@
 #import "SBIcon.h"
 #import "SBLeafIcon.h"
 #import "SBApplicationIcon.h"
+#import "SBCalendarApplicationIcon.h"
 #import "SBDownloadingIcon.h"
 #import "SBIconView.h"
 #import "SBFolderIconView.h"

@@ -14,7 +14,8 @@ typedef NS_ENUM(NSInteger, SBIconLocation) {
     SBIconLocationHomeScreen = 0,
     SBIconLocationDock       = 1,
     SBIconLocationSwitcher   = 2,
-    SBIconLocationFolder	 = 5
+    SBIconLocationFolder_7_1 = 4,
+    SBIconLocationFolder     = 5
 };
 
 @interface SBIcon : NSObject <SBIconIndexNode>

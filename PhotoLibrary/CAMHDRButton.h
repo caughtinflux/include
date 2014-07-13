@@ -10,7 +10,7 @@
 
 @interface CAMHDRButton : UIButton
 {
-    _Bool _on;
+    BOOL _on;
     long long _orientation;
     CAMButtonLabel *__hdrLabel;
     CAMButtonLabel *__offLabel;
@@ -21,13 +21,13 @@
 @property(readonly, nonatomic) CAMButtonLabel *_offLabel; // @synthesize _offLabel=__offLabel;
 @property(readonly, nonatomic) CAMButtonLabel *_hdrLabel; // @synthesize _hdrLabel=__hdrLabel;
 @property(nonatomic) long long orientation; // @synthesize orientation=_orientation;
-@property(nonatomic, getter=isOn) _Bool on; // @synthesize on=_on;
-- (void)_updateFromOrientationChangeAnimated:(_Bool)animated;
+@property(nonatomic, getter=isOn) BOOL on; // @synthesize on=_on;
+- (void)_updateFromOrientationChangeAnimated:(BOOL)animated;
 - (void)_updateFrameFromOrientation;
 - (CGAffineTransform)_transformForOrientation:(long long)orientation;
 - (void)_updateLabelsFromOrientation;
 - (void)_updateFromOnState;
-- (void)setOrientation:(long long)orientation animated:(_Bool)animated;
+- (void)setOrientation:(long long)orientation animated:(BOOL)animated;
 - (void)layoutSubviews;
 - (void)_layoutForLandscapeOrientation;
 - (void)_layoutForPortraitOrientation;

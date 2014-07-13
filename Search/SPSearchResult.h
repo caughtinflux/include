@@ -16,7 +16,7 @@
 	unsigned long long _identifier;
 	NSString* _auxiliarySubtitle;
 	NSString* _auxiliaryTitle;
-	int _flags;
+	NSInteger _flags;
 	unsigned _numberOfSummaryLines;
 	NSString* _subtitle;
 	NSString* _summary;

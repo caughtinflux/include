@@ -167,5 +167,9 @@
 - (void)dealloc;
 - (id)initWithDefaultSize;
 
+// 7.1
+// SBIconView conforms to SBReusableView, which contains only 1 method
+- (void)prepareForReuse;
+
 @end
 

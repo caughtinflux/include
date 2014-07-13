@@ -17,10 +17,10 @@ typedef NS_ENUM(NSInteger, SBWallpaperVariant) {
 
 @interface SBWallpaperEffectView : UIView <_SBFakeBlurObserver, SBWallpaperObserver>
 {
-    int _variant;
+    SBWallpaperVariant _variant;
     UIColor *_wallpaperAverageColor;
-    int _startStyle;
-    int _endStyle;
+    NSInteger _startStyle;
+    NSInteger _endStyle;
     CGFloat _transitionFraction;
     UIView<_SBFakeBlur> *_blurView;
     UIView *_grayscaleTintView;
