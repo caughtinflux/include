@@ -35,7 +35,7 @@
 - (void)_prepareAnimation;
 - (NSUInteger)dockIconCount;
 - (NSUInteger)listIconCount;
-- (void)enumerateIconsAndIconViewsWithHandler:(id)arg1;
+- (void)enumerateIconsAndIconViewsWithHandler:(void(^)(SBIcon *, SBIconView *))handler;
 - (id)iconViewForIcon:(SBIcon *)icon;
 
 - (instancetype)initWithFolderController:(SBFolderController *)folderController;

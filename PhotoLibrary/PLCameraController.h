@@ -163,8 +163,8 @@ typedef NS_ENUM(long long, PLCameraMode) {
         NSUInteger delegateTorchAvailabilityChanged:1;
         NSUInteger delegateHDRSuggestionChanged:1;
     } _cameraFlags;
-    NSObject<OS_dispatch_queue> *_dispatchTimerQueue;
-    NSObject<OS_dispatch_source> *_dispatchTimer;
+    dispatch_queue_t _dispatchTimerQueue;
+    dispatch_queue_t _dispatchTimer;
     BOOL __previewPaused;
     BOOL __previewLayerEnabledForRenderer;
     BOOL __videoDataOutputEnabledForRenderer;
@@ -178,9 +178,9 @@ typedef NS_ENUM(long long, PLCameraMode) {
     id postSessionSetupBlock;
     PLCameraEffectsRenderer *_effectsRenderer;
     NSArray *_supportedCameraModes;
-    NSObject<OS_dispatch_queue> *__effectFilterIndexQueue;
+    dispatch_queue_t __effectFilterIndexQueue;
     NSDictionary *__effectFilterIndices;
-    NSObject<OS_dispatch_queue> *__captureIsolationQueue;
+    dispatch_queue_t __captureIsolationQueue;
     NSMutableArray *__currentFaceMetadata;
 }
 
