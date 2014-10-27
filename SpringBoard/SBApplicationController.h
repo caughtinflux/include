@@ -74,7 +74,8 @@
 - (SBApplication *)applicationWithPid:(int)arg1;
 - (SBApplication *)applicationWithDisplayIdentifier:(id)arg1;
 - (SBApplication *)applicationsWithPid:(int)arg1;
-- (SBApplication *)applicationsWithBundleIdentifier:(id)arg1;
+- (SBApplication *)applicationWithBundleIdentifier:(id)arg1; // >= 8
+- (SBApplication *)applicationsWithBundleIdentifier:(id)arg1; // < 8
 - (NSArray *)allApplications;
 - (NSArray *)allDisplayIdentifiers;
 - (void)autoLaunchAppsIfNecessaryAfterBoot;

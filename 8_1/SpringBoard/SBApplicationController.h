@@ -6,9 +6,9 @@
 
 #import "NSObject.h"
 
-#import "FBUIApplicationServiceDelegate.h"
-#import "SBApplicationLifecycleObserver.h"
-#import "SBApplicationRestrictionDataSource.h"
+#import "FBUIApplicationServiceDelegate-Protocol.h"
+#import "SBApplicationLifecycleObserver-Protocol.h"
+#import "SBApplicationRestrictionDataSource-Protocol.h"
 
 @class BKSApplicationStateMonitor, FBApplicationInfo, FBApplicationLibrary, NSDictionary, NSLock, NSMutableDictionary, NSMutableSet, NSString, SBApplicationLibraryObserver, SBApplicationRestrictionController, SBReverseCountedSemaphore;
 
