@@ -200,7 +200,8 @@
 - (void)applicationWillOrderInContext:(id)arg1 windowLevel:(CGFloat)arg2 screen:(id)arg3;
 - (void)frontDisplayDidChange:(id)arg1;
 - (void)_setAmbiguousControlCenterActivationMargin:(CGFloat)arg1;
-- (void)updateOrientationAndAccelerometerSettings;
+- (void)updateOrientationAndAccelerometerSettings; // 7.0
+- (void)updateOrientationDetectionSettings; // 8.1
 - (void)updateProximitySettings;
 - (void)setExpectsFaceContact:(BOOL)arg1;
 - (void)setExpectsFaceContact:(BOOL)arg1 inLandscape:(BOOL)arg2;

@@ -5,77 +5,76 @@
 //
 
 #import "UIControl.h"
-
+#import "CAMExpandableMenuButtonDelegate-Protocol.h"
 @class NSIndexSet, NSMutableArray, NSMutableIndexSet, UIView;
 
 @interface CAMExpandableMenuButton : UIControl
 {
     BOOL _expanded;
-    int _selectedIndex;
-    int _expansionOrientation;
-    int _orientation;
+    NSInteger _selectedIndex;
+    NSInteger _expansionOrientation;
+    NSInteger _orientation;
     id <CAMExpandableMenuButtonDelegate> _expandableMenuDelegate;
     NSMutableArray *__menuItems;
     UIView *__headerView;
     NSIndexSet *__hiddenIndexesWhileCollapsed;
     NSMutableIndexSet *__highlightedIndexesWhileCollapsed;
-    struct UIEdgeInsets _tappableEdgeInsets;
+    UIEdgeInsets _tappableEdgeInsets;
 }
 
-+ (double)expansionDuration;
-- (int)numberOfMenuItems;
++ (NSTimeInterval)expansionDuration;
+- (NSInteger)numberOfMenuItems;
 @property(readonly, nonatomic) UIView *_headerView; // @synthesize _headerView=__headerView;
 @property(readonly, copy, nonatomic) NSMutableIndexSet *_highlightedIndexesWhileCollapsed; // @synthesize _highlightedIndexesWhileCollapsed=__highlightedIndexesWhileCollapsed;
 @property(readonly, nonatomic) NSMutableArray *_menuItems; // @synthesize _menuItems=__menuItems;
-@property(nonatomic) __weak id <CAMExpandableMenuButtonDelegate> expandableMenuDelegate; // @synthesize expandableMenuDelegate=_expandableMenuDelegate;
+@property(nonatomic, assign)  id <CAMExpandableMenuButtonDelegate> expandableMenuDelegate; // @synthesize expandableMenuDelegate=_expandableMenuDelegate;
 - (BOOL)shouldIgnoreMenuInteraction;
-- (void)completeExpansionToProposedFrame:(struct CGRect)arg1;
+- (void)completeExpansionToProposedFrame:(CGRect)arg1;
 - (void)collapseMenuAnimated:(BOOL)arg1;
 - (void)expandMenuAnimated:(BOOL)arg1;
-- (void)_convertAllSubviewsToProposedFrame:(struct CGRect)arg1;
+- (void)_convertAllSubviewsToProposedFrame:(CGRect)arg1;
 - (void)_applyMenuItemTextAlignmentForCurrentOrientation;
 - (void)_applyMenuItemAlphaForCurrentExpansionState;
 - (void)_applyMenuItemColorsForCurrentState;
 - (void)_updateFromSelectedIndexChange;
 @property(readonly, copy, nonatomic) NSIndexSet *_hiddenIndexesWhileCollapsed; // @synthesize _hiddenIndexesWhileCollapsed=__hiddenIndexesWhileCollapsed;
-- (struct CGSize)_layoutForVerticalExpansionOrientation:(BOOL)arg1 expanded:(BOOL)arg2;
-- (struct CGSize)_layoutForHorizontalExpansionOrientation:(BOOL)arg1 expanded:(BOOL)arg2;
-@property(nonatomic) int expansionOrientation; // @synthesize expansionOrientation=_expansionOrientation;
-- (struct CGSize)_layoutForVerticalCollapsedPortraitButton:(BOOL)arg1;
-- (struct CGSize)_layoutForVerticalCollapsedLandscapeButton:(BOOL)arg1;
-- (struct CGSize)_layoutForVerticalExpandedPortraitButton:(BOOL)arg1;
-- (struct CGSize)_layoutForVerticalExpandedLandscapeButton:(BOOL)arg1;
-- (struct CGSize)_layoutForHorizontalCollapsedLandscapeButton:(BOOL)arg1;
-- (struct CGSize)_layoutForHorizontalExpandedPortraitButton:(BOOL)arg1;
-- (struct CGSize)_layoutForHorizontalExpandedLandscapeButton:(BOOL)arg1;
-- (struct CGSize)_layoutForHorizontalCollapsedPortraitButton:(BOOL)arg1;
+- (CGSize)_layoutForVerticalExpansionOrientation:(BOOL)arg1 expanded:(BOOL)arg2;
+- (CGSize)_layoutForHorizontalExpansionOrientation:(BOOL)arg1 expanded:(BOOL)arg2;
+@property(nonatomic) NSInteger expansionOrientation; // @synthesize expansionOrientation=_expansionOrientation;
+- (CGSize)_layoutForVerticalCollapsedPortraitButton:(BOOL)arg1;
+- (CGSize)_layoutForVerticalCollapsedLandscapeButton:(BOOL)arg1;
+- (CGSize)_layoutForVerticalExpandedPortraitButton:(BOOL)arg1;
+- (CGSize)_layoutForVerticalExpandedLandscapeButton:(BOOL)arg1;
+- (CGSize)_layoutForHorizontalCollapsedLandscapeButton:(BOOL)arg1;
+- (CGSize)_layoutForHorizontalExpandedPortraitButton:(BOOL)arg1;
+- (CGSize)_layoutForHorizontalExpandedLandscapeButton:(BOOL)arg1;
+- (CGSize)_layoutForHorizontalCollapsedPortraitButton:(BOOL)arg1;
 - (id)_selectedLabel;
 - (BOOL)_wantsSelectedItemToBeVisible;
-- (struct CGSize)_layoutMenuButton:(BOOL)arg1 expanded:(BOOL)arg2;
+- (CGSize)_layoutMenuButton:(BOOL)arg1 expanded:(BOOL)arg2;
 - (void)_handleTapGestureRecognizer:(id)arg1;
 - (void)_updateFromOrientationChangeAnimated:(BOOL)arg1;
 - (void)_updateFromExpansionChangeAnimated:(BOOL)arg1;
 - (id)hiddenIndexesWhileCollapsed;
-- (id)titleForMenuItemAtIndex:(int)arg1;
-- (id)initWithExpansionOrientation:(int)arg1;
-- (void)setHighlighted:(BOOL)arg1 forIndex:(int)arg2;
-@property(nonatomic) struct UIEdgeInsets tappableEdgeInsets; // @synthesize tappableEdgeInsets=_tappableEdgeInsets;
+- (id)titleForMenuItemAtIndex:(NSInteger)arg1;
+- (id)initWithExpansionOrientation:(NSInteger)arg1;
+- (void)setHighlighted:(BOOL)arg1 forIndex:(NSInteger)arg2;
+@property(nonatomic) UIEdgeInsets tappableEdgeInsets; // @synthesize tappableEdgeInsets=_tappableEdgeInsets;
 - (void)updateToContentSize:(id)arg1;
 - (void)finishExpansionAnimated:(BOOL)arg1;
-- (void)startExpansionWithProposedFrame:(struct CGRect)arg1;
-- (struct CGRect)alignmentRectForFrame:(struct CGRect)arg1 expanded:(BOOL)arg2;
+- (void)startExpansionWithProposedFrame:(CGRect)arg1;
+- (CGRect)alignmentRectForFrame:(CGRect)arg1 expanded:(BOOL)arg2;
 - (void)finishCollapsingAnimated:(BOOL)arg1;
-- (void)startCollapsingWithProposedFrame:(struct CGRect)arg1;
-- (struct CGRect)frameForAlignmentRect:(struct CGRect)arg1 expanded:(BOOL)arg2;
-- (struct CGSize)intrinsicContentSizeForExpansion:(BOOL)arg1;
-- (void).cxx_destruct;
-@property(nonatomic) int orientation; // @synthesize orientation=_orientation;
+- (void)startCollapsingWithProposedFrame:(CGRect)arg1;
+- (CGRect)frameForAlignmentRect:(CGRect)arg1 expanded:(BOOL)arg2;
+- (CGSize)intrinsicContentSizeForExpansion:(BOOL)arg1;
+@property(nonatomic) NSInteger orientation; // @synthesize orientation=_orientation;
 - (id)headerView;
-@property(nonatomic) int selectedIndex; // @synthesize selectedIndex=_selectedIndex;
+@property(nonatomic) NSInteger selectedIndex; // @synthesize selectedIndex=_selectedIndex;
 @property(readonly, nonatomic, getter=isExpanded) BOOL expanded; // @synthesize expanded=_expanded;
-- (struct CGSize)intrinsicContentSize;
-- (struct UIEdgeInsets)alignmentRectInsets;
-- (void)setOrientation:(int)arg1 animated:(BOOL)arg2;
+- (CGSize)intrinsicContentSize;
+- (UIEdgeInsets)alignmentRectInsets;
+- (void)setOrientation:(NSInteger)arg1 animated:(BOOL)arg2;
 - (void)layoutSubviews;
 - (id)init;
 - (void)reloadData;

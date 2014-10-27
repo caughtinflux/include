@@ -6,78 +6,21 @@
 
 #pragma mark Blocks
 
-typedef void (^CDUnknownBlockType)(void); // return type and parameters are unknown
+#import "../SpringBoard/CDStructures.h"
 
 #pragma mark Named Structures
 
+#import <QuartzCore/QuartzCore.h>
+#import <UIKit/UIKit.h>
+
 struct CAMShutterButtonSpec {
-    float outerRingDiameter;
-    float outerRingStrokeWidth;
-    float stopSquareSideLength;
-    float stopSquareCornerRadius;
-};
-
-struct CATransform3D {
-    float _field1;
-    float _field2;
-    float _field3;
-    float _field4;
-    float _field5;
-    float _field6;
-    float _field7;
-    float _field8;
-    float _field9;
-    float _field10;
-    float _field11;
-    float _field12;
-    float _field13;
-    float _field14;
-    float _field15;
-    float _field16;
-};
-
-struct CGAffineTransform {
-    float a;
-    float b;
-    float c;
-    float d;
-    float tx;
-    float ty;
-};
-
-struct CGPoint {
-    float x;
-    float y;
-};
-
-struct CGRect {
-    struct CGPoint origin;
-    struct CGSize size;
-};
-
-struct CGSize {
-    float width;
-    float height;
-};
-
-struct UIEdgeInsets {
-    float top;
-    float left;
-    float bottom;
-    float right;
+    CGFloat outerRingDiameter;
+    CGFloat outerRingStrokeWidth;
+    CGFloat stopSquareSideLength;
+    CGFloat stopSquareCornerRadius;
 };
 
 #pragma mark Typedef'd Structures
-
-typedef struct {
-    char _field1;
-    char _field2;
-    char _field3;
-    char _field4;
-    char _field5;
-    float _field6;
-    int _field7;
-} CDStruct_3421d26a;
 
 typedef struct {
     long long _field1;
