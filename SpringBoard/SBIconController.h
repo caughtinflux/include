@@ -18,7 +18,7 @@
 #import "SBSearchGestureObserver-Protocol.h"
 #import "SBIcon.h"
 
-@class BBObserver, SBFolder, SBIcon, SBFolder, SBRootFolder, SBIconColorSettings, SBIconListView, SBRootIconListView, SBDockIconListView, SBFolderController, SBFolderIconListView, SBIconContentView, SBIconModel, SBLeafIcon, SBRootFolderController, _UILegibilitySettings;
+@class BBObserver, SBFolder, SBIcon, SBFolder, SBRootFolder, SBIconColorSettings, SBIconListView, SBRootIconListView, SBDockIconListView, SBFolderController, SBFolderIconListView, SBIconContentView, SBIconModel, SBLeafIcon, SBRootFolderController, _UILegibilitySettings, SBApplicationShortcutMenu;
 
 @interface SBIconController : NSObject <BBObserverDelegate, MCProfileConnectionObserver, SBApplicationRestrictionObserver, SBFolderControllerDelegate, SBSearchGestureObserver, SBIconViewDelegate, SBIconModelDelegate, SBIconViewMapDelegate, SBIconModelApplicationDataSource>
 {
@@ -67,6 +67,24 @@
 
 + (instancetype)sharedInstance;
 @property(retain, nonatomic) _UILegibilitySettings *legibilitySettings; // @synthesize legibilitySettings=_legibilitySettings;
+
+// -----
+// 9+
+@property(retain, nonatomic) SBApplicationShortcutMenu *presentedShortcutMenu; // @synthesize presentedShortcutMenu=_presentedShortcutMenu;
+@property(readonly, nonatomic) SBIconViewMap *homescreenIconViewMap;
+
+- (void)viewMap:(SBIconViewMap *)viewMap configureIconView:(SBIconView *)iconView;
+- (id)initWithContentType:(NSUInteger)contentType;
+- (void)_revealMenuForIconView:(SBIconView *)iconView presentImmediately:(BOOL)reveal;
+// 9.3+
+- (void)_revealMenuForIconView:(SBIconView *)iconView;
+
+// ----
+// ----
+// 7.1+
+- (Class)iconViewClassForIcon:(SBIcon *)icon location:(SBIconLocation)location;
+// ----
+
 - (void)searchGesture:(id)arg1 changedPercentComplete:(CGFloat)arg2;
 - (void)folderControllerDidEndScrolling:(id)arg1;
 - (void)folderControllerShouldBeginEditing:(id)arg1;
@@ -246,9 +264,6 @@
 - (void)_noteFolderAnimationStateDidChange;
 - (id)iconListViewAtIndex:(NSUInteger)arg1 inFolder:(id)arg2 createIfNecessary:(BOOL)arg3;
 - (void)getListView:(SBIconListView **)arg1 folder:(SBFolder **)arg2 relativePath:(id *)arg3 forIndexPath:(NSIndexPath *)indexPath createIfNecessary:(BOOL)create;
-
-// 7.1
-- (Class)iconViewClassForIcon:(SBIcon *)icon location:(SBIconLocation)location;
 
 @end
 

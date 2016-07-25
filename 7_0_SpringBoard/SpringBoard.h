@@ -10,6 +10,8 @@
 #import "SBPowerDownControllerDelegate.h"
 #import "UIApplicationDelegate.h"
 
+#import "SBIconController.h"
+
 @class BBDataProviderConnection, NSDate, NSHashTable, NSMutableArray, NSMutableSet, NSNumberFormatter, NSObject<OS_dispatch_queue>, NSObject<OS_dispatch_source>, NSSet, NSTimer, SBApplication, SBCardItemsController, SBUIController, UIWindow;
 
 @interface SpringBoard : UIApplication <SBPowerDownControllerDelegate, MCProfileConnectionObserver, UIApplicationDelegate>

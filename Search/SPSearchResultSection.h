@@ -11,6 +11,10 @@
 
 @class NSString, NSMutableArray;
 
+typedef NS_ENUM(NSUInteger, SPSearchResultDomain) {
+    SPSearchResultDomainTopHits = 1,
+};
+
 @interface SPSearchResultSection : PBCodable {
 
 	NSString* _category;
@@ -24,17 +28,17 @@
 
 }
 
-@property (assign,nonatomic) BOOL hasDomain; 
+@property (assign,nonatomic) BOOL hasDomain;
 @property (assign,nonatomic) NSUInteger domain;                           //@synthesize domain=_domain - In the implementation block
-@property (nonatomic,readonly) BOOL hasIcon; 
+@property (nonatomic,readonly) BOOL hasIcon;
 @property (nonatomic,retain) NSString * icon;                           //@synthesize icon=_icon - In the implementation block
-@property (nonatomic,readonly) BOOL hasDisplayIdentifier; 
+@property (nonatomic,readonly) BOOL hasDisplayIdentifier;
 @property (nonatomic,retain) NSString * displayIdentifier;              //@synthesize displayIdentifier=_displayIdentifier - In the implementation block
-@property (nonatomic,readonly) BOOL hasCategory; 
+@property (nonatomic,readonly) BOOL hasCategory;
 @property (nonatomic,retain) NSString * category;                       //@synthesize category=_category - In the implementation block
-@property (nonatomic,readonly) BOOL hasScheme; 
+@property (nonatomic,readonly) BOOL hasScheme;
 @property (nonatomic,retain) NSString * scheme;                         //@synthesize scheme=_scheme - In the implementation block
-@property (assign,nonatomic) BOOL hasFlags; 
+@property (assign,nonatomic) BOOL hasFlags;
 @property (assign,nonatomic) NSInteger flags;                                 //@synthesize flags=_flags - In the implementation block
 @property (nonatomic,retain) NSMutableArray * results;                  //@synthesize results=_results - In the implementation block
 

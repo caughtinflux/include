@@ -30,6 +30,11 @@ typedef NS_ENUM(NSInteger, SBIconLocation) {
 + (id)memoryMappedIconImageForIconImage:(id)arg1;
 + (id)_iconImageOfSize:(CGSize)arg1 scale:(CGFloat)arg2 failGracefully:(BOOL)arg3 drawing:(id)arg4;
 + (id)_iconImagesMemoryPool;
+
+// iOS 9+
+- (void)launchFromLocation:(SBIconLocation)location context:(id)ctx;
+- (id)displayNameForLocation:(SBIconLocation)location;
+
 - (BOOL)canReceiveGrabbedIcon;
 - (id)folderFallbackTitle;
 - (id)folderTitleOptions;

@@ -23,6 +23,11 @@
 @property(nonatomic) BOOL enabled; // @synthesize enabled=_enabled;
 @property(readonly, nonatomic, getter=isAnimatingResetOrReveal) BOOL animatingResetOrReveal; // @synthesize animatingResetOrReveal=_animatingResetOrReveal;
 @property(retain, nonatomic) UIView *targetView; // @synthesize targetView=_targetView;
+
+// 9.0+
+- (void)setDisabled:(BOOL)disabled forReason:(NSString *)reason;
+// ----
+
 - (void)scrollViewDidEndScrollingAnimation:(id)arg1;
 - (void)scrollViewDidScrollToTop:(id)arg1;
 - (void)scrollViewDidEndDecelerating:(id)arg1;

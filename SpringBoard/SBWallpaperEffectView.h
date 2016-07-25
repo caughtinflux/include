@@ -15,6 +15,25 @@ typedef NS_ENUM(NSInteger, SBWallpaperVariant) {
     SBWallpaperVariantHomeScreen
 };
 
+// Checked on iOS 9.3
+typedef NS_ENUM(NSInteger, SBEffectStyle) {
+    SBEffectStyleNormal = 0,
+    SBEffectStyleHidden = 1,
+    SBEffectStyleBlack = 2,
+    SBEffectStyleBlur = 3,
+    SBEffectStyleUltraLightBlurOnly = 4,
+    SBEffectStyleSemiLightBlurOnly = 5,
+    SBEffectStyleFlatSemiLightBlurOnly = 6,
+    SBEffectStyleLightBlurOnly = 7,
+    SBEffectStyleDarkBlurOnly = 8,
+    SBEffectStyleUltraLightTintedBlur = 9,
+    SBEffectStyleSemiLightTintedBlur = 10,
+    SBEffectStyleFlatSemiLightTintedBlur = 11,
+    SBEffectStyleLightTintedBlur = 12,
+    /* and many more up to 31 */
+    /* See SBFWallpaperLoggableNameForVariant */
+};
+
 @interface SBWallpaperEffectView : UIView <_SBFakeBlurObserver, SBWallpaperObserver>
 {
     SBWallpaperVariant _variant;

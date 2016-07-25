@@ -12,7 +12,6 @@
 #import "CATiledLayer2.h"
 #import "CAMatchMoveAnimation.h"
 #import "CAAnimationGroup2.h"
-#import "CAValueFunction.h"
 #import "NSAffineTransform.h"
 #import "NSNumber.h"
 #import "CAGradientLayer2.h"
