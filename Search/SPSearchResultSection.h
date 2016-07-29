@@ -12,7 +12,7 @@
 @class NSString, NSMutableArray;
 
 typedef NS_ENUM(NSUInteger, SPSearchResultDomain) {
-    SPSearchResultDomainTopHits = 1,
+    SPSearchResultDomainTopHits = 0,
 };
 
 @interface SPSearchResultSection : PBCodable {
