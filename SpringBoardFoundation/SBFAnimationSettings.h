@@ -7,7 +7,7 @@
 #import <SpringBoardFoundation/SBFAnimationCurveSettings.h>
 
 @interface SBFAnimationSettings : SBFAnimationCurveSettings
-+ (id)_moduleWithSectionTitle:(id)arg1 delay:(_Bool)arg2;
++ (id)_moduleWithSectionTitle:(id)arg1 delay:(BOOL)arg2;
 + (id)_moduleWithSectionTitle:(id)arg1;
 + (id)settingsControllerModule;
 @property(nonatomic) NSTimeInterval calculatedDuration; // @synthesize calculatedDuration=_calculatedDuration;

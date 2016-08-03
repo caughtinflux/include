@@ -4,27 +4,28 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2012 by Steve Nygard.
  */
 
-#import "NSObject.h"
-
-@class NSMutableSet;
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface SBOrientationLockManager : NSObject
 {
     NSMutableSet *_lockOverrideReasons;
-    int _userLockedOrientation;
+    UIInterfaceOrientation _userLockedOrientation;
 }
 
 + (id)sharedInstance;
+
 - (BOOL)_effectivelyLocked;
 - (void)_updateLockStateWithOrientation:(int)arg1 forceUpdateHID:(BOOL)arg2 changes:(id)arg3;
 - (void)_updateLockStateWithChanges:(id)arg1;
 - (void)updateLockOverrideForCurrentDeviceOrientation;
 - (BOOL)lockOverrideEnabled;
-- (void)enableLockOverrideForReason:(id)arg1 forceOrientation:(int)arg2;
-- (void)enableLockOverrideForReason:(id)arg1 suggestOrientation:(int)arg2;
+- (void)enableLockOverrideForReason:(id)arg1 forceOrientation:(UIInterfaceOrientation)orientation;
+- (void)enableLockOverrideForReason:(id)arg1 suggestOrientation:(UIInterfaceOrientation)orientation;
 - (void)setLockOverrideEnabled:(BOOL)arg1 forReason:(id)arg2;
 - (int)userLockOrientation;
-- (BOOL)isLocked;
+- (BOOL)isLocked; // < iOS 9
+- (BOOL)isEffectivelyLocked; // >= iOS 9
 - (void)unlock;
 - (void)lock:(int)arg1;
 - (void)lock;

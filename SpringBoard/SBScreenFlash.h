@@ -7,24 +7,24 @@
 #import "NSObject.h"
 
 @class UIView, UIWindow;
-
-@interface SBScreenFlash : NSObject
-{
+// iOS 8.1+
+@interface SBScreenFlash : NSObject {
+    NSMutableArray *_flashCompletionBlocks;
+    UIScreen *_screen;
     UIWindow *_flashWindow;
     UIView *_flashView;
     BOOL _windowVisible;
 }
 
-+ (instancetype)sharedInstance;
-- (void)animationDidStop:(id)arg1 finished:(id)arg2 context:(void *)arg3;
-- (void)flashColor:(id)arg1;
-- (void)flash;
-- (void)stopFlash;
++ (id)mainScreenFlasher;
+
 - (void)_orderWindowFront:(id)arg1 withColor:(id)arg2;
 - (void)_orderWindowOut:(id)arg1;
 - (void)_tearDown;
 - (void)_createUIWithColor:(id)arg1;
-- (void)dealloc;
+- (void)flashColor:(UIColor *)color withCompletion:(id)completion;
+- (void)flashWhiteWithCompletion:(id)completion;
+- (id)initWithScreen:(id)arg1;
 
 @end
 

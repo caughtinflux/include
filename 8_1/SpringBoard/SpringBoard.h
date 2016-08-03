@@ -7,7 +7,7 @@
 #import <UIKit/UIKit.h>
 #import <8_1/FrontBoard/FBSystemApp.h>
 #import "SBOrientationLockManager.h"
-#import "CDStructures.h"
+#import <SpringBoard/CDStructures.h>
 
 #import "MCProfileConnectionObserver-Protocol.h"
 #import "SBPowerDownControllerDelegate-Protocol.h"

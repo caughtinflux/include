@@ -6,6 +6,8 @@
 
 #pragma mark Named Structures
 
+typedef void (^CDUnknownBlockType)(void);
+
 struct SBBannerDismissGestureState {
     char _field1;
     char _field2;

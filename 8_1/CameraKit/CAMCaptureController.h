@@ -83,7 +83,7 @@ typedef NS_ENUM(long long, CAMCameraMode) {
     CGFloat _maxVideoZoomFactorRear;
     CGFloat _maxVideoZoomFactorFront;
     NSUInteger _keepAliveCounter;
-    NSTimer *_keepAliveTimer;   
+    NSTimer *_keepAliveTimer;
     NSTimer *_keepAliveFailsafeTimer;
     struct {
         NSUInteger supportsVideo:1;
@@ -245,43 +245,43 @@ typedef NS_ENUM(long long, CAMCameraMode) {
 
 @property(readonly, nonatomic) AVCaptureSession *currentSession; // @synthesize currentSession=_avCaptureSession;
 @property(readonly, nonatomic) NSInteger cameraOrientation;
-@property(readonly, nonatomic) BOOL _locationAcquiredForTimelapseCapture; // @synthesize 
-@property(nonatomic, setter=_setLockLensPositionTarget:) CGFloat _lockLensPositionTarget; // @synthesize 
-@property(copy, nonatomic, setter=_setLockLensPositionCompletionBlock:) CDUnknownBlockType _lockLensPositionCompletionBlock; // @synthesize 
-@property(readonly, nonatomic) BOOL _lockExposureAfterExposeFinishes; // @synthesize 
+@property(readonly, nonatomic) BOOL _locationAcquiredForTimelapseCapture; // @synthesize
+@property(nonatomic, setter=_setLockLensPositionTarget:) CGFloat _lockLensPositionTarget; // @synthesize
+@property(copy, nonatomic, setter=_setLockLensPositionCompletionBlock:) CDUnknownBlockType _lockLensPositionCompletionBlock; // @synthesize
+@property(readonly, nonatomic) BOOL _lockExposureAfterExposeFinishes; // @synthesize
 @property(readonly, nonatomic) BOOL _lockFocusAfterFocusFinishes; // @synthesize _lockFocusAfterFocusFinishes=__lockFocusAfterFocusFinishes;
-@property(readonly, nonatomic) NSTimeInterval _ignoreSubjectAreaChangesUntilTime; // @synthesize 
+@property(readonly, nonatomic) NSTimeInterval _ignoreSubjectAreaChangesUntilTime; // @synthesize
 @property(readonly, nonatomic) BOOL _ignoreSubjectAreaChanges; // @synthesize _ignoreSubjectAreaChanges=__ignoreSubjectAreaChanges;
 @property(readonly, nonatomic) CAMDebugCaptureService *_debugCaptureService; // @synthesize _debugCaptureService=__debugCaptureService;
 @property(readonly, nonatomic) NSMutableArray *_currentFaceMetadata; // @synthesize _currentFaceMetadata=__currentFaceMetadata;
-@property(readonly, nonatomic) BOOL _wasStillImageStabilzationOnBeforeTimedCapture; // @synthesize 
-@property(readonly, nonatomic) BOOL _panoramaProcessorReadyForSampleBuffers; // @synthesize 
-@property(readonly, nonatomic) NSMutableArray *_processingPanoramaCaptureRequests; // @synthesize 
-@property(readonly, nonatomic) NSMutableArray *_inflightPanoramaCaptureRequests; // @synthesize 
-@property(readonly, nonatomic) NSMutableArray *_deferredVideoCaptureRequests; // @synthesize 
-@property(readonly, nonatomic) NSMutableArray *_inflightStillImageCaptureRequests; // @synthesize 
+@property(readonly, nonatomic) BOOL _wasStillImageStabilzationOnBeforeTimedCapture; // @synthesize
+@property(readonly, nonatomic) BOOL _panoramaProcessorReadyForSampleBuffers; // @synthesize
+@property(readonly, nonatomic) NSMutableArray *_processingPanoramaCaptureRequests; // @synthesize
+@property(readonly, nonatomic) NSMutableArray *_inflightPanoramaCaptureRequests; // @synthesize
+@property(readonly, nonatomic) NSMutableArray *_deferredVideoCaptureRequests; // @synthesize
+@property(readonly, nonatomic) NSMutableArray *_inflightStillImageCaptureRequests; // @synthesize
 @property(nonatomic) BOOL _rebuildingSession; // @synthesize _rebuildingSession=__rebuildingSession;
 @property(readonly, assign) dispatch_queue_t _effectRenderingQueue; // @synthesize _effectRenderingQueue=__effectRenderingQueue;
-@property(nonatomic) BOOL disableAllPreviewSuspensionDuringCapture; // @synthesize 
+@property(nonatomic) BOOL disableAllPreviewSuspensionDuringCapture; // @synthesize
 @property(nonatomic, getter=isHDRDetectionEnabled) BOOL HDRDetectionEnabled; // @synthesize HDRDetectionEnabled=_HDRDetectionEnabled;
 @property(readonly, nonatomic) AVCaptureStillImageOutput *imageOutput; // @synthesize imageOutput=_avCaptureOutputPhoto;
 @property(nonatomic, assign) AVCaptureDevice *currentDevice; // @synthesize currentDevice=_currentDevice;
 @property(nonatomic) BOOL convertSampleBufferToJPEG;
 @property(readonly, nonatomic) NSMutableDictionary *_servicesByType; // @synthesize _servicesByType=__servicesByType;
-@property(nonatomic, setter=_setVideoDataOutputEnabledForRenderer:) BOOL _videoDataOutputEnabledForRenderer; // @synthesize 
-@property(nonatomic, setter=_setPreviewLayerEnabledForRenderer:) BOOL _previewLayerEnabledForRenderer; // @synthesize 
+@property(nonatomic, setter=_setVideoDataOutputEnabledForRenderer:) BOOL _videoDataOutputEnabledForRenderer; // @synthesize
+@property(nonatomic, setter=_setPreviewLayerEnabledForRenderer:) BOOL _previewLayerEnabledForRenderer; // @synthesize
 @property(nonatomic, getter=_isPreviewPaused, setter=_setPreviewPaused:) BOOL _previewPaused; // @synthesize _previewPaused=__previewPaused;
-@property(readonly, nonatomic) CAMAvalancheCaptureService *_avalancheCaptureService; // @synthesize 
+@property(readonly, nonatomic) CAMAvalancheCaptureService *_avalancheCaptureService; // @synthesize
 @property(setter=_setAtomicEffectsAvailable:) BOOL _atomicEffectsAvailable; // @synthesize _atomicEffectsAvailable=__atomicEffectsAvailable;
-@property(retain, nonatomic, setter=_setEffectFilterIndices:) NSDictionary *_effectFilterIndices; // @synthesize 
+@property(retain, nonatomic, setter=_setEffectFilterIndices:) NSDictionary *_effectFilterIndices; // @synthesize
 @property(readonly, assign) dispatch_queue_t _effectFilterIndexQueue; // @synthesize _effectFilterIndexQueue=__effectFilterIndexQueue;
 @property(nonatomic, setter=_setEffectsAvailable:) BOOL _effectsAvailable;
 @property(nonatomic) BOOL use60FPSVideo; // @synthesize use60FPSVideo=_use60FPSVideo;
-@property(nonatomic) BOOL resetExposureWhenSubjectAreaChanged; // @synthesize 
+@property(nonatomic) BOOL resetExposureWhenSubjectAreaChanged; // @synthesize
 @property(nonatomic) BOOL resetFocusWhenSubjectAreaChanged; // @synthesize resetFocusWhenSubjectAreaChanged=_resetFocusWhenSubjectAreaChanged;
-@property(getter=_isConfiguringCamera, setter=_setConfiguringCamera:) BOOL _configuringCamera; // @synthesize 
+@property(getter=_isConfiguringCamera, setter=_setConfiguringCamera:) BOOL _configuringCamera; // @synthesize
 @property(readonly, assign) dispatch_queue_t _captureIsolationQueue; // @synthesize _captureIsolationQueue=__captureIsolationQueue;
-@property(readonly, nonatomic) NSMutableArray *_inflightVideoCaptureResponses; // @synthesize 
+@property(readonly, nonatomic) NSMutableArray *_inflightVideoCaptureResponses; // @synthesize
 @property(nonatomic, assign) AVCaptureDeviceInput *currentInput; // @synthesize currentInput=_currentInput;
 @property(nonatomic, getter=_isSessionReady, setter=_setSessionReady:) BOOL _sessionReady; // @synthesize _sessionReady=__sessionReady;
 @property(copy, nonatomic) CDUnknownBlockType postSessionSetupBlock; // @synthesize postSessionSetupBlock;
@@ -290,7 +290,7 @@ typedef NS_ENUM(long long, CAMCameraMode) {
 @property(nonatomic, getter=isCapturingTimelapse) BOOL capturingTimelapse; // @synthesize capturingTimelapse=_capturingTimelapse;
 @property(readonly, nonatomic) CGFloat panoramaPreviewScale; // @synthesize panoramaPreviewScale=_panoramaPreviewScale;
 @property(readonly, nonatomic, getter=isHDRSuggested) BOOL HDRSuggested;
-@property(nonatomic) BOOL canCapturePhotoFromVideoModeWhenNotRecording; // @synthesize 
+@property(nonatomic) BOOL canCapturePhotoFromVideoModeWhenNotRecording; // @synthesize
 @property(readonly, nonatomic) BOOL supportsHDR;
 @property(nonatomic) BOOL useAlternateSlomoRear; // @synthesize useAlternateSlomoRear=_useAlternateSlomoRear;
 @property(nonatomic) BOOL useAlternateSlomoFront; // @synthesize useAlternateSlomoFront=_useAlternateSlomoFront;

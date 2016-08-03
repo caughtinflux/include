@@ -6,7 +6,7 @@
 
 #pragma mark Blocks
 
-#import "../SpringBoard/CDStructures.h"
+#import <SpringBoard/CDStructures.h>
 
 #pragma mark Named Structures
 

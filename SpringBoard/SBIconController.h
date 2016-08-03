@@ -17,6 +17,7 @@
 #import "SBIconViewMapDelegate-Protocol.h"
 #import "SBSearchGestureObserver-Protocol.h"
 #import "SBIcon.h"
+#import "SBIconViewMap.h"
 
 @class BBObserver, SBFolder, SBIcon, SBFolder, SBRootFolder, SBIconColorSettings, SBIconListView, SBRootIconListView, SBDockIconListView, SBFolderController, SBFolderIconListView, SBIconContentView, SBIconModel, SBLeafIcon, SBRootFolderController, _UILegibilitySettings, SBApplicationShortcutMenu;
 
