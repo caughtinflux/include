@@ -147,7 +147,8 @@
 -(void)removeDefaultImage:(id)image;
 -(BOOL)_isInteractionEvent:(GSEventRef)event;
 -(BOOL)_isTouchEvent:(GSEventRef)event;
--(BOOL)_isSimulatorMotionEvent:(GSEventRef)event __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);
+-(BOOL)_isSimulatorMotionEvent:(GSEventRef)event;
+- (UIWindow *)statusBarWindow;
 -(BOOL)launchApplicationWithIdentifier:(id)identifier suspended:(BOOL)suspended;
 -(void)_runSpringboardCommand:(id)command;
 -(void)addStatusBarImageNamed:(id)named removeOnExit:(BOOL)exit;
